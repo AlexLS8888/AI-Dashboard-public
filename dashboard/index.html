@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Improvement — AI Monitor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ── Design tokens ────────────────────────────────────────────── */
+:root {
+  --bg:      #F5F4F1;
+  --card:    #FFFFFF;
+  --rule:    #E2DED7;
+  --rule2:   #C8C3BB;
+  --ink:     #1A1917;
+  --ink2:    #3D3A34;
+  --ink3:    #7A756A;
+  --ink4:    #B0A99E;
+  --gold:    #8B6914;
+  --gold-bg: #FBF6EB;
+  --sage:    #2E6651;
+  --sage-bg: #EBF3EF;
+  --umber:   #8B2E2E;
+  --sand:    #7A5A2A;
+  --blue:    #2A5A7A;
+  --ff:      'Figtree', system-ui, sans-serif;
+  --mono:    'Roboto Mono', monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink2);font-family:var(--ff);
+     font-size:13px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.header{
+  background:var(--card);border-bottom:1px solid var(--rule);
+  padding:0 40px;height:52px;display:flex;align-items:center;
+  justify-content:space-between;position:sticky;top:0;z-index:100;
+}
+.brand{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-0.01em;}
+.brand span{color:var(--gold);}
+.header-meta{display:flex;gap:20px;align-items:center;}
+.pill{
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:8px;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--ink4);
+}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--rule2);}
+.dot.live{background:var(--sage);}
+.dot.warn{background:var(--gold);}
+#last-update{font-family:var(--mono);font-size:8px;color:var(--ink4);}
+
+/* ── Layout ──────────────────────────────────────────────────── */
+.main{padding:28px 40px 60px;max-width:1400px;margin:0 auto;}
+
+.section-row{
+  display:flex;align-items:center;gap:12px;
+  margin:32px 0 16px;
+}
+.section-row::before{
+  content:'';display:block;width:2px;height:12px;
+  background:var(--gold);flex-shrink:0;
+}
+.section-label{
+  font-family:var(--mono);font-size:8px;text-transform:uppercase;
+  letter-spacing:0.18em;color:var(--ink4);
+}
+.section-row::after{content:'';flex:1;height:1px;background:var(--rule);}
+
+/* ── KPI strip ───────────────────────────────────────────────── */
+.kpi-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--rule);margin-bottom:1px;
+}
+.kpi{
+  background:var(--card);padding:20px 22px;
+  border-bottom:2px solid transparent;
+}
+.kpi.up{border-bottom-color:var(--sage);}
+.kpi.dn{border-bottom-color:var(--umber);}
+.kpi.nu{border-bottom-color:var(--sand);}
+.kpi-label{
+  font-family:var(--mono);font-size:8px;text-transform:uppercase;
+  letter-spacing:0.14em;color:var(--ink4);margin-bottom:10px;
+}
+.kpi-value{
+  font-family:var(--mono);font-size:26px;font-weight:300;
+  color:var(--ink);line-height:1;margin-bottom:6px;letter-spacing:-0.02em;
+}
+.kpi-sub{font-family:var(--mono);font-size:9px;color:var(--ink4);}
+.kpi-delta{font-family:var(--mono);font-size:9px;margin-top:3px;}
+.kpi-delta.up{color:var(--sage);}
+.kpi-delta.dn{color:var(--umber);}
+.kpi-delta.nu{color:var(--ink4);}
+
+/* ── Grid ────────────────────────────────────────────────────── */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;
+         background:var(--rule);margin-bottom:1px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+         background:var(--rule);margin-bottom:1px;}
+.grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:1px;
+           background:var(--rule);margin-bottom:1px;}
+
+/* ── Card ────────────────────────────────────────────────────── */
+.card{background:var(--card);padding:22px 24px;}
+.card-title{
+  font-family:var(--mono);font-size:8px;text-transform:uppercase;
+  letter-spacing:0.15em;color:var(--ink4);margin-bottom:3px;
+}
+.card-sub{font-size:10px;color:var(--ink4);margin-bottom:18px;line-height:1.4;}
+
+/* ── Table ───────────────────────────────────────────────────── */
+.tbl{width:100%;border-collapse:collapse;margin-top:6px;}
+.tbl th{
+  font-family:var(--mono);font-size:8px;text-transform:uppercase;
+  letter-spacing:0.12em;color:var(--ink4);text-align:left;
+  padding:8px 10px;border-bottom:1px solid var(--rule);
+  background:var(--bg);position:sticky;top:52px;
+}
+.tbl td{
+  font-size:11px;color:var(--ink2);
+  padding:7px 10px;border-bottom:1px solid var(--rule);
+}
+.tbl tbody tr:hover td{background:#F9F8F5;}
+.mono{font-family:var(--mono);font-size:10px;}
+.org-badge{
+  display:inline-block;padding:1px 7px;border:1px solid var(--rule2);
+  font-family:var(--mono);font-size:8px;color:var(--ink3);border-radius:2px;
+}
+.bar-wrap{display:flex;align-items:center;gap:8px;}
+.bar{height:5px;background:var(--gold);opacity:0.7;border-radius:1px;min-width:2px;}
+
+/* ── Annotation box ──────────────────────────────────────────── */
+.note{
+  background:var(--gold-bg);border-left:2px solid var(--gold);
+  padding:10px 14px;font-size:11px;color:var(--sand);
+  margin-bottom:1px;
+}
+
+/* ── Loading / Error ─────────────────────────────────────────── */
+.loader{
+  display:flex;align-items:center;justify-content:center;
+  height:140px;font-family:var(--mono);font-size:9px;
+  letter-spacing:0.1em;color:var(--ink4);
+}
+.err{
+  padding:12px 14px;background:#F8EEEE;border-left:2px solid var(--umber);
+  font-size:11px;color:var(--umber);
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.footer{
+  margin-top:40px;padding:16px 0;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:8px;color:var(--ink4);
+  text-align:center;letter-spacing:0.1em;text-transform:uppercase;
+}
+.footer a{color:var(--ink4);text-decoration:none;}
+.footer a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────── -->
+<div class="header">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="brand">AI <span>Monitor</span></div>
+    <div style="width:1px;height:12px;background:var(--rule2)"></div>
+    <div class="brand" style="font-weight:400;color:var(--ink3);">
+      Indicator 1 — Model Improvement
+    </div>
+  </div>
+  <div class="header-meta">
+    <div class="pill" id="metr-status">
+      <div class="dot" id="metr-dot"></div>METR P50
+    </div>
+    <div class="pill" id="eci-status">
+      <div class="dot" id="eci-dot"></div>Epoch ECI
+    </div>
+    <div id="last-update">Loading...</div>
+  </div>
+</div>
+
+<!-- ── Main ───────────────────────────────────────────────────── -->
+<div class="main">
+
+  <!-- KPI strip -->
+  <div class="section-row"><span class="section-label">Live Signals</span></div>
+  <div class="kpi-strip" id="kpi-strip">
+    <div class="kpi nu"><div class="kpi-label">Frontier P50</div>
+      <div class="kpi-value" id="kpi-p50">—</div>
+      <div class="kpi-sub">hours — METR Time Horizon</div>
+      <div class="kpi-delta nu" id="kpi-p50-delta">loading...</div>
+    </div>
+    <div class="kpi nu"><div class="kpi-label">Doubling Rate</div>
+      <div class="kpi-value" id="kpi-double">—</div>
+      <div class="kpi-sub">months per 2× P50</div>
+      <div class="kpi-delta nu" id="kpi-double-sub">exponential fit</div>
+    </div>
+    <div class="kpi nu"><div class="kpi-label">Frontier ECI</div>
+      <div class="kpi-value" id="kpi-eci">—</div>
+      <div class="kpi-sub">Epoch Capabilities Index</div>
+      <div class="kpi-delta nu" id="kpi-eci-delta">Claude 3.5 Sonnet = 130</div>
+    </div>
+    <div class="kpi nu"><div class="kpi-label">ECI Slope</div>
+      <div class="kpi-value" id="kpi-eci-slope">—</div>
+      <div class="kpi-sub">points / year (12m rolling)</div>
+      <div class="kpi-delta nu" id="kpi-eci-slope-sub">post-2024 acceleration</div>
+    </div>
+  </div>
+
+  <!-- Annotation -->
+  <div class="note" id="signal-note">Loading signal interpretation...</div>
+
+  <!-- P50 Time Horizon Charts -->
+  <div class="section-row"><span class="section-label">METR P50 Time Horizon — Task Difficulty AI Can Handle at 50% Success Rate</span></div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">P50 Time Horizon — Frontier Trend</div>
+      <div class="card-sub">
+        Max P50 per month across all evaluated models (hours).
+        Exponential trend: ~7 months per doubling (historically).
+      </div>
+      <canvas id="p50TrendChart" height="220"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">P50 vs P80 — Current Models</div>
+      <div class="card-sub">
+        P50 = task length AI completes with 50% reliability.
+        P80 = 80% reliability. Wider gap = less consistent model.
+      </div>
+      <canvas id="p50P80Chart" height="220"></canvas>
+    </div>
+  </div>
+
+  <!-- P50 table -->
+  <div class="section-row"><span class="section-label">All METR Measurements — Latest Eval Version</span></div>
+  <div class="card" style="padding:0;">
+    <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
+      <table class="tbl" id="metr-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Model</th>
+            <th>Org</th>
+            <th>Release</th>
+            <th>P50 (hrs)</th>
+            <th>P80 (hrs)</th>
+            <th>CI 95%</th>
+            <th>Avg Score</th>
+            <th>Trend</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="9" class="loader">Loading METR data...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ECI Charts -->
+  <div class="section-row"><span class="section-label">Epoch Capabilities Index — General AI Capability Score (37 benchmarks)</span></div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">ECI Frontier Trend</div>
+      <div class="card-sub">
+        Max ECI per month. Scale: Claude 3.5 Sonnet = 130, GPT-5 = 150.
+        5 ECI points ≈ 2× METR P50.
+      </div>
+      <canvas id="eciTrendChart" height="220"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">Top 20 Models by ECI</div>
+      <div class="card-sub">
+        Higher = better across 37 benchmarks (difficulty-weighted).
+        Error bars show 95% CI.
+      </div>
+      <canvas id="eciLeaderChart" height="220"></canvas>
+    </div>
+  </div>
+
+  <!-- ECI table -->
+  <div class="section-row"><span class="section-label">All ECI Scores — Epoch AI Benchmarking Hub</span></div>
+  <div class="card" style="padding:0;">
+    <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
+      <table class="tbl" id="eci-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Model</th>
+            <th>Org</th>
+            <th>Release</th>
+            <th>ECI</th>
+            <th>CI Low</th>
+            <th>CI High</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="8" class="loader">Loading ECI data...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<div class="footer">
+  Data: <a href="https://metr.org/time-horizons/" target="_blank">METR Time Horizons</a>
+  &nbsp;·&nbsp;
+  <a href="https://epoch.ai/benchmarks/eci" target="_blank">Epoch AI ECI</a>
+  &nbsp;·&nbsp;
+  Updated every Monday via GitHub Actions
+  &nbsp;·&nbsp;
+  AI Monitor — Model Improvement Indicator
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+// CONFIG
+// ════════════════════════════════════════════════════════════════
+const DATA = {
+  metrHistory:  'data/metr_p50_history.csv',
+  metrBest:     'data/metr_p50_best.csv',
+  metrTrend:    'data/metr_frontier_trend.csv',
+  eciHistory:   'data/epoch_eci_history.csv',
+  eciBest:      'data/epoch_eci_best.csv',
+  eciTrend:     'data/eci_frontier_trend.csv',
+};
+
+// Chart defaults
+Chart.defaults.color       = '#7A756A';
+Chart.defaults.font.family = "'Roboto Mono', monospace";
+Chart.defaults.font.size   = 9;
+const gridColor = 'rgba(0,0,0,0.04)';
+
+const C = {
+  gold:   '#8B6914', goldA: 'rgba(139,105,20,0.10)',
+  sage:   '#2E6651', sageA: 'rgba(46,102,81,0.08)',
+  blue:   '#2A5A7A', blueA: 'rgba(42,90,122,0.08)',
+  umber:  '#8B2E2E', sand:  '#7A5A2A',
+  ink3:   '#7A756A', ink4:  '#B0A99E',
+};
+
+// ════════════════════════════════════════════════════════════════
+// CSV PARSER
+// ════════════════════════════════════════════════════════════════
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const hdrs  = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+  return lines.slice(1)
+    .filter(l => l.trim())
+    .map(line => {
+      // Handle quoted fields with commas inside
+      const vals = [];
+      let cur = '', inQ = false;
+      for (const ch of line) {
+        if (ch === '"') { inQ = !inQ; }
+        else if (ch === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
+        else cur += ch;
+      }
+      vals.push(cur.trim());
+      const obj = {};
+      hdrs.forEach((h, i) => obj[h] = (vals[i] || '').replace(/^"|"$/g,''));
+      return obj;
+    });
+}
+
+async function loadCSV(path) {
+  try {
+    const r = await fetch(path + '?t=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    return parseCSV(await r.text());
+  } catch(e) {
+    console.warn('CSV load failed:', path, e);
+    return [];
+  }
+}
+
+// ════════════════════════════════════════════════════════════════
+// HELPERS
+// ════════════════════════════════════════════════════════════════
+const f1 = v => v ? (+v).toFixed(1) : '—';
+const f2 = v => v ? (+v).toFixed(2) : '—';
+const fh = v => {           // format hours nicely
+  if (!v || isNaN(+v)) return '—';
+  const h = +v;
+  if (h < 1)   return Math.round(h * 60) + 'm';
+  if (h < 24)  return h.toFixed(1) + 'h';
+  return (h / 24).toFixed(1) + 'd';
+};
+const fd = s => s ? s.slice(0, 7) : '—'; // YYYY-MM
+
+function statusDot(id, ok) {
+  document.getElementById(id).className = 'dot ' + (ok ? 'live' : 'warn');
+}
+
+// ════════════════════════════════════════════════════════════════
+// CHART BUILDERS
+// ════════════════════════════════════════════════════════════════
+function lineChart(id, labels, datasets, yOpts = {}) {
+  const ctx = document.getElementById(id);
+  if (!ctx) return;
+  return new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: datasets.length > 1,
+          labels: { boxWidth: 8, padding: 10, font: { size: 9 } }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.dataset.label + ': ' + ctx.formattedValue
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: gridColor }, ticks: { maxTicksLimit: 10 } },
+        y: { grid: { color: gridColor }, ...yOpts }
+      }
+    }
+  });
+}
+
+function barChart(id, labels, data, colors, opts = {}) {
+  const ctx = document.getElementById(id);
+  if (!ctx) return;
+  return new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: colors,
+        borderWidth: 0,
+        borderRadius: 1,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: gridColor }, ...opts.x },
+        y: { grid: { color: 'transparent' }, ticks: { font: { size: 8 } } }
+      }
+    }
+  });
+}
+
+// ════════════════════════════════════════════════════════════════
+// DOUBLING TIME (log-linear regression on frontier P50)
+// ════════════════════════════════════════════════════════════════
+function computeDoublingMonths(trend) {
+  // trend: [{month: "YYYY-MM", frontier_p50_hours: X}, ...]
+  const pts = trend
+    .filter(r => r.frontier_p50_hours && +r.frontier_p50_hours > 0)
+    .map(r => ({
+      t: new Date(r.month + '-01').getTime() / (1000 * 60 * 60 * 24 * 30.44), // months since epoch
+      v: Math.log2(+r.frontier_p50_hours)
+    }));
+  if (pts.length < 2) return null;
+  // OLS: v = a + b*t
+  const n = pts.length;
+  const sumT  = pts.reduce((s, p) => s + p.t, 0);
+  const sumV  = pts.reduce((s, p) => s + p.v, 0);
+  const sumTT = pts.reduce((s, p) => s + p.t * p.t, 0);
+  const sumTV = pts.reduce((s, p) => s + p.t * p.v, 0);
+  const b = (n * sumTV - sumT * sumV) / (n * sumTT - sumT * sumT);
+  // b = doublings per month → months per doubling = 1/b
+  return b > 0 ? Math.round(1 / b) : null;
+}
+
+// ════════════════════════════════════════════════════════════════
+// ECI SLOPE (linear regression on frontier ECI, last 12 months)
+// ════════════════════════════════════════════════════════════════
+function computeEciSlope(trend) {
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - 1);
+  const pts = trend
+    .filter(r => r.frontier_eci && r.month && new Date(r.month + '-01') >= cutoff)
+    .map(r => ({
+      t: new Date(r.month + '-01').getTime() / (1000 * 60 * 60 * 24 * 365.25),
+      v: +r.frontier_eci
+    }));
+  if (pts.length < 2) return null;
+  const n    = pts.length;
+  const sumT = pts.reduce((s, p) => s + p.t, 0);
+  const sumV = pts.reduce((s, p) => s + p.v, 0);
+  const sumTT= pts.reduce((s, p) => s + p.t * p.t, 0);
+  const sumTV= pts.reduce((s, p) => s + p.t * p.v, 0);
+  const b    = (n * sumTV - sumT * sumV) / (n * sumTT - sumT * sumT);
+  return Math.round(b);
+}
+
+// ════════════════════════════════════════════════════════════════
+// LOAD METR
+// ════════════════════════════════════════════════════════════════
+async function loadMETR() {
+  const [trend, best] = await Promise.all([
+    loadCSV(DATA.metrTrend),
+    loadCSV(DATA.metrBest),
+  ]);
+
+  if (!trend.length && !best.length) {
+    document.querySelector('#metr-table tbody').innerHTML =
+      '<tr><td colspan="9" class="err">No METR data. Run: python collector.py</td></tr>';
+    return;
+  }
+
+  statusDot('metr-dot', true);
+
+  // ── KPI: Frontier P50 ──────────────────────────────────────────
+  const sorted = [...trend].sort((a, b) => b.month.localeCompare(a.month));
+  const latest  = sorted[0];
+  const prev    = sorted[1];
+  const currP50 = latest ? +latest.frontier_p50_hours : null;
+  const prevP50 = prev   ? +prev.frontier_p50_hours   : null;
+
+  if (currP50) {
+    document.getElementById('kpi-p50').textContent = fh(currP50);
+    if (prevP50 && prevP50 > 0) {
+      const pct  = (currP50 - prevP50) / prevP50 * 100;
+      const el   = document.getElementById('kpi-p50-delta');
+      el.textContent = (pct >= 0 ? '↑' : '↓') + Math.abs(pct).toFixed(1) + '% vs prior month';
+      el.className   = 'kpi-delta ' + (pct >= 0 ? 'up' : 'dn');
+      // Update KPI border
+      document.querySelector('.kpi-strip .kpi:first-child').className = 'kpi ' + (pct >= 0 ? 'up' : 'dn');
+    }
+  }
+
+  // ── KPI: Doubling rate ─────────────────────────────────────────
+  const dbl = computeDoublingMonths(trend);
+  if (dbl) {
+    document.getElementById('kpi-double').textContent = dbl;
+    document.getElementById('kpi-double-sub').textContent = 'months per 2× P50 (OLS fit)';
+    const dblKpi = document.querySelector('.kpi-strip .kpi:nth-child(2)');
+    dblKpi.className = 'kpi ' + (dbl < 8 ? 'up' : dbl < 12 ? 'nu' : 'dn');
+  }
+
+  // ── Trend chart ────────────────────────────────────────────────
+  const tLabels = trend.map(r => r.month);
+  const tVals   = trend.map(r => r.frontier_p50_hours ? +r.frontier_p50_hours : null);
+
+  // Exponential trendline
+  const doublingMonths = dbl || 7;
+  const startVal = tVals.find(v => v);
+  const tExpVals = tLabels.map((m, i) => {
+    return startVal ? startVal * Math.pow(2, i / doublingMonths) : null;
+  });
+
+  lineChart('p50TrendChart', tLabels, [
+    {
+      label: 'Frontier P50 (hrs)',
+      data: tVals,
+      borderColor: C.gold, backgroundColor: C.goldA,
+      tension: 0.3, pointRadius: 3, pointHoverRadius: 5,
+    },
+    {
+      label: 'Exp. trend',
+      data: tExpVals,
+      borderColor: C.ink4, borderDash: [4, 3],
+      pointRadius: 0, tension: 0, borderWidth: 1,
+    }
+  ], {
+    y: { ticks: { callback: v => fh(v) }, beginAtZero: false }
+  });
+
+  // ── P50 vs P80 horizontal bar ──────────────────────────────────
+  const top10 = best.slice(0, 12);
+  const names = top10.map(r => (r.model_name || r.model_version || '?').slice(0, 22));
+
+  lineChart('p50P80Chart', names, [
+    {
+      label: 'P50 (hrs)',
+      data: top10.map(r => r.p50_hours ? +r.p50_hours : null),
+      borderColor: C.gold, backgroundColor: C.goldA,
+      tension: 0, pointRadius: 4, pointHoverRadius: 6,
+      type: 'bar',
+    },
+    {
+      label: 'P80 (hrs)',
+      data: top10.map(r => r.p80_hours ? +r.p80_hours : null),
+      borderColor: C.sand, backgroundColor: 'rgba(122,90,42,0.15)',
+      tension: 0, pointRadius: 3, type: 'bar',
+    }
+  ], { y: { beginAtZero: true, ticks: { callback: v => fh(v) } } });
+
+  // ── Table ──────────────────────────────────────────────────────
+  const metrRows = [...best].sort((a, b) => +b.p50_hours - +a.p50_hours);
+  const maxP50   = Math.max(...metrRows.map(r => +r.p50_hours || 0));
+
+  document.querySelector('#metr-table tbody').innerHTML = metrRows.map((r, i) => {
+    const barW = Math.round(((+r.p50_hours || 0) / maxP50) * 80);
+    const ci   = r.ci_low_hours && r.ci_high_hours
+      ? `${fh(r.ci_low_hours)} – ${fh(r.ci_high_hours)}` : '—';
+    return `<tr>
+      <td class="mono" style="color:var(--ink4)">${i+1}</td>
+      <td><strong>${r.model_name || '—'}</strong></td>
+      <td><span class="org-badge">${r.organization || '—'}</span></td>
+      <td class="mono">${fd(r.release_date)}</td>
+      <td class="mono"><strong>${fh(r.p50_hours)}</strong></td>
+      <td class="mono">${fh(r.p80_hours)}</td>
+      <td class="mono" style="font-size:9px;color:var(--ink3)">${ci}</td>
+      <td class="mono">${r.average_score ? (+r.average_score*100).toFixed(1)+'%' : '—'}</td>
+      <td><div class="bar-wrap"><div class="bar" style="width:${barW}px"></div></div></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9" style="color:var(--ink4);padding:20px">No data</td></tr>';
+
+  document.getElementById('last-update').textContent =
+    'METR: ' + (latest?.month || '?');
+}
+
+// ════════════════════════════════════════════════════════════════
+// LOAD ECI
+// ════════════════════════════════════════════════════════════════
+async function loadECI() {
+  const [trend, best] = await Promise.all([
+    loadCSV(DATA.eciTrend),
+    loadCSV(DATA.eciBest),
+  ]);
+
+  if (!trend.length && !best.length) {
+    document.querySelector('#eci-table tbody').innerHTML =
+      '<tr><td colspan="8" class="err">No ECI data. Run: python collector.py</td></tr>';
+    return;
+  }
+
+  statusDot('eci-dot', true);
+
+  // ── KPI: Frontier ECI ──────────────────────────────────────────
+  const sorted  = [...trend].sort((a, b) => b.month.localeCompare(a.month));
+  const latest  = sorted[0];
+  const prev    = sorted[1];
+  const currECI = latest ? +latest.frontier_eci : null;
+  const prevECI = prev   ? +prev.frontier_eci   : null;
+
+  if (currECI) {
+    document.getElementById('kpi-eci').textContent = f1(currECI);
+    if (prevECI) {
+      const delta = currECI - prevECI;
+      const el    = document.getElementById('kpi-eci-delta');
+      el.textContent = (delta >= 0 ? '↑' : '↓') + Math.abs(delta).toFixed(1) + ' pts vs prior month';
+      el.className   = 'kpi-delta ' + (delta >= 0 ? 'up' : 'dn');
+      document.querySelector('.kpi-strip .kpi:nth-child(3)').className =
+        'kpi ' + (delta >= 0 ? 'up' : 'dn');
+    }
+  }
+
+  // ── KPI: ECI Slope ────────────────────────────────────────────
+  const slope = computeEciSlope(trend);
+  if (slope !== null) {
+    document.getElementById('kpi-eci-slope').textContent = slope;
+    document.getElementById('kpi-eci-slope-sub').textContent =
+      'pts/yr · 12m rolling OLS';
+    const slopeKpi = document.querySelector('.kpi-strip .kpi:nth-child(4)');
+    slopeKpi.className = 'kpi ' + (slope > 12 ? 'up' : slope > 6 ? 'nu' : 'dn');
+  }
+
+  // ── ECI Trend Chart ────────────────────────────────────────────
+  const tLabels = trend.map(r => r.month);
+  const tVals   = trend.map(r => r.frontier_eci ? +r.frontier_eci : null);
+
+  lineChart('eciTrendChart', tLabels, [
+    {
+      label: 'Frontier ECI',
+      data: tVals,
+      borderColor: C.blue, backgroundColor: C.blueA,
+      tension: 0.3, pointRadius: 3, pointHoverRadius: 5,
+    }
+  ], {
+    y: {
+      beginAtZero: false,
+      ticks: { callback: v => v.toFixed(0) },
+    }
+  });
+
+  // ── ECI Leaderboard Chart ──────────────────────────────────────
+  const top20  = best.slice(0, 20);
+  const labels = top20.map(r => (r.model_name || r.model_slug || '?').slice(0, 18));
+  const vals   = top20.map(r => +r.eci || 0);
+  const colors = top20.map(r => {
+    const org = (r.organization || '').toLowerCase();
+    if (org.includes('openai'))    return C.blue;
+    if (org.includes('anthropic')) return C.gold;
+    if (org.includes('google'))    return C.sage;
+    if (org.includes('deepseek') || org.includes('minimax') || org.includes('alibaba'))
+      return C.sand;
+    return C.ink3;
+  });
+
+  barChart('eciLeaderChart', labels, vals, colors, {
+    x: { min: Math.min(...vals) * 0.95, ticks: { callback: v => v.toFixed(0) } }
+  });
+
+  // ── ECI Table ──────────────────────────────────────────────────
+  document.querySelector('#eci-table tbody').innerHTML =
+    best.slice(0, 40).map((r, i) => `<tr>
+      <td class="mono" style="color:var(--ink4)">${i+1}</td>
+      <td><strong>${r.model_name || r.model_slug || '—'}</strong></td>
+      <td><span class="org-badge">${r.organization || '—'}</span></td>
+      <td class="mono">${fd(r.release_date)}</td>
+      <td class="mono"><strong>${f1(r.eci)}</strong></td>
+      <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_low)}</td>
+      <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_high)}</td>
+      <td style="font-size:10px;color:var(--ink3)">${r.accessibility || '—'}</td>
+    </tr>`).join('') ||
+    '<tr><td colspan="8" style="color:var(--ink4);padding:20px">No data</td></tr>';
+}
+
+// ════════════════════════════════════════════════════════════════
+// SIGNAL NOTE
+// ════════════════════════════════════════════════════════════════
+async function buildSignalNote() {
+  const [metrTrend, eciTrend] = await Promise.all([
+    loadCSV(DATA.metrTrend),
+    loadCSV(DATA.eciTrend),
+  ]);
+
+  const mSorted = [...metrTrend].sort((a,b) => b.month.localeCompare(a.month));
+  const eSorted = [...eciTrend].sort((a,b) => b.month.localeCompare(a.month));
+
+  const p50  = mSorted[0]?.frontier_p50_hours ? +mSorted[0].frontier_p50_hours : null;
+  const dbl  = computeDoublingMonths(metrTrend);
+  const eci  = eSorted[0]?.frontier_eci ? +eSorted[0].frontier_eci : null;
+  const slope = computeEciSlope(eciTrend);
+
+  const parts = [];
+  if (p50)  parts.push(`Frontier P50 = <strong>${fh(p50)}</strong>`);
+  if (dbl)  parts.push(`doubling every <strong>~${dbl} months</strong>`);
+  if (eci)  parts.push(`ECI = <strong>${f1(eci)}</strong>`);
+  if (slope) parts.push(`ECI accelerating at <strong>${slope} pts/yr</strong>`);
+
+  const bull = dbl && dbl < 8 || (slope && slope > 14);
+  const bear = dbl && dbl > 14 || (slope && slope < 5);
+
+  const signal = bull ? '🟢 STRONG BULL — rapid capability acceleration' :
+                 bear ? '🔴 BEAR — pace of improvement decelerating' :
+                        '🟡 NEUTRAL — steady progress, no inflection detected';
+
+  document.getElementById('signal-note').innerHTML =
+    `<strong>${signal}</strong> &nbsp;|&nbsp; ${parts.join(' &nbsp;·&nbsp; ')}
+     &nbsp;|&nbsp; <span style="color:var(--ink4);font-size:10px">
+     Note: 5 ECI pts ≈ 2× METR P50. METR scope = SW/ML/cybersecurity tasks only.</span>`;
+}
+
+// ════════════════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════════════════
+(async () => {
+  await Promise.all([loadMETR(), loadECI(), buildSignalNote()]);
+  document.getElementById('last-update').textContent =
+    'Updated: ' + new Date().toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+})();
+</script>
+</body>
+</html>
