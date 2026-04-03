@@ -1,0 +1,28 @@
+month,frontier_p50_hours,frontier_org,frontier_model
+,0.0025,OpenAI,Davinci 002
+2019-11,0.0007,OpenAI,Gpt2 Xl
+2023-03,0.0894,OpenAI,Gpt 4 0314
+2023-06,0.0665,OpenAI,Gpt 4 0613
+2023-09,0.0101,OpenAI,Gpt 3.5 Turbo Instruct
+2023-11,0.1426,OpenAI,Gpt 4 1106 Preview
+2024-01,0.0894,OpenAI,Gpt 4 0125 Preview
+2024-02,0.1068,Anthropic,Claude 3 Opus
+2024-04,0.1095,OpenAI,Gpt 4 Turbo 2024 04 09
+2024-06,0.3114,Anthropic,Claude 3 5 Sonnet
+2024-08,0.1165,OpenAI,Gpt 4O 2024 08 06
+2024-09,0.3704,OpenAI,O1 Preview 2024 09 12
+2024-10,0.4929,Anthropic,Claude 3 5 Sonnet
+2024-11,0.1528,OpenAI,Gpt 4O 2024 11 20
+2024-12,0.6534,OpenAI,O1 2024 12 17
+2025-01,0.4489,DeepSeek,Deepseek R1
+2025-02,1.0065,Anthropic,Claude 3 7 Sonnet
+2025-03,0.3853,DeepSeek,Deepseek V3 0324
+2025-04,1.9955,OpenAI,O3 2025 04 16
+2025-05,1.6728,Anthropic,Claude Opus 4
+2025-06,0.6456,Google DeepMind,Gemini 2.5 Pro Preview 06 05
+2025-07,1.8346,xAI,Grok 4 0709
+2025-08,3.3835,OpenAI,Gpt 5 2025 08 07
+2025-09,2.0324,Anthropic,Claude Sonnet 4 5
+2025-11,4.8832,Anthropic,Claude Opus 4 5
+2025-12,5.8708,OpenAI,Gpt 5.2 2025 12 11
+2026-02,11.9801,Anthropic,Claude Opus 4 6
