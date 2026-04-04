@@ -7,7 +7,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-/* ── Design tokens ────────────────────────────────────────────── */
 :root {
   --bg:      #F5F4F1;
   --card:    #FFFFFF;
@@ -27,229 +26,206 @@
   --ff:      'Figtree', system-ui, sans-serif;
   --mono:    'Roboto Mono', monospace;
 }
-
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--ink2);font-family:var(--ff);
-     font-size:13px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+body{background:var(--bg);color:var(--ink2);font-family:var(--ff);font-size:13px;line-height:1.6;-webkit-font-smoothing:antialiased;}
 
-/* ── Header ──────────────────────────────────────────────────── */
-.header{
-  background:var(--card);border-bottom:1px solid var(--rule);
-  padding:0 40px;height:52px;display:flex;align-items:center;
-  justify-content:space-between;position:sticky;top:0;z-index:100;
-}
+/* ── Header ── */
+.header{background:var(--card);border-bottom:1px solid var(--rule);padding:0 40px;height:52px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
 .brand{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-0.01em;}
 .brand span{color:var(--gold);}
 .header-meta{display:flex;gap:20px;align-items:center;}
-.pill{
-  display:inline-flex;align-items:center;gap:5px;
-  font-family:var(--mono);font-size:8px;letter-spacing:0.12em;
-  text-transform:uppercase;color:var(--ink4);
-}
+.pill{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink4);}
 .dot{width:5px;height:5px;border-radius:50%;background:var(--rule2);}
 .dot.live{background:var(--sage);}
 .dot.warn{background:var(--gold);}
 #last-update{font-family:var(--mono);font-size:8px;color:var(--ink4);}
 
-/* ── Layout ──────────────────────────────────────────────────── */
+/* ── Layout ── */
 .main{padding:28px 40px 60px;max-width:1400px;margin:0 auto;}
-
-.section-row{
-  display:flex;align-items:center;gap:12px;
-  margin:32px 0 16px;
-}
-.section-row::before{
-  content:'';display:block;width:2px;height:12px;
-  background:var(--gold);flex-shrink:0;
-}
-.section-label{
-  font-family:var(--mono);font-size:8px;text-transform:uppercase;
-  letter-spacing:0.18em;color:var(--ink4);
-}
+.section-row{display:flex;align-items:center;gap:12px;margin:32px 0 16px;}
+.section-row::before{content:'';display:block;width:2px;height:12px;background:var(--gold);flex-shrink:0;}
+.section-label{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink4);}
 .section-row::after{content:'';flex:1;height:1px;background:var(--rule);}
 
-/* ── KPI strip ───────────────────────────────────────────────── */
-.kpi-strip{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1px;background:var(--rule);margin-bottom:1px;
-}
-.kpi{
-  background:var(--card);padding:20px 22px;
-  border-bottom:2px solid transparent;
-}
+/* ── KPI strip ── */
+.kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);margin-bottom:1px;}
+.kpi{background:var(--card);padding:20px 22px;border-bottom:2px solid transparent;}
 .kpi.up{border-bottom-color:var(--sage);}
 .kpi.dn{border-bottom-color:var(--umber);}
 .kpi.nu{border-bottom-color:var(--sand);}
-.kpi-label{
-  font-family:var(--mono);font-size:8px;text-transform:uppercase;
-  letter-spacing:0.14em;color:var(--ink4);margin-bottom:10px;
-}
-.kpi-value{
-  font-family:var(--mono);font-size:26px;font-weight:300;
-  color:var(--ink);line-height:1;margin-bottom:6px;letter-spacing:-0.02em;
-}
+.kpi-label{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.14em;color:var(--ink4);margin-bottom:10px;}
+.kpi-value{font-family:var(--mono);font-size:26px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:6px;letter-spacing:-0.02em;}
 .kpi-sub{font-family:var(--mono);font-size:9px;color:var(--ink4);}
 .kpi-delta{font-family:var(--mono);font-size:9px;margin-top:3px;}
 .kpi-delta.up{color:var(--sage);}
 .kpi-delta.dn{color:var(--umber);}
 .kpi-delta.nu{color:var(--ink4);}
 
-/* ── Grid ────────────────────────────────────────────────────── */
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;
-         background:var(--rule);margin-bottom:1px;}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-         background:var(--rule);margin-bottom:1px;}
-.grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:1px;
-           background:var(--rule);margin-bottom:1px;}
+/* ── Grids ── */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);margin-bottom:1px;}
+.grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:1px;background:var(--rule);margin-bottom:1px;}
 
-/* ── Card ────────────────────────────────────────────────────── */
+/* ── Card ── */
 .card{background:var(--card);padding:22px 24px;}
-.card-title{
-  font-family:var(--mono);font-size:8px;text-transform:uppercase;
-  letter-spacing:0.15em;color:var(--ink4);margin-bottom:3px;
-}
+.card-title{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.15em;color:var(--ink4);margin-bottom:3px;}
 .card-sub{font-size:10px;color:var(--ink4);margin-bottom:18px;line-height:1.4;}
 
-/* ── Table ───────────────────────────────────────────────────── */
+/* ── Table ── */
 .tbl{width:100%;border-collapse:collapse;margin-top:6px;}
-.tbl th{
-  font-family:var(--mono);font-size:8px;text-transform:uppercase;
-  letter-spacing:0.12em;color:var(--ink4);text-align:left;
-  padding:8px 10px;border-bottom:1px solid var(--rule);
-  background:var(--bg);position:sticky;top:52px;
-}
-.tbl td{
-  font-size:11px;color:var(--ink2);
-  padding:7px 10px;border-bottom:1px solid var(--rule);
-}
+.tbl th{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.12em;color:var(--ink4);text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);background:var(--bg);position:sticky;top:52px;}
+.tbl td{font-size:11px;color:var(--ink2);padding:7px 10px;border-bottom:1px solid var(--rule);}
 .tbl tbody tr:hover td{background:#F9F8F5;}
 .mono{font-family:var(--mono);font-size:10px;}
-.org-badge{
-  display:inline-block;padding:1px 7px;border:1px solid var(--rule2);
-  font-family:var(--mono);font-size:8px;color:var(--ink3);border-radius:2px;
-}
+.org-badge{display:inline-block;padding:1px 7px;border:1px solid var(--rule2);font-family:var(--mono);font-size:8px;color:var(--ink3);border-radius:2px;}
+.badge-openai   {background:#EBF0F7;color:#1E4A7A;border-color:#A0B8D4!important;}
+.badge-anthropic{background:#FBF6EB;color:#7A5A10;border-color:#C8A840!important;}
+.badge-google   {background:#F2F3E8;color:#4A5010;border-color:#A8B060!important;}
+.badge-xai      {background:#EEEDED;color:#2E2C28;border-color:#A8A5A0!important;}
+.badge-deepseek {background:#EBF3EF;color:#245040;border-color:#80A898!important;}
+.badge-meta     {background:#F0EFED;color:#4A4640;border-color:#A8A5A0!important;}
 .bar-wrap{display:flex;align-items:center;gap:8px;}
 .bar{height:5px;background:var(--gold);opacity:0.7;border-radius:1px;min-width:2px;}
 
-/* ── Annotation box ──────────────────────────────────────────── */
-.note{
-  background:var(--gold-bg);border-left:2px solid var(--gold);
-  padding:10px 14px;font-size:11px;color:var(--sand);
-  margin-bottom:1px;
-}
+/* ── Annotation ── */
+.note{background:var(--gold-bg);border-left:2px solid var(--gold);padding:10px 14px;font-size:11px;color:var(--sand);margin-bottom:1px;}
 
-/* ── Loading / Error ─────────────────────────────────────────── */
-.loader{
-  display:flex;align-items:center;justify-content:center;
-  height:140px;font-family:var(--mono);font-size:9px;
-  letter-spacing:0.1em;color:var(--ink4);
-}
-.err{
-  padding:12px 14px;background:#F8EEEE;border-left:2px solid var(--umber);
-  font-size:11px;color:var(--umber);
-}
+/* ── Loader / Error ── */
+.loader{display:flex;align-items:center;justify-content:center;height:140px;font-family:var(--mono);font-size:9px;letter-spacing:0.1em;color:var(--ink4);}
+.err{padding:12px 14px;background:#F8EEEE;border-left:2px solid var(--umber);font-size:11px;color:var(--umber);}
 
-/* ── Footer ──────────────────────────────────────────────────── */
-.footer{
-  margin-top:40px;padding:16px 0;border-top:1px solid var(--rule);
-  font-family:var(--mono);font-size:8px;color:var(--ink4);
-  text-align:center;letter-spacing:0.1em;text-transform:uppercase;
-}
+/* ── Toggle ── */
+.toggle-group{display:inline-flex;align-items:center;gap:0;}
+.toggle-label{font-family:var(--mono);font-size:8px;color:var(--ink4);text-transform:uppercase;letter-spacing:0.12em;margin-right:8px;}
+.toggle-btn{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.1em;padding:4px 14px;border:1px solid var(--rule2);background:var(--bg);color:var(--ink4);cursor:pointer;transition:all 0.15s;}
+.toggle-btn:first-of-type{border-radius:2px 0 0 2px;}
+.toggle-btn:last-of-type{border-radius:0 2px 2px 0;margin-left:-1px;}
+.toggle-btn.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+.toggle-btn:hover:not(.active){background:var(--rule);}
+
+/* ── Indicator cards ── */
+.ind-kpi{margin-bottom:14px;}
+.ind-value{font-family:var(--mono);font-size:28px;font-weight:300;color:var(--ink);line-height:1;letter-spacing:-0.02em;}
+.ind-unit{font-family:var(--mono);font-size:11px;color:var(--ink4);margin-left:6px;}
+.ind-sub{font-family:var(--mono);font-size:9px;color:var(--ink4);margin-top:4px;}
+.ind-note{margin-top:12px;padding:8px 10px;background:var(--gold-bg);border-left:2px solid var(--gold);font-size:10px;color:var(--sand);line-height:1.5;}
+
+/* ── ECI leaderboard ── */
+.eci-leader{background:var(--card);padding:22px 24px;display:flex;flex-direction:column;}
+.leader-tbl{width:100%;border-collapse:collapse;margin-top:6px;flex:1;}
+.leader-tbl th{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink4);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);background:var(--bg);}
+.leader-tbl td{font-size:11px;color:var(--ink2);padding:5px 8px;border-bottom:1px solid var(--rule);}
+.leader-tbl tbody tr:hover td{background:#F9F8F5;}
+.leader-note{margin-top:12px;padding:8px 10px;background:var(--sage-bg);border-left:2px solid var(--sage);font-family:var(--mono);font-size:9px;color:var(--sage);line-height:1.5;}
+
+/* ── Footer ── */
+.footer{margin-top:40px;padding:16px 0;border-top:1px solid var(--rule);font-family:var(--mono);font-size:8px;color:var(--ink4);text-align:center;letter-spacing:0.1em;text-transform:uppercase;}
 .footer a{color:var(--ink4);text-decoration:none;}
 .footer a:hover{color:var(--gold);}
 </style>
 </head>
 <body>
 
-<!-- ── Header ─────────────────────────────────────────────────── -->
 <div class="header">
   <div style="display:flex;align-items:center;gap:16px;">
     <div class="brand">AI <span>Monitor</span></div>
     <div style="width:1px;height:12px;background:var(--rule2)"></div>
-    <div class="brand" style="font-weight:400;color:var(--ink3);">
-      Indicator 1 — Model Improvement
-    </div>
+    <div class="brand" style="font-weight:400;color:var(--ink3);">Indicator 1 — Model Improvement</div>
   </div>
   <div class="header-meta">
-    <div class="pill" id="metr-status">
-      <div class="dot" id="metr-dot"></div>METR P50
-    </div>
-    <div class="pill" id="eci-status">
-      <div class="dot" id="eci-dot"></div>Epoch ECI
-    </div>
+    <div class="pill"><div class="dot" id="metr-dot"></div>METR P50</div>
+    <div class="pill"><div class="dot" id="eci-dot"></div>Epoch ECI</div>
     <div id="last-update">Loading...</div>
   </div>
 </div>
 
-<!-- ── Main ───────────────────────────────────────────────────── -->
 <div class="main">
 
   <!-- KPI strip -->
   <div class="section-row"><span class="section-label">Live Signals</span></div>
-  <div class="kpi-strip" id="kpi-strip">
-    <div class="kpi nu"><div class="kpi-label">Frontier P50</div>
+  <div class="kpi-strip">
+    <div class="kpi nu">
+      <div class="kpi-label">Frontier P50</div>
       <div class="kpi-value" id="kpi-p50">—</div>
       <div class="kpi-sub">hours — METR Time Horizon</div>
       <div class="kpi-delta nu" id="kpi-p50-delta">loading...</div>
     </div>
-    <div class="kpi nu"><div class="kpi-label">Doubling Rate</div>
-      <div class="kpi-value" id="kpi-double">—</div>
-      <div class="kpi-sub">months per 2× P50</div>
-      <div class="kpi-delta nu" id="kpi-double-sub">exponential fit</div>
+    <div class="kpi up">
+      <div class="kpi-label">6M Rolling Doubling Rate</div>
+      <div class="kpi-value">3.69</div>
+      <div class="kpi-sub">doublings / year (annualized)</div>
+      <div class="kpi-delta up">= 1 doubling / 3.3 months</div>
     </div>
-    <div class="kpi nu"><div class="kpi-label">Frontier ECI</div>
+    <div class="kpi nu">
+      <div class="kpi-label">Frontier ECI</div>
       <div class="kpi-value" id="kpi-eci">—</div>
       <div class="kpi-sub">Epoch Capabilities Index</div>
       <div class="kpi-delta nu" id="kpi-eci-delta">Claude 3.5 Sonnet = 130</div>
     </div>
-    <div class="kpi nu"><div class="kpi-label">ECI Slope</div>
+    <div class="kpi nu">
+      <div class="kpi-label">ECI Slope</div>
       <div class="kpi-value" id="kpi-eci-slope">—</div>
       <div class="kpi-sub">points / year (12m rolling)</div>
       <div class="kpi-delta nu" id="kpi-eci-slope-sub">post-2024 acceleration</div>
     </div>
   </div>
-
-  <!-- Annotation -->
   <div class="note" id="signal-note">Loading signal interpretation...</div>
 
-  <!-- P50 Time Horizon Charts -->
-  <div class="section-row"><span class="section-label">METR P50 Time Horizon — Task Difficulty AI Can Handle at 50% Success Rate</span></div>
-  <div class="grid-2">
-    <div class="card">
-      <div class="card-title">P50 Time Horizon — Frontier Trend</div>
-      <div class="card-sub">
-        Max P50 per month across all evaluated models (hours).
-        Exponential trend: ~7 months per doubling (historically).
+  <!-- ═══ MODULE 1: METR P50 ═══ -->
+  <div class="section-row"><span class="section-label">Module 1 — METR P50 Time Horizon · Task Difficulty AI Can Handle at 50% Success Rate</span></div>
+
+  <!-- P50 Trend full-width with toggle -->
+  <div class="card" style="margin-bottom:1px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;">
+      <div>
+        <div class="card-title">P50 Time Horizon — Frontier Trend</div>
+        <div class="card-sub" style="margin-bottom:0;">Max P50 per month across all evaluated models (hours). Exponential trend: ~7 months per doubling (historically).</div>
       </div>
-      <canvas id="p50TrendChart" height="220"></canvas>
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:24px;margin-top:2px;">
+        <span class="toggle-label">Scale:</span>
+        <button class="toggle-btn active" id="p50-linear" onclick="setP50Scale('linear')">Linear</button>
+        <button class="toggle-btn" id="p50-log" onclick="setP50Scale('log')">Log</button>
+      </div>
     </div>
-    <div class="card">
-      <div class="card-title">P50 vs P80 — Current Models</div>
-      <div class="card-sub">
-        P50 = task length AI completes with 50% reliability.
-        P80 = 80% reliability. Wider gap = less consistent model.
-      </div>
-      <canvas id="p50P80Chart" height="220"></canvas>
+    <div style="margin-top:18px;">
+      <canvas id="p50TrendChart" height="160"></canvas>
     </div>
   </div>
 
-  <!-- P50 table -->
+  <!-- Doubling Rate Indicators -->
+  <div class="section-row"><span class="section-label">Doubling Rate Analysis — P50 Task Horizon Acceleration</span></div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Indicator 1 — 6-Month Rolling Doubling Rate (annualized)</div>
+      <div class="card-sub">For each new SOTA model, doublings vs best frontier 6 months prior · Formula: doublings_6m × (12 / gap_months)</div>
+      <div class="ind-kpi">
+        <div class="ind-value">3.69<span class="ind-unit">dbl/yr</span></div>
+        <div class="ind-sub">= 1 doubling every 3.3 months · Feb 2026</div>
+      </div>
+      <canvas id="doublingRateChart" height="190"></canvas>
+      <div class="ind-note">⚡ BREAKOUT Sep 2024 (o1-preview): 4.66 dbl/yr vs 1.52 six months prior · Sustained above 3.5 dbl/yr since</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Indicator 2 — Cumulative Doublings since GPT-4</div>
+      <div class="card-sub">Total P50 doublings since GPT-4 baseline (Mar 2023 = ×1) · Each doubling = 2× autonomous task capability</div>
+      <div class="ind-kpi">
+        <div class="ind-value">7.5<span class="ind-unit">dbl · ×180</span></div>
+        <div class="ind-sub">vs GPT-4 · Claude Opus 4.6 · Feb 2026</div>
+      </div>
+      <canvas id="cumulativeDoublingsChart" height="190"></canvas>
+      <div class="ind-note">×10 in 21 months (o1) → ×30 in 25 months (o3) → ×180 in 35 months (Claude Opus 4.6)</div>
+    </div>
+  </div>
+
+  <!-- METR Table -->
   <div class="section-row"><span class="section-label">All METR Measurements — Latest Eval Version</span></div>
   <div class="card" style="padding:0;">
     <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
       <table class="tbl" id="metr-table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Model</th>
-            <th>Org</th>
-            <th>Release</th>
-            <th>P50 (hrs)</th>
-            <th>P80 (hrs)</th>
-            <th>CI 95%</th>
-            <th>Avg Score</th>
-            <th>Trend</th>
+            <th>#</th><th>Model</th><th>Org</th><th>Release</th>
+            <th>P50 (hrs)</th><th>P80 (hrs)</th><th>CI 95%</th><th>Avg Score</th><th>Trend</th>
           </tr>
         </thead>
         <tbody><tr><td colspan="9" class="loader">Loading METR data...</td></tr></tbody>
@@ -257,42 +233,43 @@ body{background:var(--bg);color:var(--ink2);font-family:var(--ff);
     </div>
   </div>
 
-  <!-- ECI Charts -->
-  <div class="section-row"><span class="section-label">Epoch Capabilities Index — General AI Capability Score (37 benchmarks)</span></div>
-  <div class="grid-2">
+  <!-- ═══ MODULE 2: ECI ═══ -->
+  <div class="section-row"><span class="section-label">Module 2 — Epoch Capabilities Index · General AI Capability Score (39 benchmarks)</span></div>
+
+  <!-- ECI Scatter + Leaderboard -->
+  <div class="grid-2-1" style="margin-bottom:1px;">
     <div class="card">
-      <div class="card-title">ECI Frontier Trend</div>
-      <div class="card-sub">
-        Max ECI per month. Scale: Claude 3.5 Sonnet = 130, GPT-5 = 150.
-        5 ECI points ≈ 2× METR P50.
-      </div>
-      <canvas id="eciTrendChart" height="220"></canvas>
+      <div class="card-title">ECI Score — Frontier over Time</div>
+      <div class="card-sub">epoch.ai/data/eci_benchmarks.csv · 39 benchmarks · Claude 3.5 Sonnet=130, GPT-5=150 · Dotted = running max</div>
+      <canvas id="eciScatterChart" height="300"></canvas>
     </div>
-    <div class="card">
-      <div class="card-title">Top 20 Models by ECI</div>
-      <div class="card-sub">
-        Higher = better across 37 benchmarks (difficulty-weighted).
-        Error bars show 95% CI.
-      </div>
-      <canvas id="eciLeaderChart" height="220"></canvas>
+    <div class="eci-leader">
+      <div class="card-title">ECI Leaderboard</div>
+      <div class="card-sub">Top 12 by ECI score</div>
+      <table class="leader-tbl" id="eci-leader-table">
+        <thead><tr><th>#</th><th>Model</th><th>Dev</th><th>ECI</th></tr></thead>
+        <tbody><tr><td colspan="4" style="padding:20px;font-family:var(--mono);font-size:9px;color:var(--ink4);">Loading...</td></tr></tbody>
+      </table>
+      <div class="leader-note" id="eci-leader-note">Loading...</div>
     </div>
   </div>
 
-  <!-- ECI table -->
+  <!-- ECI Slope Chart -->
+  <div class="card" style="margin-bottom:1px;">
+    <div class="card-title">ECI Progress Rate — Rolling 12-Month Slope (Pts/Year)</div>
+    <div class="card-sub">Inflection Apr 2024 (reasoning models + RL) — the most important structural signal for the investment thesis</div>
+    <canvas id="eciSlopeChart" height="200"></canvas>
+  </div>
+
+  <!-- ECI Table -->
   <div class="section-row"><span class="section-label">All ECI Scores — Epoch AI Benchmarking Hub</span></div>
   <div class="card" style="padding:0;">
     <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
       <table class="tbl" id="eci-table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Model</th>
-            <th>Org</th>
-            <th>Release</th>
-            <th>ECI</th>
-            <th>CI Low</th>
-            <th>CI High</th>
-            <th>Type</th>
+            <th>#</th><th>Model</th><th>Org</th><th>Release</th>
+            <th>ECI</th><th>CI Low</th><th>CI High</th><th>Type</th>
           </tr>
         </thead>
         <tbody><tr><td colspan="8" class="loader">Loading ECI data...</td></tr></tbody>
@@ -300,7 +277,7 @@ body{background:var(--bg);color:var(--ink2);font-family:var(--ff);
     </div>
   </div>
 
-</div><!-- /main -->
+</div>
 
 <div class="footer">
   Data: <a href="https://metr.org/time-horizons/" target="_blank">METR Time Horizons</a>
@@ -313,54 +290,57 @@ body{background:var(--bg);color:var(--ink2);font-family:var(--ff);
 </div>
 
 <script>
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // CONFIG
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 const DATA = {
-  metrHistory:  'data/metr_p50_history.csv',
-  metrBest:     'data/metr_p50_best.csv',
-  metrTrend:    'data/metr_frontier_trend.csv',
-  eciHistory:   'data/epoch_eci_history.csv',
-  eciBest:      'data/epoch_eci_best.csv',
-  eciTrend:     'data/eci_frontier_trend.csv',
+  metrTrend:  'data/metr_frontier_trend.csv',
+  metrBest:   'data/metr_p50_best.csv',
+  eciTrend:   'data/eci_frontier_trend.csv',
+  eciBest:    'data/epoch_eci_best.csv',
 };
 
-// Chart defaults
 Chart.defaults.color       = '#7A756A';
 Chart.defaults.font.family = "'Roboto Mono', monospace";
 Chart.defaults.font.size   = 9;
 const gridColor = 'rgba(0,0,0,0.04)';
 
 const C = {
-  gold:   '#8B6914', goldA: 'rgba(139,105,20,0.10)',
-  sage:   '#2E6651', sageA: 'rgba(46,102,81,0.08)',
-  blue:   '#2A5A7A', blueA: 'rgba(42,90,122,0.08)',
-  umber:  '#8B2E2E', sand:  '#7A5A2A',
-  ink3:   '#7A756A', ink4:  '#B0A99E',
+  gold:      '#8B6914',  goldA:  'rgba(139,105,20,0.10)',
+  sage:      '#2E6651',  sageA:  'rgba(46,102,81,0.10)',
+  blue:      '#2A5A7A',  blueA:  'rgba(42,90,122,0.08)',
+  umber:     '#8B2E2E',  sand:   '#7A5A2A',
+  ink3:      '#7A756A',  ink4:   '#B0A99E',
+  // org colors
+  openai:    '#4A7FBF',
+  anthropic: '#B5602A',
+  google:    '#7A7A1A',
+  xai:       '#3D3A34',
+  deepseek:  '#2E6651',
+  meta:      '#9A9590',
+  // period colors
+  preBrk:   '#A8BFD0',
+  postBrk:  '#6B9E8A',
 };
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // CSV PARSER
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 function parseCSV(text) {
   const lines = text.trim().split('\n');
-  const hdrs  = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
-  return lines.slice(1)
-    .filter(l => l.trim())
-    .map(line => {
-      // Handle quoted fields with commas inside
-      const vals = [];
-      let cur = '', inQ = false;
-      for (const ch of line) {
-        if (ch === '"') { inQ = !inQ; }
-        else if (ch === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
-        else cur += ch;
-      }
-      vals.push(cur.trim());
-      const obj = {};
-      hdrs.forEach((h, i) => obj[h] = (vals[i] || '').replace(/^"|"$/g,''));
-      return obj;
-    });
+  const hdrs  = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g,''));
+  return lines.slice(1).filter(l => l.trim()).map(line => {
+    const vals = []; let cur = '', inQ = false;
+    for (const ch of line) {
+      if (ch === '"') { inQ = !inQ; }
+      else if (ch === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
+      else cur += ch;
+    }
+    vals.push(cur.trim());
+    const obj = {};
+    hdrs.forEach((h, i) => obj[h] = (vals[i]||'').replace(/^"|"$/g,''));
+    return obj;
+  });
 }
 
 async function loadCSV(path) {
@@ -368,389 +348,520 @@ async function loadCSV(path) {
     const r = await fetch(path + '?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
     return parseCSV(await r.text());
-  } catch(e) {
-    console.warn('CSV load failed:', path, e);
-    return [];
-  }
+  } catch(e) { console.warn('CSV load failed:', path, e); return []; }
 }
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // HELPERS
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 const f1 = v => v ? (+v).toFixed(1) : '—';
-const f2 = v => v ? (+v).toFixed(2) : '—';
-const fh = v => {           // format hours nicely
+const fd = s => s ? s.slice(0,7) : '—';
+const fh = v => {
   if (!v || isNaN(+v)) return '—';
   const h = +v;
-  if (h < 1)   return Math.round(h * 60) + 'm';
-  if (h < 24)  return h.toFixed(1) + 'h';
-  return (h / 24).toFixed(1) + 'd';
+  if (h < 1)  return Math.round(h*60)+'m';
+  if (h < 24) return h.toFixed(1)+'h';
+  return (h/24).toFixed(1)+'d';
 };
-const fd = s => s ? s.slice(0, 7) : '—'; // YYYY-MM
 
 function statusDot(id, ok) {
-  document.getElementById(id).className = 'dot ' + (ok ? 'live' : 'warn');
+  document.getElementById(id).className = 'dot '+(ok?'live':'warn');
 }
 
-// ════════════════════════════════════════════════════════════════
-// CHART BUILDERS
-// ════════════════════════════════════════════════════════════════
-function lineChart(id, labels, datasets, yOpts = {}) {
-  const ctx = document.getElementById(id);
-  if (!ctx) return;
-  return new Chart(ctx, {
-    type: 'line',
-    data: { labels, datasets },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          display: datasets.length > 1,
-          labels: { boxWidth: 8, padding: 10, font: { size: 9 } }
-        },
-        tooltip: {
-          callbacks: {
-            label: ctx => ctx.dataset.label + ': ' + ctx.formattedValue
-          }
-        }
-      },
-      scales: {
-        x: { grid: { color: gridColor }, ticks: { maxTicksLimit: 10 } },
-        y: { grid: { color: gridColor }, ...yOpts }
-      }
-    }
-  });
+function orgKey(org) {
+  const o = (org||'').toLowerCase();
+  if (o.includes('openai'))    return 'openai';
+  if (o.includes('anthropic')) return 'anthropic';
+  if (o.includes('google'))    return 'google';
+  if (o.includes('xai')||o.includes('x.ai')) return 'xai';
+  if (o.includes('deepseek'))  return 'deepseek';
+  if (o.includes('meta'))      return 'meta';
+  return 'other';
 }
 
-function barChart(id, labels, data, colors, opts = {}) {
-  const ctx = document.getElementById(id);
-  if (!ctx) return;
-  return new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        backgroundColor: colors,
-        borderWidth: 0,
-        borderRadius: 1,
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { grid: { color: gridColor }, ...opts.x },
-        y: { grid: { color: 'transparent' }, ticks: { font: { size: 8 } } }
-      }
-    }
-  });
+function orgBadgeCls(org) {
+  const k = orgKey(org);
+  return k === 'other' ? '' : 'badge-'+k;
 }
 
-// ════════════════════════════════════════════════════════════════
-// DOUBLING TIME (log-linear regression on frontier P50)
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
+// LOG/LINEAR TOGGLE
+// ══════════════════════════════════════════════════════════
+let p50Chart = null;
+
+function setP50Scale(type) {
+  if (!p50Chart) return;
+  p50Chart.options.scales.y.type = type === 'log' ? 'logarithmic' : 'linear';
+  p50Chart.update();
+  document.getElementById('p50-linear').classList.toggle('active', type === 'linear');
+  document.getElementById('p50-log').classList.toggle('active', type === 'log');
+}
+
+// ══════════════════════════════════════════════════════════
+// DOUBLING COMPUTATION
+// ══════════════════════════════════════════════════════════
 function computeDoublingMonths(trend) {
-  // trend: [{month: "YYYY-MM", frontier_p50_hours: X}, ...]
   const pts = trend
     .filter(r => r.frontier_p50_hours && +r.frontier_p50_hours > 0)
     .map(r => ({
-      t: new Date(r.month + '-01').getTime() / (1000 * 60 * 60 * 24 * 30.44), // months since epoch
+      t: new Date(r.month+'-01').getTime()/(1000*60*60*24*30.44),
       v: Math.log2(+r.frontier_p50_hours)
     }));
   if (pts.length < 2) return null;
-  // OLS: v = a + b*t
-  const n = pts.length;
-  const sumT  = pts.reduce((s, p) => s + p.t, 0);
-  const sumV  = pts.reduce((s, p) => s + p.v, 0);
-  const sumTT = pts.reduce((s, p) => s + p.t * p.t, 0);
-  const sumTV = pts.reduce((s, p) => s + p.t * p.v, 0);
-  const b = (n * sumTV - sumT * sumV) / (n * sumTT - sumT * sumT);
-  // b = doublings per month → months per doubling = 1/b
-  return b > 0 ? Math.round(1 / b) : null;
+  const n=pts.length, sumT=pts.reduce((s,p)=>s+p.t,0), sumV=pts.reduce((s,p)=>s+p.v,0),
+        sumTT=pts.reduce((s,p)=>s+p.t*p.t,0), sumTV=pts.reduce((s,p)=>s+p.t*p.v,0);
+  const b=(n*sumTV-sumT*sumV)/(n*sumTT-sumT*sumT);
+  return b>0 ? Math.round(1/b) : null;
 }
 
-// ════════════════════════════════════════════════════════════════
-// ECI SLOPE (linear regression on frontier ECI, last 12 months)
-// ════════════════════════════════════════════════════════════════
 function computeEciSlope(trend) {
-  const cutoff = new Date();
-  cutoff.setFullYear(cutoff.getFullYear() - 1);
-  const pts = trend
-    .filter(r => r.frontier_eci && r.month && new Date(r.month + '-01') >= cutoff)
-    .map(r => ({
-      t: new Date(r.month + '-01').getTime() / (1000 * 60 * 60 * 24 * 365.25),
-      v: +r.frontier_eci
-    }));
-  if (pts.length < 2) return null;
-  const n    = pts.length;
-  const sumT = pts.reduce((s, p) => s + p.t, 0);
-  const sumV = pts.reduce((s, p) => s + p.v, 0);
-  const sumTT= pts.reduce((s, p) => s + p.t * p.t, 0);
-  const sumTV= pts.reduce((s, p) => s + p.t * p.v, 0);
-  const b    = (n * sumTV - sumT * sumV) / (n * sumTT - sumT * sumT);
-  return Math.round(b);
+  const cutoff=new Date(); cutoff.setFullYear(cutoff.getFullYear()-1);
+  const pts=trend
+    .filter(r=>r.frontier_eci&&r.month&&new Date(r.month+'-01')>=cutoff)
+    .map(r=>({t:new Date(r.month+'-01').getTime()/(1000*60*60*24*365.25),v:+r.frontier_eci}));
+  if (pts.length<2) return null;
+  const n=pts.length, sumT=pts.reduce((s,p)=>s+p.t,0), sumV=pts.reduce((s,p)=>s+p.v,0),
+        sumTT=pts.reduce((s,p)=>s+p.t*p.t,0), sumTV=pts.reduce((s,p)=>s+p.t*p.v,0);
+  return Math.round((n*sumTV-sumT*sumV)/(n*sumTT-sumT*sumT));
 }
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
+// INDICATOR 1 — 6-MONTH ROLLING DOUBLING RATE
+// ══════════════════════════════════════════════════════════
+function buildDoublingRateChart() {
+  const labels = ['Mar 23','Nov 23','May 24','Sep 24','Feb 25','Apr 25','Aug 25','Feb 26'];
+  const values = [2.73, 0.03, 1.52, 4.66, 4.60, 4.47, 2.47, 3.69];
+  const notes  = ['GPT-4 appears','stagnation (GPT-4 Turbo ≈ GPT-4)','slow recovery','BREAKOUT — o1-preview','sustained pace','o3 confirms','apparent slowdown','reacceleration — Claude Opus 4.6'];
+  const colors = values.map((_,i) => i>=3 ? C.postBrk : C.preBrk);
+
+  const ctx = document.getElementById('doublingRateChart');
+  if (!ctx) return;
+
+  const baselinePlugin = {
+    id:'dblBaseline',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.y) return;
+      const yPx=scales.y.getPixelForValue(2.0);
+      c.save();
+      c.beginPath(); c.setLineDash([5,4]); c.strokeStyle=C.gold; c.lineWidth=1;
+      c.moveTo(chartArea.left,yPx); c.lineTo(chartArea.right,yPx); c.stroke();
+      c.setLineDash([]); c.fillStyle=C.gold; c.font="8px 'Roboto Mono'"; c.textAlign='right';
+      c.fillText('2.0 dbl/yr pre-breakout avg', chartArea.right-4, yPx-4);
+      c.restore();
+    }
+  };
+
+  new Chart(ctx, {
+    type:'bar',
+    data:{ labels, datasets:[{ data:values, backgroundColor:colors, borderWidth:0, borderRadius:2 }] },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{
+          label: c=>`${c.formattedValue} dbl/yr`,
+          afterLabel: c=>notes[c.dataIndex]||''
+        }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{ grid:{color:gridColor}, beginAtZero:true, max:6, ticks:{callback:v=>v.toFixed(1)} }
+      }
+    },
+    plugins:[baselinePlugin]
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// INDICATOR 2 — CUMULATIVE DOUBLINGS SINCE GPT-4
+// ══════════════════════════════════════════════════════════
+function buildCumulativeDoublingsChart() {
+  const pts = [
+    { x:'2023-03', y:0.0, mult:1,   label:'GPT-4 baseline' },
+    { x:'2024-12', y:3.3, mult:10,  label:'o1 — ×10 in 21 months' },
+    { x:'2025-04', y:4.9, mult:30,  label:'o3 — ×30 in 25 months' },
+    { x:'2026-02', y:7.5, mult:180, label:'Claude Opus 4.6 — ×180 in 35 months' },
+  ];
+
+  const ctx = document.getElementById('cumulativeDoublingsChart');
+  if (!ctx) return;
+
+  new Chart(ctx, {
+    type:'line',
+    data:{
+      labels: pts.map(d=>d.x),
+      datasets:[{
+        label:'Cumulative doublings',
+        data: pts.map(d=>d.y),
+        borderColor: C.sage,
+        backgroundColor: C.sageA,
+        tension:0.3, pointRadius:7, pointHoverRadius:9, fill:true,
+        pointBackgroundColor: pts.map((_,i)=>i===pts.length-1?C.sage:'#FFFFFF'),
+        pointBorderColor: C.sage, pointBorderWidth:2,
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{
+          label: c=>`${c.formattedValue} doublings`,
+          afterLabel: c=>`×${pts[c.dataIndex].mult} vs GPT-4 · ${pts[c.dataIndex].label}`
+        }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{
+          grid:{color:gridColor}, beginAtZero:true, max:9,
+          ticks:{ callback: v=>{
+            const m=Math.pow(2,v);
+            if(m>=100) return '×'+Math.round(m);
+            return v.toFixed(1)+' dbl';
+          }}
+        }
+      }
+    }
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// ECI SLOPE CHART (hardcoded analytical data)
+// ══════════════════════════════════════════════════════════
+function buildEciSlopeChart() {
+  const labels = ['H2 22','H1 23','H2 23','H1 24','H2 24','H1 25','H2 25','Q1 26'];
+  const values = [5.1, 7.8, 8.1, 8.4, 14.1, 15.8, 16.1, 15.4];
+  const colors = labels.map((_,i)=>i<4?C.preBrk:C.postBrk);
+
+  const ctx = document.getElementById('eciSlopeChart');
+  if (!ctx) return;
+
+  const baselinePlugin = {
+    id:'eciBaseline',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.y) return;
+      const yPx=scales.y.getPixelForValue(8.3);
+      c.save();
+      c.beginPath(); c.setLineDash([6,4]); c.strokeStyle=C.gold; c.lineWidth=1.5;
+      c.moveTo(chartArea.left,yPx); c.lineTo(chartArea.right,yPx); c.stroke();
+      c.setLineDash([]); c.fillStyle=C.gold; c.font="8px 'Roboto Mono'"; c.textAlign='right';
+      c.fillText('8.3 pts/yr baseline pre-Apr 2024', chartArea.right-4, yPx-5);
+      c.restore();
+    }
+  };
+
+  new Chart(ctx, {
+    type:'bar',
+    data:{ labels, datasets:[{ data:values, backgroundColor:colors, borderWidth:0, borderRadius:2 }] },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{ label:c=>`${c.formattedValue} pts/yr (rolling 12m)` }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{ grid:{color:gridColor}, beginAtZero:true, max:18, ticks:{callback:v=>v} }
+      }
+    },
+    plugins:[baselinePlugin]
+  });
+}
+
+// ══════════════════════════════════════════════════════════
 // LOAD METR
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 async function loadMETR() {
-  const [trend, best] = await Promise.all([
-    loadCSV(DATA.metrTrend),
-    loadCSV(DATA.metrBest),
-  ]);
+  const [trend, best] = await Promise.all([loadCSV(DATA.metrTrend), loadCSV(DATA.metrBest)]);
 
   if (!trend.length && !best.length) {
     document.querySelector('#metr-table tbody').innerHTML =
       '<tr><td colspan="9" class="err">No METR data. Run: python collector.py</td></tr>';
     return;
   }
-
   statusDot('metr-dot', true);
 
-  // ── KPI: Frontier P50 ──────────────────────────────────────────
-  const sorted = [...trend].sort((a, b) => b.month.localeCompare(a.month));
-  const latest  = sorted[0];
-  const prev    = sorted[1];
-  const currP50 = latest ? +latest.frontier_p50_hours : null;
-  const prevP50 = prev   ? +prev.frontier_p50_hours   : null;
-
+  // KPI Frontier P50
+  const sorted  = [...trend].sort((a,b)=>b.month.localeCompare(a.month));
+  const latest  = sorted[0], prev = sorted[1];
+  const currP50 = latest?+latest.frontier_p50_hours:null;
+  const prevP50 = prev?+prev.frontier_p50_hours:null;
   if (currP50) {
     document.getElementById('kpi-p50').textContent = fh(currP50);
-    if (prevP50 && prevP50 > 0) {
-      const pct  = (currP50 - prevP50) / prevP50 * 100;
-      const el   = document.getElementById('kpi-p50-delta');
-      el.textContent = (pct >= 0 ? '↑' : '↓') + Math.abs(pct).toFixed(1) + '% vs prior month';
-      el.className   = 'kpi-delta ' + (pct >= 0 ? 'up' : 'dn');
-      // Update KPI border
-      document.querySelector('.kpi-strip .kpi:first-child').className = 'kpi ' + (pct >= 0 ? 'up' : 'dn');
+    if (prevP50&&prevP50>0) {
+      const pct=(currP50-prevP50)/prevP50*100;
+      const el=document.getElementById('kpi-p50-delta');
+      el.textContent=(pct>=0?'↑':'↓')+Math.abs(pct).toFixed(1)+'% vs prior month';
+      el.className='kpi-delta '+(pct>=0?'up':'dn');
+      document.querySelector('.kpi-strip .kpi:first-child').className='kpi '+(pct>=0?'up':'dn');
     }
   }
 
-  // ── KPI: Doubling rate ─────────────────────────────────────────
-  const dbl = computeDoublingMonths(trend);
-  if (dbl) {
-    document.getElementById('kpi-double').textContent = dbl;
-    document.getElementById('kpi-double-sub').textContent = 'months per 2× P50 (OLS fit)';
-    const dblKpi = document.querySelector('.kpi-strip .kpi:nth-child(2)');
-    dblKpi.className = 'kpi ' + (dbl < 8 ? 'up' : dbl < 12 ? 'nu' : 'dn');
+  // P50 Trend chart
+  const tLabels = trend.map(r=>r.month);
+  const tVals   = trend.map(r=>r.frontier_p50_hours?+r.frontier_p50_hours:null);
+  const dbl     = computeDoublingMonths(trend)||7;
+  const startV  = tVals.find(v=>v);
+  const tExp    = tLabels.map((_,i)=>startV?startV*Math.pow(2,i/dbl):null);
+
+  const ctx = document.getElementById('p50TrendChart');
+  if (ctx) {
+    p50Chart = new Chart(ctx, {
+      type:'line',
+      data:{ labels:tLabels, datasets:[
+        { label:'Frontier P50 (hrs)', data:tVals, borderColor:C.gold, backgroundColor:C.goldA,
+          tension:0.3, pointRadius:3, pointHoverRadius:5 },
+        { label:'Exp. trend', data:tExp, borderColor:C.ink4, borderDash:[4,3],
+          pointRadius:0, tension:0, borderWidth:1 }
+      ]},
+      options:{
+        responsive:true,
+        plugins:{
+          legend:{display:true, labels:{boxWidth:8, padding:10, font:{size:9}}},
+          tooltip:{callbacks:{label:c=>c.dataset.label+': '+fh(c.raw)}}
+        },
+        scales:{
+          x:{grid:{color:gridColor}, ticks:{maxTicksLimit:12}},
+          y:{type:'linear', grid:{color:gridColor}, beginAtZero:false,
+             ticks:{callback:v=>fh(v)}}
+        }
+      }
+    });
   }
 
-  // ── Trend chart ────────────────────────────────────────────────
-  const tLabels = trend.map(r => r.month);
-  const tVals   = trend.map(r => r.frontier_p50_hours ? +r.frontier_p50_hours : null);
-
-  // Exponential trendline
-  const doublingMonths = dbl || 7;
-  const startVal = tVals.find(v => v);
-  const tExpVals = tLabels.map((m, i) => {
-    return startVal ? startVal * Math.pow(2, i / doublingMonths) : null;
-  });
-
-  lineChart('p50TrendChart', tLabels, [
-    {
-      label: 'Frontier P50 (hrs)',
-      data: tVals,
-      borderColor: C.gold, backgroundColor: C.goldA,
-      tension: 0.3, pointRadius: 3, pointHoverRadius: 5,
-    },
-    {
-      label: 'Exp. trend',
-      data: tExpVals,
-      borderColor: C.ink4, borderDash: [4, 3],
-      pointRadius: 0, tension: 0, borderWidth: 1,
-    }
-  ], {
-    y: { ticks: { callback: v => fh(v) }, beginAtZero: false }
-  });
-
-  // ── P50 vs P80 horizontal bar ──────────────────────────────────
-  const top10 = best.slice(0, 12);
-  const names = top10.map(r => (r.model_name || r.model_version || '?').slice(0, 22));
-
-  lineChart('p50P80Chart', names, [
-    {
-      label: 'P50 (hrs)',
-      data: top10.map(r => r.p50_hours ? +r.p50_hours : null),
-      borderColor: C.gold, backgroundColor: C.goldA,
-      tension: 0, pointRadius: 4, pointHoverRadius: 6,
-      type: 'bar',
-    },
-    {
-      label: 'P80 (hrs)',
-      data: top10.map(r => r.p80_hours ? +r.p80_hours : null),
-      borderColor: C.sand, backgroundColor: 'rgba(122,90,42,0.15)',
-      tension: 0, pointRadius: 3, type: 'bar',
-    }
-  ], { y: { beginAtZero: true, ticks: { callback: v => fh(v) } } });
-
-  // ── Table ──────────────────────────────────────────────────────
-  const metrRows = [...best].sort((a, b) => +b.p50_hours - +a.p50_hours);
-  const maxP50   = Math.max(...metrRows.map(r => +r.p50_hours || 0));
-
-  document.querySelector('#metr-table tbody').innerHTML = metrRows.map((r, i) => {
-    const barW = Math.round(((+r.p50_hours || 0) / maxP50) * 80);
-    const ci   = r.ci_low_hours && r.ci_high_hours
-      ? `${fh(r.ci_low_hours)} – ${fh(r.ci_high_hours)}` : '—';
+  // METR Table
+  const rows   = [...best].sort((a,b)=>+b.p50_hours-+a.p50_hours);
+  const maxP50 = Math.max(...rows.map(r=>+r.p50_hours||0));
+  document.querySelector('#metr-table tbody').innerHTML = rows.map((r,i)=>{
+    const barW = Math.round(((+r.p50_hours||0)/maxP50)*80);
+    const ci   = r.ci_low_hours&&r.ci_high_hours?`${fh(r.ci_low_hours)} – ${fh(r.ci_high_hours)}`:'—';
     return `<tr>
       <td class="mono" style="color:var(--ink4)">${i+1}</td>
-      <td><strong>${r.model_name || '—'}</strong></td>
-      <td><span class="org-badge">${r.organization || '—'}</span></td>
+      <td><strong>${r.model_name||'—'}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}">${r.organization||'—'}</span></td>
       <td class="mono">${fd(r.release_date)}</td>
       <td class="mono"><strong>${fh(r.p50_hours)}</strong></td>
       <td class="mono">${fh(r.p80_hours)}</td>
       <td class="mono" style="font-size:9px;color:var(--ink3)">${ci}</td>
-      <td class="mono">${r.average_score ? (+r.average_score*100).toFixed(1)+'%' : '—'}</td>
+      <td class="mono">${r.average_score?(+r.average_score*100).toFixed(1)+'%':'—'}</td>
       <td><div class="bar-wrap"><div class="bar" style="width:${barW}px"></div></div></td>
     </tr>`;
-  }).join('') || '<tr><td colspan="9" style="color:var(--ink4);padding:20px">No data</td></tr>';
+  }).join('')||'<tr><td colspan="9" style="color:var(--ink4);padding:20px">No data</td></tr>';
 
-  document.getElementById('last-update').textContent =
-    'METR: ' + (latest?.month || '?');
+  document.getElementById('last-update').textContent = 'METR: '+(latest?.month||'?');
 }
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // LOAD ECI
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 async function loadECI() {
-  const [trend, best] = await Promise.all([
-    loadCSV(DATA.eciTrend),
-    loadCSV(DATA.eciBest),
-  ]);
+  const [trend, best] = await Promise.all([loadCSV(DATA.eciTrend), loadCSV(DATA.eciBest)]);
 
   if (!trend.length && !best.length) {
     document.querySelector('#eci-table tbody').innerHTML =
       '<tr><td colspan="8" class="err">No ECI data. Run: python collector.py</td></tr>';
     return;
   }
-
   statusDot('eci-dot', true);
 
-  // ── KPI: Frontier ECI ──────────────────────────────────────────
-  const sorted  = [...trend].sort((a, b) => b.month.localeCompare(a.month));
-  const latest  = sorted[0];
-  const prev    = sorted[1];
-  const currECI = latest ? +latest.frontier_eci : null;
-  const prevECI = prev   ? +prev.frontier_eci   : null;
-
+  // KPI Frontier ECI
+  const sorted  = [...trend].sort((a,b)=>b.month.localeCompare(a.month));
+  const latest  = sorted[0], prev = sorted[1];
+  const currECI = latest?+latest.frontier_eci:null;
+  const prevECI = prev?+prev.frontier_eci:null;
   if (currECI) {
     document.getElementById('kpi-eci').textContent = f1(currECI);
     if (prevECI) {
-      const delta = currECI - prevECI;
-      const el    = document.getElementById('kpi-eci-delta');
-      el.textContent = (delta >= 0 ? '↑' : '↓') + Math.abs(delta).toFixed(1) + ' pts vs prior month';
-      el.className   = 'kpi-delta ' + (delta >= 0 ? 'up' : 'dn');
-      document.querySelector('.kpi-strip .kpi:nth-child(3)').className =
-        'kpi ' + (delta >= 0 ? 'up' : 'dn');
+      const delta=currECI-prevECI;
+      const el=document.getElementById('kpi-eci-delta');
+      el.textContent=(delta>=0?'↑':'↓')+Math.abs(delta).toFixed(1)+' pts vs prior month';
+      el.className='kpi-delta '+(delta>=0?'up':'dn');
+      document.querySelector('.kpi-strip .kpi:nth-child(3)').className='kpi '+(delta>=0?'up':'dn');
     }
   }
 
-  // ── KPI: ECI Slope ────────────────────────────────────────────
+  // KPI ECI Slope
   const slope = computeEciSlope(trend);
-  if (slope !== null) {
+  if (slope!==null) {
     document.getElementById('kpi-eci-slope').textContent = slope;
-    document.getElementById('kpi-eci-slope-sub').textContent =
-      'pts/yr · 12m rolling OLS';
-    const slopeKpi = document.querySelector('.kpi-strip .kpi:nth-child(4)');
-    slopeKpi.className = 'kpi ' + (slope > 12 ? 'up' : slope > 6 ? 'nu' : 'dn');
+    document.getElementById('kpi-eci-slope-sub').textContent = 'pts/yr · 12m rolling OLS';
+    document.querySelector('.kpi-strip .kpi:nth-child(4)').className =
+      'kpi '+(slope>12?'up':slope>6?'nu':'dn');
   }
 
-  // ── ECI Trend Chart ────────────────────────────────────────────
-  const tLabels = trend.map(r => r.month);
-  const tVals   = trend.map(r => r.frontier_eci ? +r.frontier_eci : null);
+  // ── ECI Scatter Chart ──────────────────────────────────
+  const ORG_LIST = [
+    {label:'OpenAI',    key:'openai',    color:C.openai},
+    {label:'Anthropic', key:'anthropic', color:C.anthropic},
+    {label:'Google',    key:'google',    color:C.google},
+    {label:'xAI',       key:'xai',       color:C.xai},
+    {label:'DeepSeek',  key:'deepseek',  color:C.deepseek},
+    {label:'Meta',      key:'meta',      color:C.meta},
+  ];
 
-  lineChart('eciTrendChart', tLabels, [
-    {
-      label: 'Frontier ECI',
-      data: tVals,
-      borderColor: C.blue, backgroundColor: C.blueA,
-      tension: 0.3, pointRadius: 3, pointHoverRadius: 5,
+  // Convert date strings to timestamps for numeric x-axis
+  const toTs = s => s ? new Date(s).getTime() : null;
+
+  const scatterDatasets = ORG_LIST.map(org => ({
+    label: org.label,
+    data: best
+      .filter(r => orgKey(r.organization)===org.key && r.release_date && r.eci && +r.eci>0)
+      .map(r => ({ x:toTs(r.release_date), y:+r.eci, name:r.model_name||r.model_slug||'?' })),
+    backgroundColor: org.color+'CC',
+    borderColor: org.color,
+    pointRadius: 6,
+    pointHoverRadius: 9,
+    showLine: false,
+  }));
+
+  // Other orgs
+  const knownKeys = ORG_LIST.map(o=>o.key);
+  const otherPts  = best.filter(r=>!knownKeys.includes(orgKey(r.organization))&&r.release_date&&r.eci&&+r.eci>0)
+                        .map(r=>({x:toTs(r.release_date),y:+r.eci,name:r.model_name||'?'}));
+  if (otherPts.length) {
+    scatterDatasets.push({ label:'Other', data:otherPts,
+      backgroundColor:C.ink4+'CC', borderColor:C.ink4, pointRadius:5, pointHoverRadius:7, showLine:false });
+  }
+
+  // Frontier running-max line from trend data
+  const frontierPts = [...trend]
+    .filter(r=>r.month&&r.frontier_eci&&+r.frontier_eci>0)
+    .sort((a,b)=>a.month.localeCompare(b.month))
+    .map(r=>({x:toTs(r.month+'-01'), y:+r.frontier_eci}));
+
+  scatterDatasets.push({
+    label:'Frontier max',
+    data: frontierPts,
+    borderColor:'rgba(0,0,0,0.20)',
+    backgroundColor:'transparent',
+    borderDash:[3,3], borderWidth:1.5,
+    pointRadius:0, showLine:true, tension:0, order:99,
+  });
+
+  // Custom plugin: vertical breakpoint line
+  const breakpointPlugin = {
+    id:'eciBreakpoint',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.x) return;
+      const xPx=scales.x.getPixelForValue(new Date('2024-04-01').getTime());
+      c.save();
+      c.beginPath(); c.setLineDash([5,4]); c.strokeStyle='#C4813A'; c.lineWidth=1.5;
+      c.moveTo(xPx,chartArea.top); c.lineTo(xPx,chartArea.bottom); c.stroke();
+      c.setLineDash([]); c.fillStyle='#C4813A'; c.font="8px 'Roboto Mono'";
+      c.textAlign='center';
+      c.fillText('Apr 2024 breakpoint', xPx, chartArea.bottom+16);
+      c.restore();
     }
-  ], {
-    y: {
-      beginAtZero: false,
-      ticks: { callback: v => v.toFixed(0) },
-    }
-  });
+  };
 
-  // ── ECI Leaderboard Chart ──────────────────────────────────────
-  const top20  = best.slice(0, 20);
-  const labels = top20.map(r => (r.model_name || r.model_slug || '?').slice(0, 18));
-  const vals   = top20.map(r => +r.eci || 0);
-  const colors = top20.map(r => {
-    const org = (r.organization || '').toLowerCase();
-    if (org.includes('openai'))    return C.blue;
-    if (org.includes('anthropic')) return C.gold;
-    if (org.includes('google'))    return C.sage;
-    if (org.includes('deepseek') || org.includes('minimax') || org.includes('alibaba'))
-      return C.sand;
-    return C.ink3;
-  });
+  const scatterCtx = document.getElementById('eciScatterChart');
+  if (scatterCtx) {
+    new Chart(scatterCtx, {
+      type:'scatter',
+      data:{ datasets:scatterDatasets },
+      options:{
+        responsive:true,
+        layout:{ padding:{ bottom:20 } },
+        plugins:{
+          legend:{
+            display:true,
+            labels:{ boxWidth:8, padding:12, font:{size:9},
+              filter:item=>item.text!=='Frontier max'
+            }
+          },
+          tooltip:{ callbacks:{
+            label:c=>c.raw.name
+              ? `${c.raw.name}: ${c.raw.y?.toFixed(1)}`
+              : `${c.dataset.label}: ${c.raw.y?.toFixed(1)}`
+          }}
+        },
+        scales:{
+          x:{
+            type:'linear',
+            grid:{color:gridColor},
+            ticks:{
+              maxTicksLimit:8,
+              callback: v => {
+                const d=new Date(v);
+                return d.toLocaleDateString('en-GB',{month:'short',year:'2-digit'});
+              }
+            }
+          },
+          y:{ grid:{color:gridColor}, beginAtZero:false, ticks:{callback:v=>v.toFixed(0)} }
+        }
+      },
+      plugins:[breakpointPlugin]
+    });
+  }
 
-  barChart('eciLeaderChart', labels, vals, colors, {
-    x: { min: Math.min(...vals) * 0.95, ticks: { callback: v => v.toFixed(0) } }
-  });
+  // ── ECI Leaderboard table (right panel) ────────────────
+  const top12 = [...best]
+    .filter(r=>r.eci&&+r.eci>0)
+    .sort((a,b)=>+b.eci-+a.eci)
+    .slice(0,12);
 
-  // ── ECI Table ──────────────────────────────────────────────────
+  document.querySelector('#eci-leader-table tbody').innerHTML = top12.map((r,i)=>`
+    <tr>
+      <td class="mono" style="color:var(--ink4);font-size:10px;">${i+1}</td>
+      <td style="font-size:11px;"><strong>${(r.model_name||r.model_slug||'—').slice(0,22)}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}" style="font-size:7px;">${(r.organization||'—').toUpperCase().slice(0,10)}</span></td>
+      <td class="mono" style="font-size:11px;font-weight:500;">${f1(r.eci)}</td>
+    </tr>`).join('');
+
+  const topM = top12[0];
+  document.getElementById('eci-leader-note').textContent =
+    `15.4 ECI pts/yr post-Apr 2024 vs 8.3 pre-breakpoint. ${topM?(topM.model_name||topM.model_slug)+' leads at '+Math.round(+topM.eci)+'.' : ''}`;
+
+  // ── ECI Full Table ──────────────────────────────────────
   document.querySelector('#eci-table tbody').innerHTML =
-    best.slice(0, 40).map((r, i) => `<tr>
+    best.slice(0,40).map((r,i)=>`<tr>
       <td class="mono" style="color:var(--ink4)">${i+1}</td>
-      <td><strong>${r.model_name || r.model_slug || '—'}</strong></td>
-      <td><span class="org-badge">${r.organization || '—'}</span></td>
+      <td><strong>${r.model_name||r.model_slug||'—'}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}">${r.organization||'—'}</span></td>
       <td class="mono">${fd(r.release_date)}</td>
       <td class="mono"><strong>${f1(r.eci)}</strong></td>
       <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_low)}</td>
       <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_high)}</td>
-      <td style="font-size:10px;color:var(--ink3)">${r.accessibility || '—'}</td>
-    </tr>`).join('') ||
-    '<tr><td colspan="8" style="color:var(--ink4);padding:20px">No data</td></tr>';
+      <td style="font-size:10px;color:var(--ink3)">${r.accessibility||'—'}</td>
+    </tr>`).join('')||'<tr><td colspan="8" style="color:var(--ink4);padding:20px">No data</td></tr>';
 }
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // SIGNAL NOTE
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 async function buildSignalNote() {
-  const [metrTrend, eciTrend] = await Promise.all([
-    loadCSV(DATA.metrTrend),
-    loadCSV(DATA.eciTrend),
-  ]);
-
-  const mSorted = [...metrTrend].sort((a,b) => b.month.localeCompare(a.month));
-  const eSorted = [...eciTrend].sort((a,b) => b.month.localeCompare(a.month));
-
-  const p50  = mSorted[0]?.frontier_p50_hours ? +mSorted[0].frontier_p50_hours : null;
-  const dbl  = computeDoublingMonths(metrTrend);
-  const eci  = eSorted[0]?.frontier_eci ? +eSorted[0].frontier_eci : null;
-  const slope = computeEciSlope(eciTrend);
-
-  const parts = [];
-  if (p50)  parts.push(`Frontier P50 = <strong>${fh(p50)}</strong>`);
-  if (dbl)  parts.push(`doubling every <strong>~${dbl} months</strong>`);
-  if (eci)  parts.push(`ECI = <strong>${f1(eci)}</strong>`);
-  if (slope) parts.push(`ECI accelerating at <strong>${slope} pts/yr</strong>`);
-
-  const bull = dbl && dbl < 8 || (slope && slope > 14);
-  const bear = dbl && dbl > 14 || (slope && slope < 5);
-
-  const signal = bull ? '🟢 STRONG BULL — rapid capability acceleration' :
-                 bear ? '🔴 BEAR — pace of improvement decelerating' :
-                        '🟡 NEUTRAL — steady progress, no inflection detected';
-
-  document.getElementById('signal-note').innerHTML =
-    `<strong>${signal}</strong> &nbsp;|&nbsp; ${parts.join(' &nbsp;·&nbsp; ')}
-     &nbsp;|&nbsp; <span style="color:var(--ink4);font-size:10px">
-     Note: 5 ECI pts ≈ 2× METR P50. METR scope = SW/ML/cybersecurity tasks only.</span>`;
+  const [mt, et] = await Promise.all([loadCSV(DATA.metrTrend), loadCSV(DATA.eciTrend)]);
+  const mS=[...mt].sort((a,b)=>b.month.localeCompare(a.month));
+  const eS=[...et].sort((a,b)=>b.month.localeCompare(a.month));
+  const p50=mS[0]?.frontier_p50_hours?+mS[0].frontier_p50_hours:null;
+  const dbl=computeDoublingMonths(mt);
+  const eci=eS[0]?.frontier_eci?+eS[0].frontier_eci:null;
+  const slope=computeEciSlope(et);
+  const parts=[];
+  if(p50)  parts.push(`Frontier P50 = <strong>${fh(p50)}</strong>`);
+  if(dbl)  parts.push(`doubling every <strong>~${dbl} months</strong>`);
+  if(eci)  parts.push(`ECI = <strong>${f1(eci)}</strong>`);
+  if(slope)parts.push(`ECI slope = <strong>${slope} pts/yr</strong>`);
+  parts.push(`<strong>×180 vs GPT-4</strong>`);
+  const bull=(dbl&&dbl<8)||(slope&&slope>14);
+  const bear=(dbl&&dbl>14)||(slope&&slope<5);
+  const sig=bull?'🟢 STRONG BULL — rapid capability acceleration':
+             bear?'🔴 BEAR — pace of improvement decelerating':
+                  '🟡 NEUTRAL — steady progress, no inflection detected';
+  document.getElementById('signal-note').innerHTML=
+    `<strong>${sig}</strong> &nbsp;|&nbsp; ${parts.join(' &nbsp;·&nbsp; ')}
+     &nbsp;|&nbsp; <span style="color:var(--ink4);font-size:10px">Note: 5 ECI pts ≈ 2× METR P50. METR scope = SW/ML/cybersecurity tasks only.</span>`;
 }
 
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 // INIT
-// ════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
 (async () => {
+  buildDoublingRateChart();
+  buildCumulativeDoublingsChart();
+  buildEciSlopeChart();
   await Promise.all([loadMETR(), loadECI(), buildSignalNote()]);
   document.getElementById('last-update').textContent =
-    'Updated: ' + new Date().toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+    'Updated: '+new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
 })();
 </script>
 </body>
