@@ -1,101 +1,101 @@
 date,model_id,author,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,market_share,velocity
-2026-04-09,sentence-transformers/all-MiniLM-L6-v2,sentence-transformers,Sentence Transformers,sentence-similarity,194794489,4665,0.0,,0.168682,130036.4
-2026-04-09,google-bert/bert-base-uncased,google-bert,Google,fill-mask,67627896,2616,0.0,,0.058562,45145.5
-2026-04-09,google/electra-base-discriminator,google,Google,unknown,48676934,90,0.0,,0.042152,32494.6
-2026-04-09,Falconsai/nsfw_image_detection,Falconsai,Community,image-classification,38057004,1039,0.0,,0.032955,41913.0
-2026-04-09,sentence-transformers/all-mpnet-base-v2,sentence-transformers,Sentence Transformers,sentence-similarity,29342528,1274,0.0,,0.025409,19587.8
-2026-04-09,openai/clip-vit-large-patch14,openai,OpenAI,zero-shot-image-classification,29169880,1986,0.0001,,0.02526,19472.6
-2026-04-09,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,sentence-transformers,Sentence Transformers,sentence-similarity,28552443,1190,0.0,,0.024725,19060.4
-2026-04-09,openai/clip-vit-base-patch32,openai,OpenAI,zero-shot-image-classification,20690471,903,0.0,,0.017917,13812.1
-2026-04-09,FacebookAI/roberta-large,FacebookAI,Meta,fill-mask,20200655,273,0.0,,0.017493,13485.1
-2026-04-09,laion/clap-htsat-fused,laion,Community,audio-classification,19699862,74,0.0,,0.017059,17175.1
-2026-04-09,FacebookAI/xlm-roberta-base,FacebookAI,Meta,fill-mask,19317602,811,0.0,,0.016728,12895.6
-2026-04-09,cross-encoder/ms-marco-MiniLM-L6-v2,cross-encoder,Sentence Transformers,text-ranking,16556072,212,0.0,,0.014337,11052.1
-2026-04-09,BAAI/bge-small-en-v1.5,BAAI,BAAI,feature-extraction,15874573,434,0.0,,0.013747,16905.8
-2026-04-09,Bingsu/adetailer,Bingsu,Community,unknown,15633069,682,0.0,,0.013537,14501.9
-2026-04-09,colbert-ir/colbertv2.0,colbert-ir,Community,unknown,15425082,319,0.0,,0.013357,15182.2
-2026-04-09,FacebookAI/roberta-base,FacebookAI,Meta,fill-mask,15326801,582,0.0,,0.013272,10231.5
-2026-04-09,BAAI/bge-m3,BAAI,BAAI,sentence-similarity,15036876,2893,0.0002,,0.013021,18749.2
-2026-04-09,Qwen/Qwen3-0.6B,Qwen,Alibaba,text-generation,14909614,1182,0.0001,,0.012911,43091.4
-2026-04-09,openai/clip-vit-large-patch14-336,openai,OpenAI,zero-shot-image-classification,14892517,296,0.0,,0.012896,10292.0
-2026-04-09,timm/mobilenetv3_small_100.lamb_in1k,timm,Hugging Face,image-classification,14647400,60,0.0,,0.012684,12115.3
-2026-04-09,amazon/chronos-2,amazon,Amazon,time-series-forecasting,13582198,228,0.0,,0.011761,84888.7
-2026-04-09,openai-community/gpt2,openai-community,OpenAI,text-generation,13454875,3187,0.0002,,0.011651,8981.9
-2026-04-09,Qwen/Qwen2.5-7B-Instruct,Qwen,Alibaba,text-generation,12602900,1194,0.0001,,0.010913,22149.2
-2026-04-09,pyannote/wespeaker-voxceleb-resnet34-LM,pyannote,Community,unknown,11958884,115,0.0,,0.010356,13636.1
-2026-04-09,pyannote/segmentation-3.0,pyannote,Community,voice-activity-detection,11128609,892,0.0001,,0.009637,11979.1
-2026-04-09,pyannote/speaker-diarization-3.1,pyannote,Community,automatic-speech-recognition,10925278,1731,0.0002,,0.009461,12500.3
-2026-04-09,nomic-ai/nomic-embed-text-v1.5,nomic-ai,Community,sentence-similarity,10666291,793,0.0001,,0.009236,13535.9
-2026-04-09,omni-research/Tarsier2-Recap-7b,omni-research,Community,unknown,10598417,32,0.0,,0.009178,25174.4
-2026-04-09,autogluon/chronos-bolt-small,autogluon,Amazon,time-series-forecasting,10219206,29,0.0,,0.008849,19998.4
-2026-04-09,hexgrad/Kokoro-82M,hexgrad,Community,text-to-speech,9771415,5935,0.0006,,0.008462,20879.1
-2026-04-09,Qwen/Qwen2.5-1.5B-Instruct,Qwen,Alibaba,text-generation,9536454,659,0.0001,,0.008258,16789.5
-2026-04-09,autogluon/chronos-2,autogluon,Amazon,time-series-forecasting,9181033,12,0.0,,0.00795,49896.9
-2026-04-09,meta-llama/Llama-3.1-8B-Instruct,meta-llama,Meta,text-generation,8906869,5675,0.0006,,0.007713,14160.4
-2026-04-09,Qwen/Qwen3-8B,Qwen,Alibaba,text-generation,8775938,1035,0.0001,,0.0076,25364.0
-2026-04-09,Qwen/Qwen3-4B,Qwen,Alibaba,text-generation,8289135,592,0.0001,,0.007178,23957.0
-2026-04-09,Qwen/Qwen3-1.7B,Qwen,Alibaba,text-generation,8177214,441,0.0001,,0.007081,23633.6
-2026-04-09,Qwen/Qwen2.5-3B-Instruct,Qwen,Alibaba,text-generation,8157699,435,0.0001,,0.007064,14362.1
-2026-04-09,Marqo/nsfw-image-detection-384,Marqo,Community,image-classification,8016237,44,0.0,,0.006942,15905.2
-2026-04-09,distilbert/distilbert-base-uncased,distilbert,Hugging Face,fill-mask,7699577,860,0.0001,,0.006667,5139.9
-2026-04-09,Kijai/WanVideo_comfy,Kijai,Community,unknown,7482173,2246,0.0003,,0.006479,18383.7
-2026-04-09,Qwen/Qwen3-4B-Instruct-2507,Qwen,Alibaba,text-generation,7465248,800,0.0001,,0.006465,30346.5
-2026-04-09,facebook/contriever,facebook,Meta,unknown,7280026,77,0.0,,0.006304,4859.8
-2026-04-09,BAAI/bge-large-en-v1.5,BAAI,BAAI,feature-extraction,7231203,645,0.0001,,0.006262,7701.0
-2026-04-09,answerdotai/ModernBERT-base,answerdotai,Community,fill-mask,7214215,1020,0.0001,,0.006247,14936.3
-2026-04-09,lpiccinelli/unidepth-v2-vitl14,lpiccinelli,Community,unknown,7136589,11,0.0,,0.00618,10731.7
-2026-04-09,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Comfy-Org,Community,unknown,6981487,668,0.0001,,0.006046,27378.4
-2026-04-09,dima806/fairface_age_image_detection,dima806,Community,image-classification,6761275,69,0.0,,0.005855,13855.1
-2026-04-09,amazon/chronos-bolt-base,amazon,Amazon,time-series-forecasting,6738109,84,0.0,,0.005835,13503.2
-2026-04-09,FacebookAI/xlm-roberta-large,FacebookAI,Meta,fill-mask,6603314,503,0.0001,,0.005718,4408.1
-2026-04-09,facebook/opt-125m,facebook,Meta,text-generation,6574259,240,0.0,,0.005693,4603.8
-2026-04-09,jonatasgrosman/wav2vec2-large-xlsr-53-russian,jonatasgrosman,Community,automatic-speech-recognition,6410022,67,0.0,,0.005551,4279.1
-2026-04-09,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Alibaba,image-text-to-text,6408352,636,0.0001,,0.005549,14664.4
-2026-04-09,coqui/XTTS-v2,coqui,Community,text-to-speech,6156958,3466,0.0006,,0.005332,6917.9
-2026-04-09,BAAI/bge-base-en-v1.5,BAAI,BAAI,feature-extraction,6059864,409,0.0001,,0.005248,6446.7
-2026-04-09,moonshotai/Kimi-K2.5,moonshotai,Community,image-text-to-text,6031157,2441,0.0004,,0.005223,62176.9
-2026-04-09,Qwen/Qwen3-Embedding-0.6B,Qwen,Alibaba,feature-extraction,6012677,970,0.0002,,0.005207,19458.5
-2026-04-09,argmaxinc/whisperkit-coreml,argmaxinc,Community,automatic-speech-recognition,5918684,168,0.0,,0.005125,7686.6
-2026-04-09,BAAI/bge-reranker-v2-m3,BAAI,BAAI,text-classification,5900545,944,0.0002,,0.00511,7825.7
-2026-04-09,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,trl-internal-testing,Community,text-generation,5879524,5,0.0,,0.005091,11782.6
-2026-04-09,meta-llama/Llama-3.2-3B-Instruct,meta-llama,Meta,text-generation,5858377,2087,0.0004,,0.005073,10332.2
-2026-04-09,google/vit-base-patch16-224-in21k,google,Google,image-feature-extraction,5842625,404,0.0001,,0.005059,3900.3
-2026-04-09,openai/gpt-oss-20b,openai,OpenAI,text-generation,5801451,4517,0.0008,,0.005024,23487.7
-2026-04-09,openai/whisper-large-v3-turbo,openai,OpenAI,automatic-speech-recognition,5747459,2913,0.0005,,0.004977,10374.5
-2026-04-09,zai-org/GLM-OCR,zai-org,Community,image-to-text,5640118,1586,0.0003,,0.004884,82942.9
-2026-04-09,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,jonatasgrosman,Community,automatic-speech-recognition,5637450,43,0.0,,0.004882,3763.3
-2026-04-09,Qwen/Qwen2.5-0.5B-Instruct,Qwen,Alibaba,text-generation,5394668,494,0.0001,,0.004672,9481.0
-2026-04-09,intfloat/multilingual-e5-large,intfloat,Community,feature-extraction,5161562,1173,0.0002,,0.00447,5095.3
-2026-04-09,Qwen/Qwen3.5-9B,Qwen,Alibaba,image-text-to-text,4962843,1217,0.0002,,0.004298,124071.1
-2026-04-09,ProsusAI/finbert,ProsusAI,Community,text-classification,4908068,1128,0.0002,,0.00425,3276.4
-2026-04-09,openai/whisper-large-v3,openai,OpenAI,automatic-speech-recognition,4745613,5558,0.0012,,0.004109,5374.4
-2026-04-09,jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn,jonatasgrosman,Community,automatic-speech-recognition,4580797,130,0.0,,0.003967,3057.9
-2026-04-09,google-bert/bert-base-multilingual-uncased,google-bert,Google,fill-mask,4508939,154,0.0,,0.003905,3010.0
-2026-04-09,google-bert/bert-base-cased,google-bert,Google,fill-mask,4473029,355,0.0001,,0.003873,2986.0
-2026-04-09,google/vit-base-patch16-224,google,Google,image-classification,4451036,949,0.0002,,0.003854,2971.3
-2026-04-09,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,sentence-transformers,Sentence Transformers,sentence-similarity,4445470,458,0.0001,,0.00385,2967.6
-2026-04-09,dphn/dolphin-2.9.1-yi-1.5-34b,dphn,Community,text-generation,4401604,61,0.0,,0.003812,6379.1
-2026-04-09,timm/vit_base_patch14_dinov2.lvd142m,timm,Hugging Face,image-feature-extraction,4382233,10,0.0,,0.003795,4114.8
-2026-04-09,Qwen/Qwen3-VL-8B-Instruct,Qwen,Alibaba,image-text-to-text,4375790,856,0.0002,,0.003789,24445.8
-2026-04-09,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Alibaba,image-text-to-text,4330775,1487,0.0003,,0.00375,9910.2
-2026-04-09,Qwen/Qwen3-VL-30B-A3B-Instruct,Qwen,Alibaba,image-text-to-text,4289316,559,0.0001,,0.003714,22575.3
-2026-04-09,MahmoudAshraf/mms-300m-1130-forced-aligner,MahmoudAshraf,Community,automatic-speech-recognition,4256461,83,0.0,,0.003686,6029.0
-2026-04-09,Comfy-Org/Wan_2.1_ComfyUI_repackaged,Comfy-Org,Community,unknown,4211526,874,0.0002,,0.003647,10347.7
-2026-04-09,Qwen/Qwen2.5-32B-Instruct,Qwen,Alibaba,text-generation,4179626,344,0.0001,,0.003619,7358.5
-2026-04-09,meta-llama/Llama-3.2-1B-Instruct,meta-llama,Meta,text-generation,4164734,1357,0.0003,,0.003606,7345.2
-2026-04-09,intfloat/multilingual-e5-small,intfloat,Community,sentence-similarity,3997378,301,0.0001,,0.003462,3946.1
-2026-04-09,usyd-community/vitpose-plus-base,usyd-community,Community,keypoint-detection,3881534,31,0.0,,0.003361,8530.8
-2026-04-09,sentence-transformers/paraphrase-MiniLM-L6-v2,sentence-transformers,Sentence Transformers,sentence-similarity,3791499,145,0.0,,0.003283,2531.0
-2026-04-09,openai/gpt-oss-120b,openai,OpenAI,text-generation,3572271,4663,0.0013,,0.003093,14462.6
-2026-04-09,facebook/esmfold_v1,facebook,Meta,unknown,3541463,48,0.0,,0.003067,2824.1
-2026-04-09,google-bert/bert-base-multilingual-cased,google-bert,Google,fill-mask,3538835,584,0.0002,,0.003064,2362.4
-2026-04-09,mixedbread-ai/mxbai-embed-large-v1,mixedbread-ai,Community,feature-extraction,3510620,779,0.0002,,0.00304,4607.1
-2026-04-09,nomic-ai/nomic-embed-text-v1,nomic-ai,Community,sentence-similarity,3491276,562,0.0002,,0.003023,4375.0
-2026-04-09,cardiffnlp/twitter-roberta-base-sentiment-latest,cardiffnlp,Community,text-classification,3467528,784,0.0002,,0.003003,2335.0
-2026-04-09,sentence-transformers/all-MiniLM-L12-v2,sentence-transformers,Sentence Transformers,sentence-similarity,3413879,302,0.0001,,0.002956,2279.0
-2026-04-09,Qwen/Qwen3.5-35B-A3B,Qwen,Alibaba,image-text-to-text,3409579,1350,0.0004,,0.002953,79292.5
-2026-04-09,google-bert/bert-base-chinese,google-bert,Google,fill-mask,3353621,1410,0.0004,,0.002904,2238.7
-2026-04-09,Qwen/Qwen3-32B,Qwen,Alibaba,text-generation,3215878,678,0.0002,,0.002785,9294.4
-2026-04-09,deepseek-ai/DeepSeek-R1,deepseek-ai,DeepSeek,text-generation,3187961,13156,0.0041,,0.002761,7196.3
-2026-04-09,OneThink/OneThinker-SFT-Qwen3-8B,OneThink,Community,any-to-any,3186855,3,0.0,,0.00276,24897.3
-2026-04-09,Qwen/Qwen3.5-27B,Qwen,Alibaba,image-text-to-text,3165635,892,0.0003,,0.002741,73619.4
+2026-04-10,sentence-transformers/all-MiniLM-L6-v2,sentence-transformers,Sentence Transformers,sentence-similarity,194504137,4666,0.0,,0.167862,129755.9
+2026-04-10,google-bert/bert-base-uncased,google-bert,Google,fill-mask,66872132,2616,0.0,,0.057712,44611.2
+2026-04-10,google/electra-base-discriminator,google,Google,unknown,48518518,90,0.0,,0.041873,32367.3
+2026-04-10,Falconsai/nsfw_image_detection,Falconsai,Community,image-classification,37968104,1039,0.0,,0.032767,41769.1
+2026-04-10,sentence-transformers/all-mpnet-base-v2,sentence-transformers,Sentence Transformers,sentence-similarity,29616352,1274,0.0,,0.02556,19757.4
+2026-04-10,openai/clip-vit-large-patch14,openai,OpenAI,zero-shot-image-classification,29402065,1986,0.0001,,0.025375,19614.5
+2026-04-10,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,sentence-transformers,Sentence Transformers,sentence-similarity,28989731,1191,0.0,,0.025019,19339.4
+2026-04-10,openai/clip-vit-base-patch32,openai,OpenAI,zero-shot-image-classification,20738321,903,0.0,,0.017898,13834.8
+2026-04-10,FacebookAI/roberta-large,FacebookAI,Meta,fill-mask,20428795,273,0.0,,0.017631,13628.3
+2026-04-10,FacebookAI/xlm-roberta-base,FacebookAI,Meta,fill-mask,19185606,811,0.0,,0.016558,12798.9
+2026-04-10,laion/clap-htsat-fused,laion,Community,audio-classification,19125301,74,0.0,,0.016506,16659.7
+2026-04-10,cross-encoder/ms-marco-MiniLM-L6-v2,cross-encoder,Sentence Transformers,text-ranking,17230680,212,0.0,,0.014871,11494.8
+2026-04-10,BAAI/bge-small-en-v1.5,BAAI,BAAI,feature-extraction,16375859,434,0.0,,0.014133,17421.1
+2026-04-10,openai/clip-vit-large-patch14-336,openai,OpenAI,zero-shot-image-classification,15708322,296,0.0,,0.013557,10848.3
+2026-04-10,Bingsu/adetailer,Bingsu,Community,unknown,15447493,682,0.0,,0.013332,14316.5
+2026-04-10,FacebookAI/roberta-base,FacebookAI,Meta,fill-mask,15384150,582,0.0,,0.013277,10262.9
+2026-04-10,colbert-ir/colbertv2.0,colbert-ir,Community,unknown,15383631,319,0.0,,0.013276,15126.5
+2026-04-10,Qwen/Qwen3-0.6B,Qwen,Alibaba,text-generation,15101523,1182,0.0001,,0.013033,43520.2
+2026-04-10,BAAI/bge-m3,BAAI,BAAI,sentence-similarity,15082193,2895,0.0002,,0.013016,18782.3
+2026-04-10,timm/mobilenetv3_small_100.lamb_in1k,timm,Hugging Face,image-classification,14678825,60,0.0,,0.012668,12131.3
+2026-04-10,amazon/chronos-2,amazon,Amazon,time-series-forecasting,13963080,228,0.0,,0.012051,86727.2
+2026-04-10,openai-community/gpt2,openai-community,OpenAI,text-generation,13521727,3188,0.0002,,0.01167,9020.5
+2026-04-10,Qwen/Qwen2.5-7B-Instruct,Qwen,Alibaba,text-generation,12111952,1195,0.0001,,0.010453,21249.0
+2026-04-10,pyannote/wespeaker-voxceleb-resnet34-LM,pyannote,Community,unknown,11945522,115,0.0,,0.010309,13605.4
+2026-04-10,pyannote/segmentation-3.0,pyannote,Community,voice-activity-detection,11077399,894,0.0001,,0.00956,11911.2
+2026-04-10,pyannote/speaker-diarization-3.1,pyannote,Community,automatic-speech-recognition,10906588,1732,0.0002,,0.009413,12464.7
+2026-04-10,nomic-ai/nomic-embed-text-v1.5,nomic-ai,Community,sentence-similarity,10616366,794,0.0001,,0.009162,13455.5
+2026-04-10,omni-research/Tarsier2-Recap-7b,omni-research,Community,unknown,10424091,32,0.0,,0.008996,24701.6
+2026-04-10,autogluon/chronos-bolt-small,autogluon,Amazon,time-series-forecasting,10236709,29,0.0,,0.008835,19993.6
+2026-04-10,Qwen/Qwen2.5-1.5B-Instruct,Qwen,Alibaba,text-generation,9922750,660,0.0001,,0.008564,17438.9
+2026-04-10,hexgrad/Kokoro-82M,hexgrad,Community,text-to-speech,9728735,5939,0.0006,,0.008396,20743.6
+2026-04-10,meta-llama/Llama-3.1-8B-Instruct,meta-llama,Meta,text-generation,9196892,5675,0.0006,,0.007937,14598.2
+2026-04-10,autogluon/chronos-2,autogluon,Amazon,time-series-forecasting,9162047,12,0.0,,0.007907,49524.6
+2026-04-10,Qwen/Qwen2.5-3B-Instruct,Qwen,Alibaba,text-generation,8679038,435,0.0001,,0.00749,15253.1
+2026-04-10,Qwen/Qwen3-8B,Qwen,Alibaba,text-generation,8366071,1036,0.0001,,0.00722,24109.7
+2026-04-10,Qwen/Qwen3-4B,Qwen,Alibaba,text-generation,8255392,592,0.0001,,0.007125,23790.8
+2026-04-10,Qwen/Qwen3-1.7B,Qwen,Alibaba,text-generation,8194168,444,0.0001,,0.007072,23614.3
+2026-04-10,Marqo/nsfw-image-detection-384,Marqo,Community,image-classification,7885546,45,0.0,,0.006805,15614.9
+2026-04-10,distilbert/distilbert-base-uncased,distilbert,Hugging Face,fill-mask,7745707,860,0.0001,,0.006685,5167.2
+2026-04-10,BAAI/bge-large-en-v1.5,BAAI,BAAI,feature-extraction,7570795,645,0.0001,,0.006534,8054.0
+2026-04-10,Kijai/WanVideo_comfy,Kijai,Community,unknown,7415388,2246,0.0003,,0.0064,18175.0
+2026-04-10,Qwen/Qwen3-4B-Instruct-2507,Qwen,Alibaba,text-generation,7359404,802,0.0001,,0.006351,29795.2
+2026-04-10,facebook/contriever,facebook,Meta,unknown,7296114,77,0.0,,0.006297,4867.3
+2026-04-10,answerdotai/ModernBERT-base,answerdotai,Community,fill-mask,7201565,1021,0.0001,,0.006215,14879.3
+2026-04-10,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Comfy-Org,Community,unknown,6919345,668,0.0001,,0.005972,27028.7
+2026-04-10,lpiccinelli/unidepth-v2-vitl14,lpiccinelli,Community,unknown,6886202,11,0.0,,0.005943,10339.6
+2026-04-10,dima806/fairface_age_image_detection,dima806,Community,image-classification,6858091,69,0.0,,0.005919,14024.7
+2026-04-10,amazon/chronos-bolt-base,amazon,Amazon,time-series-forecasting,6774805,84,0.0,,0.005847,13549.6
+2026-04-10,FacebookAI/xlm-roberta-large,FacebookAI,Meta,fill-mask,6667591,503,0.0001,,0.0057540000000000004,4448.0
+2026-04-10,facebook/opt-125m,facebook,Meta,text-generation,6544170,240,0.0,,0.005648,4579.5
+2026-04-10,Qwen/Qwen2.5-VL-3B-Instruct,Qwen,Alibaba,image-text-to-text,6436254,634,0.0001,,0.005555,14694.6
+2026-04-10,jonatasgrosman/wav2vec2-large-xlsr-53-russian,jonatasgrosman,Community,automatic-speech-recognition,6188354,67,0.0,,0.005341,4128.3
+2026-04-10,coqui/XTTS-v2,coqui,Community,text-to-speech,6181730,3468,0.0006,,0.005335,6938.0
+2026-04-10,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,trl-internal-testing,Community,text-generation,6166457,5,0.0,,0.005322,12332.9
+2026-04-10,google/vit-base-patch16-224-in21k,google,Google,image-feature-extraction,6140702,404,0.0001,,0.0053,4096.5
+2026-04-10,BAAI/bge-base-en-v1.5,BAAI,BAAI,feature-extraction,6132365,409,0.0001,,0.005292,6516.9
+2026-04-10,openai/whisper-large-v3-turbo,openai,OpenAI,automatic-speech-recognition,6100143,2915,0.0005,,0.005265,10991.2
+2026-04-10,Qwen/Qwen3-Embedding-0.6B,Qwen,Alibaba,feature-extraction,6044098,973,0.0002,,0.005216,19497.1
+2026-04-10,moonshotai/Kimi-K2.5,moonshotai,Community,image-text-to-text,5995570,2442,0.0004,,0.005174,61179.3
+2026-04-10,BAAI/bge-reranker-v2-m3,BAAI,BAAI,text-classification,5980784,945,0.0002,,0.005162,7921.6
+2026-04-10,argmaxinc/whisperkit-coreml,argmaxinc,Community,automatic-speech-recognition,5956943,168,0.0,,0.005141,7726.3
+2026-04-10,openai/gpt-oss-20b,openai,OpenAI,text-generation,5856294,4520,0.0008,,0.005054,23614.1
+2026-04-10,zai-org/GLM-OCR,zai-org,Community,image-to-text,5832345,1589,0.0003,,0.005033,84526.7
+2026-04-10,meta-llama/Llama-3.2-3B-Instruct,meta-llama,Meta,text-generation,5755922,2088,0.0004,,0.004968,10133.7
+2026-04-10,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,jonatasgrosman,Community,automatic-speech-recognition,5446104,51,0.0,,0.0047,3633.2
+2026-04-10,Qwen/Qwen2.5-0.5B-Instruct,Qwen,Alibaba,text-generation,5357071,495,0.0001,,0.004623,9398.4
+2026-04-10,intfloat/multilingual-e5-large,intfloat,Community,feature-extraction,5137270,1174,0.0002,,0.004434,5066.3
+2026-04-10,Qwen/Qwen3.5-9B,Qwen,Alibaba,image-text-to-text,5080252,1223,0.0002,,0.004384,123908.6
+2026-04-10,apple/DFN5B-CLIP-ViT-H-14-378,apple,Community,unknown,5041306,104,0.0,,0.004351,5651.7
+2026-04-10,ProsusAI/finbert,ProsusAI,Community,text-classification,4836101,1128,0.0002,,0.004174,3226.2
+2026-04-10,openai/whisper-large-v3,openai,OpenAI,automatic-speech-recognition,4760728,5559,0.0012,,0.004109,5385.4
+2026-04-10,google-bert/bert-base-multilingual-uncased,google-bert,Google,fill-mask,4482026,154,0.0,,0.003868,2990.0
+2026-04-10,google-bert/bert-base-cased,google-bert,Google,fill-mask,4475106,355,0.0001,,0.003862,2985.4
+2026-04-10,google/vit-base-patch16-224,google,Google,image-classification,4465880,949,0.0002,,0.003854,2979.2
+2026-04-10,dphn/dolphin-2.9.1-yi-1.5-34b,dphn,Community,text-generation,4396553,61,0.0,,0.003794,6362.6
+2026-04-10,Qwen/Qwen3-VL-8B-Instruct,Qwen,Alibaba,image-text-to-text,4390121,856,0.0002,,0.003789,24389.6
+2026-04-10,timm/vit_base_patch14_dinov2.lvd142m,timm,Hugging Face,image-feature-extraction,4328105,10,0.0,,0.003735,4060.1
+2026-04-10,Qwen/Qwen2.5-VL-7B-Instruct,Qwen,Alibaba,image-text-to-text,4289288,1488,0.0003,,0.003702,9792.9
+2026-04-10,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,sentence-transformers,Sentence Transformers,sentence-similarity,4283893,458,0.0001,,0.003697,2857.8
+2026-04-10,MahmoudAshraf/mms-300m-1130-forced-aligner,MahmoudAshraf,Community,automatic-speech-recognition,4217790,83,0.0,,0.00364,5965.8
+2026-04-10,jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn,jonatasgrosman,Community,automatic-speech-recognition,4194446,131,0.0,,0.00362,2798.2
+2026-04-10,Qwen/Qwen3-VL-30B-A3B-Instruct,Qwen,Alibaba,image-text-to-text,4186012,559,0.0001,,0.003613,21916.3
+2026-04-10,Comfy-Org/Wan_2.1_ComfyUI_repackaged,Comfy-Org,Community,unknown,4182775,874,0.0002,,0.00361,10251.9
+2026-04-10,meta-llama/Llama-3.2-1B-Instruct,meta-llama,Meta,text-generation,4172246,1357,0.0003,,0.003601,7345.5
+2026-04-10,Qwen/Qwen2.5-32B-Instruct,Qwen,Alibaba,text-generation,4140117,344,0.0001,,0.003573,7276.1
+2026-04-10,usyd-community/vitpose-plus-base,usyd-community,Community,keypoint-detection,4048671,31,0.0,,0.003494,8878.7
+2026-04-10,intfloat/multilingual-e5-small,intfloat,Community,sentence-similarity,4004090,303,0.0001,,0.003456,3948.8
+2026-04-10,sentence-transformers/paraphrase-MiniLM-L6-v2,sentence-transformers,Sentence Transformers,sentence-similarity,3716629,145,0.0,,0.003208,2479.4
+2026-04-10,mixedbread-ai/mxbai-embed-large-v1,mixedbread-ai,Community,feature-extraction,3615534,781,0.0002,,0.00312,4738.6
+2026-04-10,nomic-ai/nomic-embed-text-v1,nomic-ai,Community,sentence-similarity,3602951,562,0.0002,,0.003109,4509.3
+2026-04-10,facebook/esmfold_v1,facebook,Meta,unknown,3523510,48,0.0,,0.003041,2807.6
+2026-04-10,openai/gpt-oss-120b,openai,OpenAI,text-generation,3523185,4667,0.0013,,0.003041,14206.4
+2026-04-10,google-bert/bert-base-multilingual-cased,google-bert,Google,fill-mask,3515511,584,0.0002,,0.003034,2345.2
+2026-04-10,cardiffnlp/twitter-roberta-base-sentiment-latest,cardiffnlp,Community,text-classification,3480169,784,0.0002,,0.003003,2342.0
+2026-04-10,Qwen/Qwen3.5-35B-A3B,Qwen,Alibaba,image-text-to-text,3462269,1357,0.0004,,0.002988,78687.9
+2026-04-10,sentence-transformers/all-MiniLM-L12-v2,sentence-transformers,Sentence Transformers,sentence-similarity,3359818,302,0.0001,,0.0029,2241.4
+2026-04-10,google-bert/bert-base-chinese,google-bert,Google,fill-mask,3347154,1411,0.0004,,0.002889,2232.9
+2026-04-10,deepseek-ai/DeepSeek-R1,deepseek-ai,DeepSeek,text-generation,3341628,13157,0.0039,,0.002884,7526.2
+2026-04-10,Qwen/Qwen3-32B,Qwen,Alibaba,text-generation,3185298,679,0.0002,,0.002749,9179.5
+2026-04-10,OneThink/OneThinker-SFT-Qwen3-8B,OneThink,Community,any-to-any,3181274,3,0.0,,0.002746,24661.0
