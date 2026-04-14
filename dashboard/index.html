@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Improvement — AI Monitor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:      #F5F4F1;
+  --card:    #FFFFFF;
+  --rule:    #E2DED7;
+  --rule2:   #C8C3BB;
+  --ink:     #1A1917;
+  --ink2:    #3D3A34;
+  --ink3:    #7A756A;
+  --ink4:    #B0A99E;
+  --gold:    #8B6914;
+  --gold-bg: #FBF6EB;
+  --sage:    #2E6651;
+  --sage-bg: #EBF3EF;
+  --umber:   #8B2E2E;
+  --sand:    #7A5A2A;
+  --blue:    #2A5A7A;
+  --ff:      'Figtree', system-ui, sans-serif;
+  --mono:    'Roboto Mono', monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink2);font-family:var(--ff);font-size:13px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* ── Header ── */
+.header{background:var(--card);border-bottom:1px solid var(--rule);padding:0 40px;height:52px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.brand{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-0.01em;}
+.brand span{color:var(--gold);}
+.header-meta{display:flex;gap:20px;align-items:center;}
+.pill{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink4);}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--rule2);}
+.dot.live{background:var(--sage);}
+.dot.warn{background:var(--gold);}
+#last-update{font-family:var(--mono);font-size:8px;color:var(--ink4);}
+
+/* ── Layout ── */
+.main{padding:28px 40px 60px;max-width:1400px;margin:0 auto;}
+.section-row{display:flex;align-items:center;gap:12px;margin:32px 0 16px;}
+.section-row::before{content:'';display:block;width:2px;height:12px;background:var(--gold);flex-shrink:0;}
+.section-label{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink4);}
+.section-label.lg{font-size:11px;letter-spacing:0.08em;text-transform:none;color:var(--ink3);font-weight:500;}
+.section-row::after{content:'';flex:1;height:1px;background:var(--rule);}
+
+/* ── KPI strip ── */
+.kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);margin-bottom:1px;}
+.kpi{background:var(--card);padding:20px 22px;border-bottom:2px solid transparent;}
+.kpi.up{border-bottom-color:var(--sage);}
+.kpi.dn{border-bottom-color:var(--umber);}
+.kpi.nu{border-bottom-color:var(--sand);}
+.kpi-label{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.14em;color:var(--ink4);margin-bottom:10px;}
+.kpi-value{font-family:var(--mono);font-size:26px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:6px;letter-spacing:-0.02em;}
+.kpi-sub{font-family:var(--mono);font-size:9px;color:var(--ink4);}
+.kpi-delta{font-family:var(--mono);font-size:9px;margin-top:3px;}
+.kpi-delta.up{color:var(--sage);}
+.kpi-delta.dn{color:var(--umber);}
+.kpi-delta.nu{color:var(--ink4);}
+
+/* ── Grids ── */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);margin-bottom:1px;min-width:0;}
+.grid-2 > *{min-width:0;overflow:hidden;}
+.grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:1px;background:var(--rule);margin-bottom:1px;}
+
+/* ── GPU KPI strip (5 cols) ── */
+#gpu-kpi-strip{grid-template-columns:repeat(5,1fr)!important;}
+
+/* ── Sticky table headers inside scroll containers ── */
+.tbl-scroll{position:relative;}
+.tbl-scroll .tbl th{position:sticky;top:0;z-index:2;background:var(--bg);box-shadow:0 1px 0 var(--rule);}
+/* Full-page tables (ECI, METR) — sticky below fixed header */
+.card > .tbl th{position:sticky;top:52px;z-index:2;background:var(--bg);}
+
+/* ── Card ── */
+.card{background:var(--card);padding:22px 24px;}
+.card-title{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.15em;color:var(--ink4);margin-bottom:3px;}
+.card-sub{font-size:10px;color:var(--ink4);margin-bottom:18px;line-height:1.4;}
+
+/* ── Table ── */
+.tbl{width:100%;border-collapse:collapse;margin-top:6px;}
+.tbl th{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.12em;color:var(--ink4);text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);background:var(--bg);}
+.tbl td{font-size:11px;color:var(--ink2);padding:7px 10px;border-bottom:1px solid var(--rule);}
+.tbl tbody tr:hover td{background:#F9F8F5;}
+.mono{font-family:var(--mono);font-size:10px;}
+.org-badge{display:inline-block;padding:1px 7px;border:1px solid var(--rule2);font-family:var(--mono);font-size:8px;color:var(--ink3);border-radius:2px;}
+.badge-openai   {background:#EBF0F7;color:#1E4A7A;border-color:#A0B8D4!important;}
+.badge-anthropic{background:#FBF6EB;color:#7A5A10;border-color:#C8A840!important;}
+.badge-google   {background:#F2F3E8;color:#4A5010;border-color:#A8B060!important;}
+.badge-xai      {background:#EEEDED;color:#2E2C28;border-color:#A8A5A0!important;}
+.badge-deepseek {background:#EBF3EF;color:#245040;border-color:#80A898!important;}
+.badge-meta     {background:#F0EFED;color:#4A4640;border-color:#A8A5A0!important;}
+.bar-wrap{display:flex;align-items:center;gap:8px;}
+.bar{height:5px;background:var(--gold);opacity:0.7;border-radius:1px;min-width:2px;}
+
+/* ── Annotation ── */
+.note{background:var(--gold-bg);border-left:2px solid var(--gold);padding:10px 14px;font-size:11px;color:var(--sand);margin-bottom:1px;}
+
+/* ── Loader / Error ── */
+.loader{display:flex;align-items:center;justify-content:center;height:140px;font-family:var(--mono);font-size:9px;letter-spacing:0.1em;color:var(--ink4);}
+.err{padding:12px 14px;background:#F8EEEE;border-left:2px solid var(--umber);font-size:11px;color:var(--umber);}
+
+/* ── Toggle ── */
+.toggle-group{display:inline-flex;align-items:center;gap:0;}
+.toggle-label{font-family:var(--mono);font-size:8px;color:var(--ink4);text-transform:uppercase;letter-spacing:0.12em;margin-right:8px;}
+.toggle-btn{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.1em;padding:4px 14px;border:1px solid var(--rule2);background:var(--bg);color:var(--ink4);cursor:pointer;transition:all 0.15s;}
+.toggle-btn:first-of-type{border-radius:2px 0 0 2px;}
+.toggle-btn:last-of-type{border-radius:0 2px 2px 0;margin-left:-1px;}
+.toggle-btn.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+.toggle-btn:hover:not(.active){background:var(--rule);}
+
+/* ── Indicator cards ── */
+.ind-kpi{margin-bottom:14px;}
+.ind-value{font-family:var(--mono);font-size:28px;font-weight:300;color:var(--ink);line-height:1;letter-spacing:-0.02em;}
+.ind-unit{font-family:var(--mono);font-size:11px;color:var(--ink4);margin-left:6px;}
+.ind-sub{font-family:var(--mono);font-size:9px;color:var(--ink4);margin-top:4px;}
+.ind-note{margin-top:12px;padding:8px 10px;background:var(--gold-bg);border-left:2px solid var(--gold);font-size:10px;color:var(--sand);line-height:1.5;}
+
+/* ── ECI leaderboard ── */
+.eci-leader{background:var(--card);padding:22px 24px;display:flex;flex-direction:column;}
+.leader-tbl{width:100%;border-collapse:collapse;margin-top:6px;flex:1;}
+.leader-tbl th{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink4);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);background:var(--bg);}
+.leader-tbl td{font-size:11px;color:var(--ink2);padding:5px 8px;border-bottom:1px solid var(--rule);}
+.leader-tbl tbody tr:hover td{background:#F9F8F5;}
+.leader-note{margin-top:12px;padding:8px 10px;background:var(--sage-bg);border-left:2px solid var(--sage);font-family:var(--mono);font-size:9px;color:var(--sage);line-height:1.5;}
+
+/* ── Footer ── */
+.footer{margin-top:40px;padding:16px 0;border-top:1px solid var(--rule);font-family:var(--mono);font-size:8px;color:var(--ink4);text-align:center;letter-spacing:0.1em;text-transform:uppercase;}
+.footer a{color:var(--ink4);text-decoration:none;}
+.footer a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="brand">AI <span>Monitor</span></div>
+    <div style="width:1px;height:12px;background:var(--rule2)"></div>
+    <div class="brand" style="font-weight:400;color:var(--ink3);">Indicator 1 — Model Improvement</div>
+  </div>
+  <div class="header-meta">
+    <div class="pill"><div class="dot" id="metr-dot"></div>METR P50</div>
+    <div class="pill"><div class="dot" id="eci-dot"></div>Epoch ECI</div>
+    <div id="last-update">Loading...</div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- KPI strip -->
+  <div class="section-row"><span class="section-label lg">Live Signals</span></div>
+  <div class="kpi-strip">
+    <div class="kpi nu">
+      <div class="kpi-label">Frontier P50</div>
+      <div class="kpi-value" id="kpi-p50">—</div>
+      <div class="kpi-sub">hours — METR Time Horizon</div>
+      <div class="kpi-delta nu" id="kpi-p50-delta">loading...</div>
+    </div>
+    <div class="kpi up">
+      <div class="kpi-label">6M Rolling Doubling Rate</div>
+      <div class="kpi-value">3.69</div>
+      <div class="kpi-sub">doublings / year (annualized)</div>
+      <div class="kpi-delta up">= 1 doubling / 3.3 months</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Frontier ECI</div>
+      <div class="kpi-value" id="kpi-eci">—</div>
+      <div class="kpi-sub">Epoch Capabilities Index</div>
+      <div class="kpi-delta nu" id="kpi-eci-delta">Claude 3.5 Sonnet = 130</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">ECI Slope</div>
+      <div class="kpi-value" id="kpi-eci-slope">—</div>
+      <div class="kpi-sub">points / year (12m rolling)</div>
+      <div class="kpi-delta nu" id="kpi-eci-slope-sub">post-2024 acceleration</div>
+    </div>
+  </div>
+  <div class="note" id="signal-note">Loading signal interpretation...</div>
+
+  <!-- ═══ MODULE 1: METR P50 ═══ -->
+  <div class="section-row"><span class="section-label lg">Module 1 — METR P50 Time Horizon · Task Difficulty AI Can Handle at 50% Success Rate</span></div>
+
+  <!-- P50 Trend full-width with toggle -->
+  <div class="card" style="margin-bottom:1px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;">
+      <div>
+        <div class="card-title">P50 Time Horizon — Frontier Trend</div>
+        <div class="card-sub" style="margin-bottom:0;">Max P50 per month across all evaluated models (hours). Exponential trend: ~7 months per doubling (historically).</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:24px;margin-top:2px;">
+        <span class="toggle-label">Scale:</span>
+        <button class="toggle-btn active" id="p50-linear" onclick="setP50Scale('linear')">Linear</button>
+        <button class="toggle-btn" id="p50-log" onclick="setP50Scale('log')">Log</button>
+      </div>
+    </div>
+    <div style="margin-top:18px;">
+      <canvas id="p50TrendChart" height="160"></canvas>
+    </div>
+  </div>
+
+  <!-- Doubling Rate Indicators -->
+  <div class="section-row"><span class="section-label lg">Doubling Rate Analysis — P50 Task Horizon Acceleration</span></div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Indicator 1 — 6-Month Rolling Doubling Rate (annualized)</div>
+      <div class="card-sub">For each new SOTA model, doublings vs best frontier 6 months prior · Formula: doublings_6m × (12 / gap_months)</div>
+      <div class="ind-kpi">
+        <div class="ind-value">3.69<span class="ind-unit">dbl/yr</span></div>
+        <div class="ind-sub">= 1 doubling every 3.3 months · Feb 2026</div>
+      </div>
+      <canvas id="doublingRateChart" height="190"></canvas>
+      <div class="ind-note">⚡ BREAKOUT Sep 2024 (o1-preview): 4.66 dbl/yr vs 1.52 six months prior · Sustained above 3.5 dbl/yr since</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Indicator 2 — Cumulative Doublings since GPT-4</div>
+      <div class="card-sub">Total P50 doublings since GPT-4 baseline (Mar 2023 = ×1) · Each doubling = 2× autonomous task capability</div>
+      <div class="ind-kpi">
+        <div class="ind-value">7.5<span class="ind-unit">dbl · ×180</span></div>
+        <div class="ind-sub">vs GPT-4 · Claude Opus 4.6 · Feb 2026</div>
+      </div>
+      <canvas id="cumulativeDoublingsChart" height="190"></canvas>
+      <div class="ind-note">×10 in 21 months (o1) → ×30 in 25 months (o3) → ×180 in 35 months (Claude Opus 4.6)</div>
+    </div>
+  </div>
+
+  <!-- METR Table -->
+  <div class="section-row"><span class="section-label lg">All METR Measurements — Latest Eval Version</span></div>
+  <div class="card" style="padding:0;">
+    <div style="overflow-x:auto;max-height:420px;overflow-y:auto;" class="tbl-scroll">
+      <table class="tbl" id="metr-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Model</th><th>Org</th><th>Release</th>
+            <th>P50 (hrs)</th><th>P80 (hrs)</th><th>CI 95%</th><th>Avg Score</th><th>Trend</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="9" class="loader">Loading METR data...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══ MODULE 2: ECI ═══ -->
+  <div class="section-row"><span class="section-label lg">Module 2 — Epoch Capabilities Index · General AI Capability Score (39 benchmarks)</span></div>
+
+  <!-- ECI Scatter + Leaderboard -->
+  <div class="grid-2-1" style="margin-bottom:1px;">
+    <div class="card">
+      <div class="card-title">ECI Score — Frontier over Time</div>
+      <div class="card-sub">epoch.ai/data/eci_benchmarks.csv · 39 benchmarks · Claude 3.5 Sonnet=130, GPT-5=150 · Dotted = running max</div>
+      <canvas id="eciScatterChart" height="300"></canvas>
+    </div>
+    <div class="eci-leader">
+      <div class="card-title">ECI Leaderboard</div>
+      <div class="card-sub">Top 12 by ECI score</div>
+      <table class="leader-tbl" id="eci-leader-table">
+        <thead><tr><th>#</th><th>Model</th><th>Dev</th><th>ECI</th></tr></thead>
+        <tbody><tr><td colspan="4" style="padding:20px;font-family:var(--mono);font-size:9px;color:var(--ink4);">Loading...</td></tr></tbody>
+      </table>
+      <div class="leader-note" id="eci-leader-note">Loading...</div>
+    </div>
+  </div>
+
+  <!-- ECI Slope Chart -->
+  <div class="card" style="margin-bottom:1px;">
+    <div class="card-title">ECI Progress Rate — Rolling 12-Month Slope (Pts/Year)</div>
+    <div class="card-sub">Inflection Apr 2024 (reasoning models + RL) — the most important structural signal for the investment thesis</div>
+    <canvas id="eciSlopeChart" height="200"></canvas>
+  </div>
+
+  <!-- ECI Table -->
+  <div class="section-row"><span class="section-label lg">All ECI Scores — Epoch AI Benchmarking Hub</span></div>
+  <div class="card" style="padding:0;">
+    <div style="overflow-x:auto;max-height:420px;overflow-y:auto;" class="tbl-scroll">
+      <table class="tbl" id="eci-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Model</th><th>Org</th><th>Release</th>
+            <th>ECI</th><th>CI Low</th><th>CI High</th><th>Access</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="8" class="loader">Loading ECI data...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MODULE 3 — GPU PRICING BAROMETER
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-row" style="margin-top:40px;">
+    <span class="section-label lg">Module 3 — GPU Pricing Barometer · $/GPU/hr · Spot Market Intelligence</span>
+  </div>
+
+  <!-- KPI strip GPU -->
+  <div class="kpi-strip" id="gpu-kpi-strip" style="grid-template-columns:repeat(5,1fr);">
+    <div class="kpi nu">
+      <div class="kpi-label">A100 On-Demand — Ampère (2020)</div>
+      <div class="kpi-value" id="gpu-kpi-a100-med">—</div>
+      <div class="kpi-sub">$/GPU/hr · on-demand · prior gen</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">H100 On-Demand — Hopper (2022)</div>
+      <div class="kpi-value" id="gpu-kpi-h100-med">—</div>
+      <div class="kpi-sub">$/GPU/hr · on-demand · all providers</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">B200 On-Demand — Blackwell (2025)</div>
+      <div class="kpi-value" id="gpu-kpi-b200-med">—</div>
+      <div class="kpi-sub">$/GPU/hr · on-demand · frontier GPU</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Training / Inference</div>
+      <div class="kpi-value" id="gpu-kpi-ratio">—</div>
+      <div class="kpi-sub">price ratio</div>
+      <div class="kpi-delta nu" id="gpu-kpi-ratio-sub">training premium vs inference</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Hyperscaler Premium H100</div>
+      <div class="kpi-value" id="gpu-kpi-hyp-prem">—</div>
+      <div class="kpi-sub">$/hr vs neocloud</div>
+      <div class="kpi-delta nu" id="gpu-kpi-hyp-prem-sub">hyperscaler − neocloud</div>
+    </div>
+  </div>
+
+  <!-- Row 0: Price per Provider per GPU — full width grouped bar -->
+  <div class="card" style="margin-top:1px;margin-bottom:1px;">
+    <div class="card-title">$/GPU/hr On-Demand — Per Provider per GPU</div>
+    <div class="card-sub">
+      On-demand median price per cloud provider for H100, H200, B200, A100 · sorted by price within each GPU group
+    </div>
+    <canvas id="gpuProviderGroupedChart" height="180"></canvas>
+  </div>
+
+  <!-- Row 1: By GPU Type + Aggregate Inference vs Training -->
+  <div class="grid-2" style="margin-top:1px;">
+
+    <!-- GPU by Name distribution -->
+    <div class="card">
+      <div class="card-title">$/GPU/hr — Distribution by GPU Model</div>
+      <div class="card-sub">P25 / Median / P75 / Mean across all providers · on-demand pricing only</div>
+      <canvas id="gpuByNameChart" height="220"></canvas>
+      <table class="tbl" style="margin-top:14px;font-size:10px;" id="gpu-name-table">
+        <thead>
+          <tr>
+            <th>GPU</th><th>N</th><th>Min</th>
+            <th>P25</th><th>Median</th><th>Mean</th><th>P75</th><th>Max</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="8" style="padding:10px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+      </table>
+    </div>
+
+    <!-- Aggregate Inference vs Training -->
+    <div class="card">
+      <div class="card-title">$/GPU/hr — Inference vs Training</div>
+      <div class="card-sub">Inference vs Training · on-demand pricing only · ratio highlighted</div>
+      <canvas id="gpuAggChart" height="220"></canvas>
+      <div style="margin-top:18px;" id="gpu-ratio-note">
+        <div style="background:var(--gold-bg);border-left:2px solid var(--gold);padding:10px 14px;font-size:11px;color:var(--sand);">
+          Training/Inference ratio: <strong id="gpu-ratio-val">—</strong>
+          &nbsp;·&nbsp; Training commands a <strong id="gpu-ratio-pct">—</strong> premium
+          <div style="font-size:10px;color:var(--ink4);margin-top:4px;">
+            Structural: training needs sustained high-memory bandwidth, inference is bursty → different supply/demand dynamics
+          </div>
+        </div>
+      </div>
+      <table class="tbl" style="margin-top:14px;font-size:10px;" id="gpu-agg-table">
+        <thead>
+          <tr>
+            <th>Workload</th><th>N</th><th>Min</th>
+            <th>P25</th><th>Median</th><th>Mean</th><th>P75</th><th>Max</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="8" style="padding:10px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Row 2: Hyperscaler vs Neocloud + Time Series -->
+  <div class="grid-2" style="margin-top:1px;">
+
+    <!-- Provider: Hyperscaler vs Neocloud -->
+    <div class="card">
+      <div class="card-title">$/GPU/hr — Hyperscaler vs Neocloud (H100)</div>
+      <div class="card-sub">Hyperscaler vs Neocloud · H100 on-demand pricing only</div>
+      <canvas id="gpuProvChart" height="220"></canvas>
+      <div style="margin-top:18px;" id="gpu-hyp-note">
+        <div style="background:var(--gold-bg);border-left:2px solid var(--gold);padding:10px 14px;font-size:11px;color:var(--sand);">
+          Hyperscaler H100 premium: <strong id="gpu-hyp-prem-val">—</strong>
+          &nbsp;·&nbsp; Hyperscaler median: <strong id="gpu-hyp-med-val">—</strong>
+          &nbsp;vs&nbsp; Neocloud median: <strong id="gpu-neo-med-val">—</strong>
+          <div style="font-size:10px;color:var(--ink4);margin-top:4px;">
+            Premium reflects SLA, compliance, integration with managed cloud services (VPC, IAM, etc.)
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:14px;overflow-x:auto;">
+        <table class="tbl" id="gpu-prov-table">
+          <thead>
+            <tr>
+              <th>Provider Type</th>
+              <th>Count</th>
+              <th>P25</th>
+              <th>Median</th>
+              <th>Mean</th>
+              <th>P75</th>
+              <th>Min:Max</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="7" style="padding:12px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Time Series — spot vs on-demand for each GPU -->
+    <div class="card">
+      <div class="card-title">Price Evolution — Spot vs On-Demand Over Time</div>
+      <div class="card-sub">Daily median $/GPU/hr · solid line = on-demand · dashed = spot</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px;">
+        <div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--ink3);margin-bottom:6px;">H100</div>
+          <canvas id="gpuTsH100" height="140"></canvas>
+        </div>
+        <div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--ink3);margin-bottom:6px;">H200</div>
+          <canvas id="gpuTsH200" height="140"></canvas>
+        </div>
+        <div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--ink3);margin-bottom:6px;">B200</div>
+          <canvas id="gpuTsB200" height="140"></canvas>
+        </div>
+        <div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--ink3);margin-bottom:6px;">A100</div>
+          <canvas id="gpuTsA100" height="140"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coming Soon placeholder -->
+    <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:420px;">
+      <div style="text-align:center;padding:40px;">
+        <div style="font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:0.2em;color:var(--ink4);margin-bottom:20px;">Coming Soon</div>
+        <div style="font-size:22px;font-weight:300;color:var(--ink3);margin-bottom:16px;">Time Series</div>
+        <div style="font-size:11px;color:var(--ink4);line-height:1.8;max-width:280px;">
+          Évolution temporelle des prix spot GPU :<br>
+          <span style="color:var(--ink3);">· H100 / B200 / A100 median hebdo</span><br>
+          <span style="color:var(--ink3);">· Hyperscaler vs Neocloud trend</span><br>
+          <span style="color:var(--ink3);">· Training/Inference ratio trend</span><br>
+          <span style="color:var(--ink3);">· Détection de breakouts prix</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- PASTE THIS BLOCK in index.html just before the footer div -->
+
+  <!-- ═══ MODULE 3: OPENROUTER TOKEN USAGE ═══ -->
+  <div class="section-row"><span class="section-label lg">Module 4 — OpenRouter Weekly Token Usage · Real Usage Across LLM Providers</span></div>
+
+  <!-- KPI strip tokens -->
+  <div class="kpi-strip" id="or-kpi-strip">
+    <div class="kpi nu">
+      <div class="kpi-label">Latest Week Total</div>
+      <div class="kpi-value" id="or-kpi-total">—</div>
+      <div class="kpi-sub">trillion tokens</div>
+      <div class="kpi-delta nu" id="or-kpi-total-delta">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Week-on-Week Growth</div>
+      <div class="kpi-value" id="or-kpi-wow">—</div>
+      <div class="kpi-sub">% change vs prior week</div>
+      <div class="kpi-delta nu" id="or-kpi-wow-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">52-Week Growth</div>
+      <div class="kpi-value" id="or-kpi-ytd">—</div>
+      <div class="kpi-sub">× since first week tracked</div>
+      <div class="kpi-delta nu" id="or-kpi-ytd-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Top Model This Week</div>
+      <div class="kpi-value" id="or-kpi-top" style="font-size:13px;line-height:1.2;padding-top:4px;">—</div>
+      <div class="kpi-sub" id="or-kpi-top-share">loading...</div>
+      <div class="kpi-delta nu" id="or-kpi-top-sub"></div>
+    </div>
+  </div>
+
+  <!-- Stacked bar chart + model table -->
+  <div class="grid-2-1" style="margin-bottom:1px;">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;">
+        <div>
+          <div class="card-title">Weekly Token Volume — Top Models (Stacked)</div>
+          <div class="card-sub" style="margin-bottom:0;">Trillion tokens/week · Top 9 models + Others · Source: openrouter.ai/rankings</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:24px;margin-top:2px;">
+          <span class="toggle-label">View:</span>
+          <button class="toggle-btn active" id="or-abs-btn" onclick="setOrView('absolute')">Absolute</button>
+          <button class="toggle-btn" id="or-pct-btn"  onclick="setOrView('percent')">% Share</button>
+        </div>
+      </div>
+      <div style="margin-top:18px;">
+        <canvas id="orStackedChart" height="220"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Model Leaderboard — All-Time Volume</div>
+      <div class="card-sub">Cumulative tokens since Apr 2025 tracking start</div>
+      <table class="leader-tbl" id="or-model-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Model</th>
+            <th>Total (T)</th>
+            <th>Peak wk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4" style="padding:20px;font-family:var(--mono);font-size:9px;color:var(--ink4);">Loading...</td></tr>
+        </tbody>
+      </table>
+      <div class="leader-note" id="or-leader-note" style="margin-top:12px;">Loading...</div>
+    </div>
+  </div>
+
+  <!-- WoW Growth chart -->
+  <div class="card" style="margin-bottom:1px;">
+    <div class="card-title">Week-on-Week Token Growth % — OpenRouter Platform</div>
+    <div class="card-sub">Green = growth · Red = contraction · Reflects model launches and adoption spikes</div>
+    <canvas id="orWowChart" height="160"></canvas>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       MODULE 5 — HUGGINGFACE MODEL DEMAND
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-row" style="margin-top:40px;">
+    <span class="section-label lg">Module 5 — HuggingFace Model Demand · Open-Source Deployment Intelligence</span>
+  </div>
+  <div class="note" style="margin-bottom:1px;">
+    ⚠ HuggingFace measures <strong>open-source local deployments</strong>, not API usage.
+    Anthropic (Claude = API-only) is absent. OpenAI/Google downloads reflect legacy models (CLIP, BERT, Whisper), not frontier LLMs.
+    Meta's 48% share is RoBERTa, not Llama. <strong>Use as deployment proxy, not revenue proxy.</strong>
+  </div>
+
+  <!-- KPI strip -->
+  <div class="kpi-strip" id="hf-kpi-strip" style="grid-template-columns:repeat(4,1fr);">
+    <div class="kpi nu">
+      <div class="kpi-label">Total Downloads Top 500</div>
+      <div class="kpi-value" id="hf-kpi-total">—</div>
+      <div class="kpi-sub">30-day downloads · top 500 models</div>
+      <div class="kpi-delta nu" id="hf-kpi-total-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Top Pipeline</div>
+      <div class="kpi-value" id="hf-kpi-top-pipe" style="font-size:14px;padding-top:4px;">—</div>
+      <div class="kpi-sub" id="hf-kpi-top-pipe-share">share of total DL</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Top Velocity Model</div>
+      <div class="kpi-value" id="hf-kpi-top-vel" style="font-size:13px;padding-top:4px;line-height:1.2;">—</div>
+      <div class="kpi-sub" id="hf-kpi-top-vel-sub">DL / age_days</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Top Growth 7d</div>
+      <div class="kpi-value" id="hf-kpi-top-growth" style="font-size:14px;padding-top:4px;">—</div>
+      <div class="kpi-sub" id="hf-kpi-top-growth-sub">model · WoW % change</div>
+    </div>
+  </div>
+
+  <!-- Row 0: Total Downloads over time — full width -->
+  <div class="card" style="margin-top:1px;margin-bottom:1px;">
+    <div class="card-title">Total Downloads Top 500 — Evolution Over Time</div>
+    <div class="card-sub">
+      Sum of 30-day downloads across top 500 models · daily snapshot · proxy for total open-source AI deployment demand
+    </div>
+    <canvas id="hfTotalDLChart" height="140"></canvas>
+  </div>
+
+  <!-- Row 1: Company Share (bar) + Pipeline Share (donut) -->
+  <div class="grid-2" style="margin-top:1px;">
+    <div class="card">
+      <div class="card-title">Company Market Share — Downloads</div>
+      <div class="card-sub">% of total top-500 downloads aggregated per company · multi-account mapping applied</div>
+      <canvas id="hfCompanyChart" height="240"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">Pipeline Tag Share — Use-Case Demand</div>
+      <div class="card-sub">% of total downloads by use-case · text-gen vs image vs audio vs NLP</div>
+      <canvas id="hfPipelineChart" height="240"></canvas>
+    </div>
+  </div>
+
+  <!-- Row 2: Top Velocity + Top Growth tables -->
+  <div class="grid-2" style="margin-top:1px;">
+    <div class="card">
+      <div class="card-title">Top 20 Velocity — Emerging Winners</div>
+      <div class="card-sub">Downloads / age_days · new models capturing market fast · min 10k DL</div>
+      <div style="overflow-y:auto;max-height:340px;" class="tbl-scroll">
+        <table class="tbl" id="hf-velocity-table">
+          <thead><tr>
+            <th>#</th><th>Model</th><th>Company</th><th>Pipeline</th>
+            <th>DL 30d</th><th>Velocity</th><th>Like Ratio</th>
+          </tr></thead>
+          <tbody><tr><td colspan="7" style="padding:16px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Top 20 Growth 7d — Momentum Signal</div>
+      <div class="card-sub">WoW % change in downloads · established models with accelerating demand · min 50k DL</div>
+      <div style="overflow-y:auto;max-height:340px;" class="tbl-scroll">
+        <table class="tbl" id="hf-growth-table">
+          <thead><tr>
+            <th>#</th><th>Model</th><th>Company</th><th>Pipeline</th>
+            <th>DL 30d</th><th>G7d %</th><th>Like Ratio</th>
+          </tr></thead>
+          <tbody><tr><td colspan="7" style="padding:16px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3: Like Ratio scatter + Company share table -->
+  <div class="grid-2" style="margin-top:1px;margin-bottom:1px;">
+    <div class="card">
+      <div class="card-title">Like Ratio — Engagement Quality Signal</div>
+      <div class="card-sub">Likes / downloads_30d · higher = more community interest relative to usage · top 40 models by DL</div>
+      <canvas id="hfLikeRatioChart" height="240"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">Company Share — Detail Table</div>
+      <div class="card-sub">Latest snapshot · multi-account mapping · sorted by downloads</div>
+      <table class="tbl" id="hf-company-table">
+        <thead><tr>
+          <th>Company</th><th>DL 30d</th><th>Share</th>
+          <th>Models</th><th>Avg Like Ratio</th><th>G7d Avg</th>
+        </tr></thead>
+        <tbody><tr><td colspan="6" style="padding:16px;color:var(--ink4);font-family:var(--mono);font-size:9px;">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<div class="footer">
+  Data: <a href="https://metr.org/time-horizons/" target="_blank">METR Time Horizons</a>
+  &nbsp;·&nbsp;
+  <a href="https://epoch.ai/benchmarks/eci" target="_blank">Epoch AI ECI</a>
+  &nbsp;·&nbsp;
+  Updated every Monday via GitHub Actions
+  &nbsp;·&nbsp;
+  AI Monitor — Model Improvement Indicator
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// CONFIG
+// ══════════════════════════════════════════════════════════
+const DATA = {
+  metrTrend:       'data/metr_frontier_trend.csv',
+  metrBest:        'data/metr_p50_best.csv',
+  eciTrend:        'data/eci_frontier_trend.csv',
+  eciBest:         'data/epoch_eci_best.csv',
+  gpuIndex:        'data/gpu_index_history.csv',
+  gpuLatest:       'data/gpu_index_latest.csv',
+  hfLatest:        'data/hf_models_latest.csv',
+  hfHistory:       'data/hf_models_history.csv',
+  hfCompanyShare:  'data/hf_company_share.csv',
+  hfPipelineShare: 'data/hf_pipeline_share.csv',
+  hfTopVelocity:   'data/hf_top_velocity.csv',
+  hfTopGrowth:     'data/hf_top_growth.csv',
+};
+
+Chart.defaults.color       = '#7A756A';
+Chart.defaults.font.family = "'Roboto Mono', monospace";
+Chart.defaults.font.size   = 9;
+const gridColor = 'rgba(0,0,0,0.04)';
+
+const C = {
+  gold:      '#8B6914',  goldA:  'rgba(139,105,20,0.10)',
+  sage:      '#2E6651',  sageA:  'rgba(46,102,81,0.10)',
+  blue:      '#2A5A7A',  blueA:  'rgba(42,90,122,0.08)',
+  umber:     '#8B2E2E',  sand:   '#7A5A2A',
+  ink3:      '#7A756A',  ink4:   '#B0A99E',
+  // org colors
+  openai:    '#4A7FBF',
+  anthropic: '#B5602A',
+  google:    '#7A7A1A',
+  xai:       '#3D3A34',
+  deepseek:  '#2E6651',
+  meta:      '#9A9590',
+  // period colors
+  preBrk:   '#A8BFD0',
+  postBrk:  '#6B9E8A',
+};
+
+// ══════════════════════════════════════════════════════════
+// CSV PARSER
+// ══════════════════════════════════════════════════════════
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const hdrs  = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g,''));
+  return lines.slice(1).filter(l => l.trim()).map(line => {
+    const vals = []; let cur = '', inQ = false;
+    for (const ch of line) {
+      if (ch === '"') { inQ = !inQ; }
+      else if (ch === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
+      else cur += ch;
+    }
+    vals.push(cur.trim());
+    const obj = {};
+    hdrs.forEach((h, i) => obj[h] = (vals[i]||'').replace(/^"|"$/g,''));
+    return obj;
+  });
+}
+
+async function loadCSV(path) {
+  try {
+    const r = await fetch(path + '?t=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    return parseCSV(await r.text());
+  } catch(e) { console.warn('CSV load failed:', path, e); return []; }
+}
+
+// ══════════════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════════════
+const f1 = v => v ? (+v).toFixed(1) : '—';
+const fd = s => s ? s.slice(0,7) : '—';
+const fh = v => {
+  if (!v || isNaN(+v)) return '—';
+  const h = +v;
+  if (h < 1)  return Math.round(h*60)+'m';
+  if (h < 24) return h.toFixed(1)+'h';
+  return (h/24).toFixed(1)+'d';
+};
+
+function statusDot(id, ok) {
+  document.getElementById(id).className = 'dot '+(ok?'live':'warn');
+}
+
+function orgKey(org) {
+  const o = (org||'').toLowerCase();
+  if (o.includes('openai'))    return 'openai';
+  if (o.includes('anthropic')) return 'anthropic';
+  if (o.includes('google'))    return 'google';
+  if (o.includes('xai')||o.includes('x.ai')) return 'xai';
+  if (o.includes('deepseek'))  return 'deepseek';
+  if (o.includes('meta'))      return 'meta';
+  return 'other';
+}
+
+function orgBadgeCls(org) {
+  const k = orgKey(org);
+  return k === 'other' ? '' : 'badge-'+k;
+}
+
+// ══════════════════════════════════════════════════════════
+// LOG/LINEAR TOGGLE
+// ══════════════════════════════════════════════════════════
+let p50Chart = null;
+
+function setP50Scale(type) {
+  if (!p50Chart) return;
+  p50Chart.options.scales.y.type = type === 'log' ? 'logarithmic' : 'linear';
+  p50Chart.update();
+  document.getElementById('p50-linear').classList.toggle('active', type === 'linear');
+  document.getElementById('p50-log').classList.toggle('active', type === 'log');
+}
+
+// ══════════════════════════════════════════════════════════
+// DOUBLING COMPUTATION
+// ══════════════════════════════════════════════════════════
+function computeDoublingMonths(trend) {
+  const pts = trend
+    .filter(r => r.frontier_p50_hours && +r.frontier_p50_hours > 0)
+    .map(r => ({
+      t: new Date(r.month+'-01').getTime()/(1000*60*60*24*30.44),
+      v: Math.log2(+r.frontier_p50_hours)
+    }));
+  if (pts.length < 2) return null;
+  const n=pts.length, sumT=pts.reduce((s,p)=>s+p.t,0), sumV=pts.reduce((s,p)=>s+p.v,0),
+        sumTT=pts.reduce((s,p)=>s+p.t*p.t,0), sumTV=pts.reduce((s,p)=>s+p.t*p.v,0);
+  const b=(n*sumTV-sumT*sumV)/(n*sumTT-sumT*sumT);
+  return b>0 ? Math.round(1/b) : null;
+}
+
+function computeEciSlope(trend) {
+  const cutoff=new Date(); cutoff.setFullYear(cutoff.getFullYear()-1);
+  const pts=trend
+    .filter(r=>r.frontier_eci&&r.month&&new Date(r.month+'-01')>=cutoff)
+    .map(r=>({t:new Date(r.month+'-01').getTime()/(1000*60*60*24*365.25),v:+r.frontier_eci}));
+  if (pts.length<2) return null;
+  const n=pts.length, sumT=pts.reduce((s,p)=>s+p.t,0), sumV=pts.reduce((s,p)=>s+p.v,0),
+        sumTT=pts.reduce((s,p)=>s+p.t*p.t,0), sumTV=pts.reduce((s,p)=>s+p.t*p.v,0);
+  return Math.round((n*sumTV-sumT*sumV)/(n*sumTT-sumT*sumT));
+}
+
+// ══════════════════════════════════════════════════════════
+// INDICATOR 1 — 6-MONTH ROLLING DOUBLING RATE
+// ══════════════════════════════════════════════════════════
+function buildDoublingRateChart() {
+  const labels = ['Mar 23','Nov 23','May 24','Sep 24','Feb 25','Apr 25','Aug 25','Feb 26'];
+  const values = [2.73, 0.03, 1.52, 4.66, 4.60, 4.47, 2.47, 3.69];
+  const notes  = ['GPT-4 appears','stagnation (GPT-4 Turbo ≈ GPT-4)','slow recovery','BREAKOUT — o1-preview','sustained pace','o3 confirms','apparent slowdown','reacceleration — Claude Opus 4.6'];
+  const colors = values.map((_,i) => i>=3 ? C.postBrk : C.preBrk);
+
+  const ctx = document.getElementById('doublingRateChart');
+  if (!ctx) return;
+
+  const baselinePlugin = {
+    id:'dblBaseline',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.y) return;
+      const yPx=scales.y.getPixelForValue(2.0);
+      c.save();
+      c.beginPath(); c.setLineDash([5,4]); c.strokeStyle=C.gold; c.lineWidth=1;
+      c.moveTo(chartArea.left,yPx); c.lineTo(chartArea.right,yPx); c.stroke();
+      c.setLineDash([]); c.fillStyle=C.gold; c.font="8px 'Roboto Mono'"; c.textAlign='right';
+      c.fillText('2.0 dbl/yr pre-breakout avg', chartArea.right-4, yPx-4);
+      c.restore();
+    }
+  };
+
+  new Chart(ctx, {
+    type:'bar',
+    data:{ labels, datasets:[{ data:values, backgroundColor:colors, borderWidth:0, borderRadius:2 }] },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{
+          label: c=>`${c.formattedValue} dbl/yr`,
+          afterLabel: c=>notes[c.dataIndex]||''
+        }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{ grid:{color:gridColor}, beginAtZero:true, max:6, ticks:{callback:v=>v.toFixed(1)} }
+      }
+    },
+    plugins:[baselinePlugin]
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// INDICATOR 2 — CUMULATIVE DOUBLINGS SINCE GPT-4
+// ══════════════════════════════════════════════════════════
+function buildCumulativeDoublingsChart() {
+  const pts = [
+    { x:'2023-03', y:0.0, mult:1,   label:'GPT-4 baseline' },
+    { x:'2024-12', y:3.3, mult:10,  label:'o1 — ×10 in 21 months' },
+    { x:'2025-04', y:4.9, mult:30,  label:'o3 — ×30 in 25 months' },
+    { x:'2026-02', y:7.5, mult:180, label:'Claude Opus 4.6 — ×180 in 35 months' },
+  ];
+
+  const ctx = document.getElementById('cumulativeDoublingsChart');
+  if (!ctx) return;
+
+  new Chart(ctx, {
+    type:'line',
+    data:{
+      labels: pts.map(d=>d.x),
+      datasets:[{
+        label:'Cumulative doublings',
+        data: pts.map(d=>d.y),
+        borderColor: C.sage,
+        backgroundColor: C.sageA,
+        tension:0.3, pointRadius:7, pointHoverRadius:9, fill:true,
+        pointBackgroundColor: pts.map((_,i)=>i===pts.length-1?C.sage:'#FFFFFF'),
+        pointBorderColor: C.sage, pointBorderWidth:2,
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{
+          label: c=>`${c.formattedValue} doublings`,
+          afterLabel: c=>`×${pts[c.dataIndex].mult} vs GPT-4 · ${pts[c.dataIndex].label}`
+        }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{
+          grid:{color:gridColor}, beginAtZero:true, max:9,
+          ticks:{ callback: v=>{
+            const m=Math.pow(2,v);
+            if(m>=100) return '×'+Math.round(m);
+            return v.toFixed(1)+' dbl';
+          }}
+        }
+      }
+    }
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// ECI SLOPE CHART (hardcoded analytical data)
+// ══════════════════════════════════════════════════════════
+function buildEciSlopeChart() {
+  const labels = ['H2 22','H1 23','H2 23','H1 24','H2 24','H1 25','H2 25','Q1 26'];
+  const values = [5.1, 7.8, 8.1, 8.4, 14.1, 15.8, 16.1, 15.4];
+  const colors = labels.map((_,i)=>i<4?C.preBrk:C.postBrk);
+
+  const ctx = document.getElementById('eciSlopeChart');
+  if (!ctx) return;
+
+  const baselinePlugin = {
+    id:'eciBaseline',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.y) return;
+      const yPx=scales.y.getPixelForValue(8.3);
+      c.save();
+      c.beginPath(); c.setLineDash([6,4]); c.strokeStyle=C.gold; c.lineWidth=1.5;
+      c.moveTo(chartArea.left,yPx); c.lineTo(chartArea.right,yPx); c.stroke();
+      c.setLineDash([]); c.fillStyle=C.gold; c.font="8px 'Roboto Mono'"; c.textAlign='right';
+      c.fillText('8.3 pts/yr baseline pre-Apr 2024', chartArea.right-4, yPx-5);
+      c.restore();
+    }
+  };
+
+  new Chart(ctx, {
+    type:'bar',
+    data:{ labels, datasets:[{ data:values, backgroundColor:colors, borderWidth:0, borderRadius:2 }] },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{ callbacks:{ label:c=>`${c.formattedValue} pts/yr (rolling 12m)` }}
+      },
+      scales:{
+        x:{ grid:{color:'transparent'} },
+        y:{ grid:{color:gridColor}, beginAtZero:true, max:18, ticks:{callback:v=>v} }
+      }
+    },
+    plugins:[baselinePlugin]
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// LOAD METR
+// ══════════════════════════════════════════════════════════
+async function loadMETR() {
+  const [trend, best] = await Promise.all([loadCSV(DATA.metrTrend), loadCSV(DATA.metrBest)]);
+
+  if (!trend.length && !best.length) {
+    document.querySelector('#metr-table tbody').innerHTML =
+      '<tr><td colspan="9" class="err">No METR data. Run: python collector.py</td></tr>';
+    return;
+  }
+  statusDot('metr-dot', true);
+
+  // KPI Frontier P50
+  const sorted  = [...trend].sort((a,b)=>b.month.localeCompare(a.month));
+  const latest  = sorted[0], prev = sorted[1];
+  const currP50 = latest?+latest.frontier_p50_hours:null;
+  const prevP50 = prev?+prev.frontier_p50_hours:null;
+  if (currP50) {
+    document.getElementById('kpi-p50').textContent = fh(currP50);
+    if (prevP50&&prevP50>0) {
+      const pct=(currP50-prevP50)/prevP50*100;
+      const el=document.getElementById('kpi-p50-delta');
+      el.textContent=(pct>=0?'↑':'↓')+Math.abs(pct).toFixed(1)+'% vs prior month';
+      el.className='kpi-delta '+(pct>=0?'up':'dn');
+      document.querySelector('.kpi-strip .kpi:first-child').className='kpi '+(pct>=0?'up':'dn');
+    }
+  }
+
+  // P50 Trend chart
+  const tLabels = trend.map(r=>r.month);
+  const tVals   = trend.map(r=>r.frontier_p50_hours?+r.frontier_p50_hours:null);
+  const dbl     = computeDoublingMonths(trend)||7;
+  const startV  = tVals.find(v=>v);
+  const tExp    = tLabels.map((_,i)=>startV?startV*Math.pow(2,i/dbl):null);
+
+  const ctx = document.getElementById('p50TrendChart');
+  if (ctx) {
+    p50Chart = new Chart(ctx, {
+      type:'line',
+      data:{ labels:tLabels, datasets:[
+        { label:'Frontier P50 (hrs)', data:tVals, borderColor:C.gold, backgroundColor:C.goldA,
+          tension:0.3, pointRadius:3, pointHoverRadius:5 },
+        { label:'Exp. trend', data:tExp, borderColor:C.ink4, borderDash:[4,3],
+          pointRadius:0, tension:0, borderWidth:1 }
+      ]},
+      options:{
+        responsive:true,
+        plugins:{
+          legend:{display:true, labels:{boxWidth:8, padding:10, font:{size:9}}},
+          tooltip:{callbacks:{label:c=>c.dataset.label+': '+fh(c.raw)}}
+        },
+        scales:{
+          x:{grid:{color:gridColor}, ticks:{maxTicksLimit:12}},
+          y:{type:'linear', grid:{color:gridColor}, beginAtZero:false,
+             ticks:{callback:v=>fh(v)}}
+        }
+      }
+    });
+  }
+
+  // METR Table
+  const rows   = [...best].sort((a,b)=>+b.p50_hours-+a.p50_hours);
+  const maxP50 = Math.max(...rows.map(r=>+r.p50_hours||0));
+  document.querySelector('#metr-table tbody').innerHTML = rows.map((r,i)=>{
+    const barW = Math.round(((+r.p50_hours||0)/maxP50)*80);
+    const ci   = r.ci_low_hours&&r.ci_high_hours?`${fh(r.ci_low_hours)} – ${fh(r.ci_high_hours)}`:'—';
+    return `<tr>
+      <td class="mono" style="color:var(--ink4)">${i+1}</td>
+      <td><strong>${r.model_name||'—'}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}">${r.organization||'—'}</span></td>
+      <td class="mono">${fd(r.release_date)}</td>
+      <td class="mono"><strong>${fh(r.p50_hours)}</strong></td>
+      <td class="mono">${fh(r.p80_hours)}</td>
+      <td class="mono" style="font-size:9px;color:var(--ink3)">${ci}</td>
+      <td class="mono">${r.average_score?(+r.average_score*100).toFixed(1)+'%':'—'}</td>
+      <td><div class="bar-wrap"><div class="bar" style="width:${barW}px"></div></div></td>
+    </tr>`;
+  }).join('')||'<tr><td colspan="9" style="color:var(--ink4);padding:20px">No data</td></tr>';
+
+  document.getElementById('last-update').textContent = 'METR: '+(latest?.month||'?');
+}
+
+// ══════════════════════════════════════════════════════════
+// LOAD ECI
+// ══════════════════════════════════════════════════════════
+async function loadECI() {
+  const [trend, best] = await Promise.all([loadCSV(DATA.eciTrend), loadCSV(DATA.eciBest)]);
+
+  if (!trend.length && !best.length) {
+    document.querySelector('#eci-table tbody').innerHTML =
+      '<tr><td colspan="8" class="err">No ECI data. Run: python collector.py</td></tr>';
+    return;
+  }
+  statusDot('eci-dot', true);
+
+  // KPI Frontier ECI
+  const sorted  = [...trend].sort((a,b)=>b.month.localeCompare(a.month));
+  const latest  = sorted[0], prev = sorted[1];
+  const currECI = latest?+latest.frontier_eci:null;
+  const prevECI = prev?+prev.frontier_eci:null;
+  if (currECI) {
+    document.getElementById('kpi-eci').textContent = f1(currECI);
+    if (prevECI) {
+      const delta=currECI-prevECI;
+      const el=document.getElementById('kpi-eci-delta');
+      el.textContent=(delta>=0?'↑':'↓')+Math.abs(delta).toFixed(1)+' pts vs prior month';
+      el.className='kpi-delta '+(delta>=0?'up':'dn');
+      document.querySelector('.kpi-strip .kpi:nth-child(3)').className='kpi '+(delta>=0?'up':'dn');
+    }
+  }
+
+  // KPI ECI Slope
+  const slope = computeEciSlope(trend);
+  if (slope!==null) {
+    document.getElementById('kpi-eci-slope').textContent = slope;
+    document.getElementById('kpi-eci-slope-sub').textContent = 'pts/yr · 12m rolling OLS';
+    document.querySelector('.kpi-strip .kpi:nth-child(4)').className =
+      'kpi '+(slope>12?'up':slope>6?'nu':'dn');
+  }
+
+  // ── ECI Scatter Chart ──────────────────────────────────
+  const ORG_LIST = [
+    {label:'OpenAI',    key:'openai',    color:C.openai},
+    {label:'Anthropic', key:'anthropic', color:C.anthropic},
+    {label:'Google',    key:'google',    color:C.google},
+    {label:'xAI',       key:'xai',       color:C.xai},
+    {label:'DeepSeek',  key:'deepseek',  color:C.deepseek},
+    {label:'Meta',      key:'meta',      color:C.meta},
+  ];
+
+  // Convert date strings to timestamps for numeric x-axis
+  const toTs = s => s ? new Date(s).getTime() : null;
+
+  const scatterDatasets = ORG_LIST.map(org => ({
+    label: org.label,
+    data: best
+      .filter(r => orgKey(r.organization)===org.key && r.release_date && r.eci && +r.eci>0)
+      .map(r => ({ x:toTs(r.release_date), y:+r.eci, name:r.model_name||r.model_slug||'?' })),
+    backgroundColor: org.color+'CC',
+    borderColor: org.color,
+    pointRadius: 6,
+    pointHoverRadius: 9,
+    showLine: false,
+  }));
+
+  // Other orgs
+  const knownKeys = ORG_LIST.map(o=>o.key);
+  const otherPts  = best.filter(r=>!knownKeys.includes(orgKey(r.organization))&&r.release_date&&r.eci&&+r.eci>0)
+                        .map(r=>({x:toTs(r.release_date),y:+r.eci,name:r.model_name||'?'}));
+  if (otherPts.length) {
+    scatterDatasets.push({ label:'Other', data:otherPts,
+      backgroundColor:C.ink4+'CC', borderColor:C.ink4, pointRadius:5, pointHoverRadius:7, showLine:false });
+  }
+
+  // Frontier running-max line from trend data
+  const frontierPts = [...trend]
+    .filter(r=>r.month&&r.frontier_eci&&+r.frontier_eci>0)
+    .sort((a,b)=>a.month.localeCompare(b.month))
+    .map(r=>({x:toTs(r.month+'-01'), y:+r.frontier_eci}));
+
+  scatterDatasets.push({
+    label:'Frontier max',
+    data: frontierPts,
+    borderColor:'rgba(0,0,0,0.20)',
+    backgroundColor:'transparent',
+    borderDash:[3,3], borderWidth:1.5,
+    pointRadius:0, showLine:true, tension:0, order:99,
+  });
+
+  // Custom plugin: vertical breakpoint line
+  const breakpointPlugin = {
+    id:'eciBreakpoint',
+    afterDraw(chart) {
+      const {ctx:c,chartArea,scales}=chart; if(!scales.x) return;
+      const xPx=scales.x.getPixelForValue(new Date('2024-04-01').getTime());
+      c.save();
+      c.beginPath(); c.setLineDash([5,4]); c.strokeStyle='#C4813A'; c.lineWidth=1.5;
+      c.moveTo(xPx,chartArea.top); c.lineTo(xPx,chartArea.bottom); c.stroke();
+      c.setLineDash([]); c.fillStyle='#C4813A'; c.font="8px 'Roboto Mono'";
+      c.textAlign='center';
+      c.fillText('Apr 2024 breakpoint', xPx, chartArea.bottom+16);
+      c.restore();
+    }
+  };
+
+  const scatterCtx = document.getElementById('eciScatterChart');
+  if (scatterCtx) {
+    new Chart(scatterCtx, {
+      type:'scatter',
+      data:{ datasets:scatterDatasets },
+      options:{
+        responsive:true,
+        layout:{ padding:{ bottom:20 } },
+        plugins:{
+          legend:{
+            display:true,
+            labels:{ boxWidth:8, padding:12, font:{size:9},
+              filter:item=>item.text!=='Frontier max'
+            }
+          },
+          tooltip:{ callbacks:{
+            label:c=>c.raw.name
+              ? `${c.raw.name}: ${c.raw.y?.toFixed(1)}`
+              : `${c.dataset.label}: ${c.raw.y?.toFixed(1)}`
+          }}
+        },
+        scales:{
+          x:{
+            type:'linear',
+            grid:{color:gridColor},
+            ticks:{
+              maxTicksLimit:8,
+              callback: v => {
+                const d=new Date(v);
+                return d.toLocaleDateString('en-GB',{month:'short',year:'2-digit'});
+              }
+            }
+          },
+          y:{ grid:{color:gridColor}, beginAtZero:false, ticks:{callback:v=>v.toFixed(0)} }
+        }
+      },
+      plugins:[breakpointPlugin]
+    });
+  }
+
+  // ── ECI Leaderboard table (right panel) ────────────────
+  const top12 = [...best]
+    .filter(r=>r.eci&&+r.eci>0)
+    .sort((a,b)=>+b.eci-+a.eci)
+    .slice(0,12);
+
+  document.querySelector('#eci-leader-table tbody').innerHTML = top12.map((r,i)=>`
+    <tr>
+      <td class="mono" style="color:var(--ink4);font-size:10px;">${i+1}</td>
+      <td style="font-size:11px;"><strong>${(r.model_name||r.model_slug||'—').slice(0,22)}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}" style="font-size:7px;">${(r.organization||'—').toUpperCase().slice(0,10)}</span></td>
+      <td class="mono" style="font-size:11px;font-weight:500;">${f1(r.eci)}</td>
+    </tr>`).join('');
+
+  const topM = top12[0];
+  document.getElementById('eci-leader-note').textContent =
+    `15.4 ECI pts/yr post-Apr 2024 vs 8.3 pre-breakpoint. ${topM?(topM.model_name||topM.model_slug)+' leads at '+Math.round(+topM.eci)+'.' : ''}`;
+
+  // ── ECI Full Table ──────────────────────────────────────
+  document.querySelector('#eci-table tbody').innerHTML =
+    best.slice(0,40).map((r,i)=>`<tr>
+      <td class="mono" style="color:var(--ink4)">${i+1}</td>
+      <td><strong>${r.model_name||r.model_slug||'—'}</strong></td>
+      <td><span class="org-badge ${orgBadgeCls(r.organization)}">${r.organization||'—'}</span></td>
+      <td class="mono">${fd(r.release_date)}</td>
+      <td class="mono"><strong>${f1(r.eci)}</strong></td>
+      <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_low)}</td>
+      <td class="mono" style="color:var(--ink3)">${f1(r.eci_ci_high)}</td>
+      <td class="mono" style="font-size:9px;">${(()=>{const a=r.accessibility||'';if(a.toLowerCase().includes('open'))return '<span style=\"color:var(--sage)\">Open</span>';if(a.toLowerCase().includes('api'))return '<span style=\"color:var(--blue)\">API</span>';if(a.toLowerCase().includes('web'))return '<span style=\"color:var(--sand)\">Web</span>';return a.slice(0,4)||'—';})()}</td>
+    </tr>`).join('')||'<tr><td colspan="8" style="color:var(--ink4);padding:20px">No data</td></tr>';
+}
+
+// ══════════════════════════════════════════════════════════
+// SIGNAL NOTE
+// ══════════════════════════════════════════════════════════
+async function buildSignalNote() {
+  const [mt, et] = await Promise.all([loadCSV(DATA.metrTrend), loadCSV(DATA.eciTrend)]);
+  const mS=[...mt].sort((a,b)=>b.month.localeCompare(a.month));
+  const eS=[...et].sort((a,b)=>b.month.localeCompare(a.month));
+  const p50=mS[0]?.frontier_p50_hours?+mS[0].frontier_p50_hours:null;
+  const dbl=computeDoublingMonths(mt);
+  const eci=eS[0]?.frontier_eci?+eS[0].frontier_eci:null;
+  const slope=computeEciSlope(et);
+  const parts=[];
+  if(p50)  parts.push(`Frontier P50 = <strong>${fh(p50)}</strong>`);
+  if(dbl)  parts.push(`doubling every <strong>~${dbl} months</strong>`);
+  if(eci)  parts.push(`ECI = <strong>${f1(eci)}</strong>`);
+  if(slope)parts.push(`ECI slope = <strong>${slope} pts/yr</strong>`);
+  parts.push(`<strong>×180 vs GPT-4</strong>`);
+  const bull=(dbl&&dbl<8)||(slope&&slope>14);
+  const bear=(dbl&&dbl>14)||(slope&&slope<5);
+  const sig=bull?'🟢 STRONG BULL — rapid capability acceleration':
+             bear?'🔴 BEAR — pace of improvement decelerating':
+                  '🟡 NEUTRAL — steady progress, no inflection detected';
+  document.getElementById('signal-note').innerHTML=
+    `<strong>${sig}</strong> &nbsp;|&nbsp; ${parts.join(' &nbsp;·&nbsp; ')}
+     &nbsp;|&nbsp; <span style="color:var(--ink4);font-size:10px">Note: 5 ECI pts ≈ 2× METR P50. METR scope = SW/ML/cybersecurity tasks only.</span>`;
+}
+
+// ══════════════════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════════════════
+(async () => {
+  buildDoublingRateChart();
+  buildCumulativeDoublingsChart();
+  buildEciSlopeChart();
+  await Promise.all([loadMETR(), loadECI(), buildSignalNote(), loadOrData(), loadGPUPricing(), loadHuggingFace()]);
+  document.getElementById('last-update').textContent =
+    'Updated: '+new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+})();
+
+
+
+  // ══════════════════════════════════════════════════════════
+// MODULE 3 — OPENROUTER TOKEN USAGE  (patched version)
+// Replace the entire existing MODULE 3 block in index.html
+// ══════════════════════════════════════════════════════════
+
+const OR_PALETTE = [
+  '#8B6914', // gold        → model 1
+  '#2E6651', // sage        → model 2
+  '#2A5A7A', // blue        → model 3
+  '#8B2E2E', // umber       → model 4
+  '#6B4EA0', // purple      → model 5
+  '#2E7A80', // teal        → model 6
+  '#A06828', // amber       → model 7
+  '#4A7A3A', // green       → model 8
+  '#7A3A6A', // plum        → model 9
+  '#C8C3BB', // ink4-light  → Others (always last, greyed out)
+];
+
+let orChart   = null;
+let orWowChart = null;
+let orData    = [];   // parsed CSV rows (sorted by week_ending)
+let orModels  = [];   // top-9 model column names from CSV header
+let orView    = 'absolute';
+
+// ── Toggle absolute / % share ────────────────────────────
+function setOrView(mode) {
+  orView = mode;
+  document.getElementById('or-abs-btn').classList.toggle('active', mode === 'absolute');
+  document.getElementById('or-pct-btn').classList.toggle('active', mode === 'percent');
+  if (!orChart) return;
+
+  orChart.data.datasets.forEach((ds, i) => {
+    const key = i < orModels.length ? orModels[i] : 'Others';
+    ds.data = orData.map(r => {
+      const val = +r[key] || 0;
+      if (mode === 'percent') {
+        // denominator = total_T column (true platform total)
+        const tot = (+r.total_T || 0) * 1e12;
+        return tot > 0 ? +(val / tot * 100).toFixed(2) : 0;
+      }
+      return +(val / 1e12).toFixed(3);
+    });
+  });
+
+  orChart.options.scales.y.ticks.callback =
+    mode === 'percent' ? v => v.toFixed(0) + '%' : v => v.toFixed(1) + 'T';
+  orChart.options.scales.y.max = mode === 'percent' ? 100 : undefined;
+  orChart.update();
+}
+
+// ── Tooltip label ────────────────────────────────────────
+function orTooltipLabel(ctx) {
+  const model = ctx.dataset.label;
+  const val   = +ctx.raw;
+  if (orView === 'percent') return `${model}: ${val.toFixed(1)}%`;
+  return `${model}: ${val.toFixed(2)}T`;
+}
+
+// ── Shorten model slug for display ──────────────────────
+function shortModel(slug) {
+  if (!slug || slug === 'Others') return 'Others';
+  return slug.split('/').pop()
+    .replace(/-\d{8}$/, '')   // strip date suffix
+    .replace(/:/g, ' ')        // free/thinking variants
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase())
+    .slice(0, 24);
+}
+
+// ── Main loader ──────────────────────────────────────────
+async function loadOrData() {
+  const rows = await loadCSV('data/openrouter_weekly.csv');
+  if (!rows.length) {
+    document.getElementById('or-leader-note').textContent =
+      'No data — run openrouter_update.py';
+    return;
+  }
+
+  // Sort chronologically (should already be, but defensive)
+  rows.sort((a, b) => a.week_ending.localeCompare(b.week_ending));
+  orData = rows;
+
+  // Model columns = everything except week_ending, Others, total_T
+  const allCols = Object.keys(rows[0]);
+  orModels = allCols.filter(c => c !== 'week_ending' && c !== 'Others' && c !== 'total_T');
+
+  const latest = rows[rows.length - 1];
+  const prev   = rows[rows.length - 2];
+  const first  = rows[0];
+
+  // ── true totals from total_T column ──────────────────
+  const latestT = +latest.total_T;
+  const prevT   = prev ? +prev.total_T : null;
+  const firstT  = +first.total_T;
+
+  // ── KPI 1 — Latest week total ────────────────────────
+  const kpiTotal = document.getElementById('or-kpi-total');
+  kpiTotal.textContent = latestT.toFixed(2) + 'T';
+  kpiTotal.closest('.kpi').className = 'kpi ' + (latestT > (prevT || 0) ? 'up' : 'dn');
+  document.getElementById('or-kpi-total-delta').textContent =
+    latest.week_ending + ' (week ending)';
+
+  // ── KPI 2 — WoW % (based on total_T) ────────────────
+  if (prevT && prevT > 0) {
+    const wow = (latestT - prevT) / prevT * 100;
+    const elW = document.getElementById('or-kpi-wow');
+    elW.textContent = (wow >= 0 ? '+' : '') + wow.toFixed(1) + '%';
+    elW.closest('.kpi').className = 'kpi ' + (wow >= 0 ? 'up' : 'dn');
+    document.getElementById('or-kpi-wow-sub').textContent =
+      `${prevT.toFixed(2)}T → ${latestT.toFixed(2)}T`;
+  }
+
+  // ── KPI 3 — 52-week growth multiple ─────────────────
+  const mult = firstT > 0 ? latestT / firstT : 1;
+  document.getElementById('or-kpi-ytd').textContent = '×' + mult.toFixed(1);
+  document.getElementById('or-kpi-ytd-sub').textContent =
+    `${first.week_ending} → ${latest.week_ending}`;
+
+  // ── KPI 4 — Top model this week ─────────────────────
+  // Compare all model columns + Others against true total_T
+  const allModelCols = [...orModels, 'Others'];
+  let topModel = '', topTokens = 0;
+  allModelCols.forEach(m => {
+    const t = +latest[m] || 0;
+    if (t > topTokens) { topTokens = t; topModel = m; }
+  });
+  const topShare = latestT > 0 ? (topTokens / 1e12 / latestT * 100).toFixed(1) : 0;
+  document.getElementById('or-kpi-top').textContent = shortModel(topModel);
+  document.getElementById('or-kpi-top-share').textContent =
+    `${(topTokens / 1e12).toFixed(2)}T · ${topShare}% of total`;
+
+  // ── Stacked bar chart ────────────────────────────────
+  // KEY FIX: the stacked bar total must equal total_T for every week.
+  // We use top-9 model columns from CSV + a computed "Others" that = total_T - sum(top9).
+  // This guarantees the stack always adds up to the true platform total.
+
+  const labels = rows.map(r => r.week_ending.slice(5)); // "MM-DD"
+
+  const datasets = orModels.map((model, i) => ({
+    label: shortModel(model),
+    data:  rows.map(r => +(( +r[model] || 0) / 1e12).toFixed(3)),
+    backgroundColor: OR_PALETTE[i],
+    borderWidth: 0,
+  }));
+
+  // "Others" = total_T minus the sum of top-9 columns
+  datasets.push({
+    label: 'Others',
+    data: rows.map(r => {
+      const top9sum = orModels.reduce((s, m) => s + (+r[m] || 0), 0) / 1e12;
+      const total   = +r.total_T || 0;
+      return +Math.max(0, total - top9sum).toFixed(3);
+    }),
+    backgroundColor: OR_PALETTE[9],
+    borderWidth: 0,
+  });
+
+  const ctxBar = document.getElementById('orStackedChart');
+  orChart = new Chart(ctxBar, {
+    type: 'bar',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { boxWidth: 8, padding: 8, font: { size: 8 } }
+        },
+        tooltip: {
+          callbacks: {
+            label: orTooltipLabel,
+            footer: items => {
+              // Footer shows the true total_T for the hovered week
+              const weekIdx = items[0]?.dataIndex;
+              const trueTotal = weekIdx != null ? +rows[weekIdx].total_T : 0;
+              return `Platform total: ${trueTotal.toFixed(2)}T`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          grid:  { color: 'transparent' },
+          ticks: { maxTicksLimit: 14, font: { size: 8 } }
+        },
+        y: {
+          stacked: true,
+          grid:  { color: gridColor },
+          ticks: { callback: v => v.toFixed(1) + 'T' }
+        }
+      }
+    }
+  });
+
+  // ── WoW growth bar chart + 12-month avg line ─────────
+  // WoW always computed from total_T column (true platform total)
+  const wowVals = rows.map((r, i) => {
+    if (i === 0) return null;
+    const pT = +rows[i - 1].total_T;
+    return pT > 0 ? +((+r.total_T - pT) / pT * 100).toFixed(1) : null;
+  });
+
+  // 12-month rolling average WoW (last 52 valid values)
+  const wowAvg = wowVals.map((_, i) => {
+    const window = wowVals.slice(Math.max(0, i - 51), i + 1).filter(v => v !== null);
+    if (window.length < 4) return null; // need at least 4 pts for meaningful avg
+    return +(window.reduce((s, v) => s + v, 0) / window.length).toFixed(1);
+  });
+
+  const wowColors = wowVals.map(v =>
+    v === null ? 'transparent' : v >= 0 ? C.sage + 'CC' : C.umber + 'CC'
+  );
+
+  const ctxWow = document.getElementById('orWowChart');
+  orWowChart = new Chart(ctxWow, {
+    type: 'bar',
+    data: {
+      labels: rows.map(r => r.week_ending.slice(5)),
+      datasets: [
+        {
+          type: 'bar',
+          label: 'WoW growth %',
+          data: wowVals,
+          backgroundColor: wowColors,
+          borderWidth: 0,
+          borderRadius: 2,
+          order: 2,
+        },
+        {
+          type: 'line',
+          label: '12-month rolling avg',
+          data: wowAvg,
+          borderColor: C.gold,
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          borderDash: [5, 4],
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          tension: 0.3,
+          order: 1,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: { boxWidth: 8, padding: 10, font: { size: 8 } }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              if (ctx.raw === null) return null;
+              const prefix = ctx.dataset.type === 'line' ? '12m avg: ' : 'WoW: ';
+              return prefix + (ctx.raw >= 0 ? '+' : '') + ctx.raw + '%';
+            },
+            afterBody: items => {
+              // Show absolute volumes for context
+              const i = items[0]?.dataIndex;
+              if (i == null || i === 0) return '';
+              return [
+                `  ${rows[i-1].week_ending}: ${(+rows[i-1].total_T).toFixed(2)}T`,
+                `  ${rows[i].week_ending}: ${(+rows[i].total_T).toFixed(2)}T`,
+              ];
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid:  { color: 'transparent' },
+          ticks: { maxTicksLimit: 14, font: { size: 8 } }
+        },
+        y: {
+          grid:  { color: gridColor },
+          ticks: { callback: v => v + '%' }
+        }
+      }
+    }
+  });
+
+  // ── Right-panel leaderboard ──────────────────────────
+  // Shows top-10 models by all-time volume, with correct "others" summed from total_T
+  const modelTotals = orModels.map(m => ({
+    model:     m,
+    total:     rows.reduce((s, r) => s + (+r[m] || 0), 0),
+    peakWeek:  rows.reduce((best, r) => +r[m] > best.v ? { v: +r[m], w: r.week_ending } : best, { v: 0, w: '' }),
+  })).sort((a, b) => b.total - a.total);
+
+  // True "Others" total = sum(total_T) - sum(all model columns in CSV)
+  const grandTotalPlatform = rows.reduce((s, r) => s + (+r.total_T || 0), 0) * 1e12;
+  const grandTotalTop9     = orModels.reduce((s, m) =>
+    s + rows.reduce((ss, r) => ss + (+r[m] || 0), 0), 0);
+  const othersAllTime      = grandTotalPlatform - grandTotalTop9;
+
+  document.querySelector('#or-model-table tbody').innerHTML = [
+    ...modelTotals.map((m, i) => `
+      <tr>
+        <td class="mono" style="color:var(--ink4);font-size:9px">${i + 1}</td>
+        <td style="font-size:10px;">
+          <strong>${shortModel(m.model)}</strong>
+          <div style="font-size:8px;color:var(--ink4);font-family:var(--mono)">
+            ${m.model.split('/')[0] || ''}
+          </div>
+        </td>
+        <td class="mono" style="font-size:10px">${(m.total / 1e12).toFixed(1)}T</td>
+        <td class="mono" style="font-size:9px;color:var(--ink3)">
+          ${(m.peakWeek.v / 1e12).toFixed(1)}T<br>
+          <span style="font-size:8px">${m.peakWeek.w.slice(5)}</span>
+        </td>
+      </tr>`),
+    // Others row
+    `<tr style="background:var(--bg)">
+      <td class="mono" style="color:var(--ink4);font-size:9px">—</td>
+      <td style="font-size:10px;color:var(--ink3)"><em>Others (all other models)</em></td>
+      <td class="mono" style="font-size:10px;color:var(--ink3)">${(othersAllTime / 1e12).toFixed(1)}T</td>
+      <td class="mono" style="font-size:9px;color:var(--ink4)">—</td>
+    </tr>`
+  ].join('');
+
+  const growthX = firstT > 0 ? (latestT / firstT).toFixed(1) : '?';
+  document.getElementById('or-leader-note').textContent =
+    `${latest.week_ending} · ${latestT.toFixed(2)}T · ` +
+    `×${growthX} since ${first.week_ending} · ` +
+    `platform total incl. all models`;
+}
+
+// ══════════════════════════════════════════════════════════
+// MODULE 3 — GPU PRICING BAROMETER
+// ══════════════════════════════════════════════════════════
+async function loadGPUPricing() {
+  // Load latest + history
+  const [rows, latestRows] = await Promise.all([
+    loadCSV(DATA.gpuIndex),
+    loadCSV(DATA.gpuLatest || DATA.gpuIndex),
+  ]);
+  const allRows = rows.length ? rows : latestRows;
+  if (!allRows.length) { console.warn('[GPU] No data'); return; }
+
+  const dates  = [...new Set(allRows.map(r => r.date).filter(Boolean))].sort();
+  const latest = dates[dates.length - 1];
+  const snap   = allRows.filter(r => r.date === latest);
+  console.log('[GPU]', snap.length, 'rows for', latest);
+
+  const fv  = v => (v !== '' && v != null && !isNaN(+v)) ? +v : null;
+  const f$  = v => fv(v) != null ? '$' + fv(v).toFixed(2) : '—';
+  const fct = v => fv(v) != null ? Math.round(fv(v)).toLocaleString() : '—';
+
+  // Get rows filtered by pricing
+  const getSnap  = (type, name, pricing) =>
+    snap.find(r => r.type === type && r.name === name &&
+      (!pricing || r.pricing === pricing));
+  const getM = name => snap.find(r => r.type === 'metric' && r.name === name);
+
+  // ── KPIs — on-demand only ─────────────────────────────────────────────
+  const a100 = getSnap('gpu','A100','on-demand');
+  const h100 = getSnap('gpu','H100','on-demand');
+  const b200 = getSnap('gpu','B200','on-demand');
+  const ratio = getM('training_inference_ratio');
+  const hypPremH100 = getM('hyperscaler_premium_h100');
+  const neoMedH100  = getM('neocloud_median_h100');
+  const hypMedH100  = getM('hyperscaler_median_h100');
+
+  if (a100) document.getElementById('gpu-kpi-a100-med').textContent = f$(a100.median);
+  if (h100) document.getElementById('gpu-kpi-h100-med').textContent = f$(h100.median);
+  if (b200) document.getElementById('gpu-kpi-b200-med').textContent = f$(b200.median);
+  if (ratio && fv(ratio.median)) {
+    const rv = fv(ratio.median);
+    document.getElementById('gpu-kpi-ratio').textContent     = rv.toFixed(2) + '×';
+    document.getElementById('gpu-kpi-ratio-sub').textContent = rv > 6 ? '⚠ elevated' : 'within range';
+    const kEl = document.querySelectorAll('#gpu-kpi-strip .kpi')[3];
+    if (kEl) kEl.className = 'kpi ' + (rv > 6 ? 'up' : rv > 4 ? 'nu' : 'dn');
+  }
+  if (hypPremH100 && fv(hypPremH100.median)) {
+    document.getElementById('gpu-kpi-hyp-prem').textContent     = f$(hypPremH100.median);
+    document.getElementById('gpu-kpi-hyp-prem-sub').textContent = '+' + f$(hypPremH100.median) + ' vs neocloud';
+  }
+
+  // ── SVG Box Plot (on-demand only) ──────────────────────────────────────
+  function buildDistChart(canvasId, labels, dataRows) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const wrap = canvas.parentElement;
+    canvas.style.display = 'none';
+    const ex = wrap.querySelector('.boxplot-svg'); if (ex) ex.remove();
+    const W = Math.min(wrap.clientWidth || 520, 580);
+    const H = 260, mL=52, mR=20, mT=24, mB=36;
+    const plotW = W-mL-mR, plotH = H-mT-mB, n=dataRows.length;
+    const slotW=plotW/n, boxW=Math.min(slotW*0.45,60);
+    const allV = dataRows.flatMap(r=>[fv(r.min),fv(r.p25),fv(r.median),fv(r.mean),fv(r.p75),fv(r.max)].filter(v=>v!=null));
+    if(!allV.length) return;
+    const dMin=0, dMax=Math.ceil(Math.max(...allV)*1.12);
+    const yS=v=>plotH-((v-dMin)/(dMax-dMin))*plotH;
+    const BF='rgba(139,105,20,0.22)', BS='#8B6914', MC='#1A1917', MnC='#B0A99E', WC='#7A756A';
+    let gl='',yl='',bx='';
+    for(let i=0;i<=5;i++){const v=dMin+(dMax-dMin)*(i/5),y=mT+yS(v),yr=Math.round(y);gl+=`<line x1="${mL}" x2="${W-mR}" y1="${yr}" y2="${yr}" stroke="#E2DED7" stroke-width="1"/>`;yl+=`<text x="${mL-6}" y="${yr+4}" text-anchor="end" font-family="'Roboto Mono',monospace" font-size="9" fill="#B0A99E">$${v.toFixed(1)}</text>`;}
+    dataRows.forEach((r,i)=>{const mn=fv(r.min),p25=fv(r.p25),med=fv(r.median),mean=fv(r.mean),p75=fv(r.p75),mx=fv(r.max);const cx=mL+slotW*i+slotW/2,lft=cx-boxW/2,rgt=cx+boxW/2;if(mn!=null&&mx!=null){const ym=mT+yS(mn),yM=mT+yS(mx),cW=boxW*0.35;bx+=`<line x1="${cx}" x2="${cx}" y1="${yM}" y2="${ym}" stroke="${WC}" stroke-width="1.5" stroke-dasharray="3,2"/>`;bx+=`<line x1="${cx-cW}" x2="${cx+cW}" y1="${ym}" y2="${ym}" stroke="${WC}" stroke-width="2"/>`;bx+=`<line x1="${cx-cW}" x2="${cx+cW}" y1="${yM}" y2="${yM}" stroke="${WC}" stroke-width="2"/>`;}if(p25!=null&&p75!=null){const yP=mT+yS(p25),yQ=mT+yS(p75);bx+=`<rect x="${lft}" y="${yQ}" width="${boxW}" height="${Math.max(1,yP-yQ)}" fill="${BF}" stroke="${BS}" stroke-width="1.5" rx="2"/>`;}if(med!=null){const yMed=mT+yS(med);bx+=`<line x1="${lft}" x2="${rgt}" y1="${yMed}" y2="${yMed}" stroke="${MC}" stroke-width="2.5"/>`;}if(mean!=null){const yMean=mT+yS(mean),s=5;bx+=`<line x1="${cx-s}" x2="${cx+s}" y1="${yMean-s}" y2="${yMean+s}" stroke="${MnC}" stroke-width="1.8"/>`;bx+=`<line x1="${cx+s}" x2="${cx-s}" y1="${yMean-s}" y2="${yMean+s}" stroke="${MnC}" stroke-width="1.8"/>`;}const tip=[`Max:${f$(mx)}`,`P75:${f$(p75)}`,`Median:${f$(med)}`,`Mean:${f$(mean)}`,`P25:${f$(p25)}`,`Min:${f$(mn)}`].join('&#10;');bx+=`<rect x="${lft-4}" y="${mT}" width="${boxW+8}" height="${plotH}" fill="transparent"><title>${labels[i]}&#10;${tip}</title></rect>`;bx+=`<text x="${cx}" y="${H-8}" text-anchor="middle" font-family="'Roboto Mono',monospace" font-size="9" fill="#7A756A">${labels[i]}</text>`;});
+    const legY=mT-10;const leg=`<line x1="${W-130}" x2="${W-115}" y1="${legY}" y2="${legY}" stroke="${MC}" stroke-width="2.5"/><text x="${W-112}" y="${legY+3}" font-family="'Roboto Mono',monospace" font-size="8" fill="#7A756A">Median</text><line x1="${W-78}" x2="${W-63}" y1="${legY-3}" y2="${legY+3}" stroke="${MnC}" stroke-width="1.8"/><line x1="${W-63}" x2="${W-78}" y1="${legY-3}" y2="${legY+3}" stroke="${MnC}" stroke-width="1.8"/><text x="${W-60}" y="${legY+3}" font-family="'Roboto Mono',monospace" font-size="8" fill="#7A756A">Mean</text>`;
+    const svg=`<svg class="boxplot-svg" width="${W}" height="${H}" style="display:block;overflow:hidden;max-width:100%;">${gl}${yl}${bx}${leg}<line x1="${mL}" x2="${mL}" y1="${mT}" y2="${mT+plotH}" stroke="#C8C3BB" stroke-width="1"/><line x1="${mL}" x2="${W-mR}" y1="${mT+plotH}" y2="${mT+plotH}" stroke="#C8C3BB" stroke-width="1"/></svg>`;
+    canvas.insertAdjacentHTML('afterend', svg);
+  }
+
+  // ── Chart 1: Distribution by GPU — ON-DEMAND ONLY ─────────────────────
+  const gpuRows = snap.filter(r => r.type === 'gpu' && r.name && fv(r.median) != null
+                                && r.pricing === 'on-demand');
+  gpuRows.sort((a,b) => (fv(b.median)||0) - (fv(a.median)||0));
+  buildDistChart('gpuByNameChart', gpuRows.map(r=>r.name), gpuRows);
+
+  // Table
+  document.querySelector('#gpu-name-table tbody').innerHTML =
+    gpuRows.map(r => `<tr>
+      <td><strong>${r.name}</strong></td>
+      <td class="mono">${fct(r.count)}</td>
+      <td class="mono" style="color:var(--ink3)">${f$(r.min)}</td>
+      <td class="mono">${f$(r.p25)}</td>
+      <td class="mono"><strong>${f$(r.median)}</strong></td>
+      <td class="mono">${f$(r.mean)}</td>
+      <td class="mono">${f$(r.p75)}</td>
+      <td class="mono" style="color:var(--ink3)">${f$(r.max)}</td>
+    </tr>`).join('') || '<tr><td colspan="8" style="padding:12px;color:var(--ink4)">No data</td></tr>';
+
+  // ── Chart 2: Inference vs Training — ON-DEMAND ONLY ───────────────────
+  const inf = snap.find(r=>r.type==='aggregate'&&r.name==='inference'&&r.pricing==='on-demand');
+  const trn = snap.find(r=>r.type==='aggregate'&&r.name==='training' &&r.pricing==='on-demand');
+  const aggRows = [inf, trn].filter(Boolean);
+  if (aggRows.length) buildDistChart('gpuAggChart',
+    aggRows.map(r=>r.name.charAt(0).toUpperCase()+r.name.slice(1)), aggRows);
+
+  // Agg table
+  document.querySelector('#gpu-agg-table tbody').innerHTML =
+    aggRows.map(r=>`<tr>
+      <td><strong>${r.name.charAt(0).toUpperCase()+r.name.slice(1)}</strong></td>
+      <td class="mono">${fct(r.count)}</td>
+      <td class="mono" style="color:var(--ink3)">${f$(r.min)}</td>
+      <td class="mono">${f$(r.p25)}</td>
+      <td class="mono"><strong>${f$(r.median)}</strong></td>
+      <td class="mono">${f$(r.mean)}</td>
+      <td class="mono">${f$(r.p75)}</td>
+      <td class="mono" style="color:var(--ink3)">${f$(r.max)}</td>
+    </tr>`).join('') || '<tr><td colspan="8" style="padding:10px;color:var(--ink4)">No data</td></tr>';
+
+  if (inf && trn && fv(inf.median) && fv(trn.median)) {
+    const rv = fv(trn.median)/fv(inf.median);
+    document.getElementById('gpu-ratio-val').textContent = rv.toFixed(2)+'×';
+    document.getElementById('gpu-ratio-pct').textContent = '+'+((rv-1)*100).toFixed(0)+'%';
+  }
+
+  // ── Chart 3: Hyperscaler vs Neocloud H100 — ON-DEMAND ONLY ───────────
+  const hypH100 = snap.find(r=>r.type==='provider_h100'&&r.name==='hyperscaler'&&r.pricing==='on-demand');
+  const neoH100 = snap.find(r=>r.type==='provider_h100'&&r.name==='neocloud'   &&r.pricing==='on-demand');
+  const provRows = [hypH100, neoH100].filter(Boolean);
+  if (provRows.length) buildDistChart('gpuProvChart',
+    ['Hyperscaler (H100)','Neocloud (H100)'].slice(0,provRows.length), provRows);
+
+  if (hypMedH100 && neoMedH100 && fv(hypMedH100.median) && fv(neoMedH100.median)) {
+    const hv=fv(hypMedH100.median), nv=fv(neoMedH100.median);
+    document.getElementById('gpu-hyp-prem-val').textContent = '$'+(hv-nv).toFixed(2)+'/hr';
+    document.getElementById('gpu-hyp-med-val').textContent  = '$'+hv.toFixed(2);
+    document.getElementById('gpu-neo-med-val').textContent  = '$'+nv.toFixed(2);
+    if (hypPremH100 && fv(hypPremH100.median))
+      document.getElementById('gpu-kpi-hyp-prem').textContent = f$(hypPremH100.median);
+  }
+
+  // Provider table
+  document.querySelector('#gpu-prov-table tbody').innerHTML =
+    provRows.map(r=>`<tr>
+      <td><strong>${r.name.charAt(0).toUpperCase()+r.name.slice(1)}</strong></td>
+      <td class="mono">${fct(r.count)}</td>
+      <td class="mono">${f$(r.p25)}</td>
+      <td class="mono"><strong>${f$(r.median)}</strong></td>
+      <td class="mono">${f$(r.mean)}</td>
+      <td class="mono">${f$(r.p75)}</td>
+      <td class="mono" style="font-size:9px;color:var(--ink3)">${f$(r.min)}:${f$(r.max)}</td>
+    </tr>`).join('') || '<tr><td colspan="7" style="padding:12px;color:var(--ink4)">No data</td></tr>';
+
+  // ── Chart 0: Price per Provider — grouped bar (ON-DEMAND) ─────────────
+  const GPUS4 = ['H100','H200','B200','A100'];
+  const GPU_COLORS = {
+    H100:'rgba(139,105,20,0.85)', H200:'rgba(42,90,122,0.85)',
+    B200:'rgba(46,102,81,0.85)',  A100:'rgba(122,90,42,0.85)'
+  };
+  // Collect all providers that have on-demand data for at least one GPU
+  const providerSet = new Set();
+  snap.filter(r=>r.type==='gpu_provider'&&r.pricing==='on-demand')
+      .forEach(r=>providerSet.add(r.provider));
+  const providers = [...providerSet].sort();
+
+  // Build datasets: one per GPU, x-axis = providers
+  const gpuProvDatasets = GPUS4.map(gpu => {
+    const data = providers.map(prov => {
+      const row = snap.find(r => r.type==='gpu_provider' && r.name===gpu
+                              && r.provider===prov && r.pricing==='on-demand');
+      return row ? fv(row.median) : null;
+    });
+    return {
+      label: gpu,
+      data,
+      backgroundColor: GPU_COLORS[gpu],
+      borderWidth: 0,
+      borderRadius: 2,
+      skipNull: true,
+    };
+  });
+
+  const gpuProvCtx = document.getElementById('gpuProviderGroupedChart');
+  if (gpuProvCtx) {
+    new Chart(gpuProvCtx, {
+      type: 'bar',
+      data: { labels: providers, datasets: gpuProvDatasets },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { boxWidth: 10, font: { size: 9 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => ctx.parsed.y != null
+                ? `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(2)}/hr`
+                : `${ctx.dataset.label}: n/a`
+            }
+          }
+        },
+        scales: {
+          x: { grid: { color: gridColor }, ticks: { font: { size: 9 } } },
+          y: {
+            grid: { color: gridColor },
+            beginAtZero: true,
+            ticks: { callback: v => '$'+v.toFixed(1) },
+            title: { display: true, text: '$/GPU/hr (on-demand)', font: { size: 9 } }
+          }
+        }
+      }
+    });
+  }
+
+  // ── Time Series — spot vs on-demand for each GPU ───────────────────────
+  function buildTsChart(canvasId, gpuName) {
+    const ctx = document.getElementById(canvasId);
+    if (!ctx || !allRows.length) return;
+
+    // Group by date, pick on-demand and spot medians
+    const byDate = {};
+    allRows.filter(r => r.type==='gpu' && r.name===gpuName)
+           .forEach(r => {
+             if (!byDate[r.date]) byDate[r.date] = {};
+             if (r.pricing==='on-demand') byDate[r.date].od = fv(r.median);
+             if (r.pricing==='spot')      byDate[r.date].sp = fv(r.median);
+           });
+
+    const tsDates = Object.keys(byDate).sort();
+    if (tsDates.length < 2) {
+      // Single date — show message
+      const c2 = ctx.getContext('2d');
+      c2.font = "9px 'Roboto Mono',monospace";
+      c2.fillStyle = '#B0A99E';
+      c2.textAlign = 'center';
+      c2.fillText('More data soon — running daily', ctx.width/2, 50);
+      return;
+    }
+
+    const baseColor = GPU_COLORS[gpuName] || 'rgba(139,105,20,0.85)';
+    const baseColorLight = baseColor.replace('0.85','0.4');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: tsDates.map(d => d.slice(5)),
+        datasets: [
+          {
+            label: 'On-Demand',
+            data: tsDates.map(d => byDate[d].od ?? null),
+            borderColor: baseColor, backgroundColor: baseColor.replace('0.85','0.08'),
+            borderWidth: 2, tension: 0.3,
+            pointRadius: tsDates.length > 20 ? 0 : 3,
+            fill: true, spanGaps: true,
+          },
+          {
+            label: 'Spot',
+            data: tsDates.map(d => byDate[d].sp ?? null),
+            borderColor: baseColorLight,
+            borderDash: [4,3], borderWidth: 1.5, tension: 0.3,
+            pointRadius: 0, fill: false, spanGaps: true,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { boxWidth: 8, font: { size: 8 } } },
+          tooltip: { callbacks: { label: ctx2 => `${ctx2.dataset.label}: $${ctx2.parsed.y?.toFixed(2)}/hr` } }
+        },
+        scales: {
+          x: { grid: { color: gridColor }, ticks: { font: { size: 8 }, maxTicksLimit: 8 } },
+          y: { grid: { color: gridColor }, beginAtZero: false,
+               ticks: { callback: v => '$'+v.toFixed(1), font: { size: 8 } } }
+        }
+      }
+    });
+  }
+
+  buildTsChart('gpuTsH100', 'H100');
+  buildTsChart('gpuTsH200', 'H200');
+  buildTsChart('gpuTsB200', 'B200');
+  buildTsChart('gpuTsA100', 'A100');
+
+  console.log('[GPU] All charts rendered ✓');
+}
+
+async function loadHuggingFace() {
+  const [latest, history, companyShare, pipeShare, topVel, topGrowth] = await Promise.all([
+    loadCSV(DATA.hfLatest),
+    loadCSV(DATA.hfHistory),
+    loadCSV(DATA.hfCompanyShare),
+    loadCSV(DATA.hfPipelineShare),
+    loadCSV(DATA.hfTopVelocity),
+    loadCSV(DATA.hfTopGrowth),
+  ]);
+
+  if (!latest.length && !companyShare.length) {
+    console.warn('[HF] No data loaded');
+    return;
+  }
+  console.log('[HF] Loaded', latest.length, 'models,', companyShare.length, 'company rows');
+
+  // ── Helpers ────────────────────────────────────────────────────────────
+  const fv  = v => (v !== '' && v != null && !isNaN(+v)) ? +v : null;
+  const fM  = v => { // format millions
+    const n = fv(v);
+    if (n == null) return '—';
+    if (n >= 1e9) return (n/1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n/1e3).toFixed(0) + 'k';
+    return String(n);
+  };
+  const fPct = v => { const n = fv(v); return n == null ? '—' : (n*100).toFixed(1)+'%'; };
+  const fLR  = v => { const n = fv(v); return n == null ? '—' : n.toFixed(4); };
+
+  // Company color palette
+  const CO = {
+    'Meta':                 '#4A7FBF',
+    'Google':               '#7A7A1A',
+    'Microsoft':            '#2A5A7A',
+    'OpenAI':               '#B5602A',
+    'Alibaba':              '#C04040',
+    'Stability AI':         '#7A4A9A',
+    'Mistral':              '#2E6651',
+    'NVIDIA':               '#3A8A3A',
+    'Amazon':               '#C08020',
+    'Hugging Face':         '#D4802A',
+    'Salesforce':           '#3A5A9A',
+    'BAAI':                 '#8A4A2A',
+    'DeepSeek':             '#4A8A7A',
+    'LM Studio':            '#6A5A8A',
+    'Sentence Transformers':'#5A7A6A',
+    'Unsloth':              '#8A6A4A',
+    'Community (GGUF)':     '#9A9590',
+    'Community':            '#B0A99E',
+  };
+  const getColor = (co, alpha=1) => {
+    const hex = CO[co] || '#B0A99E';
+    const r=parseInt(hex.slice(1,3),16), g=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  };
+
+  // ── KPIs ────────────────────────────────────────────────────────────────
+  // Total downloads
+  const totalDL = latest.reduce((s, r) => s + (fv(r.downloads_30d) || 0), 0);
+  document.getElementById('hf-kpi-total').textContent = fM(totalDL);
+  document.getElementById('hf-kpi-total-sub').textContent = `across top ${latest.length} models`;
+
+  // Top pipeline (latest snapshot of pipeline share)
+  const latestDate = pipeShare.length ? pipeShare[0].date : null;
+  const todayPipe = pipeShare.filter(r => r.date === latestDate);
+  if (todayPipe.length) {
+    const top = todayPipe[0];
+    document.getElementById('hf-kpi-top-pipe').textContent = top.pipeline_tag || '—';
+    document.getElementById('hf-kpi-top-pipe-share').textContent =
+      (fv(top.share_pct) || 0).toFixed(1) + '% of total downloads';
+  }
+
+  // Top velocity
+  if (topVel.length) {
+    const v = topVel[0];
+    document.getElementById('hf-kpi-top-vel').textContent =
+      (v.model_id || '').split('/').pop()?.slice(0,16) || '—';
+    document.getElementById('hf-kpi-top-vel-sub').textContent =
+      'vel=' + fM(fv(v.velocity)) + ' · ' + (v.company || '?');
+  }
+
+  // Top growth
+  if (topGrowth.length) {
+    const g = topGrowth[0];
+    const pct = fv(g.growth_7d);
+    document.getElementById('hf-kpi-top-growth').textContent =
+      pct != null ? (pct*100 > 0 ? '+' : '') + (pct*100).toFixed(1)+'%' : '—';
+    document.getElementById('hf-kpi-top-growth-sub').textContent =
+      (g.model_id || '').split('/').pop()?.slice(0,18) + ' · ' + (g.company || '?');
+    const el4 = document.querySelector('#hf-kpi-strip .kpi:nth-child(4)');
+    if (el4 && pct != null) el4.className = 'kpi ' + (pct > 0.1 ? 'up' : pct < 0 ? 'dn' : 'nu');
+  }
+
+  // ── Chart 0: Total Downloads Time Series — full width ─────────────────────
+  if (history.length > 0) {
+    // Aggregate: sum downloads_30d per date across all models
+    const dlByDate = {};
+    history.forEach(r => {
+      const d = r.date;
+      if (!d) return;
+      dlByDate[d] = (dlByDate[d] || 0) + (fv(r.downloads_30d) || 0);
+    });
+    const tsDates  = Object.keys(dlByDate).sort();
+    const tsVals   = tsDates.map(d => dlByDate[d] / 1e9); // billions
+
+    if (tsDates.length >= 2) {
+      const first = tsVals[0], last = tsVals[tsVals.length-1];
+      const trend = last > first ? '↑' : '↓';
+      const pctChg = first > 0 ? ((last - first)/first*100).toFixed(1) : '?';
+
+      new Chart(document.getElementById('hfTotalDLChart'), {
+        type: 'line',
+        data: {
+          labels: tsDates.map(d => d.slice(5)), // MM-DD
+          datasets: [{
+            label: 'Total Downloads Top 500 (B)',
+            data: tsVals,
+            borderColor: C.gold,
+            backgroundColor: C.goldA,
+            tension: 0.3,
+            pointRadius: tsDates.length > 30 ? 0 : 3,
+            pointHoverRadius: 5,
+            fill: true,
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => `${ctx.parsed.y.toFixed(2)}B downloads (30d)`
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: gridColor }, ticks: { maxTicksLimit: 12 } },
+            y: {
+              grid: { color: gridColor },
+              beginAtZero: false,
+              ticks: { callback: v => v.toFixed(1)+'B' }
+            }
+          }
+        }
+      });
+    } else {
+      // Not enough history yet — show message
+      const canvas = document.getElementById('hfTotalDLChart');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.font = "9px 'Roboto Mono', monospace";
+        ctx.fillStyle = '#B0A99E';
+        ctx.textAlign = 'center';
+        ctx.fillText('Collecting data — time series available after 2+ daily runs', canvas.width/2, 60);
+      }
+    }
+  }
+
+  // ── Chart 1: Company Share — horizontal bar ─────────────────────────────
+  // Robust: find max date explicitly to avoid undefined when array is sorted differently
+  const maxCompDate = companyShare.reduce((mx, r) => r.date > mx ? r.date : mx, '');
+  const todayComp   = companyShare.filter(r => r.date === maxCompDate);
+  const compSorted = [...todayComp].sort((a,b) => (fv(b.share_pct)||0) - (fv(a.share_pct)||0)).slice(0,12);
+  const compLabels = compSorted.map(r => r.company || '?');
+  const compVals   = compSorted.map(r => fv(r.share_pct) || 0);
+
+  new Chart(document.getElementById('hfCompanyChart'), {
+    type: 'bar',
+    data: {
+      labels: compLabels,
+      datasets: [{
+        data: compVals,
+        backgroundColor: compLabels.map(l => getColor(l, 0.75)),
+        borderColor:     compLabels.map(l => getColor(l, 1.0)),
+        borderWidth: 1,
+        borderRadius: 2,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `${ctx.parsed.x.toFixed(2)}% of top-500 downloads`
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: gridColor }, ticks: { callback: v => v.toFixed(1)+'%' } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { size: 9 } } }
+      }
+    }
+  });
+
+  // ── Chart 2: Pipeline Share — horizontal bar ────────────────────────────
+  const pipeSorted = [...todayPipe]
+    .sort((a,b) => (fv(b.share_pct)||0) - (fv(a.share_pct)||0))
+    .slice(0, 10);
+  const pipeColors = [
+    'rgba(139,105,20,0.75)', 'rgba(42,90,122,0.75)',  'rgba(46,102,81,0.75)',
+    'rgba(122,90,42,0.75)',  'rgba(139,46,46,0.75)',  'rgba(90,42,122,0.75)',
+    'rgba(42,122,90,0.75)',  'rgba(90,122,42,0.75)',  'rgba(122,42,90,0.75)',
+    'rgba(176,169,158,0.75)',
+  ];
+
+  new Chart(document.getElementById('hfPipelineChart'), {
+    type: 'bar',
+    data: {
+      labels: pipeSorted.map(r => r.pipeline_tag || 'unknown'),
+      datasets: [{
+        data: pipeSorted.map(r => fv(r.share_pct) || 0),
+        backgroundColor: pipeColors,
+        borderWidth: 0,
+        borderRadius: 2,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const row = pipeSorted[ctx.dataIndex];
+              return `${ctx.parsed.x.toFixed(1)}% · ${fM(fv(row?.total_downloads))} DL · ${row?.model_count} models`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: gridColor }, ticks: { callback: v => v.toFixed(0)+'%' } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { size: 9 } } }
+      }
+    }
+  });
+
+  // ── Table: Top Velocity ─────────────────────────────────────────────────
+  document.querySelector('#hf-velocity-table tbody').innerHTML =
+    topVel.slice(0, 20).map((r, i) => {
+      const g7 = fv(r.growth_7d);
+      const g7txt = g7 != null ? (g7>0?'+':'') + (g7*100).toFixed(1)+'%' : '—';
+      return `<tr>
+        <td class="mono" style="color:var(--ink4)">${i+1}</td>
+        <td style="font-size:10px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+          <strong title="${r.model_id}">${(r.model_id||'').split('/').pop()}</strong>
+          <div style="font-size:8px;color:var(--ink4);font-family:var(--mono)">${(r.model_id||'').split('/')[0]||''}</div>
+        </td>
+        <td><span class="org-badge">${r.company||'?'}</span></td>
+        <td style="font-size:9px;color:var(--ink3)">${r.pipeline_tag||'—'}</td>
+        <td class="mono">${fM(fv(r.downloads_30d))}</td>
+        <td class="mono" style="color:var(--gold)"><strong>${fM(fv(r.velocity))}</strong></td>
+        <td class="mono" style="color:var(--ink3)">${fLR(r.like_ratio)}</td>
+      </tr>`;
+    }).join('') || '<tr><td colspan="7" style="padding:16px;color:var(--ink4)">No data yet — run collector first</td></tr>';
+
+  // ── Table: Top Growth ───────────────────────────────────────────────────
+  document.querySelector('#hf-growth-table tbody').innerHTML =
+    topGrowth.slice(0, 20).map((r, i) => {
+      const g7 = fv(r.growth_7d);
+      const g7pct = g7 != null ? (g7>0?'+':'') + (g7*100).toFixed(1)+'%' : '—';
+      const g7color = g7 == null ? 'var(--ink3)' : g7 > 0 ? 'var(--sage)' : 'var(--umber)';
+      return `<tr>
+        <td class="mono" style="color:var(--ink4)">${i+1}</td>
+        <td style="font-size:10px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+          <strong title="${r.model_id}">${(r.model_id||'').split('/').pop()}</strong>
+          <div style="font-size:8px;color:var(--ink4);font-family:var(--mono)">${(r.model_id||'').split('/')[0]||''}</div>
+        </td>
+        <td><span class="org-badge">${r.company||'?'}</span></td>
+        <td style="font-size:9px;color:var(--ink3)">${r.pipeline_tag||'—'}</td>
+        <td class="mono">${fM(fv(r.downloads_30d))}</td>
+        <td class="mono" style="color:${g7color}"><strong>${g7pct}</strong></td>
+        <td class="mono" style="color:var(--ink3)">${fLR(r.like_ratio)}</td>
+      </tr>`;
+    }).join('') || '<tr><td colspan="7" style="padding:16px;color:var(--ink4)">No data yet (growth_7d available after 7 days of collection)</td></tr>';
+
+  // ── Chart 3: Like Ratio — scatter plot (top 40 by downloads) ───────────
+  const top40 = [...latest]
+    .filter(r => fv(r.like_ratio) != null && fv(r.downloads_30d) > 0)
+    .sort((a,b) => (fv(b.downloads_30d)||0) - (fv(a.downloads_30d)||0))
+    .slice(0, 40);
+
+  // Group by company for coloring
+  const scatterData = top40.map(r => ({
+    x: fv(r.downloads_30d) / 1e6,
+    y: fv(r.like_ratio),
+    label: (r.model_id||'').split('/').pop(),
+    company: r.company || 'Community',
+  }));
+
+  // One dataset per company (for legend)
+  const compGroups = {};
+  scatterData.forEach(pt => {
+    if (!compGroups[pt.company]) compGroups[pt.company] = [];
+    compGroups[pt.company].push(pt);
+  });
+
+  const scatterDatasets = Object.entries(compGroups).map(([co, pts]) => ({
+    label: co,
+    data: pts.map(p => ({ x: p.x, y: p.y, label: p.label })),
+    backgroundColor: getColor(co, 0.8),
+    pointRadius: 5,
+    pointHoverRadius: 7,
+  }));
+
+  new Chart(document.getElementById('hfLikeRatioChart'), {
+    type: 'scatter',
+    data: { datasets: scatterDatasets },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: { boxWidth: 8, font: { size: 8 }, padding: 6 }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const pt = ctx.raw;
+              return [`${pt.label}`, `DL: ${pt.x.toFixed(1)}M`, `Like ratio: ${pt.y?.toFixed(4)}`];
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: gridColor },
+          title: { display: true, text: 'Downloads 30d (M)', font: { size: 9 } },
+          ticks: { callback: v => v.toFixed(0)+'M' }
+        },
+        y: {
+          grid: { color: gridColor },
+          title: { display: true, text: 'Like Ratio (likes/DL)', font: { size: 9 } },
+          ticks: { callback: v => v.toFixed(4) }
+        }
+      }
+    }
+  });
+
+  // ── Table: Company Detail ───────────────────────────────────────────────
+  document.querySelector('#hf-company-table tbody').innerHTML =
+    todayComp.map((r, i) => {
+      const g7 = fv(r.growth_7d_avg);
+      const g7txt = g7 != null ? (g7>0?'+':'') + (g7*100).toFixed(1)+'%' : '—';
+      const g7c = g7 == null ? 'var(--ink4)' : g7 > 0 ? 'var(--sage)' : 'var(--umber)';
+      return `<tr>
+        <td>
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;
+            background:${getColor(r.company,1)};margin-right:6px;vertical-align:middle;"></span>
+          <strong>${r.company||'?'}</strong>
+        </td>
+        <td class="mono">${fM(fv(r.total_downloads))}</td>
+        <td class="mono" style="color:var(--gold)"><strong>${(fv(r.share_pct)||0).toFixed(2)}%</strong></td>
+        <td class="mono">${r.model_count||'—'}</td>
+        <td class="mono" style="color:var(--ink3)">${fLR(r.avg_like_ratio)}</td>
+        <td class="mono" style="color:${g7c}">${g7txt}</td>
+      </tr>`;
+    }).join('') || '<tr><td colspan="6" style="padding:16px;color:var(--ink4)">No data yet</td></tr>';
+
+  console.log('[HF] All charts rendered ✓');
+}
+
+
+</script>
+</body>
+</html>
