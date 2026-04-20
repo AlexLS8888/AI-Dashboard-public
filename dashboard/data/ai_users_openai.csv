@@ -1,0 +1,14 @@
+date,active_users,users_period,product,source_label,confidence,source_type,prev_date,prev_users,growth_vs_prev_pct
+2023-03-25,50000000.0,Weekly,ChatGPT,ChatGPT 50M WAU,Likely,Company disclosure,,,
+2023-09-20,80000000.0,Weekly,ChatGPT,ChatGPT 80M WAU,Likely,Company disclosure,2023-03-25,50000000.0,60.0
+2024-03-20,125000000.0,Weekly,ChatGPT,ChatGPT 125M WAU,Likely,Company disclosure,2023-09-20,80000000.0,56.3
+2024-03-30,100000000.0,Monthly,All products,100M MAU,Uncertain,Media report,,,
+2024-06-30,350000000.0,Monthly,All products,350M MAU,Likely,Media report,2024-03-30,100000000.0,250.0
+2024-09-15,240000000.0,Weekly,ChatGPT,ChatGPT 240M WAU,Likely,Company disclosure,2024-03-20,125000000.0,92.0
+2024-12-04,300000000.0,Weekly,ChatGPT,ChatGPT 300M WAU,Confident,Company disclosure,2024-09-15,240000000.0,25.0
+2025-03-13,430000000.0,Weekly,ChatGPT,ChatGPT 430M WAU,Likely,Company disclosure,2024-12-04,300000000.0,43.3
+2025-03-28,160000000.0,Daily,ChatGPT,ChatGPT Google trial,Likely,Other,,,
+2025-07-15,770000000.0,Weekly,ChatGPT,ChatGPT 700M WAU,Confident,Company disclosure,2025-03-13,430000000.0,79.1
+2025-08-04,700000000.0,Weekly,ChatGPT,ChatGPT 700M WAU,Confident,Company disclosure,2025-07-15,770000000.0,-9.1
+2025-10-06,800000000.0,Weekly,ChatGPT,ChatGPT 800M WAU,Confident,Company disclosure,2025-08-04,700000000.0,14.3
+2025-12-09,900000000.0,Weekly,ChatGPT,ChatGPT 900M WAU,Likely,Media report,2025-10-06,800000000.0,12.5

@@ -8,6 +8,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-11-24,Claude Opus 4 5,Anthropic,,4.8151,,1.8146,20.4198,0.74969,claude-opus-4-5-20251101_16K
 2025-11-24,Claude Opus 4 5,Anthropic,,4.8151,,1.8146,20.4198,0.74969,claude-opus-4-5-20251101_16K
 2025-11-24,Claude Opus 4 5,Anthropic,,4.8151,,1.8146,20.4198,0.74969,claude-opus-4-5-20251101_16K
+2025-11-24,Claude Opus 4 5,Anthropic,,4.8151,,1.8146,20.4198,0.74969,claude-opus-4-5-20251101_16K
+2025-11-19,Gpt 5.1 Codex Max,OpenAI,,2.6959,,1.2469,5.8045,0.715789,gpt-5.1-codex-max
 2025-11-19,Gpt 5.1 Codex Max,OpenAI,,2.6959,,1.2469,5.8045,0.715789,gpt-5.1-codex-max
 2025-11-19,Gpt 5.1 Codex Max,OpenAI,,2.6959,,1.2469,5.8045,0.715789,gpt-5.1-codex-max
 2025-11-19,Gpt 5.1 Codex Max,OpenAI,,2.6959,,1.2469,5.8045,0.715789,gpt-5.1-codex-max
@@ -19,6 +21,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-11-06,Kimi K2 Thinking,Moonshot,,0.9032,,0.4247,1.6375,0.591943,kimi-k2-thinking
 2025-11-06,Kimi K2 Thinking,Moonshot,,0.9032,,0.4247,1.6375,0.591943,kimi-k2-thinking
 2025-11-06,Kimi K2 Thinking,Moonshot,,0.9032,,0.4247,1.6375,0.591943,kimi-k2-thinking
+2025-11-06,Kimi K2 Thinking,Moonshot,,0.9032,,0.4247,1.6375,0.591943,kimi-k2-thinking
+2025-09-29,Claude Sonnet 4 5,Anthropic,,2.0324,,0.934,4.2388,0.673842,claude-sonnet-4-5-20250929_16K
 2025-09-29,Claude Sonnet 4 5,Anthropic,,2.0324,,0.934,4.2388,0.673842,claude-sonnet-4-5-20250929_16K
 2025-09-29,Claude Sonnet 4 5,Anthropic,,2.0324,,0.934,4.2388,0.673842,claude-sonnet-4-5-20250929_16K
 2025-09-29,Claude Sonnet 4 5,Anthropic,,2.0324,,0.934,4.2388,0.673842,claude-sonnet-4-5-20250929_16K
@@ -30,6 +34,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-08-07,Gpt 5 2025 08 07,OpenAI,,2.2886,,1.1145,4.5186,0.696053,gpt-5-2025-08-07_medium
 2025-08-07,Gpt 5 2025 08 07,OpenAI,,2.2886,,1.1145,4.5186,0.696053,gpt-5-2025-08-07_medium
 2025-08-07,Gpt 5 2025 08 07,OpenAI,,2.2886,,1.1145,4.5186,0.696053,gpt-5-2025-08-07_medium
+2025-08-07,Gpt 5 2025 08 07,OpenAI,,2.2886,,1.1145,4.5186,0.696053,gpt-5-2025-08-07_medium
+2025-08-05,Claude Opus 4 1,Anthropic,,1.8948,,0.9592,3.4865,0.668069,claude-opus-4-1-20250805_16K
 2025-08-05,Claude Opus 4 1,Anthropic,,1.8948,,0.9592,3.4865,0.668069,claude-opus-4-1-20250805_16K
 2025-08-05,Claude Opus 4 1,Anthropic,,1.8948,,0.9592,3.4865,0.668069,claude-opus-4-1-20250805_16K
 2025-08-05,Claude Opus 4 1,Anthropic,,1.8948,,0.9592,3.4865,0.668069,claude-opus-4-1-20250805_16K
@@ -41,6 +47,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-08-05,Gpt Oss 120B,OpenAI,,0.6997,,0.3132,1.3584,0.56634,gpt-oss-120b
 2025-08-05,Gpt Oss 120B,OpenAI,,0.6997,,0.3132,1.3584,0.56634,gpt-oss-120b
 2025-08-05,Gpt Oss 120B,OpenAI,,0.6997,,0.3132,1.3584,0.56634,gpt-oss-120b
+2025-08-05,Gpt Oss 120B,OpenAI,,0.6997,,0.3132,1.3584,0.56634,gpt-oss-120b
+2025-07-09,Grok 4 0709,xAI,,1.8346,,0.8032,3.8639,0.665803,grok-4-0709
 2025-07-09,Grok 4 0709,xAI,,1.8346,,0.8032,3.8639,0.665803,grok-4-0709
 2025-07-09,Grok 4 0709,xAI,,1.8346,,0.8032,3.8639,0.665803,grok-4-0709
 2025-07-09,Grok 4 0709,xAI,,1.8346,,0.8032,3.8639,0.665803,grok-4-0709
@@ -51,6 +59,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-06-05,Gemini 2.5 Pro Preview 06 05,Google DeepMind,,0.6456,,0.322,1.1593,0.5544,gemini-2.5-pro-preview-06-05
 2025-06-05,Gemini 2.5 Pro Preview 06 05,Google DeepMind,,0.6456,,0.322,1.1593,0.5544,gemini-2.5-pro-preview-06-05
 2025-06-05,Gemini 2.5 Pro Preview 06 05,Google DeepMind,,0.6456,,0.322,1.1593,0.5544,gemini-2.5-pro-preview-06-05
+2025-06-05,Gemini 2.5 Pro Preview 06 05,Google DeepMind,,0.6456,,0.322,1.1593,0.5544,gemini-2.5-pro-preview-06-05
+2025-05-28,Deepseek R1 0528,DeepSeek,,0.5195,,0.2142,1.0685,0.537826,DeepSeek-R1-0528
 2025-05-28,Deepseek R1 0528,DeepSeek,,0.5195,,0.2142,1.0685,0.537826,DeepSeek-R1-0528
 2025-05-28,Deepseek R1 0528,DeepSeek,,0.5195,,0.2142,1.0685,0.537826,DeepSeek-R1-0528
 2025-05-28,Deepseek R1 0528,DeepSeek,,0.5195,,0.2142,1.0685,0.537826,DeepSeek-R1-0528
@@ -62,6 +72,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-05-22,Claude Opus 4,Anthropic,,1.4259,,0.751,2.4467,0.639292,claude-opus-4-20250514_16K
 2025-05-22,Claude Opus 4,Anthropic,,1.4259,,0.751,2.4467,0.639292,claude-opus-4-20250514_16K
 2025-05-22,Claude Opus 4,Anthropic,,1.4259,,0.751,2.4467,0.639292,claude-opus-4-20250514_16K
+2025-05-22,Claude Opus 4,Anthropic,,1.4259,,0.751,2.4467,0.639292,claude-opus-4-20250514_16K
+2025-05-22,Claude Sonnet 4,Anthropic,,1.249,,0.6308,2.2331,0.619725,claude-sonnet-4-20250514_16K
 2025-05-22,Claude Sonnet 4,Anthropic,,1.249,,0.6308,2.2331,0.619725,claude-sonnet-4-20250514_16K
 2025-05-22,Claude Sonnet 4,Anthropic,,1.249,,0.6308,2.2331,0.619725,claude-sonnet-4-20250514_16K
 2025-05-22,Claude Sonnet 4,Anthropic,,1.249,,0.6308,2.2331,0.619725,claude-sonnet-4-20250514_16K
@@ -73,11 +85,14 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-04-16,O3 2025 04 16,OpenAI,,1.5212,,0.7605,2.7189,0.654376,o3-2025-04-16_medium
 2025-04-16,O3 2025 04 16,OpenAI,,1.5212,,0.7605,2.7189,0.654376,o3-2025-04-16_medium
 2025-04-16,O3 2025 04 16,OpenAI,,1.5212,,0.7605,2.7189,0.654376,o3-2025-04-16_medium
+2025-04-16,O3 2025 04 16,OpenAI,,1.5212,,0.7605,2.7189,0.654376,o3-2025-04-16_medium
 2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
 2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
 2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
 2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
 2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
+2025-04-16,O4 Mini 2025 04 16,OpenAI,,1.2752,,0.5869,2.5246,0.639269,o4-mini-2025-04-16_medium
+2025-03-24,Deepseek V3 0324,DeepSeek,,0.3853,,0.1952,0.6889,0.495813,DeepSeek-V3-0324
 2025-03-24,Deepseek V3 0324,DeepSeek,,0.3853,,0.1952,0.6889,0.495813,DeepSeek-V3-0324
 2025-03-24,Deepseek V3 0324,DeepSeek,,0.3853,,0.1952,0.6889,0.495813,DeepSeek-V3-0324
 2025-03-24,Deepseek V3 0324,DeepSeek,,0.3853,,0.1952,0.6889,0.495813,DeepSeek-V3-0324
@@ -89,6 +104,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2025-02-24,Claude 3 7 Sonnet,Anthropic,,0.9349,,0.4888,1.5571,0.599681,claude-3-7-sonnet-20250219_16K
 2025-02-24,Claude 3 7 Sonnet,Anthropic,,0.9349,,0.4888,1.5571,0.599681,claude-3-7-sonnet-20250219_16K
 2025-02-24,Claude 3 7 Sonnet,Anthropic,,0.9349,,0.4888,1.5571,0.599681,claude-3-7-sonnet-20250219_16K
+2025-02-24,Claude 3 7 Sonnet,Anthropic,,0.9349,,0.4888,1.5571,0.599681,claude-3-7-sonnet-20250219_16K
+2025-01-20,Deepseek R1,DeepSeek,,0.4489,,0.2246,0.8496,0.519251,DeepSeek-R1
 2025-01-20,Deepseek R1,DeepSeek,,0.4489,,0.2246,0.8496,0.519251,DeepSeek-R1
 2025-01-20,Deepseek R1,DeepSeek,,0.4489,,0.2246,0.8496,0.519251,DeepSeek-R1
 2025-01-20,Deepseek R1,DeepSeek,,0.4489,,0.2246,0.8496,0.519251,DeepSeek-R1
@@ -99,6 +116,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-12-26,Deepseek V3,DeepSeek,,0.3079,,0.1495,0.5629,0.473627,DeepSeek-V3
 2024-12-26,Deepseek V3,DeepSeek,,0.3079,,0.1495,0.5629,0.473627,DeepSeek-V3
 2024-12-26,Deepseek V3,DeepSeek,,0.3079,,0.1495,0.5629,0.473627,DeepSeek-V3
+2024-12-26,Deepseek V3,DeepSeek,,0.3079,,0.1495,0.5629,0.473627,DeepSeek-V3
+2024-12-17,O1 2024 12 17,OpenAI,,0.6534,,0.2934,1.4059,0.55932,o1-2024-12-17_medium
 2024-12-17,O1 2024 12 17,OpenAI,,0.6534,,0.2934,1.4059,0.55932,o1-2024-12-17_medium
 2024-12-17,O1 2024 12 17,OpenAI,,0.6534,,0.2934,1.4059,0.55932,o1-2024-12-17_medium
 2024-12-17,O1 2024 12 17,OpenAI,,0.6534,,0.2934,1.4059,0.55932,o1-2024-12-17_medium
@@ -109,6 +128,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-11-20,Gpt 4O 2024 11 20,OpenAI,,0.1528,,0.0704,0.2994,0.407636,gpt-4o-2024-11-20
 2024-11-20,Gpt 4O 2024 11 20,OpenAI,,0.1528,,0.0704,0.2994,0.407636,gpt-4o-2024-11-20
 2024-11-20,Gpt 4O 2024 11 20,OpenAI,,0.1528,,0.0704,0.2994,0.407636,gpt-4o-2024-11-20
+2024-11-20,Gpt 4O 2024 11 20,OpenAI,,0.1528,,0.0704,0.2994,0.407636,gpt-4o-2024-11-20
+2024-10-22,Claude 3 5 Sonnet,Anthropic,,0.4929,,0.2339,0.9843,0.52701,claude-3-5-sonnet-20241022
 2024-10-22,Claude 3 5 Sonnet,Anthropic,,0.4929,,0.2339,0.9843,0.52701,claude-3-5-sonnet-20241022
 2024-10-22,Claude 3 5 Sonnet,Anthropic,,0.4929,,0.2339,0.9843,0.52701,claude-3-5-sonnet-20241022
 2024-10-22,Claude 3 5 Sonnet,Anthropic,,0.4929,,0.2339,0.9843,0.52701,claude-3-5-sonnet-20241022
@@ -119,6 +140,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-09-19,Qwen2.5 72B Instruct,Alibaba,,0.0861,,0.0397,0.1721,0.357771,qwen2.5-72b-instruct
 2024-09-19,Qwen2.5 72B Instruct,Alibaba,,0.0861,,0.0397,0.1721,0.357771,qwen2.5-72b-instruct
 2024-09-19,Qwen2.5 72B Instruct,Alibaba,,0.0861,,0.0397,0.1721,0.357771,qwen2.5-72b-instruct
+2024-09-19,Qwen2.5 72B Instruct,Alibaba,,0.0861,,0.0397,0.1721,0.357771,qwen2.5-72b-instruct
+2024-09-12,O1 Preview 2024 09 12,OpenAI,,0.3704,,0.1937,0.6799,0.492955,o1-preview-2024-09-12
 2024-09-12,O1 Preview 2024 09 12,OpenAI,,0.3704,,0.1937,0.6799,0.492955,o1-preview-2024-09-12
 2024-09-12,O1 Preview 2024 09 12,OpenAI,,0.3704,,0.1937,0.6799,0.492955,o1-preview-2024-09-12
 2024-09-12,O1 Preview 2024 09 12,OpenAI,,0.3704,,0.1937,0.6799,0.492955,o1-preview-2024-09-12
@@ -130,6 +153,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-06-20,Claude 3 5 Sonnet,Anthropic,,0.3114,,0.1578,0.5731,0.476797,claude-3-5-sonnet-20240620
 2024-06-20,Claude 3 5 Sonnet,Anthropic,,0.3114,,0.1578,0.5731,0.476797,claude-3-5-sonnet-20240620
 2024-06-20,Claude 3 5 Sonnet,Anthropic,,0.3114,,0.1578,0.5731,0.476797,claude-3-5-sonnet-20240620
+2024-06-20,Claude 3 5 Sonnet,Anthropic,,0.3114,,0.1578,0.5731,0.476797,claude-3-5-sonnet-20240620
+2024-06-07,Qwen2 72B Instruct,Alibaba,,0.0374,,0.0142,0.0805,0.298999,qwen2-72b-instruct
 2024-06-07,Qwen2 72B Instruct,Alibaba,,0.0374,,0.0142,0.0805,0.298999,qwen2-72b-instruct
 2024-06-07,Qwen2 72B Instruct,Alibaba,,0.0374,,0.0142,0.0805,0.298999,qwen2-72b-instruct
 2024-06-07,Qwen2 72B Instruct,Alibaba,,0.0374,,0.0142,0.0805,0.298999,qwen2-72b-instruct
@@ -140,6 +165,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-04-09,Gpt 4 Turbo 2024 04 09,OpenAI,,0.1095,,0.0536,0.2033,0.367357,gpt-4-turbo-2024-04-09
 2024-04-09,Gpt 4 Turbo 2024 04 09,OpenAI,,0.1095,,0.0536,0.2033,0.367357,gpt-4-turbo-2024-04-09
 2024-04-09,Gpt 4 Turbo 2024 04 09,OpenAI,,0.1095,,0.0536,0.2033,0.367357,gpt-4-turbo-2024-04-09
+2024-04-09,Gpt 4 Turbo 2024 04 09,OpenAI,,0.1095,,0.0536,0.2033,0.367357,gpt-4-turbo-2024-04-09
+2024-02-29,Claude 3 Opus,Anthropic,,0.1068,,0.0484,0.215,0.377459,claude-3-opus-20240229
 2024-02-29,Claude 3 Opus,Anthropic,,0.1068,,0.0484,0.215,0.377459,claude-3-opus-20240229
 2024-02-29,Claude 3 Opus,Anthropic,,0.1068,,0.0484,0.215,0.377459,claude-3-opus-20240229
 2024-02-29,Claude 3 Opus,Anthropic,,0.1068,,0.0484,0.215,0.377459,claude-3-opus-20240229
@@ -150,6 +177,8 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2024-01-25,Gpt 4 0125 Preview,OpenAI,,0.0894,,0.0467,0.1626,0.351726,gpt-4-0125-preview
 2024-01-25,Gpt 4 0125 Preview,OpenAI,,0.0894,,0.0467,0.1626,0.351726,gpt-4-0125-preview
 2024-01-25,Gpt 4 0125 Preview,OpenAI,,0.0894,,0.0467,0.1626,0.351726,gpt-4-0125-preview
+2024-01-25,Gpt 4 0125 Preview,OpenAI,,0.0894,,0.0467,0.1626,0.351726,gpt-4-0125-preview
+2023-11-06,Gpt 4 1106 Preview,OpenAI,,0.1426,,0.0694,0.268,0.404329,gpt-4-1106-preview
 2023-11-06,Gpt 4 1106 Preview,OpenAI,,0.1426,,0.0694,0.268,0.404329,gpt-4-1106-preview
 2023-11-06,Gpt 4 1106 Preview,OpenAI,,0.1426,,0.0694,0.268,0.404329,gpt-4-1106-preview
 2023-11-06,Gpt 4 1106 Preview,OpenAI,,0.1426,,0.0694,0.268,0.404329,gpt-4-1106-preview
@@ -161,17 +190,21 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2023-09-18,Gpt 3.5 Turbo Instruct,OpenAI,,0.0101,,0.0039,0.0165,0.214611,gpt-3.5-turbo-instruct
 2023-09-18,Gpt 3.5 Turbo Instruct,OpenAI,,0.0101,,0.0039,0.0165,0.214611,gpt-3.5-turbo-instruct
 2023-09-18,Gpt 3.5 Turbo Instruct,OpenAI,,0.0101,,0.0039,0.0165,0.214611,gpt-3.5-turbo-instruct
+2023-09-18,Gpt 3.5 Turbo Instruct,OpenAI,,0.0101,,0.0039,0.0165,0.214611,gpt-3.5-turbo-instruct
 2023-06-13,Gpt 4 0613,OpenAI,METR-Horizon-v1.1,0.0665,0.0148,0.0327,0.1318,0.293044,gpt-4-0613
 2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
 2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
 2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
 2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
 2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
+2023-03-14,Gpt 4 0314,OpenAI,,0.0894,,0.0409,0.1622,0.361067,gpt-4-0314
 2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
 2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
 2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
 2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
 2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
+2019-11-05,Gpt2 Xl,OpenAI,,0.0007,,0.0,0.0022,0.101046,gpt2-xl
+,Davinci 002,OpenAI,,0.0025,,0.0012,0.0042,0.161869,davinci-002
 ,Davinci 002,OpenAI,,0.0025,,0.0012,0.0042,0.161869,davinci-002
 ,Davinci 002,OpenAI,,0.0025,,0.0012,0.0042,0.161869,davinci-002
 ,Davinci 002,OpenAI,,0.0025,,0.0012,0.0042,0.161869,davinci-002

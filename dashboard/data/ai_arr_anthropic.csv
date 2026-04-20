@@ -1,0 +1,14 @@
+date,arr_usd,source_label,arr_type,confidence,source_type,prev_date,prev_arr,growth_vs_prev_pct
+2023-10-01,100000000.0,October 2023 100M,Annualized run rate,Likely,Media report,,,
+2024-01-01,87000000.0,2024 87M,Annualized run rate,Confident,Company disclosure,2023-10-01,100000000.0,-13.0
+2024-12-31,1000000000.0,December 2024 1B,Annualized run rate,Likely,Media report,2024-01-01,87000000.0,1049.4
+2025-03-01,1400000000.0,March 2025 1.4B,Annualized run rate,Likely,Media report,2024-12-31,1000000000.0,40.0
+2025-03-31,2000000000.0,March 2025 2B,Annualized run rate,Confident,Company disclosure,2025-03-01,1400000000.0,42.9
+2025-05-30,3000000000.0,May 2025 3B,Annualized run rate,Likely,Media report,2025-03-31,2000000000.0,50.0
+2025-07-01,4000000000.0,July 2025 4B,Annualized run rate,Likely,Media report,2025-05-30,3000000000.0,33.3
+2025-07-29,5000000000.0,July 2025 5B,Annual recurring revenue (ARR),Likely,Company disclosure,2025-07-01,4000000000.0,25.0
+2025-10-21,7000000000.0,Oct 2025 7B,Annualized run rate,Confident,Company disclosure,2025-07-29,5000000000.0,40.0
+2025-12-31,9000000000.0,end-2025 9B,Annualized run rate,Likely,Media report,2025-10-21,7000000000.0,28.6
+2026-02-12,14000000000.0,Feb 2026 14B,Annualized run rate,Confident,Company disclosure,2025-12-31,9000000000.0,55.6
+2026-03-03,19000000000.0,March 2026 19B,Annualized run rate,Confident,"Company disclosure,Media report",2026-02-12,14000000000.0,35.7
+2026-04-06,30000000000.0,Anthropic 30B April,Annualized run rate,Confident,Company disclosure,2026-03-03,19000000000.0,57.9

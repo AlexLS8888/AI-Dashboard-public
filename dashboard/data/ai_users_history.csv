@@ -1,0 +1,14 @@
+date,company,product,active_users,users_period,daily_messages,daily_tokens,source_label,confidence,source_type,source_1
+2023-03-25,OpenAI,ChatGPT,50000000.0,Weekly,,,ChatGPT 50M WAU,Likely,Company disclosure,https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf
+2023-09-20,OpenAI,ChatGPT,80000000.0,Weekly,,,ChatGPT 80M WAU,Likely,Company disclosure,https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf
+2024-03-20,OpenAI,ChatGPT,125000000.0,Weekly,,,ChatGPT 125M WAU,Likely,Company disclosure,https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf
+2024-03-30,OpenAI,All products,100000000.0,Monthly,,,100M MAU,Uncertain,Media report,https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html
+2024-06-30,OpenAI,All products,350000000.0,Monthly,,,350M MAU,Likely,Media report,https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html
+2024-09-15,OpenAI,ChatGPT,240000000.0,Weekly,,,ChatGPT 240M WAU,Likely,Company disclosure,https://www.nber.org/papers/w34255
+2024-12-04,OpenAI,ChatGPT,300000000.0,Weekly,1000000000.0,,ChatGPT 300M WAU,Confident,Company disclosure,https://x.com/OpenAINewsroom/status/1864373399218475440
+2025-03-13,OpenAI,ChatGPT,430000000.0,Weekly,,,ChatGPT 430M WAU,Likely,Company disclosure,https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf
+2025-03-28,OpenAI,ChatGPT,160000000.0,Daily,1200000000.0,,ChatGPT Google trial,Likely,Other,https://semianalysis.com/2025/07/11/meta-superintelligence-leadership-compute-talent-and-data/#chatappstats
+2025-07-15,OpenAI,ChatGPT,770000000.0,Weekly,,,ChatGPT 700M WAU,Confident,Company disclosure,https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf
+2025-08-04,OpenAI,ChatGPT,700000000.0,Weekly,,,ChatGPT 700M WAU,Confident,Company disclosure,https://www.cnbc.com/2025/08/04/openai-chatgpt-700-million-users.html
+2025-10-06,OpenAI,ChatGPT,800000000.0,Weekly,,,ChatGPT 800M WAU,Confident,Company disclosure,https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/
+2025-12-09,OpenAI,ChatGPT,900000000.0,Weekly,,,ChatGPT 900M WAU,Likely,Media report,https://www.theinformation.com/newsletters/ai-agenda/chatgpt-nears-900-million-weekly-active-users-gemini-catching?rc=9mzoog
