@@ -2,6 +2,7 @@ release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hou
 2026-02-05,Claude Opus 4 6,Anthropic,METR-Horizon-v1.1,11.9801,1.1646,5.322,65.8292,0.788644
 2025-12-11,Gpt 5.2 2025 12 11,OpenAI,METR-Horizon-v1.1,5.8708,1.1,3.1887,14.3723,0.752875
 2026-02-05,Gpt 5.3 Codex,OpenAI,METR-Horizon-v1.1,5.8255,0.9123,3.2008,14.3054,0.745439
+2026-03-05,Gpt 5.4 2026 03 05,OpenAI,METR-Horizon-v1.1,5.6956,0.898,3.1097,12.813,0.743443
 2025-11-24,Claude Opus 4 5,Anthropic,METR-Horizon-v1.1,4.8832,0.8238,2.6757,10.6437,0.73007
 2025-11-18,Gemini 3 Pro Preview,Google DeepMind,METR-Horizon-v1.1,3.7388,0.9024,2.2811,6.458,0.709822
 2025-08-07,Gpt 5 2025 08 07,OpenAI,METR-Horizon-v1.1,3.3835,0.6385,1.9035,6.7791,0.693697

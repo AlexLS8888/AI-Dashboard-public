@@ -1,5 +1,6 @@
 date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type,confidence,source_type,source_1
 2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
+2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
 2023-03-01,OpenAI,March 2023 100Ms,200000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openais-losses-doubled-to-540-million-as-it-developed-chatgpt?rc=9mzoog
 2023-08-29,OpenAI,Aug 2023 1B,1000000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=4ylmkj
 2023-10-01,Anthropic,October 2023 100M,100000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openai-rival-anthropic-in-talks-to-raise-2-billion-from-google-others-as-ai-arms-race-accelerates?rc=4ylmkj
@@ -11,6 +12,8 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2024-08-15,OpenAI,August 2024 3.6B,3600000000.0,Annualized run rate,,,Likely,Media report,https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html
 2024-09-12,OpenAI,Sep 2024 4B,4000000000.0,Annual recurring revenue (ARR),,,Likely,Media report,https://www.wsj.com/tech/ai/united-arab-emirates-fund-in-talks-to-invest-in-openai-fd4e4977?
 2024-12-31,Anthropic,December 2024 1B,1000000000.0,Annualized run rate,,,Likely,Media report,https://www.cnbc.com/2025/01/22/google-agrees-to-new-1-billion-investment-in-anthropic.html
+2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
+2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
 2024-12-31,OpenAI,Dec 2024 5.5B,5500000000.0,Annual recurring revenue (ARR),,,Likely,Media report,https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html
 2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
 2025-03-01,Anthropic,March 2025 1.4B,1400000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/anthropics-claude-drives-strong-revenue-growth-while-powering-manus-sensation?rc=9mzoog
@@ -18,14 +21,17 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2025-05-30,Anthropic,May 2025 3B,3000000000.0,Annualized run rate,,,Likely,Media report,https://www.cnbc.com/2025/05/30/anthropic-hits-3-billion-in-annualized-revenue-on-business-demand-for-ai.html
 2025-06-09,OpenAI,June 2025 10B,10000000000.0,Annual recurring revenue (ARR),,,Likely,Company disclosure,https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html
 2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
+2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
 2025-07-01,Anthropic,July 2025 4B,4000000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/anthropic-revenue-hits-4-billion-annual-pace-competition-cursor-intensifies?rc=9mzoog
 2025-07-29,Anthropic,July 2025 5B,5000000000.0,Annual recurring revenue (ARR),,,Likely,Company disclosure,https://www.bloomberg.com/news/articles/2025-07-29/anthropic-nears-deal-to-raise-funding-at-170-billion-valuation
 2025-07-30,OpenAI,July 2025 12B,12000000000.0,Annualized run rate,,,Confident,Company disclosure,https://www.cnbc.com/2025/08/20/openai-compute-ai.html
 2025-08-01,OpenAI,August 2025 13B,13000000000.0,Annual recurring revenue (ARR),,,Likely,Media report,https://www.nytimes.com/2025/08/01/business/dealbook/openai-ai-mega-funding-deal.html
 2025-10-21,Anthropic,Oct 2025 7B,7000000000.0,Annualized run rate,,,Confident,Company disclosure,https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership
 2025-12-18,OpenAI,Dec 2025 19B,19000000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openais-organizational-problems-hurt-chatgpt?rc=9mzoog
+2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
 2025-12-31,Anthropic,end-2025 9B,9000000000.0,Annualized run rate,,,Likely,Media report,https://www.bloomberg.com/news/articles/2026-01-21/anthropic-s-revenue-run-rate-tops-9-billion-as-vcs-pile-in
 2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
+2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
 2025-12-31,OpenAI,21B end-2025,21400000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog
 2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
 2026-02-12,Anthropic,Feb 2026 14B,14000000000.0,Annualized run rate,,,Confident,Company disclosure,https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation
