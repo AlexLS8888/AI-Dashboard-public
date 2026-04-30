@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPU Pricing — Time Series</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background: #F5F4F1;
+    color: #1A1917;
+    padding: 32px;
+  }
+  h1 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #7A756A;
+    margin-bottom: 4px;
+  }
+  h2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #B0A99E;
+    margin-bottom: 32px;
+    letter-spacing: 0.08em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #E0DDD6;
+    padding: 20px 20px 16px;
+  }
+  .card-title {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #3D3A34;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .card-sub {
+    font-size: 9px;
+    color: #B0A99E;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .chart-wrap {
+    position: relative;
+    height: 200px;
+  }
+  .status {
+    font-size: 11px;
+    color: #7A756A;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+    background: #EEECE7;
+    border-left: 3px solid #8B6914;
+  }
+  .err { border-left-color: #8B2E2E; color: #8B2E2E; }
+  .ok  { border-left-color: #2E6651; }
+</style>
+</head>
+<body>
+
+<h1>GPU Pricing — Time Series</h1>
+<h2>Source: data/gpu_index_history.csv · type=gpu · provider='' · pricing=on-demand / spot</h2>
+
+<div id="status" class="status">Loading CSV...</div>
+
+<div class="grid">
+  <div class="card">
+    <div class="card-title">H100 · On-Demand vs Spot</div>
+    <div class="card-sub">$/GPU/hr · solid = on-demand · dashed = spot · type=gpu, name=H100, provider=''</div>
+    <div class="chart-wrap"><canvas id="c_H100"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">H200 · On-Demand vs Spot</div>
+    <div class="card-sub">$/GPU/hr · solid = on-demand · dashed = spot · type=gpu, name=H200, provider=''</div>
+    <div class="chart-wrap"><canvas id="c_H200"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">B200 · On-Demand vs Spot</div>
+    <div class="card-sub">$/GPU/hr · solid = on-demand · dashed = spot · type=gpu, name=B200, provider=''</div>
+    <div class="chart-wrap"><canvas id="c_B200"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">A100 · On-Demand vs Spot</div>
+    <div class="card-sub">$/GPU/hr · solid = on-demand · dashed = spot · type=gpu, name=A100, provider=''</div>
+    <div class="chart-wrap"><canvas id="c_A100"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Hyperscaler vs Neocloud</div>
+    <div class="card-sub">$/GPU/hr · type=metric · name=hyperscaler_median_all / neocloud_median_all · pricing=on-demand</div>
+    <div class="chart-wrap"><canvas id="c_hypneo"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">H100 Hyperscaler Premium</div>
+    <div class="card-sub">$ premium · type=metric · name=hyperscaler_premium_h100 · pricing=on-demand</div>
+    <div class="chart-wrap"><canvas id="c_prem"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Inference vs Training</div>
+    <div class="card-sub">$/GPU/hr · type=aggregate · name=inference / training · pricing=on-demand · provider=''</div>
+    <div class="chart-wrap"><canvas id="c_inftrn"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Training / Inference Ratio</div>
+    <div class="card-sub">ratio · type=metric · name=training_inference_ratio · pricing=on-demand · provider=''</div>
+    <div class="chart-wrap"><canvas id="c_ratio"></canvas></div>
+  </div>
+</div>
+
+<script>
+// ── Config ────────────────────────────────────────────────────────────────
+const CSV_PATH = 'data/gpu_index_history.csv';
+
+const GPU_COLORS = {
+  H100: { od: 'rgba(42,95,138,0.9)',   sp: 'rgba(42,95,138,0.35)'   },
+  H200: { od: 'rgba(139,105,20,0.9)',  sp: 'rgba(139,105,20,0.35)'  },
+  B200: { od: 'rgba(46,102,81,0.9)',   sp: 'rgba(46,102,81,0.35)'   },
+  A100: { od: 'rgba(139,46,46,0.9)',   sp: 'rgba(139,46,46,0.35)'   },
+};
+const GRID_COLOR = 'rgba(0,0,0,0.06)';
+
+// ── Parse CSV ─────────────────────────────────────────────────────────────
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const TAB   = String.fromCharCode(9);
+  const sep   = lines[0].indexOf(TAB) >= 0 ? TAB : ',';
+  const hdrs  = lines[0].split(sep).map(h => h.trim().replace(/^"|"$/g, ''));
+  return lines.slice(1)
+    .filter(l => l.trim())
+    .map(line => {
+      const vals = line.split(sep).map(v => v.trim());
+      const row  = {};
+      hdrs.forEach((h, i) => { row[h] = vals[i] !== undefined ? vals[i] : ''; });
+      return row;
+    });
+}
+
+// ── Number helper ─────────────────────────────────────────────────────────
+function fv(v) {
+  if (v === '' || v == null) return null;
+  const n = parseFloat(v);
+  return isNaN(n) ? null : n;
+}
+
+// ── Chart factory ─────────────────────────────────────────────────────────
+function makeChart(canvasId, labels, datasets, yLabel) {
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+  new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive:          true,
+      maintainAspectRatio: false,
+      animation:           false,
+      plugins: {
+        legend: {
+          labels: { boxWidth: 8, font: { size: 8 }, padding: 8 }
+        },
+        tooltip: {
+          callbacks: {
+            label: c => {
+              const v = c.parsed.y;
+              return v == null ? null :
+                c.dataset.isRatio
+                  ? `${c.dataset.label}: ${v.toFixed(2)}×`
+                  : `${c.dataset.label}: $${v.toFixed(2)}/hr`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: GRID_COLOR },
+          ticks: { font: { size: 8 }, maxTicksLimit: 10 }
+        },
+        y: {
+          grid: { color: GRID_COLOR },
+          beginAtZero: false,
+          title: { display: !!yLabel, text: yLabel || '', font: { size: 8 } },
+          ticks: {
+            font: { size: 8 },
+            callback: v => yLabel === '×' ? v.toFixed(1) + '×' : '$' + v.toFixed(1)
+          }
+        }
+      }
+    }
+  });
+}
+
+// ── Build GPU time series (H100/H200/B200/A100) ───────────────────────────
+function buildGpuChart(rows, gpu) {
+  // Filter: type=gpu, name=GPU, provider=''
+  const byDate = {};
+  rows
+    .filter(r => r.type === 'gpu' && r.name === gpu && r.provider === '')
+    .forEach(r => {
+      const d = r.date;
+      if (!byDate[d]) byDate[d] = {};
+      const v = fv(r.median);
+      if (r.pricing === 'on-demand') byDate[d].od = v;
+      if (r.pricing === 'spot')      byDate[d].sp = v;
+      if (r.pricing === 'all' && byDate[d].od == null) byDate[d].od = v;
+    });
+
+  const dates = Object.keys(byDate).sort();
+  if (dates.length < 2) {
+    console.warn(`[GPU] ${gpu}: only ${dates.length} dates`);
+    return;
+  }
+
+  const col = GPU_COLORS[gpu];
+  const labels = dates.map(d => d.slice(5)); // MM-DD
+
+  makeChart(`c_${gpu}`, labels, [
+    {
+      label: 'On-Demand',
+      data: dates.map(d => byDate[d].od ?? null),
+      borderColor: col.od,
+      backgroundColor: col.od.replace('0.9)', '0.08)'),
+      borderWidth: 2, tension: 0.3,
+      pointRadius: dates.length > 30 ? 0 : 3,
+      fill: true, spanGaps: true,
+    },
+    {
+      label: 'Spot',
+      data: dates.map(d => byDate[d].sp ?? null),
+      borderColor: col.sp,
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [4, 3], tension: 0.3,
+      pointRadius: 0, fill: false, spanGaps: true,
+    }
+  ], '$/GPU/hr');
+
+  console.log(`[GPU] ${gpu}: ${dates.length} dates, od[0]=${dates.map(d=>byDate[d].od)[0]}`);
+}
+
+// ── Build Hyperscaler vs Neocloud ─────────────────────────────────────────
+function buildHypNeoChart(rows) {
+  // type=metric, name=hyperscaler_median_all / neocloud_median_all, pricing=on-demand, provider=''
+  const byDate = {};
+  rows
+    .filter(r => r.type === 'metric' && r.provider === '' && r.pricing === 'on-demand')
+    .forEach(r => {
+      const d = r.date;
+      if (!byDate[d]) byDate[d] = {};
+      const v = fv(r.median);
+      if (r.name === 'hyperscaler_median_all') byDate[d].hyp = v;
+      if (r.name === 'neocloud_median_all')    byDate[d].neo = v;
+    });
+
+  const dates  = Object.keys(byDate).sort();
+  const labels = dates.map(d => d.slice(5));
+
+  if (dates.length < 2) { console.warn('[GPU] HypNeo: no data'); return; }
+
+  makeChart('c_hypneo', labels, [
+    {
+      label: 'Hyperscaler (median_all)',
+      data: dates.map(d => byDate[d].hyp ?? null),
+      borderColor: 'rgba(42,95,138,0.9)',
+      backgroundColor: 'rgba(42,95,138,0.07)',
+      borderWidth: 2, tension: 0.3,
+      pointRadius: dates.length > 30 ? 0 : 3,
+      fill: true, spanGaps: true,
+    },
+    {
+      label: 'Neocloud (median_all)',
+      data: dates.map(d => byDate[d].neo ?? null),
+      borderColor: 'rgba(46,102,81,0.9)',
+      backgroundColor: 'transparent',
+      borderWidth: 2, tension: 0.3,
+      pointRadius: dates.length > 30 ? 0 : 3,
+      fill: false, spanGaps: true,
+    }
+  ], '$/GPU/hr');
+
+  console.log(`[GPU] HypNeo: ${dates.length} dates`);
+}
+
+// ── Build H100 Premium ────────────────────────────────────────────────────
+function buildPremChart(rows) {
+  // type=metric, name=hyperscaler_premium_h100, pricing=on-demand, provider=''
+  const byDate = {};
+  rows
+    .filter(r => r.type === 'metric' && r.name === 'hyperscaler_premium_h100'
+              && r.provider === '' && r.pricing === 'on-demand')
+    .forEach(r => {
+      byDate[r.date] = fv(r.median);
+    });
+
+  const dates  = Object.keys(byDate).sort();
+  const labels = dates.map(d => d.slice(5));
+
+  if (dates.length < 2) { console.warn('[GPU] Prem: no data'); return; }
+
+  makeChart('c_prem', labels, [{
+    label: 'H100 Hyperscaler Premium',
+    data: dates.map(d => byDate[d] ?? null),
+    borderColor: 'rgba(139,105,20,0.9)',
+    backgroundColor: 'rgba(139,105,20,0.1)',
+    borderWidth: 2, tension: 0.3,
+    pointRadius: dates.length > 30 ? 0 : 3,
+    fill: true, spanGaps: true,
+  }], '$/GPU/hr');
+
+  console.log(`[GPU] Prem: ${dates.length} dates`);
+}
+
+// ── Build Inference vs Training ───────────────────────────────────────────
+function buildInfTrnChart(rows) {
+  // type=aggregate, name=inference/training, pricing=on-demand, provider=''
+  const byDate = {};
+  rows
+    .filter(r => r.type === 'aggregate' && r.provider === '' && r.pricing === 'on-demand')
+    .forEach(r => {
+      const d = r.date;
+      if (!byDate[d]) byDate[d] = {};
+      const v = fv(r.median);
+      if (r.name === 'inference') byDate[d].inf = v;
+      if (r.name === 'training')  byDate[d].trn = v;
+    });
+
+  const dates  = Object.keys(byDate).sort();
+  const labels = dates.map(d => d.slice(5));
+
+  if (dates.length < 2) { console.warn('[GPU] InfTrn: no data'); return; }
+
+  makeChart('c_inftrn', labels, [
+    {
+      label: 'Inference on-demand',
+      data: dates.map(d => byDate[d].inf ?? null),
+      borderColor: 'rgba(46,102,81,0.9)',
+      backgroundColor: 'rgba(46,102,81,0.07)',
+      borderWidth: 2, tension: 0.3,
+      pointRadius: dates.length > 30 ? 0 : 3,
+      fill: true, spanGaps: true,
+    },
+    {
+      label: 'Training on-demand',
+      data: dates.map(d => byDate[d].trn ?? null),
+      borderColor: 'rgba(139,46,46,0.9)',
+      backgroundColor: 'transparent',
+      borderWidth: 2, tension: 0.3,
+      pointRadius: dates.length > 30 ? 0 : 3,
+      fill: false, spanGaps: true,
+    }
+  ], '$/GPU/hr');
+
+  console.log(`[GPU] InfTrn: ${dates.length} dates`);
+}
+
+// ── Build Ratio chart ─────────────────────────────────────────────────────
+function buildRatioChart(rows) {
+  // type=metric, name=training_inference_ratio, pricing=on-demand, provider=''
+  const byDate = {};
+  rows
+    .filter(r => r.type === 'metric' && r.name === 'training_inference_ratio'
+              && r.provider === '' && r.pricing === 'on-demand')
+    .forEach(r => { byDate[r.date] = fv(r.median); });
+
+  const dates  = Object.keys(byDate).sort();
+  const labels = dates.map(d => d.slice(5));
+
+  if (dates.length < 2) { console.warn('[GPU] Ratio: no data'); return; }
+
+  makeChart('c_ratio', labels, [{
+    label: 'Training/Inference ratio',
+    data: dates.map(d => byDate[d] ?? null),
+    borderColor: 'rgba(139,105,20,0.9)',
+    backgroundColor: 'rgba(139,105,20,0.08)',
+    borderWidth: 2, tension: 0.3,
+    pointRadius: dates.length > 30 ? 0 : 3,
+    fill: true, spanGaps: true,
+    isRatio: true,
+  }], '×');
+
+  console.log(`[GPU] Ratio: ${dates.length} dates`);
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────
+async function main() {
+  const statusEl = document.getElementById('status');
+
+  let rows;
+  try {
+    const resp = await fetch(CSV_PATH + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const text = await resp.text();
+    rows = parseCSV(text);
+    statusEl.className = 'status ok';
+    statusEl.textContent = `✅ CSV loaded: ${rows.length} rows · ${[...new Set(rows.map(r=>r.date))].length} dates · sep=${text[0].includes(String.fromCharCode(9))?'TAB':'COMMA'}`;
+  } catch(e) {
+    statusEl.className = 'status err';
+    statusEl.textContent = '❌ Failed to load ' + CSV_PATH + ': ' + e.message;
+    return;
+  }
+
+  // Log all unique type+name+pricing+provider combos for debugging
+  const combos = {};
+  rows.forEach(r => {
+    const k = `type=${r.type} name=${r.name} pricing=${r.pricing} provider=${r.provider||'(empty)'}`;
+    combos[k] = (combos[k]||0) + 1;
+  });
+  console.log('[GPU] Combos in CSV:');
+  Object.entries(combos).sort().forEach(([k,n]) => console.log(`  ${k}  n=${n}`));
+
+  // Build all charts
+  buildGpuChart(rows, 'H100');
+  buildGpuChart(rows, 'H200');
+  buildGpuChart(rows, 'B200');
+  buildGpuChart(rows, 'A100');
+  buildHypNeoChart(rows);
+  buildPremChart(rows);
+  buildInfTrnChart(rows);
+  buildRatioChart(rows);
+
+  console.log('[GPU] All charts done.');
+}
+
+main();
+</script>
+</body>
+</html>
