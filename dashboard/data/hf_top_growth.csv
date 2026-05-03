@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-05-02,Qwen/Qwen3-VL-2B-Instruct,Alibaba,image-text-to-text,186571456,384,0.0,0.4703,961708.5
-2026-05-02,google/gemma-4-26B-A4B-it,Google,image-text-to-text,6211893,858,0.0001,0.4697,121801.8
-2026-05-02,google/gemma-4-E4B-it,Google,any-to-any,5045802,893,0.0002,0.4527,84096.7
-2026-05-02,google/gemma-4-31B-it,Google,image-text-to-text,7776034,2469,0.0003,0.3475,152471.3
-2026-05-02,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,4668408,510,0.0001,0.2811,74101.7
-2026-05-02,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,36398462,229,0.0,0.2624,23930.6
-2026-05-02,intfloat/multilingual-e5-small,Community,sentence-similarity,6910140,311,0.0,0.2552,6670.0
-2026-05-02,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,31815585,450,0.0,0.238,33072.3
-2026-05-02,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,13523156,870,0.0001,0.2284,8891.0
-2026-05-02,argmaxinc/whisperkit-coreml,Community,automatic-speech-recognition,9815859,172,0.0,0.2142,12378.1
-2026-05-02,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6178296,1392,0.0002,0.1851,10471.7
-2026-05-02,BAAI/bge-reranker-v2-m3,BAAI,text-classification,9843903,975,0.0001,0.1843,12669.1
-2026-05-02,amazon/chronos-bolt-base,Amazon,time-series-forecasting,6988017,88,0.0,0.1808,13387.0
-2026-05-02,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,24781073,1999,0.0001,0.1803,16292.6
-2026-05-02,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22214524,65,0.0,0.1711,18031.3
-2026-05-02,amazon/chronos-2,Amazon,time-series-forecasting,21768716,257,0.0,0.1693,118954.7
-2026-05-02,nomic-ai/nomic-embed-text-v1,Community,sentence-similarity,6990244,566,0.0001,0.1572,8514.3
-2026-05-02,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,14319659,656,0.0,0.1546,14885.3
-2026-05-02,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,43551060,1211,0.0,0.1517,28633.2
-2026-05-02,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,4566829,887,0.0002,0.146,22608.1
+2026-05-03,google/gemma-4-E4B-it,Google,any-to-any,5214452,902,0.0002,0.4142,85482.8
+2026-05-03,google/gemma-4-26B-A4B-it,Google,image-text-to-text,6333903,863,0.0001,0.4067,121805.8
+2026-05-03,Qwen/Qwen3-VL-2B-Instruct,Alibaba,image-text-to-text,186849929,384,0.0,0.3245,958204.8
+2026-05-03,google/gemma-4-31B-it,Google,image-text-to-text,7907233,2482,0.0003,0.3087,152062.2
+2026-05-03,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,4764329,512,0.0001,0.2691,74442.6
+2026-05-03,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,37531922,229,0.0,0.2659,24659.6
+2026-05-03,intfloat/multilingual-e5-small,Community,sentence-similarity,7032108,311,0.0,0.2473,6781.2
+2026-05-03,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,32549569,450,0.0,0.2335,33800.2
+2026-05-03,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,13447981,872,0.0001,0.2071,8835.7
+2026-05-03,argmaxinc/whisperkit-coreml,Community,automatic-speech-recognition,9996670,172,0.0,0.1898,12590.3
+2026-05-03,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6171370,1392,0.0002,0.1895,10442.3
+2026-05-03,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22810638,65,0.0,0.1805,18500.1
+2026-05-03,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,4670171,886,0.0002,0.1752,23005.8
+2026-05-03,amazon/chronos-bolt-base,Amazon,time-series-forecasting,7001516,88,0.0,0.1746,13387.2
+2026-05-03,amazon/chronos-2,Amazon,time-series-forecasting,21656333,259,0.0,0.1734,117697.5
+2026-05-03,BAAI/bge-reranker-v2-m3,BAAI,text-classification,9881128,976,0.0001,0.157,12700.7
+2026-05-03,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,14555606,657,0.0,0.1543,15114.9
+2026-05-03,Qwen/Qwen2-1.5B-Instruct,Alibaba,text-generation,3934301,162,0.0,0.1483,5636.5
+2026-05-03,nomic-ai/nomic-embed-text-v1,Community,sentence-similarity,7064314,566,0.0001,0.147,8594.1
+2026-05-03,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,43947771,1211,0.0,0.1469,28875.0
