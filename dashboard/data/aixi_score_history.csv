@@ -1,3 +1,4 @@
 date,s_p50,s_eci,p1,s_gpu,s_or,s_hf,p2,s_capex_yoy,s_beat,p3,s_arr_yoy,s_arr_mom,p4,aixi,regime,raw_p50_months,raw_eci_slope,raw_gpu_mom_pct,raw_or_wow_pct,raw_hf_grow_pct,raw_capex_yoy_pct,raw_beat_pct,raw_arr_yoy_pct
 2026-05-02,8,8,8.0,6,,,6.0,,8,8.0,10,10,10.0,8.0,EXPANSION,3.47,13.09,0.0,,,,,1400.0
 2026-05-03,8,8,8.0,6,,,6.0,,8,8.0,10,10,10.0,8.0,EXPANSION,3.47,13.09,0.0,,,,,1400.0
+2026-05-04,8,10,9.0,6,,,6.0,,8,8.0,10,10,10.0,8.25,EXPANSION,3.47,14.1,0.0,,,,,1400.0
