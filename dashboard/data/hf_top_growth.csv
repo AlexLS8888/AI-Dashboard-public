@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-05-04,google/gemma-4-E4B-it,Google,any-to-any,5340664,908,0.0002,0.3863,86139.7
-2026-05-04,google/gemma-4-26B-A4B-it,Google,image-text-to-text,6485608,865,0.0001,0.3571,122370.0
-2026-05-04,google/gemma-4-31B-it,Google,image-text-to-text,8042257,2496,0.0003,0.2753,151740.7
-2026-05-04,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,38797946,229,0.0,0.273,25474.7
-2026-05-04,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,4891571,514,0.0001,0.2673,75254.9
-2026-05-04,intfloat/multilingual-e5-small,Community,sentence-similarity,7149624,312,0.0,0.239,6887.9
-2026-05-04,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,33405013,451,0.0,0.233,34652.5
-2026-05-04,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,4770481,887,0.0002,0.2095,23384.7
-2026-05-04,Qwen/Qwen3-VL-2B-Instruct,Alibaba,image-text-to-text,186836733,385,0.0,0.2086,953248.6
-2026-05-04,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6223032,1392,0.0002,0.1966,10511.9
-2026-05-04,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,13604571,872,0.0001,0.1907,8932.7
-2026-05-04,amazon/chronos-bolt-base,Amazon,time-series-forecasting,7145646,89,0.0,0.1765,13636.7
-2026-05-04,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22730674,65,0.0,0.1724,18420.3
-2026-05-04,Qwen/Qwen2-1.5B-Instruct,Alibaba,text-generation,3995410,162,0.0,0.1716,5715.9
-2026-05-04,argmaxinc/whisperkit-coreml,Community,automatic-speech-recognition,10186639,172,0.0,0.1685,12813.4
-2026-05-04,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,5014927,459,0.0001,0.1659,3292.8
-2026-05-04,openai/gpt-oss-120b,OpenAI,text-generation,4237999,4754,0.0011,0.1551,15580.9
-2026-05-04,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,14782261,657,0.0,0.1521,15334.3
-2026-05-04,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,44344563,1214,0.0,0.1385,29116.6
-2026-05-04,Qwen/Qwen3-8B,Alibaba,text-generation,10176727,1072,0.0001,0.1375,27430.5
+2026-05-05,google/gemma-4-E4B-it,Google,any-to-any,5417403,913,0.0002,0.3408,85990.5
+2026-05-05,google/gemma-4-26B-A4B-it,Google,image-text-to-text,6532915,871,0.0001,0.2927,120979.9
+2026-05-05,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,40186774,229,0.0,0.2871,26369.3
+2026-05-05,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,5066785,516,0.0001,0.2775,76769.5
+2026-05-05,google/gemma-4-31B-it,Google,image-text-to-text,8206643,2508,0.0003,0.2513,151974.9
+2026-05-05,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,4887168,889,0.0002,0.2412,23839.8
+2026-05-05,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,34386222,451,0.0,0.2341,35633.4
+2026-05-05,intfloat/multilingual-e5-small,Community,sentence-similarity,7279183,313,0.0,0.2255,7006.0
+2026-05-05,amazon/chronos-bolt-base,Amazon,time-series-forecasting,7493359,89,0.0,0.2179,14273.1
+2026-05-05,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,5228289,459,0.0001,0.2156,3430.6
+2026-05-05,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6336819,1392,0.0002,0.1856,10686.0
+2026-05-05,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,13940511,872,0.0001,0.1825,9147.3
+2026-05-05,Qwen/Qwen2-1.5B-Instruct,Alibaba,text-generation,4120986,162,0.0,0.1817,5887.1
+2026-05-05,Qwen/Qwen3-8B,Alibaba,text-generation,10544379,1072,0.0001,0.1685,28345.1
+2026-05-05,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22549780,66,0.0,0.1643,18258.9
+2026-05-05,openai/gpt-oss-120b,OpenAI,text-generation,4292306,4754,0.0011,0.1569,15722.7
+2026-05-05,argmaxinc/whisperkit-coreml,Community,automatic-speech-recognition,10290048,172,0.0,0.1555,12927.2
+2026-05-05,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,14929062,657,0.0,0.1554,15470.5
+2026-05-05,FacebookAI/roberta-large,Meta,fill-mask,18627609,283,0.0,0.1457,12222.8
+2026-05-05,BAAI/bge-reranker-v2-m3,BAAI,text-classification,10087580,976,0.0001,0.1329,12932.8
