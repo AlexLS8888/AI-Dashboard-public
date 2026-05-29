@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-05-28,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,262546600,4847,0.0,,169713.4
-2026-05-28,google-bert/bert-base-uncased,Google,fill-mask,69893929,2667,0.0,,45180.3
-2026-05-28,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,65671557,248,0.0,,42450.9
-2026-05-28,google/electra-base-discriminator,Google,unknown,56688890,117,0.0,,36644.4
-2026-05-28,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,52088364,472,0.0,,52721.0
-2026-05-28,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,49493765,1241,0.0,,31993.4
-2026-05-28,sentence-transformers/all-mpnet-base-v2,Sentence Transformers,sentence-similarity,35238654,1298,0.0,,22778.7
-2026-05-28,BAAI/bge-m3,BAAI,sentence-similarity,30583121,3047,0.0001,,35937.9
-2026-05-28,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,27187863,2019,0.0001,,17574.6
-2026-05-28,FacebookAI/xlm-roberta-base,Meta,fill-mask,22611285,835,0.0,,14616.2
-2026-05-28,openai/clip-vit-base-patch32,OpenAI,zero-shot-image-classification,22060515,942,0.0,,14260.2
-2026-05-28,FacebookAI/roberta-large,Meta,fill-mask,21060591,293,0.0,,13613.8
-2026-05-28,laion/clap-htsat-fused,Community,audio-classification,20823319,93,0.0,,17410.8
-2026-05-28,colbert-ir/colbertv2.0,Community,unknown,20082621,348,0.0,,18856.9
-2026-05-28,Qwen/Qwen3-0.6B,Alibaba,text-generation,19429190,1272,0.0001,,49187.8
-2026-05-28,nomic-ai/nomic-embed-text-v1.5,Community,sentence-similarity,17382177,837,0.0,,20767.2
-2026-05-28,openai-community/gpt2,OpenAI,text-generation,16815550,3264,0.0002,,10869.8
-2026-05-28,FacebookAI/roberta-base,Meta,fill-mask,16618711,605,0.0,,10742.5
-2026-05-28,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,15170955,672,0.0,,15355.2
-2026-05-28,Bingsu/adetailer,Community,unknown,14957759,708,0.0,,13272.2
+2026-05-29,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,261695055,4854,0.0,,169053.7
+2026-05-29,google-bert/bert-base-uncased,Google,fill-mask,69584580,2667,0.0,,44951.3
+2026-05-29,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,66682998,248,0.0,,43076.9
+2026-05-29,google/electra-base-discriminator,Google,unknown,56697183,117,0.0,,36626.1
+2026-05-29,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,52616423,472,0.0,,53201.6
+2026-05-29,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,49442405,1242,0.0,,31939.5
+2026-05-29,sentence-transformers/all-mpnet-base-v2,Sentence Transformers,sentence-similarity,35299440,1298,0.0,,22803.3
+2026-05-29,BAAI/bge-m3,BAAI,sentence-similarity,30761953,3048,0.0001,,36105.6
+2026-05-29,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,27189384,2020,0.0001,,17564.2
+2026-05-29,FacebookAI/xlm-roberta-base,Meta,fill-mask,22586387,835,0.0,,14590.7
+2026-05-29,openai/clip-vit-base-patch32,OpenAI,zero-shot-image-classification,22218852,942,0.0,,14353.3
+2026-05-29,laion/clap-htsat-fused,Community,audio-classification,20947294,93,0.0,,17499.8
+2026-05-29,FacebookAI/roberta-large,Meta,fill-mask,20144383,293,0.0,,13013.2
+2026-05-29,colbert-ir/colbertv2.0,Community,unknown,20007930,348,0.0,,18769.2
+2026-05-29,Qwen/Qwen3-0.6B,Alibaba,text-generation,19751122,1274,0.0001,,49876.6
+2026-05-29,nomic-ai/nomic-embed-text-v1.5,Community,sentence-similarity,17440725,837,0.0,,20812.3
+2026-05-29,openai-community/gpt2,OpenAI,text-generation,16544102,3265,0.0002,,10687.4
+2026-05-29,FacebookAI/roberta-base,Meta,fill-mask,15940898,606,0.0,,10297.7
+2026-05-29,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,15101698,673,0.0,,15269.7
+2026-05-29,Bingsu/adetailer,Community,unknown,14875141,709,0.0,,13187.2
