@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-06-13,deepseek-ai/DeepSeek-V4-Pro,DeepSeek,text-generation,3250404,4802,0.0015,,63733.4
-2026-06-13,answerdotai/ModernBERT-base,Community,fill-mask,3129619,1051,0.0003,,5711.0
-2026-06-13,timm/convnextv2_nano.fcmae_ft_in22k_in1k,Hugging Face,image-classification,2889172,4,0.0,,2304.0
-2026-06-13,BAAI/bge-small-zh-v1.5,BAAI,feature-extraction,2749844,116,0.0,,2738.9
-2026-06-13,docling-project/docling-models,Community,unknown,2740874,211,0.0001,,3860.4
-2026-06-13,Qwen/Qwen2-VL-2B-Instruct,Alibaba,image-text-to-text,2703706,508,0.0002,,4140.4
-2026-06-13,zai-org/GLM-OCR,Community,image-text-to-text,2697794,1824,0.0007,,20284.2
-2026-06-13,google-bert/bert-base-cased,Google,fill-mask,2622029,361,0.0001,,1677.6
-2026-06-13,google-bert/bert-large-uncased,Google,fill-mask,5548125,147,0.0,-0.0133,3549.7
-2026-06-13,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,5704079,77,0.0,-0.1331,4477.3
-2026-06-13,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,7882582,43,0.0,-0.1839,13685.0
-2026-06-13,deepseek-ai/DeepSeek-R1-0528,DeepSeek,text-generation,5048003,2452,0.0005,-0.2001,13284.2
-2026-06-13,openai/whisper-base,OpenAI,automatic-speech-recognition,3067802,271,0.0001,-0.2225,2264.1
-2026-06-13,hexgrad/Kokoro-82M,Community,text-to-speech,10721092,6312,0.0006,-0.2338,20114.6
-2026-06-13,Qwen/Qwen3-1.7B,Alibaba,text-generation,3601280,484,0.0001,-0.2375,8762.2
-2026-06-13,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,4349631,13387,0.0031,-0.2433,8562.3
-2026-06-13,Qwen/Qwen3-0.6B,Alibaba,text-generation,16842808,1317,0.0001,-0.2521,40980.1
-2026-06-13,distilbert/distilgpt2,Hugging Face,text-generation,3274322,630,0.0002,-0.2571,2094.9
-2026-06-13,mixedbread-ai/mxbai-embed-large-v1,Community,feature-extraction,3730067,809,0.0002,-0.2595,4510.4
-2026-06-13,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,4716605,1575,0.0003,-0.2642,9395.6
+2026-06-14,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,7278765,77,0.0,0.1078,5708.8
+2026-06-14,answerdotai/ModernBERT-base,Community,fill-mask,3617230,1053,0.0003,,6588.8
+2026-06-14,deepseek-ai/DeepSeek-V4-Pro,DeepSeek,text-generation,3075369,4818,0.0016,,59141.7
+2026-06-14,google-t5/t5-small,Google,translation,2988250,552,0.0002,,1910.6
+2026-06-14,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,2895402,57,0.0,,1851.3
+2026-06-14,timm/convnextv2_nano.fcmae_ft_in22k_in1k,Hugging Face,image-classification,2889652,4,0.0,,2302.5
+2026-06-14,docling-project/docling-models,Community,unknown,2764586,212,0.0001,,3888.3
+2026-06-14,Qwen/Qwen2-VL-2B-Instruct,Alibaba,image-text-to-text,2691427,509,0.0002,,4115.3
+2026-06-14,zai-org/GLM-OCR,Community,image-text-to-text,2636976,1824,0.0007,,19678.9
+2026-06-14,google-bert/bert-large-uncased,Google,fill-mask,5491576,147,0.0,-0.0255,3511.2
+2026-06-14,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,8292797,43,0.0,-0.1716,14372.3
+2026-06-14,hexgrad/Kokoro-82M,Community,text-to-speech,11171708,6322,0.0006,-0.2086,20920.8
+2026-06-14,deepseek-ai/DeepSeek-R1-0528,DeepSeek,text-generation,5067133,2452,0.0005,-0.2126,13299.6
+2026-06-14,openai/whisper-base,OpenAI,automatic-speech-recognition,3295377,271,0.0001,-0.2157,2430.2
+2026-06-14,Qwen/Qwen3-1.7B,Alibaba,text-generation,3686191,484,0.0001,-0.2179,8947.1
+2026-06-14,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,4435374,13389,0.003,-0.2205,8713.9
+2026-06-14,Qwen/Qwen3-0.6B,Alibaba,text-generation,17378902,1320,0.0001,-0.2305,42181.8
+2026-06-14,distilbert/distilgpt2,Hugging Face,text-generation,3270394,630,0.0002,-0.241,2091.0
+2026-06-14,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,4928226,1577,0.0003,-0.2415,9797.7
+2026-06-14,amazon/chronos-2,Amazon,time-series-forecasting,10245891,325,0.0,-0.243,45335.8
