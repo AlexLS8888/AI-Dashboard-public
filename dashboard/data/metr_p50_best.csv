@@ -1,4 +1,5 @@
 release_date,model_name,organization,metr_version,p50_hours,p80_hours,ci_low_hours,ci_high_hours,average_score
+,Claude Mythos Preview Early,,METR-Horizon-v1.1,17.413,3.0985,8.4813,55.071,0.85205
 2026-02-05,Claude Opus 4 6,Anthropic,METR-Horizon-v1.1,11.9801,1.1646,5.322,65.8292,0.788644
 2026-02-19,Gemini 3.1 Pro Preview,Google DeepMind,METR-Horizon-v1.1,6.4025,1.4967,3.8917,11.5792,0.77035
 2025-12-11,Gpt 5.2 2025 12 11,OpenAI,METR-Horizon-v1.1,5.8708,1.1,3.1887,14.3723,0.752875
