@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-06-24,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,4321541,269,0.0001,160057.1,
-2026-06-24,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,248829332,4994,0.0,158087.3,
-2026-06-24,google/gemma-4-26B-A4B-it,Google,image-text-to-text,13063101,1180,0.0001,125606.7,
-2026-06-24,google/gemma-4-31B-it,Google,image-text-to-text,11333838,3053,0.0003,108979.2,
-2026-06-24,Qwen/Qwen3.6-27B,Alibaba,image-text-to-text,5872887,1791,0.0003,93220.4,
-2026-06-24,antirez/deepseek-v4-gguf,Community,text-generation,5162447,268,0.0001,89007.7,
-2026-06-24,Qwen/Qwen3.6-27B-FP8,Alibaba,image-text-to-text,5605624,284,0.0001,88978.2,
-2026-06-24,Qwen/Qwen3.5-9B,Alibaba,image-text-to-text,9938681,1605,0.0002,85678.3,
-2026-06-24,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,9713635,678,0.0001,83738.2,
-2026-06-24,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5765260,283,0.0,83554.5,
-2026-06-24,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5396171,2223,0.0004,78205.4,
-2026-06-24,amazon/chronos-2,Amazon,time-series-forecasting,15965531,336,0.0,67650.6,
-2026-06-24,Qwen/Qwen3-0.6B,Alibaba,text-generation,27660867,1356,0.0,65547.1,
-2026-06-24,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,62638996,496,0.0,61713.3,
-2026-06-24,cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit,Community,image-text-to-text,4666655,82,0.0,57613.0,
-2026-06-24,google/gemma-4-E4B-it,Google,any-to-any,6163791,1284,0.0002,54546.8,
-2026-06-24,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,81637572,269,0.0,51866.3,
-2026-06-24,Qwen/Qwen3-4B,Alibaba,text-generation,16270032,641,0.0,38554.6,
-2026-06-24,google-bert/bert-base-uncased,Google,fill-mask,60462664,2688,0.0,38413.4,
-2026-06-24,BAAI/bge-m3,BAAI,sentence-similarity,31502520,3144,0.0001,35879.9,
+2026-06-25,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,4602255,317,0.0001,164366.3,
+2026-06-25,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,245345259,4999,0.0,155774.8,0.1343
+2026-06-25,google/gemma-4-26B-A4B-it,Google,image-text-to-text,13102535,1183,0.0001,124786.0,0.1669
+2026-06-25,google/gemma-4-31B-it,Google,image-text-to-text,11152890,3055,0.0003,106218.0,0.1241
+2026-06-25,antirez/deepseek-v4-gguf,Community,text-generation,5742770,270,0.0,97335.1,
+2026-06-25,Qwen/Qwen3.6-27B,Alibaba,image-text-to-text,5687366,1801,0.0003,88865.1,0.0838
+2026-06-25,Qwen/Qwen3.5-9B,Alibaba,image-text-to-text,9846974,1609,0.0002,84162.2,0.2012
+2026-06-25,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5777964,284,0.0,82542.3,0.1911
+2026-06-25,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,9571372,683,0.0001,81806.6,0.1375
+2026-06-25,Qwen/Qwen3.6-27B-FP8,Alibaba,image-text-to-text,5216395,286,0.0001,81506.2,-0.0276
+2026-06-25,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5497574,2234,0.0004,78536.8,0.2626
+2026-06-25,Qwen/Qwen3-0.6B,Alibaba,text-generation,27772245,1360,0.0,65655.4,0.1336
+2026-06-25,amazon/chronos-2,Amazon,time-series-forecasting,15507586,336,0.0,65432.9,0.1954
+2026-06-25,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,61847016,497,0.0,60873.0,0.1859
+2026-06-25,cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit,Community,image-text-to-text,4649888,82,0.0,56706.0,0.1198
+2026-06-25,google/gemma-4-E4B-it,Google,any-to-any,6019752,1285,0.0002,52804.8,0.0864
+2026-06-25,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,80592418,269,0.0,51169.8,0.1755
+2026-06-25,Qwen/Qwen3-4B,Alibaba,text-generation,16369272,641,0.0,38698.0,0.1595
+2026-06-25,google-bert/bert-base-uncased,Google,fill-mask,60462664,2688,0.0,38389.0,0.3355
+2026-06-25,BAAI/bge-m3,BAAI,sentence-similarity,31139890,3148,0.0001,35426.5,0.1185
