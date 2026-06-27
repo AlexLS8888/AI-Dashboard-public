@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-06-26,google-t5/t5-small,Google,translation,12907681,556,0.0,0.8528,8190.2
-2026-06-26,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,20203559,80,0.0,0.4812,15698.2
-2026-06-26,Qwen/Qwen3-VL-32B-Instruct,Alibaba,image-text-to-text,5573002,206,0.0,0.3256,22381.5
-2026-06-26,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5318072,107,0.0,0.3057,7997.1
-2026-06-26,dima806/fairface_age_image_detection,Community,image-classification,6311696,74,0.0,0.2821,11151.4
-2026-06-26,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8590987,7,0.0,0.2637,14889.1
-2026-06-26,answerdotai/ModernBERT-base,Community,fill-mask,9713903,1060,0.0001,0.22,17315.3
-2026-06-26,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9509390,1593,0.0002,0.1859,18464.8
-2026-06-26,Falconsai/nsfw_image_detection,Community,image-classification,9804805,1110,0.0001,0.1299,9944.0
-2026-06-26,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5575742,2246,0.0004,0.1129,78531.6
-2026-06-26,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7340130,465,0.0001,0.1075,4657.4
-2026-06-26,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,12078890,2040,0.0002,0.1075,7664.3
-2026-06-26,FacebookAI/roberta-large,Meta,fill-mask,11871865,301,0.0,0.0881,7532.9
-2026-06-26,intfloat/multilingual-e5-large,Community,feature-extraction,8230949,1208,0.0001,0.0794,7544.4
-2026-06-26,emilyalsentzer/Bio_ClinicalBERT,Community,fill-mask,4520666,432,0.0001,0.0762,2868.4
-2026-06-26,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11470944,748,0.0001,0.0748,17756.9
-2026-06-26,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5854516,285,0.0,0.0696,82458.0
-2026-06-26,Qwen/Qwen3-4B-Instruct-2507,Alibaba,text-generation,5541047,883,0.0002,0.0692,17102.0
-2026-06-26,Qwen/Qwen2.5-Coder-14B-Instruct,Alibaba,text-generation,4610037,166,0.0,0.0612,7735.0
-2026-06-26,Qwen/Qwen3-8B,Alibaba,text-generation,13323329,1164,0.0001,0.0595,31422.9
+2026-06-27,google-t5/t5-small,Google,translation,13698687,556,0.0,0.9663,8686.5
+2026-06-27,antirez/deepseek-v4-gguf,Community,text-generation,6514958,275,0.0,0.603,106802.6
+2026-06-27,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21222099,80,0.0,0.4769,16476.8
+2026-06-27,dima806/fairface_age_image_detection,Community,image-classification,6480675,74,0.0,0.3263,11429.8
+2026-06-27,Qwen/Qwen3-VL-32B-Instruct,Alibaba,image-text-to-text,5638104,207,0.0,0.2839,22552.4
+2026-06-27,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5433297,108,0.0,0.2421,8158.1
+2026-06-27,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8876437,7,0.0,0.2399,15357.2
+2026-06-27,answerdotai/ModernBERT-base,Community,fill-mask,9894988,1060,0.0001,0.1948,17606.7
+2026-06-27,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9588885,1594,0.0002,0.1865,18583.1
+2026-06-27,Falconsai/nsfw_image_detection,Community,image-classification,9893862,1109,0.0001,0.1506,10024.2
+2026-06-27,intfloat/multilingual-e5-large,Community,feature-extraction,8580779,1208,0.0001,0.1215,7857.9
+2026-06-27,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5612440,2254,0.0004,0.1095,77950.6
+2026-06-27,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11692294,749,0.0001,0.1087,18071.6
+2026-06-27,FacebookAI/roberta-large,Meta,fill-mask,12075442,301,0.0,0.1067,7657.2
+2026-06-27,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7410185,465,0.0001,0.1067,4698.9
+2026-06-27,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5908430,285,0.0,0.0821,82061.5
+2026-06-27,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,11807851,2040,0.0002,0.0801,7487.5
+2026-06-27,facebook/opt-125m,Meta,text-generation,12733324,267,0.0,0.0757,8449.5
+2026-06-27,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7292805,13416,0.0018,0.0709,13970.9
+2026-06-27,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,5015816,543,0.0001,0.0647,7740.5
