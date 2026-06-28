@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-06-27,google-t5/t5-small,Google,translation,13698687,556,0.0,0.9663,8686.5
-2026-06-27,antirez/deepseek-v4-gguf,Community,text-generation,6514958,275,0.0,0.603,106802.6
-2026-06-27,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21222099,80,0.0,0.4769,16476.8
-2026-06-27,dima806/fairface_age_image_detection,Community,image-classification,6480675,74,0.0,0.3263,11429.8
-2026-06-27,Qwen/Qwen3-VL-32B-Instruct,Alibaba,image-text-to-text,5638104,207,0.0,0.2839,22552.4
-2026-06-27,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5433297,108,0.0,0.2421,8158.1
-2026-06-27,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8876437,7,0.0,0.2399,15357.2
-2026-06-27,answerdotai/ModernBERT-base,Community,fill-mask,9894988,1060,0.0001,0.1948,17606.7
-2026-06-27,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9588885,1594,0.0002,0.1865,18583.1
-2026-06-27,Falconsai/nsfw_image_detection,Community,image-classification,9893862,1109,0.0001,0.1506,10024.2
-2026-06-27,intfloat/multilingual-e5-large,Community,feature-extraction,8580779,1208,0.0001,0.1215,7857.9
-2026-06-27,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5612440,2254,0.0004,0.1095,77950.6
-2026-06-27,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11692294,749,0.0001,0.1087,18071.6
-2026-06-27,FacebookAI/roberta-large,Meta,fill-mask,12075442,301,0.0,0.1067,7657.2
-2026-06-27,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7410185,465,0.0001,0.1067,4698.9
-2026-06-27,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5908430,285,0.0,0.0821,82061.5
-2026-06-27,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,11807851,2040,0.0002,0.0801,7487.5
-2026-06-27,facebook/opt-125m,Meta,text-generation,12733324,267,0.0,0.0757,8449.5
-2026-06-27,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7292805,13416,0.0018,0.0709,13970.9
-2026-06-27,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,5015816,543,0.0001,0.0647,7740.5
+2026-06-28,google-t5/t5-small,Google,translation,14394861,556,0.0,1.0662,9122.2
+2026-06-28,antirez/deepseek-v4-gguf,Community,text-generation,6464783,279,0.0,0.4737,104270.7
+2026-06-28,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21972214,80,0.0,0.4305,17045.9
+2026-06-28,dima806/fairface_age_image_detection,Community,image-classification,6589327,74,0.0,0.314,11600.9
+2026-06-28,intfloat/multilingual-e5-large,Community,feature-extraction,9633377,1208,0.0001,0.2304,8813.7
+2026-06-28,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5504224,109,0.0,0.182,8252.2
+2026-06-28,Qwen/Qwen3-VL-32B-Instruct,Alibaba,image-text-to-text,5397405,207,0.0,0.1741,21503.6
+2026-06-28,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9593545,1595,0.0002,0.1599,18556.2
+2026-06-28,answerdotai/ModernBERT-base,Community,fill-mask,9973093,1061,0.0001,0.1544,17714.2
+2026-06-28,jonatasgrosman/wav2vec2-large-xlsr-53-polish,Community,automatic-speech-recognition,4729713,12,0.0,0.1336,2997.3
+2026-06-28,Falconsai/nsfw_image_detection,Community,image-classification,9838842,1110,0.0001,0.1283,9958.3
+2026-06-28,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8928300,7,0.0,0.1155,15420.2
+2026-06-28,FacebookAI/roberta-large,Meta,fill-mask,12057371,301,0.0,0.1051,7640.9
+2026-06-28,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11800482,749,0.0001,0.1029,18210.6
+2026-06-28,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7478244,465,0.0001,0.096,4739.1
+2026-06-28,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5616196,2261,0.0004,0.0908,76934.2
+2026-06-28,facebook/opt-125m,Meta,text-generation,12833293,267,0.0,0.0906,8510.1
+2026-06-28,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,4671304,0,0.0,0.0881,11017.2
+2026-06-28,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7365944,13417,0.0018,0.0837,14084.0
+2026-06-28,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5953728,285,0.0,0.0816,81557.9
