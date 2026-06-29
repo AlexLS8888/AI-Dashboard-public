@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-06-28,google-t5/t5-small,Google,translation,14394861,556,0.0,1.0662,9122.2
-2026-06-28,antirez/deepseek-v4-gguf,Community,text-generation,6464783,279,0.0,0.4737,104270.7
-2026-06-28,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21972214,80,0.0,0.4305,17045.9
-2026-06-28,dima806/fairface_age_image_detection,Community,image-classification,6589327,74,0.0,0.314,11600.9
-2026-06-28,intfloat/multilingual-e5-large,Community,feature-extraction,9633377,1208,0.0001,0.2304,8813.7
-2026-06-28,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5504224,109,0.0,0.182,8252.2
-2026-06-28,Qwen/Qwen3-VL-32B-Instruct,Alibaba,image-text-to-text,5397405,207,0.0,0.1741,21503.6
-2026-06-28,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9593545,1595,0.0002,0.1599,18556.2
-2026-06-28,answerdotai/ModernBERT-base,Community,fill-mask,9973093,1061,0.0001,0.1544,17714.2
-2026-06-28,jonatasgrosman/wav2vec2-large-xlsr-53-polish,Community,automatic-speech-recognition,4729713,12,0.0,0.1336,2997.3
-2026-06-28,Falconsai/nsfw_image_detection,Community,image-classification,9838842,1110,0.0001,0.1283,9958.3
-2026-06-28,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8928300,7,0.0,0.1155,15420.2
-2026-06-28,FacebookAI/roberta-large,Meta,fill-mask,12057371,301,0.0,0.1051,7640.9
-2026-06-28,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11800482,749,0.0001,0.1029,18210.6
-2026-06-28,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7478244,465,0.0001,0.096,4739.1
-2026-06-28,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5616196,2261,0.0004,0.0908,76934.2
-2026-06-28,facebook/opt-125m,Meta,text-generation,12833293,267,0.0,0.0906,8510.1
-2026-06-28,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,4671304,0,0.0,0.0881,11017.2
-2026-06-28,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7365944,13417,0.0018,0.0837,14084.0
-2026-06-28,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,5953728,285,0.0,0.0816,81557.9
+2026-06-29,google-t5/t5-small,Google,translation,15116317,557,0.0,0.5308,9573.3
+2026-06-29,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22656593,80,0.0,0.3833,17563.3
+2026-06-29,antirez/deepseek-v4-gguf,Community,text-generation,6434367,281,0.0,0.3357,102132.8
+2026-06-29,intfloat/multilingual-e5-large,Community,feature-extraction,10539865,1209,0.0001,0.3079,9634.2
+2026-06-29,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,5392518,375,0.0001,0.2996,168516.2
+2026-06-29,dima806/fairface_age_image_detection,Community,image-classification,6611173,74,0.0,0.2614,11618.9
+2026-06-29,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5596087,109,0.0,0.1754,8377.4
+2026-06-29,answerdotai/ModernBERT-base,Community,fill-mask,10050757,1061,0.0001,0.1193,17820.5
+2026-06-29,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9643206,1595,0.0002,0.1135,18616.2
+2026-06-29,FacebookAI/roberta-large,Meta,fill-mask,12190994,301,0.0,0.1132,7720.7
+2026-06-29,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,4735071,0,0.0,0.0995,11141.3
+2026-06-29,jonatasgrosman/wav2vec2-large-xlsr-53-polish,Community,automatic-speech-recognition,4722399,12,0.0,0.0978,2990.8
+2026-06-29,facebook/opt-125m,Meta,text-generation,13001780,267,0.0,0.0966,8616.2
+2026-06-29,Falconsai/nsfw_image_detection,Community,image-classification,9792328,1112,0.0001,0.0927,9901.2
+2026-06-29,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7476486,13419,0.0018,0.082,14268.1
+2026-06-29,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7567460,465,0.0001,0.075,4792.6
+2026-06-29,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5657149,2273,0.0004,0.0657,76448.0
+2026-06-29,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,8544126,1503,0.0002,0.0632,13185.4
+2026-06-29,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8935372,8,0.0,0.0603,15405.8
+2026-06-29,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,11843495,750,0.0001,0.0539,18248.8
