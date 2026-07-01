@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-06-30,google-t5/t5-small,Google,translation,15755512,558,0.0,0.4672,9971.8
-2026-06-30,intfloat/multilingual-e5-large,Community,feature-extraction,11120278,1210,0.0001,0.3665,10155.5
-2026-06-30,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,23246193,80,0.0,0.3331,18006.3
-2026-06-30,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,5495402,380,0.0001,0.2716,166527.3
-2026-06-30,antirez/deepseek-v4-gguf,Community,text-generation,6441753,281,0.0,0.2478,100652.4
-2026-06-30,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5613901,109,0.0,0.1471,8391.5
-2026-06-30,dima806/fairface_age_image_detection,Community,image-classification,6248067,75,0.0,0.1349,10961.5
-2026-06-30,FacebookAI/roberta-large,Meta,fill-mask,12351432,302,0.0,0.1054,7817.4
-2026-06-30,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,4774820,0,0.0,0.0941,11208.5
-2026-06-30,answerdotai/ModernBERT-base,Community,fill-mask,10104721,1062,0.0001,0.092,17884.5
-2026-06-30,jonatasgrosman/wav2vec2-large-xlsr-53-polish,Community,automatic-speech-recognition,4706670,12,0.0,0.0892,2978.9
-2026-06-30,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9705940,1595,0.0002,0.0841,18701.2
-2026-06-30,facebook/opt-125m,Meta,text-generation,12996371,267,0.0,0.0802,8606.9
-2026-06-30,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7483926,13422,0.0018,0.0641,14255.1
-2026-06-30,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7592158,465,0.0001,0.0602,4805.2
-2026-06-30,Qwen/Qwen3-8B,Alibaba,text-generation,13672043,1170,0.0001,0.0562,31944.0
-2026-06-30,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,8583830,1502,0.0002,0.0561,13226.2
-2026-06-30,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5656573,2276,0.0004,0.0483,75421.0
-2026-06-30,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,8963673,8,0.0,0.0451,15428.0
-2026-06-30,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,12061430,2042,0.0002,0.0344,7633.8
+2026-07-01,intfloat/multilingual-e5-large,Community,feature-extraction,11924367,1211,0.0001,0.4612,10879.9
+2026-07-01,google-t5/t5-small,Google,translation,16792173,559,0.0,0.4523,10621.2
+2026-07-01,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,5769728,397,0.0001,0.3351,169697.9
+2026-07-01,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,24161012,80,0.0,0.3021,18700.5
+2026-07-01,antirez/deepseek-v4-gguf,Community,text-generation,6424594,286,0.0,0.2445,98839.9
+2026-07-01,dima806/fairface_age_image_detection,Community,image-classification,6256854,75,0.0,0.1365,10957.7
+2026-07-01,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5660564,109,0.0,0.1231,8448.6
+2026-07-01,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,4882962,0,0.0,0.1189,11435.5
+2026-07-01,Qwen/Qwen3-8B,Alibaba,text-generation,14359927,1171,0.0001,0.1093,33473.0
+2026-07-01,answerdotai/ModernBERT-base,Community,fill-mask,10238755,1063,0.0001,0.1064,18089.7
+2026-07-01,Qwen/Qwen2.5-VL-7B-Instruct,Alibaba,image-text-to-text,9905249,1596,0.0002,0.1064,19048.6
+2026-07-01,FacebookAI/roberta-large,Meta,fill-mask,12585955,302,0.0,0.0992,7960.8
+2026-07-01,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,7663567,13424,0.0018,0.0897,14569.5
+2026-07-01,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,9299768,8,0.0,0.0843,15979.0
+2026-07-01,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,7884137,466,0.0001,0.0819,4986.8
+2026-07-01,facebook/opt-125m,Meta,text-generation,13197777,267,0.0,0.067,8734.5
+2026-07-01,lpiccinelli/unidepth-v2-vitl14,Community,unknown,6018436,34,0.0,0.0642,8046.0
+2026-07-01,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,5714598,2293,0.0004,0.059,75192.1
+2026-07-01,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,6078287,292,0.0,0.0543,79977.5
+2026-07-01,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,8713391,1504,0.0002,0.0523,13405.2
