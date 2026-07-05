@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-07-04,intfloat/multilingual-e5-large,Community,feature-extraction,12188485,1214,0.0001,0.4204,11090.5
-2026-07-04,google-t5/t5-small,Google,translation,19104056,563,0.0,0.3946,12060.6
-2026-07-04,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,6354853,420,0.0001,0.2653,171752.8
-2026-07-04,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,26028831,83,0.0,0.2265,20099.5
-2026-07-04,Qwen/Qwen3-32B,Alibaba,text-generation,5050946,709,0.0001,0.2002,11692.0
-2026-07-04,lpiccinelli/unidepth-v2-vitl14,Community,unknown,6416154,34,0.0,0.1896,8543.5
-2026-07-04,Qwen/Qwen3-8B,Alibaba,text-generation,16001721,1177,0.0001,0.1852,37041.0
-2026-07-04,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,8484118,468,0.0001,0.1449,5356.1
-2026-07-04,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,8214698,13434,0.0016,0.1264,15528.7
-2026-07-04,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,5115414,0,0.0,0.1088,11896.3
-2026-07-04,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,9701891,9,0.0,0.093,16584.4
-2026-07-04,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,5933957,109,0.0,0.0921,8817.2
-2026-07-04,facebook/opt-125m,Meta,text-generation,13795345,271,0.0,0.0834,9111.9
-2026-07-04,cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit,Community,image-text-to-text,5103847,82,0.0,0.0767,56086.2
-2026-07-04,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,9020161,1505,0.0002,0.0744,13813.4
-2026-07-04,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,6343472,296,0.0,0.0736,80297.1
-2026-07-04,FacebookAI/roberta-large,Meta,fill-mask,12773172,303,0.0,0.0578,8063.9
-2026-07-04,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,12471027,2047,0.0002,0.0562,7873.1
-2026-07-04,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4340717,157,0.0,0.0495,2740.4
-2026-07-04,intfloat/multilingual-e5-small,Community,sentence-similarity,10390289,354,0.0,0.0456,9454.3
+2026-07-05,google-t5/t5-small,Google,translation,19836097,564,0.0,0.378,12514.9
+2026-07-05,intfloat/multilingual-e5-large,Community,feature-extraction,12174365,1214,0.0001,0.2638,11067.6
+2026-07-05,lpiccinelli/unidepth-v2-vitl14,Community,unknown,6898405,34,0.0,0.2637,9173.4
+2026-07-05,Qwen/Qwen3-32B,Alibaba,text-generation,5353591,709,0.0001,0.2609,12364.0
+2026-07-05,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,6515001,424,0.0001,0.2444,171447.4
+2026-07-05,Qwen/Qwen3-8B,Alibaba,text-generation,16401211,1181,0.0001,0.2093,37878.1
+2026-07-05,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,26534440,83,0.0,0.2076,20474.1
+2026-07-05,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,10285818,9,0.0,0.152,17552.6
+2026-07-05,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,8602517,468,0.0001,0.1503,5427.5
+2026-07-05,deepseek-ai/DeepSeek-R1,DeepSeek,text-generation,8338210,13435,0.0016,0.132,15732.5
+2026-07-05,Comfy-Org/stable-diffusion-v1-5-archive,Community,unknown,6065397,109,0.0,0.102,8999.1
+2026-07-05,hmellor/tiny-random-LlamaForCausalLM,Community,text-generation,5147159,0,0.0,0.1019,11942.4
+2026-07-05,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,6520645,300,0.0,0.0952,81508.1
+2026-07-05,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4426836,157,0.0,0.0808,2793.0
+2026-07-05,facebook/opt-125m,Meta,text-generation,13869888,271,0.0,0.0808,9155.0
+2026-07-05,cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit,Community,image-text-to-text,5113378,82,0.0,0.0755,55580.2
+2026-07-05,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,9086656,1505,0.0002,0.0738,13894.0
+2026-07-05,intfloat/multilingual-e5-small,Community,sentence-similarity,10511512,354,0.0,0.0616,9555.9
+2026-07-05,FacebookAI/roberta-large,Meta,fill-mask,12664514,303,0.0,0.0504,7990.2
+2026-07-05,google-bert/bert-base-uncased,Google,fill-mask,62774318,2696,0.0,0.0486,39605.2
