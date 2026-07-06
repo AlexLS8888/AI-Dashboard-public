@@ -1,4 +1,5 @@
 month,frontier_p50_hours,frontier_org,frontier_model
+,17.413,,Claude Mythos Preview Early
 2019-11,0.0007,OpenAI,Gpt2 Xl
 2023-03,0.0894,OpenAI,Gpt 4 0314
 2023-06,0.0665,OpenAI,Gpt 4 0613
@@ -26,4 +27,3 @@ month,frontier_p50_hours,frontier_org,frontier_model
 2025-12,5.8708,OpenAI,Gpt 5.2 2025 12 11
 2026-02,11.9801,Anthropic,Claude Opus 4 6
 2026-03,5.6956,OpenAI,Gpt 5.4 2026 03 05
-2026-04,17.413,Anthropic,Claude Mythos Preview Early
