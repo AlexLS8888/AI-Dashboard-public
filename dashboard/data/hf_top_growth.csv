@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-07-10,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,7937366,15,0.0,0.6697,4992.1
-2026-07-10,lpiccinelli/unidepth-v2-vitl14,Community,unknown,9161021,35,0.0,0.4573,12101.7
-2026-07-10,google-t5/t5-small,Google,translation,25567987,566,0.0,0.3914,16080.5
-2026-07-10,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,12820543,12,0.0,0.3862,21693.0
-2026-07-10,Qwen/Qwen3-32B,Alibaba,text-generation,6615288,710,0.0001,0.3577,15103.4
-2026-07-10,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8197097,452,0.0001,0.3172,190630.2
-2026-07-10,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6543236,673,0.0001,0.2243,12369.1
-2026-07-10,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10086240,470,0.0,0.2128,6343.5
-2026-07-10,Qwen/Qwen3-8B,Alibaba,text-generation,18345744,1191,0.0001,0.1969,41885.3
-2026-07-10,autogluon/chronos-2,Amazon,time-series-forecasting,9409438,36,0.0,0.1928,34092.2
-2026-07-10,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7360874,310,0.0,0.1916,86598.5
-2026-07-10,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6641470,2363,0.0004,0.1713,78134.9
-2026-07-10,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4916177,158,0.0,0.1562,3091.9
-2026-07-10,intfloat/multilingual-e5-small,Community,sentence-similarity,11773667,359,0.0,0.1432,10654.9
-2026-07-10,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,29180132,87,0.0,0.1425,22429.0
-2026-07-10,laion/CLIP-ViT-B-32-laion2B-s34B-b79K,Community,zero-shot-image-classification,4582872,141,0.0,0.1418,3287.6
-2026-07-10,google-bert/bert-base-uncased,Google,fill-mask,70056549,2701,0.0,0.128,44060.7
-2026-07-10,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,7778310,3154,0.0004,0.1252,12040.7
-2026-07-10,FacebookAI/xlm-roberta-base,Meta,fill-mask,22782183,863,0.0,0.1246,14328.4
-2026-07-10,facebook/opt-125m,Meta,text-generation,15423078,274,0.0,0.1244,10146.8
+2026-07-11,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,8413205,15,0.0,0.6911,5288.0
+2026-07-11,lpiccinelli/unidepth-v2-vitl14,Community,unknown,9952611,35,0.0,0.5512,13130.1
+2026-07-11,google-t5/t5-small,Google,translation,26147457,566,0.0,0.3687,16434.6
+2026-07-11,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8311265,455,0.0001,0.3079,188892.4
+2026-07-11,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,12608790,12,0.0,0.2996,21298.6
+2026-07-11,Qwen/Qwen3-32B,Alibaba,text-generation,6554755,711,0.0001,0.2977,14931.1
+2026-07-11,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10363411,470,0.0,0.2215,6513.8
+2026-07-11,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6591468,673,0.0001,0.2139,12436.7
+2026-07-11,intfloat/multilingual-e5-small,Community,sentence-similarity,12594461,359,0.0,0.2121,11387.4
+2026-07-11,google/electra-base-discriminator,Google,unknown,47351492,136,0.0,0.1843,29762.1
+2026-07-11,autogluon/chronos-2,Amazon,time-series-forecasting,9264295,36,0.0,0.1767,33445.1
+2026-07-11,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7442901,312,0.0,0.1733,86545.4
+2026-07-11,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6662460,2366,0.0004,0.1581,77470.5
+2026-07-11,google-bert/bert-base-uncased,Google,fill-mask,72165550,2701,0.0,0.1504,45358.6
+2026-07-11,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,7859525,3154,0.0004,0.1395,12147.6
+2026-07-11,laion/CLIP-ViT-B-32-laion2B-s34B-b79K,Community,zero-shot-image-classification,4599024,141,0.0,0.1391,3296.8
+2026-07-11,Qwen/Qwen3-8B,Alibaba,text-generation,18187422,1192,0.0001,0.1366,41429.2
+2026-07-11,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4898952,158,0.0,0.1286,3079.2
+2026-07-11,FacebookAI/xlm-roberta-base,Meta,fill-mask,22865974,863,0.0,0.123,14372.1
+2026-07-11,facebook/opt-125m,Meta,text-generation,15399476,274,0.0,0.1163,10124.6
