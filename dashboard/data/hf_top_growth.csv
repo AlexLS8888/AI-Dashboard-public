@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-07-11,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,8413205,15,0.0,0.6911,5288.0
-2026-07-11,lpiccinelli/unidepth-v2-vitl14,Community,unknown,9952611,35,0.0,0.5512,13130.1
-2026-07-11,google-t5/t5-small,Google,translation,26147457,566,0.0,0.3687,16434.6
-2026-07-11,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8311265,455,0.0001,0.3079,188892.4
-2026-07-11,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,12608790,12,0.0,0.2996,21298.6
-2026-07-11,Qwen/Qwen3-32B,Alibaba,text-generation,6554755,711,0.0001,0.2977,14931.1
-2026-07-11,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10363411,470,0.0,0.2215,6513.8
-2026-07-11,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6591468,673,0.0001,0.2139,12436.7
-2026-07-11,intfloat/multilingual-e5-small,Community,sentence-similarity,12594461,359,0.0,0.2121,11387.4
-2026-07-11,google/electra-base-discriminator,Google,unknown,47351492,136,0.0,0.1843,29762.1
-2026-07-11,autogluon/chronos-2,Amazon,time-series-forecasting,9264295,36,0.0,0.1767,33445.1
-2026-07-11,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7442901,312,0.0,0.1733,86545.4
-2026-07-11,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6662460,2366,0.0004,0.1581,77470.5
-2026-07-11,google-bert/bert-base-uncased,Google,fill-mask,72165550,2701,0.0,0.1504,45358.6
-2026-07-11,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,7859525,3154,0.0004,0.1395,12147.6
-2026-07-11,laion/CLIP-ViT-B-32-laion2B-s34B-b79K,Community,zero-shot-image-classification,4599024,141,0.0,0.1391,3296.8
-2026-07-11,Qwen/Qwen3-8B,Alibaba,text-generation,18187422,1192,0.0001,0.1366,41429.2
-2026-07-11,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4898952,158,0.0,0.1286,3079.2
-2026-07-11,FacebookAI/xlm-roberta-base,Meta,fill-mask,22865974,863,0.0,0.123,14372.1
-2026-07-11,facebook/opt-125m,Meta,text-generation,15399476,274,0.0,0.1163,10124.6
+2026-07-12,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,8664820,16,0.0,0.6743,5442.7
+2026-07-12,lpiccinelli/unidepth-v2-vitl14,Community,unknown,10346508,36,0.0,0.4998,13631.8
+2026-07-12,google-t5/t5-small,Google,translation,26474053,567,0.0,0.3346,16629.4
+2026-07-12,intfloat/multilingual-e5-small,Community,sentence-similarity,13754131,360,0.0,0.3085,12424.7
+2026-07-12,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8372625,456,0.0001,0.2851,186058.3
+2026-07-12,google/electra-base-discriminator,Google,unknown,49780827,138,0.0,0.2761,31269.4
+2026-07-12,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10571857,472,0.0,0.2289,6640.6
+2026-07-12,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,12590741,13,0.0,0.2241,21232.3
+2026-07-12,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6551093,673,0.0001,0.188,12337.3
+2026-07-12,Qwen/Qwen3-32B,Alibaba,text-generation,6246701,712,0.0001,0.1668,14197.0
+2026-07-12,google-bert/bert-base-uncased,Google,fill-mask,72570258,2703,0.0,0.156,45584.3
+2026-07-12,autogluon/chronos-2,Amazon,time-series-forecasting,9052861,38,0.0,0.1473,32564.2
+2026-07-12,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,7881486,3156,0.0004,0.1454,12162.8
+2026-07-12,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6673708,2378,0.0004,0.1398,76709.3
+2026-07-12,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7407714,313,0.0,0.136,85146.1
+2026-07-12,laion/CLIP-ViT-B-32-laion2B-s34B-b79K,Community,zero-shot-image-classification,4614038,141,0.0,0.1263,3305.2
+2026-07-12,FacebookAI/xlm-roberta-base,Meta,fill-mask,22847160,864,0.0,0.1142,14351.2
+2026-07-12,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,9366344,911,0.0001,0.1082,5883.4
+2026-07-12,Qwen/Qwen3.6-27B-FP8,Alibaba,image-text-to-text,5439183,305,0.0001,0.1072,67150.4
+2026-07-12,google-bert/bert-base-multilingual-uncased,Google,fill-mask,4886972,158,0.0,0.1039,3069.7
