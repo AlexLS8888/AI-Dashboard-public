@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-07-14,lpiccinelli/unidepth-v2-vitl14,Community,unknown,13285113,36,0.0,0.6658,17457.4
-2026-07-14,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,9431658,16,0.0,0.6114,5917.0
-2026-07-14,google/electra-base-discriminator,Google,unknown,54218527,138,0.0,0.3894,34014.1
-2026-07-14,intfloat/multilingual-e5-small,Community,sentence-similarity,14961642,360,0.0,0.348,13491.1
-2026-07-14,mistralai/Mistral-7B-Instruct-v0.3,Mistral,unknown,5222679,2707,0.0005,0.2822,6678.6
-2026-07-14,google-t5/t5-small,Google,translation,27214044,569,0.0,0.2342,17072.8
-2026-07-14,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10924353,473,0.0,0.2072,6853.4
-2026-07-14,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8582672,463,0.0001,0.2063,182610.0
-2026-07-14,google-bert/bert-base-uncased,Google,fill-mask,78962390,2703,0.0,0.1914,49537.3
-2026-07-14,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,13081197,13,0.0,0.1865,21985.2
-2026-07-14,Qwen/Qwen2.5-3B-Instruct,Alibaba,text-generation,7093265,533,0.0001,0.1617,10682.6
-2026-07-14,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6764647,673,0.0001,0.1424,12691.6
-2026-07-14,autogluon/chronos-2,Amazon,time-series-forecasting,9096322,38,0.0,0.1274,32486.9
-2026-07-14,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,8010937,3161,0.0004,0.1239,12324.5
-2026-07-14,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,14036972,51,0.0,0.1169,23125.2
-2026-07-14,facebook/opt-125m,Meta,text-generation,15578995,275,0.0,0.111,10222.4
-2026-07-14,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,9467880,912,0.0001,0.0978,5939.7
-2026-07-14,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,12561436,768,0.0001,0.0962,18917.8
-2026-07-14,Qwen/Qwen3-14B,Alibaba,text-generation,4585938,421,0.0001,0.0929,10375.4
-2026-07-14,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7462851,316,0.0,0.0883,83852.3
+2026-07-15,lpiccinelli/unidepth-v2-vitl14,Community,unknown,13285113,36,0.0,0.4751,17434.5
+2026-07-15,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,9764026,16,0.0,0.4547,6121.6
+2026-07-15,google/electra-base-discriminator,Google,unknown,56275314,138,0.0,0.3237,35282.3
+2026-07-15,intfloat/multilingual-e5-small,Community,sentence-similarity,14961642,360,0.0,0.2735,13479.0
+2026-07-15,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8582672,465,0.0001,0.2063,178805.7
+2026-07-15,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,13081197,13,0.0,0.1865,21948.3
+2026-07-15,mistralai/Mistral-7B-Instruct-v0.3,Mistral,unknown,5222679,2708,0.0005,0.165,6670.1
+2026-07-15,Qwen/Qwen2.5-3B-Instruct,Alibaba,text-generation,7093265,534,0.0001,0.1617,10666.6
+2026-07-15,google-bert/bert-base-uncased,Google,fill-mask,80047159,2704,0.0,0.1562,50186.3
+2026-07-15,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,11065770,474,0.0,0.1544,6937.8
+2026-07-15,google-t5/t5-small,Google,translation,27574739,569,0.0,0.1536,17288.2
+2026-07-15,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6764647,674,0.0001,0.1424,12667.9
+2026-07-15,autogluon/chronos-2,Amazon,time-series-forecasting,9096322,38,0.0,0.1274,32371.3
+2026-07-15,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,8010937,3162,0.0004,0.1239,12305.6
+2026-07-15,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,14036972,51,0.0,0.1169,23087.1
+2026-07-15,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,12561436,769,0.0001,0.0962,18889.4
+2026-07-15,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,9992601,912,0.0001,0.0949,6265.0
+2026-07-15,Qwen/Qwen3-14B,Alibaba,text-generation,4585938,423,0.0001,0.0929,10352.0
+2026-07-15,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7462851,317,0.0,0.0883,82920.6
+2026-07-15,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6713488,2396,0.0004,0.0809,74594.3
