@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-07-15,lpiccinelli/unidepth-v2-vitl14,Community,unknown,13285113,36,0.0,0.4751,17434.5
-2026-07-15,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,9764026,16,0.0,0.4547,6121.6
-2026-07-15,google/electra-base-discriminator,Google,unknown,56275314,138,0.0,0.3237,35282.3
-2026-07-15,intfloat/multilingual-e5-small,Community,sentence-similarity,14961642,360,0.0,0.2735,13479.0
-2026-07-15,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8582672,465,0.0001,0.2063,178805.7
-2026-07-15,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,13081197,13,0.0,0.1865,21948.3
-2026-07-15,mistralai/Mistral-7B-Instruct-v0.3,Mistral,unknown,5222679,2708,0.0005,0.165,6670.1
-2026-07-15,Qwen/Qwen2.5-3B-Instruct,Alibaba,text-generation,7093265,534,0.0001,0.1617,10666.6
-2026-07-15,google-bert/bert-base-uncased,Google,fill-mask,80047159,2704,0.0,0.1562,50186.3
-2026-07-15,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,11065770,474,0.0,0.1544,6937.8
-2026-07-15,google-t5/t5-small,Google,translation,27574739,569,0.0,0.1536,17288.2
-2026-07-15,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6764647,674,0.0001,0.1424,12667.9
-2026-07-15,autogluon/chronos-2,Amazon,time-series-forecasting,9096322,38,0.0,0.1274,32371.3
-2026-07-15,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,8010937,3162,0.0004,0.1239,12305.6
-2026-07-15,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,14036972,51,0.0,0.1169,23087.1
-2026-07-15,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,12561436,769,0.0001,0.0962,18889.4
-2026-07-15,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,9992601,912,0.0001,0.0949,6265.0
-2026-07-15,Qwen/Qwen3-14B,Alibaba,text-generation,4585938,423,0.0001,0.0929,10352.0
-2026-07-15,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,7462851,317,0.0,0.0883,82920.6
-2026-07-15,Qwen/Qwen3.6-35B-A3B,Alibaba,image-text-to-text,6713488,2396,0.0004,0.0809,74594.3
+2026-07-16,lpiccinelli/unidepth-v2-vitl14,Community,unknown,13937064,37,0.0,0.5456,18266.1
+2026-07-16,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,9813726,16,0.0,0.3435,6149.0
+2026-07-16,ggml-org/embeddinggemma-300M-GGUF,Community,unknown,5313721,35,0.0,0.2623,16922.7
+2026-07-16,intfloat/multilingual-e5-small,Community,sentence-similarity,14803429,362,0.0,0.2546,13324.4
+2026-07-16,google/electra-base-discriminator,Google,unknown,54975013,139,0.0,0.24,34445.5
+2026-07-16,mistralai/Mistral-7B-Instruct-v0.3,Mistral,unknown,5294066,2710,0.0005,0.1648,6752.6
+2026-07-16,Qwen/Qwen2.5-3B-Instruct,Alibaba,text-generation,7013681,535,0.0001,0.1419,10531.1
+2026-07-16,google-bert/bert-base-uncased,Google,fill-mask,79159377,2706,0.0,0.1319,49598.6
+2026-07-16,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,11010114,475,0.0,0.1233,6898.6
+2026-07-16,google-t5/t5-small,Google,translation,27239356,571,0.0,0.1024,17067.3
+2026-07-16,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8600492,467,0.0001,0.0753,175520.2
+2026-07-16,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,12654707,771,0.0001,0.0636,19001.1
+2026-07-16,Qwen/Qwen3.6-27B,Alibaba,image-text-to-text,5135345,1975,0.0004,0.0611,60415.8
+2026-07-16,autogluon/chronos-2,Amazon,time-series-forecasting,9629900,39,0.0,0.0595,34148.6
+2026-07-16,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,9896733,912,0.0001,0.0586,6201.0
+2026-07-16,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,Community,text-generation,12835019,13,0.0,0.051,21499.2
+2026-07-16,Qwen/Qwen2.5-VL-3B-Instruct,Alibaba,image-text-to-text,6724664,674,0.0001,0.0376,12569.5
+2026-07-16,openai/whisper-large-v3-turbo,OpenAI,automatic-speech-recognition,7966577,3166,0.0004,0.0374,12218.7
+2026-07-16,FacebookAI/xlm-roberta-base,Meta,fill-mask,23321805,866,0.0,0.027,14612.7
+2026-07-16,facebook/opt-125m,Meta,text-generation,15556821,276,0.0,0.0212,10194.5
