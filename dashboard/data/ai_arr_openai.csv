@@ -13,6 +13,7 @@ date,arr_usd,source_label,arr_type,confidence,source_type,prev_date,prev_arr,day
 2022-12-31,28000000.0,2022 28M,,Likely,Media report,2022-12-31,28000000.0,0,0.0,,
 2022-12-31,28000000.0,2022 28M,,Likely,Media report,2022-12-31,28000000.0,0,0.0,,
 2022-12-31,28000000.0,2022 28M,,Likely,Media report,2022-12-31,28000000.0,0,0.0,,
+2022-12-31,28000000.0,2022 28M,,Likely,Media report,2022-12-31,28000000.0,0,0.0,,
 2023-03-01,200000000.0,March 2023 100Ms,Annualized run rate,Likely,Media report,2022-12-31,28000000.0,60,614.3,15645340.1,167.3
 2023-08-29,1000000000.0,Aug 2023 1B,Annualized run rate,Likely,Media report,2023-03-01,200000000.0,181,400.0,2467.6,30.6
 2023-10-10,1300000000.0,1.3B Oct 2023,Annualized run rate,Likely,Media report,2023-08-29,1000000000.0,42,30.0,877.7,20.6
@@ -22,6 +23,7 @@ date,arr_usd,source_label,arr_type,confidence,source_type,prev_date,prev_arr,day
 2024-08-15,3600000000.0,August 2024 3.6B,Annualized run rate,Likely,Media report,2024-06-12,3400000000.0,64,5.9,38.5,2.7
 2024-09-12,4000000000.0,Sep 2024 4B,Annual recurring revenue (ARR),Likely,Media report,2024-08-15,3600000000.0,28,11.1,294.9,12.0
 2024-12-31,3700000000.0,2024 3.7B,,Likely,Media report,2024-09-12,4000000000.0,110,-7.5,-22.8,-2.1
+2024-12-31,3700000000.0,2024 3.7B,,Likely,Media report,2024-12-31,3700000000.0,0,0.0,,
 2024-12-31,3700000000.0,2024 3.7B,,Likely,Media report,2024-12-31,3700000000.0,0,0.0,,
 2024-12-31,3700000000.0,2024 3.7B,,Likely,Media report,2024-12-31,3700000000.0,0,0.0,,
 2024-12-31,3700000000.0,2024 3.7B,,Likely,Media report,2024-12-31,3700000000.0,0,0.0,,
