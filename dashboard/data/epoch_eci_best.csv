@@ -107,7 +107,7 @@ release_date,model_name,organization,eci,eci_ci_low,eci_ci_high,model_slug
 2025-02-05,Gemini 2.0 Flash,"Google DeepMind,Google",135.61,132.13,137.33,gemini-2-0-flash-feb-2025
 2025-02-05,Gemini 2.0 Pro,Google DeepMind,135.43,131.97,137.29,gemini-2-0-pro
 2025-05-07,Mistral Medium 3,Mistral AI,135.16,131.67,136.53,mistral-medium-3
-2024-12-11,Gemini 2.0 Flash,"Google DeepMind,Google",134.95,124.07,136.96,gemini-2-0-flash-dec-2024
+2024-12-06,Gemini 2.0 Flash,"Google DeepMind,Google",134.95,124.07,136.96,gemini-2-0-flash-dec-2024
 2024-10-22,Claude 3.5 Sonnet (October 2024),Anthropic,134.23,129.49,138.25,claude-3-5-sonnet-october-2024
 2025-01-25,Qwen2.5-Max,Alibaba,133.21,129.24,136.39,qwen2-5-max
 2025-06-10,Magistral Small 1.0,Mistral AI,132.91,127.63,135.32,magistral-small-1-0
