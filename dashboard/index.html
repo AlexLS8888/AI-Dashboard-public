@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Monitor — 8 Modules</title>
+<title>AI Monitor — 9 Modules</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -652,8 +652,52 @@ canvas { max-height: 400px; }
   </div>
   </div>
 
-  <!-- ═══ MODULE 3: OPENROUTER TOKEN USAGE ═══ -->
-  <div class="section-row"><span class="section-label lg">Module 4 — OpenRouter Weekly Token Usage · Real Usage Across LLM Providers</span></div>
+  <!-- ═══════════════════════════════════════════════════════
+       MODULE 4 — LLM TOKEN EXPENDITURE INDEX
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-row" style="margin-top:16px;">
+    <span class="section-label lg">Module 4 — LLM Token Expenditure Index · Silicon Data SDLLMTK · Broad Market, Open &amp; Proprietary LLM Pricing</span>
+  </div>
+
+  <!-- KPI strip LLM Token Index -->
+  <div class="kpi-strip" id="llmtk-kpi-strip" style="grid-template-columns:repeat(4,1fr);">
+    <div class="kpi nu">
+      <div class="kpi-label">Broad Market — SDLLMTK</div>
+      <div class="kpi-value" id="llmtk-kpi-broad">—</div>
+      <div class="kpi-sub">USD / M tokens · blended</div>
+      <div class="kpi-delta nu" id="llmtk-kpi-broad-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Open LLM</div>
+      <div class="kpi-value" id="llmtk-kpi-open">—</div>
+      <div class="kpi-sub">USD / M tokens · open-weight</div>
+      <div class="kpi-delta nu" id="llmtk-kpi-open-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">Proprietary LLM</div>
+      <div class="kpi-value" id="llmtk-kpi-prop">—</div>
+      <div class="kpi-sub">USD / M tokens · closed-source</div>
+      <div class="kpi-delta nu" id="llmtk-kpi-prop-sub">loading...</div>
+    </div>
+    <div class="kpi nu">
+      <div class="kpi-label">4-Week Rolling Growth</div>
+      <div class="kpi-value" id="llmtk-kpi-4wk">—</div>
+      <div class="kpi-sub">broad market · avg WoW %</div>
+      <div class="kpi-delta nu" id="llmtk-kpi-4wk-sub">loading...</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1px;margin-bottom:1px;">
+    <div class="card-title">LLM Token Expenditure Index — Broad Market, Open &amp; Proprietary</div>
+    <div class="card-sub" style="margin-bottom:0;">
+      USD per million tokens · daily readings · Source: silicondata.com/products/silicon-index/llm-token-expenditure-index
+    </div>
+    <canvas id="llmTokenIndexChart" height="180"></canvas>
+    <div class="leader-note" id="llmtk-history-note" style="margin-top:12px;">Loading...</div>
+  </div>
+
+  <!-- ═══ MODULE 5: OPENROUTER TOKEN USAGE ═══ -->
+  <div class="section-row"><span class="section-label lg">Module 5 — OpenRouter Weekly Token Usage · Real Usage Across LLM Providers</span></div>
 
   <!-- KPI strip tokens -->
   <div class="kpi-strip" id="or-kpi-strip">
@@ -731,10 +775,10 @@ canvas { max-height: 400px; }
 
 
   <!-- ═══════════════════════════════════════════════════════
-       MODULE 5 — HUGGINGFACE MODEL DEMAND
+       MODULE 6 — HUGGINGFACE MODEL DEMAND
   ════════════════════════════════════════════════════════ -->
   <div class="section-row" style="margin-top:40px;">
-    <span class="section-label lg">Module 5 — HuggingFace Model Demand · Open-Source Deployment Intelligence</span>
+    <span class="section-label lg">Module 6 — HuggingFace Model Demand · Open-Source Deployment Intelligence</span>
   </div>
   <div class="note" style="margin-bottom:1px;">
     ⚠ HuggingFace measures <strong>open-source local deployments</strong>, not API usage.
@@ -846,7 +890,7 @@ canvas { max-height: 400px; }
   <div class="pillar-score-banner" id="p2-banner">
     <div>
       <div class="psb-label" style="color:rgba(255,255,255,0.3);">Pillar (2) · Infrastructure Supply/Demand</div>
-      <div class="psb-formula">Score = avg( GPU Price Trend, OpenRouter WoW, HuggingFace Demand ) &nbsp;|&nbsp; Weight: 25%</div>
+      <div class="psb-formula">Score = avg( GPU Price Trend, OpenRouter WoW, HuggingFace Demand, LLM Token Expenditure Growth ) &nbsp;|&nbsp; Weight: 25%</div>
     </div>
     <div class="psb-vars">
       <div class="psb-var"><div class="psb-var-score" id="p2-var-gpu">—</div><div class="psb-var-name">GPU Trend</div></div>
@@ -854,6 +898,8 @@ canvas { max-height: 400px; }
       <div class="psb-var"><div class="psb-var-score" id="p2-var-or">—</div><div class="psb-var-name">OpenRouter</div></div>
       <div class="psb-divider"></div>
       <div class="psb-var"><div class="psb-var-score" id="p2-var-hf">—</div><div class="psb-var-name">HuggingFace</div></div>
+      <div class="psb-divider"></div>
+      <div class="psb-var"><div class="psb-var-score" id="p2-var-llmtk">—</div><div class="psb-var-name">LLM Token Idx</div></div>
     </div>
     <div style="text-align:right;">
       <div class="psb-label" style="color:rgba(255,255,255,0.3);">Pillar Score</div>
@@ -873,10 +919,10 @@ canvas { max-height: 400px; }
   <div style="height:1px;background:var(--rule);margin-bottom:16px;"></div>
 
   <!-- ═══════════════════════════════════════════════════════
-       MODULE 6 — HYPERSCALER CAPEX
+       MODULE 7 — HYPERSCALER CAPEX
   ════════════════════════════════════════════════════════ -->
   <div class="section-row" style="margin-top:40px;" id="capex-section">
-    <span class="section-label lg">Module 6 — Hyperscaler Capex · Quarterly CapEx · 5 Companies (Alphabet · Amazon · Meta · Microsoft · Oracle)</span>
+    <span class="section-label lg">Module 7 — Hyperscaler Capex · Quarterly CapEx · 5 Companies (Alphabet · Amazon · Meta · Microsoft · Oracle)</span>
   </div>
   <div class="note" style="margin-bottom:1px;">
     Source: SEC EDGAR 10-Q/10-K (cash PP&amp;E + finance leases) · Methodology: Epoch AI Feb 2026 · 5 companies include Oracle (FY ends May 31, mapped to calendar quarters).
@@ -1137,6 +1183,13 @@ canvas { max-height: 400px; }
             <td>WoW growth in 30-day downloads across top 500 HuggingFace models. Measures open-source model deployment — a leading proxy for enterprise mid-market AI adoption. Large corporates begin AI adoption with open-source models before committing to enterprise API contracts. HF download acceleration tends to precede enterprise API demand by 2–3 quarters. <div class="meth-limit">Downloads skew toward Meta (LLaMA) and Google (BERT). Anthropic (API-only) is absent. Use the growth rate, not market share, as the signal.</div></td>
             <td class="meth-score">4-week rolling avg:<br>&gt;+5%/wk = 10<br>+2–5% = 8<br>0–2% = 6<br>-2–0% = 4<br>&lt;-2% = 2</td>
           </tr>
+          <tr>
+            <td><strong>LLM Token Expenditure Growth</strong><br><span style="color:var(--ink4);font-size:10px;">Broad-market SDLLMTK, WoW %</span></td>
+            <td>Daily<br><span style="color:var(--ink4);font-size:10px;">silicondata.com</span></td>
+            <td><a href="https://www.silicondata.com/products/silicon-index/llm-token-expenditure-index" target="_blank" style="color:var(--gold)">Silicon Data</a><br><span style="color:var(--ink4);font-size:10px;">llm_token_expenditure_index.csv</span></td>
+            <td>Week-over-week growth in the broad-market LLM Token Expenditure Index (Bloomberg ticker SDLLMTK) — a usage-weighted USD/M-tokens benchmark blending posted provider pricing with real consumption volume across frontier and open-weight models. Rising expenditure signals growing token-consumption intensity across the market, alongside the OpenRouter and HuggingFace demand proxies. <div class="meth-limit">Collection started Aug 2026 — insufficient history for a real 4-week rolling average yet; this variable returns no score (excluded from the pillar average) until at least 2 weekly observations exist, and score reliability improves as more weeks accumulate. Index blends price and usage-mix effects — a move can reflect provider repricing or a shift in which models capture demand, not only genuine expenditure growth.</div></td>
+            <td class="meth-score">4-week rolling avg:<br>&gt;+5%/wk = 10<br>+2–5% = 8<br>0–2% = 6<br>-2–0% = 4<br>&lt;-2% = 2<br><br><span style="color:var(--ink4)">Insufficient history — calculates automatically once ≥2 weekly observed points exist</span></td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -1236,7 +1289,7 @@ canvas { max-height: 400px; }
   &nbsp;·&nbsp;
   Updated every Monday via GitHub Actions
   &nbsp;·&nbsp;
-  AI Monitor · 8 Modules
+  AI Monitor · 9 Modules
 </div>
 
 <script>
@@ -1256,6 +1309,8 @@ const DATA = {
   hfPipelineShare: 'data/hf_pipeline_share.csv',
   hfTopVelocity:   'data/hf_top_velocity.csv',
   hfTopGrowth:     'data/hf_top_growth.csv',
+
+  llmTokenIndex:   'data/llm_token_expenditure_index.csv',
 
   capexQuarterly:     'data/capex_quarterly_5co.csv',
   capexAggregate:     'data/capex_quarterly_aggregate_5co.csv',
@@ -1836,7 +1891,7 @@ async function buildSignalNote() {
   buildDoublingRateChart();
   buildCumulativeDoublingsChart();
   buildEciSlopeChart();
-  await Promise.all([loadMETR(), loadECI(), buildSignalNote(), loadOrData(), loadGPUPricing(), loadHuggingFace(), loadCapex(), loadARR()]);
+  await Promise.all([loadMETR(), loadECI(), buildSignalNote(), loadOrData(), loadGPUPricing(), loadLlmTokenIndex(), loadHuggingFace(), loadCapex(), loadARR()]);
   computeAndRenderAIXI();
   await loadAixiHistory();
   document.getElementById('last-update').textContent =
@@ -1864,10 +1919,11 @@ function scrollToSection(e, selector) {
     'metr-table':        1,
     'eci-table':         2,
     'gpu-kpi-strip':     3,
-    'or-kpi-strip':      4,
-    'hf-kpi-strip':      5,
-    'capex-section':     6,
-    'arr-section':       7,
+    'llmtk-kpi-strip':   4,
+    'or-kpi-strip':      5,
+    'hf-kpi-strip':      6,
+    'capex-section':     7,
+    'arr-section':       8,
   };
   const pills = Array.from(document.querySelectorAll('.nav-pill'));
   const obs = new IntersectionObserver(entries => {
@@ -1889,8 +1945,8 @@ function scrollToSection(e, selector) {
 
 
   // ══════════════════════════════════════════════════════════
-// MODULE 3 — OPENROUTER TOKEN USAGE  (patched version)
-// Replace the entire existing MODULE 3 block in index.html
+// MODULE 5 — OPENROUTER TOKEN USAGE  (patched version)
+// Replace the entire existing MODULE 5 block in index.html
 // ══════════════════════════════════════════════════════════
 
 const OR_PALETTE = [
@@ -2826,6 +2882,136 @@ async function loadGPUPricing() {
 
 }
 
+// ══════════════════════════════════════════════════════════
+// MODULE 4 — LLM TOKEN EXPENDITURE INDEX (Silicon Data SDLLMTK)
+// ══════════════════════════════════════════════════════════
+let llmTokenIndexChart = null;
+
+async function loadLlmTokenIndex() {
+  const rows = await loadCSV(DATA.llmTokenIndex);
+  const noteEl = document.getElementById('llmtk-history-note');
+  if (!rows.length) {
+    if (noteEl) noteEl.textContent = 'No data — run silicon_index_collector.py';
+    return;
+  }
+
+  rows.sort((a, b) => a.date.localeCompare(b.date));
+  const latest = rows[rows.length - 1];
+
+  // ── KPI tiles — latest reading per series ──────────────────────────
+  const setTile = (valId, subId, valTxt, changeVal) => {
+    const vEl = document.getElementById(valId);
+    const sEl = document.getElementById(subId);
+    if (vEl) vEl.textContent = valTxt;
+    if (sEl) {
+      if (changeVal == null || isNaN(changeVal)) {
+        sEl.textContent = latest.source === 'derived_7d_backfill' ? 'derived (backfill)' : '—';
+      } else {
+        sEl.textContent = (changeVal >= 0 ? '+' : '') + changeVal.toFixed(1) + '% (7D)';
+        sEl.className = 'kpi-delta ' + (changeVal >= 0 ? 'up' : 'dn');
+        const tile = sEl.closest('.kpi');
+        if (tile) tile.className = 'kpi ' + (changeVal >= 0 ? 'up' : 'dn');
+      }
+    }
+  };
+  setTile('llmtk-kpi-broad', 'llmtk-kpi-broad-sub',
+    latest.llm_token_usd_per_m ? '$' + (+latest.llm_token_usd_per_m).toFixed(2) : '—',
+    latest.llm_token_change_7d_pct ? +latest.llm_token_change_7d_pct : null);
+  setTile('llmtk-kpi-open', 'llmtk-kpi-open-sub',
+    latest.open_llm_usd_per_m ? '$' + (+latest.open_llm_usd_per_m).toFixed(2) : '—',
+    latest.open_llm_change_7d_pct ? +latest.open_llm_change_7d_pct : null);
+  setTile('llmtk-kpi-prop', 'llmtk-kpi-prop-sub',
+    latest.proprietary_llm_usd_per_m ? '$' + (+latest.proprietary_llm_usd_per_m).toFixed(2) : '—',
+    latest.proprietary_llm_change_7d_pct ? +latest.proprietary_llm_change_7d_pct : null);
+
+  // ── 4-week rolling avg WoW growth — broad market (SDLLMTK) ──────────
+  // Mirrors the AIXI methodology: only 'observed' rows count (never the
+  // one-time derived backfill point), matched on dates exactly 7 days
+  // apart. Insufficient history until ≥2 observed weekly points exist.
+  const observed = rows.filter(r => r.source === 'observed' && r.llm_token_usd_per_m);
+  const byDate = {};
+  observed.forEach(r => { byDate[r.date] = +r.llm_token_usd_per_m; });
+  const growths = [];
+  observed.forEach(r => {
+    const d = new Date(r.date + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() + 7);
+    const nextDate = d.toISOString().slice(0, 10);
+    if (byDate[nextDate] != null && byDate[r.date] > 0) {
+      growths.push((byDate[nextDate] - byDate[r.date]) / byDate[r.date] * 100);
+    }
+  });
+  const el4wk = document.getElementById('llmtk-kpi-4wk');
+  const el4wkSub = document.getElementById('llmtk-kpi-4wk-sub');
+  if (growths.length > 0) {
+    const last4 = growths.slice(-4);
+    const avg4wk = last4.reduce((s, v) => s + v, 0) / last4.length;
+    if (el4wk) el4wk.textContent = (avg4wk >= 0 ? '+' : '') + avg4wk.toFixed(1) + '%';
+    if (el4wkSub) el4wkSub.textContent = last4.length + '-week rolling avg WoW';
+    const tile4 = el4wk ? el4wk.closest('.kpi') : null;
+    if (tile4) tile4.className = 'kpi ' + (avg4wk >= 0 ? 'up' : 'dn');
+  } else {
+    if (el4wk) el4wk.textContent = '—';
+    if (el4wkSub) el4wkSub.textContent = 'Insufficient history yet';
+  }
+
+  // ── History note ─────────────────────────────────────────────────
+  if (noteEl) {
+    const nDates = rows.length;
+    const hasBackfill = rows.some(r => r.source === 'derived_7d_backfill');
+    noteEl.textContent = `${nDates} date${nDates === 1 ? '' : 's'} tracked since ${rows[0].date}` +
+      (hasBackfill ? ' · earliest point is derived from the observed 7-day change, not directly observed' : '') +
+      ' · collection began Aug 2026';
+  }
+
+  // ── Chart — 3 series over time ──────────────────────────────────────
+  const labels = rows.map(r => r.date.slice(5));
+  const mkSeries = (key, label, color) => ({
+    label,
+    data: rows.map(r => r[key] ? +r[key] : null),
+    borderColor: color,
+    backgroundColor: 'transparent',
+    borderWidth: 1.75,
+    pointRadius: rows.map(r => r.source === 'derived_7d_backfill' ? 3 : 2),
+    pointStyle: rows.map(r => r.source === 'derived_7d_backfill' ? 'circle' : 'circle'),
+    pointBackgroundColor: rows.map(r => r.source === 'derived_7d_backfill' ? 'transparent' : color),
+    pointBorderColor: color,
+    tension: 0.25,
+    spanGaps: true,
+  });
+
+  const ctx = document.getElementById('llmTokenIndexChart');
+  if (llmTokenIndexChart) llmTokenIndexChart.destroy();
+  llmTokenIndexChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        mkSeries('llm_token_usd_per_m', 'Broad Market (SDLLMTK)', C.gold),
+        mkSeries('open_llm_usd_per_m', 'Open LLM', C.sage),
+        mkSeries('proprietary_llm_usd_per_m', 'Proprietary LLM', C.blue),
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: true, labels: { boxWidth: 8, padding: 10, font: { size: 8 } } },
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.raw == null ? null : `${ctx.dataset.label}: $${ctx.raw.toFixed(3)}/M`,
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: 'transparent' }, ticks: { maxTicksLimit: 14, font: { size: 8 } } },
+        y: { grid: { color: gridColor }, ticks: { callback: v => '$' + v } }
+      }
+    }
+  });
+
+  console.log('[LLM Token Index]', rows.length, 'dates loaded, latest:', latest.date);
+}
+
 async function loadHuggingFace() {
   const [latest, history, companyShare, pipeShare, topVel, topGrowth] = await Promise.all([
     loadCSV(DATA.hfLatest),
@@ -3193,7 +3379,7 @@ async function loadHuggingFace() {
 
 
 // ══════════════════════════════════════════════════════════
-// MODULE 6 — HYPERSCALER CAPEX
+// MODULE 7 — HYPERSCALER CAPEX
 // CSVs: capex_quarterly_5co.csv, capex_quarterly_aggregate_5co.csv,
 //       capex_annual_guidance.csv
 // ══════════════════════════════════════════════════════════
@@ -3711,6 +3897,11 @@ function scoreHfGrow(pct) {
   if (pct == null) return null;
   return pct > 10 ? 10 : pct > 5 ? 8 : pct > 2 ? 6 : pct > 0 ? 4 : 2;
 }
+function scoreLlmTk(pct) {
+  // 4-week rolling avg WoW growth, broad market (SDLLMTK)
+  if (pct == null) return null;
+  return pct > 5 ? 10 : pct > 2 ? 8 : pct > 0 ? 6 : pct > -2 ? 4 : 2;
+}
 function scoreCapexYoy(pct) {
   if (pct == null) return null;
   return pct > 60 ? 10 : pct > 40 ? 8 : pct > 20 ? 6 : pct > 0 ? 4 : 2;
@@ -3756,7 +3947,12 @@ function computeAndRenderAIXI() {
   const hfMatch  = hfTxt.match(/([\d.]+)%/);
   const hfGrow   = hfMatch ? parseFloat(hfMatch[1]) : null;
   const s_hf     = scoreHfGrow(hfGrow);
-  const p2       = avg(s_gpu, s_or, s_hf);
+  // LLM Token Expenditure Index: 4-week rolling avg WoW growth, broad market
+  const llmtkEl  = document.getElementById('llmtk-kpi-4wk');
+  const llmtkTxt = llmtkEl ? llmtkEl.textContent.replace('%','').trim() : null;
+  const llmtkVal = llmtkTxt && llmtkTxt !== '—' ? parseFloat(llmtkTxt) : null;
+  const s_llm_tk = scoreLlmTk(llmtkVal); // null until ≥2 observed weekly points exist
+  const p2       = avg(s_gpu, s_or, s_hf, s_llm_tk);
 
   // P3: CapEx YoY + Guidance Beat
   // Read CapEx YoY from DOM
@@ -3845,7 +4041,7 @@ function computeAndRenderAIXI() {
   });
   // Var scores
   [['p1-var-p50', s_p50], ['p1-var-eci', s_eci],
-   ['p2-var-gpu', s_gpu], ['p2-var-or', s_or], ['p2-var-hf', s_hf],
+   ['p2-var-gpu', s_gpu], ['p2-var-or', s_or], ['p2-var-hf', s_hf], ['p2-var-llmtk', s_llm_tk],
    ['p3-var-yoy', s_yoy], ['p3-var-beat', s_beat],
    ['p4-var-arr-yoy', s_arr_yoy]
   ].forEach(([id, sc]) => {
@@ -3991,6 +4187,7 @@ async function loadAixiHistory() {
     'p2-var-gpu':     fv(latest.s_gpu),
     'p2-var-or':      fv(latest.s_or),
     'p2-var-hf':      fv(latest.s_hf),
+    'p2-var-llmtk':   fv(latest.s_llm_tk),
     'p3-var-yoy':     fv(latest.s_capex_yoy),
     'p3-var-beat':    fv(latest.s_beat),
     'p4-var-arr-yoy': fv(latest.s_arr_yoy),
