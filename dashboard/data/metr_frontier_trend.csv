@@ -1,6 +1,6 @@
 month,frontier_p50_hours,frontier_org,frontier_model
 ,0.0025,OpenAI,Davinci 002
-2019-11,0.0007,OpenAI,Gpt2 Xl
+2019-11,0.0009,OpenAI,Gpt2 Xl
 2023-03,0.0894,OpenAI,Gpt 4 0314
 2023-06,0.0665,OpenAI,Gpt 4 0613
 2023-09,0.0101,OpenAI,Gpt 3.5 Turbo Instruct

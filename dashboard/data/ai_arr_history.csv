@@ -18,6 +18,7 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
 2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
 2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
+2022-12-31,OpenAI,2022 28M,28000000.0,,28000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog
 2023-03-01,OpenAI,March 2023 100Ms,200000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openais-losses-doubled-to-540-million-as-it-developed-chatgpt?rc=9mzoog
 2023-08-29,OpenAI,Aug 2023 1B,1000000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=4ylmkj
 2023-10-01,Anthropic,October 2023 100M,100000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/openai-rival-anthropic-in-talks-to-raise-2-billion-from-google-others-as-ai-arms-race-accelerates?rc=4ylmkj
@@ -45,8 +46,10 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
 2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
 2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
+2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
 2024-12-31,Anthropic,December 2024 1B,1000000000.0,Annualized run rate,,,Likely,Media report,https://www.cnbc.com/2025/01/22/google-agrees-to-new-1-billion-investment-in-anthropic.html
 2024-12-31,Anthropic,2024 full year,,,381000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog
+2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
 2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
 2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
 2024-12-31,OpenAI,2024 3.7B,3700000000.0,,3700000000.0,Year,Likely,Media report,https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year
@@ -90,6 +93,7 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
 2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
 2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
+2025-06-30,OpenAI,H1 2025 4.3B,,,4300000000.0,Half-year,Likely,Media report,https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn?rc=9mzoog
 2025-07-01,Anthropic,July 2025 4B,4000000000.0,Annualized run rate,,,Likely,Media report,https://www.theinformation.com/articles/anthropic-revenue-hits-4-billion-annual-pace-competition-cursor-intensifies?rc=9mzoog
 2025-07-29,Anthropic,July 2025 5B,5000000000.0,Annual recurring revenue (ARR),,,Likely,Company disclosure,https://www.bloomberg.com/news/articles/2025-07-29/anthropic-nears-deal-to-raise-funding-at-170-billion-valuation
 2025-07-30,OpenAI,July 2025 12B,12000000000.0,Annualized run rate,,,Confident,Company disclosure,https://www.cnbc.com/2025/08/20/openai-compute-ai.html
@@ -114,8 +118,10 @@ date,company,source_label,arr_usd,arr_type,actual_period_revenue_usd,period_type
 2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
 2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
 2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
+2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
 2025-12-31,Anthropic,end-2025 9B,9000000000.0,Annualized run rate,,,Likely,Media report,https://www.bloomberg.com/news/articles/2026-01-21/anthropic-s-revenue-run-rate-tops-9-billion-as-vcs-pile-in
 2025-12-31,Anthropic,2025 full year,,,4500000000.0,Year,Likely,Media report,https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive
+2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
 2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
 2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
 2025-12-31,OpenAI,2025 13B,,,13000000000.0,Year,Likely,Media report,https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html
