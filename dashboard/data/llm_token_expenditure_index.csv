@@ -11,3 +11,5 @@ date,llm_token_usd_per_m,llm_token_change_7d_pct,llm_token_trend,open_llm_usd_pe
 2026-08-28,1.06,1.3,up,0.54,13.8,up,2.36,0.5,up,observed
 2026-08-30,1.0,-4.8,down,0.52,6.2,up,2.26,-3.6,down,observed
 2026-08-31,0.97,-8.6,down,0.52,-5.4,down,2.15,-8.2,down,observed
+2026-09-01,0.97,-10.0,down,,,,2.15,-9.3,down,observed
+2026-09-02,,,,0.52,-4.3,down,,,,observed
