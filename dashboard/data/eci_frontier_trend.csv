@@ -1,44 +1,44 @@
 month,frontier_eci,frontier_org,frontier_model
-2023-02,109.91,Meta AI,LLaMA-65B
-2023-03,125.88,OpenAI,GPT-4 (Mar 2023)
-2023-04,94.57,Technology Innovation Institute,Falcon-7B
-2023-05,104.09,Technology Innovation Institute,Falcon-40B
-2023-06,123.09,OpenAI,GPT-4 (Jun 2023)
-2023-07,120.08,Anthropic,Claude 2
-2023-08,120.19,Anthropic,Claude Instant
-2023-09,112.83,Alibaba,Qwen-14B
-2023-11,126.46,OpenAI,GPT-4 Turbo (Nov 2023)
-2023-12,118.38,Mistral AI,Mixtral 8x7B
-2024-01,126.46,OpenAI,GPT-4 Turbo (Nov 2023)
+2023-02,109.94,Meta AI,LLaMA-65B
+2023-03,125.89,OpenAI,GPT-4 (Mar 2023)
+2023-04,94.63,Technology Innovation Institute,Falcon-7B
+2023-05,104.13,Technology Innovation Institute,Falcon-40B
+2023-06,123.1,OpenAI,GPT-4 (Jun 2023)
+2023-07,120.09,Anthropic,Claude 2
+2023-08,120.2,Anthropic,Claude Instant
+2023-09,112.85,Alibaba,Qwen-14B
+2023-11,126.45,OpenAI,GPT-4 Turbo (Nov 2023)
+2023-12,118.4,Mistral AI,Mixtral 8x7B
+2024-01,126.45,OpenAI,GPT-4 Turbo (Nov 2023)
 2024-02,127.77667684732914,Google DeepMind,Gemini 1.5 Pro
-2024-03,118.27,Anthropic,Claude 3 Haiku
+2024-03,118.3,Anthropic,Claude 3 Haiku
 2024-04,127.25,OpenAI,GPT-4 Turbo (Apr 2024)
-2024-05,128.98,OpenAI,GPT-4o
+2024-05,128.97,OpenAI,GPT-4o
 2024-06,130.0,Anthropic,Claude 3.5 Sonnet
 2024-07,128.75,Meta AI,Llama 3.1-405B
-2024-08,128.78,OpenAI,GPT-4o
-2024-09,135.84,OpenAI,o1-mini
-2024-10,133.57,Anthropic,Claude 3.5 Sonnet (October 2024)
-2024-11,128.82,OpenAI,GPT-4o
-2024-12,141.9,OpenAI,o1
-2025-01,140.38,OpenAI,o3-mini
-2025-02,141.19,Anthropic,Claude 3.7 Sonnet
-2025-03,144.2,Google DeepMind,Gemini 2.5 Pro (Mar 2025)
+2024-08,128.77,OpenAI,GPT-4o
+2024-09,135.82,OpenAI,o1-mini
+2024-10,133.55,Anthropic,Claude 3.5 Sonnet (October 2024)
+2024-11,128.81,OpenAI,GPT-4o
+2024-12,141.86,OpenAI,o1
+2025-01,140.35,OpenAI,o3-mini
+2025-02,141.16,Anthropic,Claude 3.7 Sonnet
+2025-03,144.16,Google DeepMind,Gemini 2.5 Pro (Mar 2025)
 2025-04,146.91,OpenAI,o3
-2025-05,142.7,Anthropic,Claude Opus 4
-2025-06,147.46,OpenAI,o3-pro
-2025-07,146.46,xAI,Grok 4
+2025-05,142.68,Anthropic,Claude Opus 4
+2025-06,147.45,OpenAI,o3-pro
+2025-07,146.45,xAI,Grok 4
 2025-08,150.0,OpenAI,GPT-5
 2025-09,146.84,Anthropic,Claude Sonnet 4.5
-2025-10,150.3,OpenAI,GPT-5 Pro
-2025-11,152.94,Google DeepMind,Gemini 3 Pro
-2025-12,155.3,OpenAI,GPT-5.2 Pro
-2026-01,148.02,Moonshot,Kimi K2.5
-2026-02,156.4,OpenAI,GPT-5.3 Codex
-2026-03,158.89,OpenAI,GPT-5.4 Pro
-2026-04,162.03,OpenAI,GPT-5.5 Pro
-2026-05,158.24,Anthropic,Claude Opus 4.8
-2026-06,162.9,Anthropic,Claude Fable 5
-2026-07,162.33,Anthropic,Claude Opus 5
-2026-08,157.32,Google DeepMind,Gemini 3.7 Flash
-2026-09,169.23,OpenAI,GPT-6 Astra
+2025-10,150.29,OpenAI,GPT-5 Pro
+2025-11,153.0,Google DeepMind,Gemini 3 Pro
+2025-12,155.38,OpenAI,GPT-5.2 Pro
+2026-01,148.01,Moonshot,Kimi K2.5
+2026-02,156.58,OpenAI,GPT-5.3 Codex
+2026-03,158.95,OpenAI,GPT-5.4 Pro
+2026-04,162.25,OpenAI,GPT-5.5 Pro
+2026-05,158.3,Anthropic,Claude Opus 4.8
+2026-06,163.27,Anthropic,Claude Fable 5
+2026-07,162.3,Anthropic,Claude Opus 5
+2026-08,157.44,Google DeepMind,Gemini 3.7 Flash
+2026-09,166.31,OpenAI,GPT-6 Astra

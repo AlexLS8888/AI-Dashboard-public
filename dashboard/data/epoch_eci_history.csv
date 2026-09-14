@@ -1,664 +1,669 @@
 release_date,model_name,organization,eci,eci_ci_low,eci_ci_high,model_slug,accessibility,model_version
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_unknown
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_xhigh
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_medium
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_low
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_none
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_max
-2026-09-03,GPT-6 Astra,OpenAI,169.23,164.85,174.02,gpt-6-astra,API access,gpt-6-astra_high
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_unknown
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_low
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_high
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_xhigh
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_medium
-2026-09-01,Claude Fable 5.1,Anthropic,162.88,160.1,166.34,claude-fable-5-1,API access,claude-fable-5-1_max
-2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.64,149.18,153.79,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_high
-2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.64,149.18,153.79,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_unknown
-2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.64,149.18,153.79,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_max
-2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.3,153.14,157.68,glm-5-3,API access,glm-5.3_high
-2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.3,153.14,157.68,glm-5-3,API access,glm-5.3_unknown
-2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.3,153.14,157.68,glm-5-3,API access,glm-5.3_max
-2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.32,155.47,160.04,gemini-3-7-flash,API access,gemini-3.7-flash_low
-2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.32,155.47,160.04,gemini-3-7-flash,API access,gemini-3.7-flash_medium
-2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.32,155.47,160.04,gemini-3-7-flash,API access,gemini-3.7-flash_unknown
-2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.32,155.47,160.04,gemini-3-7-flash,API access,gemini-3.7-flash_high
-2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.42,153.62,157.54,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_none
-2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.42,153.62,157.54,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_high
-2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.42,153.62,157.54,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_low
-2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.42,153.62,157.54,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_unknown
-2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.42,153.62,157.54,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_max
-2026-08-12,Grok 4.6,xAI,156.33,154.53,158.44,grok-4-6,API access,grok-4.6_low
-2026-08-12,Grok 4.6,xAI,156.33,154.53,158.44,grok-4-6,API access,grok-4.6_medium
-2026-08-12,Grok 4.6,xAI,156.33,154.53,158.44,grok-4-6,API access,grok-4.6_unknown
-2026-08-12,Grok 4.6,xAI,156.33,154.53,158.44,grok-4-6,API access,grok-4.6_xhigh
-2026-08-12,Grok 4.6,xAI,156.33,154.53,158.44,grok-4-6,API access,grok-4.6_high
-2026-08-05,Muse Spark 1.2,Meta AI,155.51,153.82,158.41,muse-spark-1-2,API access,muse-spark-1.2
-2026-08-05,Muse Spark 1.2,Meta AI,155.51,153.82,158.41,muse-spark-1-2,API access,muse-spark-1.2_xhigh
-2026-08-02,Qwen 3.8 Max,Alibaba,156.61,154.66,158.7,qwen-3-8-max,API access,qwen3.8-max_unknown
-2026-08-02,Qwen 3.8 Max,Alibaba,156.61,154.66,158.7,qwen-3-8-max,API access,qwen3.8-max_xhigh
-2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.46,151.97,156.15,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_none
-2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.46,151.97,156.15,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_low
-2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.46,151.97,156.15,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_high
-2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.46,151.97,156.15,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_unknown
-2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.46,151.97,156.15,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_max
-2026-07-27,Qwen3.7 Flash,Alibaba,144.66,142.68,147.48,qwen3-7-flash,API access,qwen3.7-flash
-2026-07-27,Qwen3.7 Flash,Alibaba,144.66,142.68,147.48,qwen3-7-flash,API access,qwen3.7-flash_none
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_medium
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_xhigh
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_high
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_unknown
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_low
-2026-07-24,Claude Opus 5,Anthropic,162.33,159.75,165.78,claude-opus-5,API access,claude-opus-5_max
-2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.26,152.67,156.13,gemini-3-6-flash,API access,gemini-3.6-flash_medium
-2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.26,152.67,156.13,gemini-3-6-flash,API access,gemini-3.6-flash_unknown
-2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.26,152.67,156.13,gemini-3-6-flash,API access,gemini-3.6-flash_low
-2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.26,152.67,156.13,gemini-3-6-flash,API access,gemini-3.6-flash_minimal
-2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.26,152.67,156.13,gemini-3-6-flash,API access,gemini-3.6-flash_high
-2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.14,142.96,146.43,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_medium
-2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.14,142.96,146.43,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite
-2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.14,142.96,146.43,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_high
-2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.14,142.96,146.43,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_minimal
-2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.14,142.96,146.43,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_low
-2026-07-16,Kimi K3,Moonshot,157.62,155.06,160.13,kimi-k3,Open weights (non-commercial),kimi-k3_unknown
-2026-07-16,Kimi K3,Moonshot,157.62,155.06,160.13,kimi-k3,Open weights (non-commercial),kimi-k3_high
-2026-07-16,Kimi K3,Moonshot,157.62,155.06,160.13,kimi-k3,Open weights (non-commercial),kimi-k3_max
-2026-07-16,Kimi K3,Moonshot,157.62,155.06,160.13,kimi-k3,Open weights (non-commercial),kimi-k3_low
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_none
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_minimal
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_low
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_medium
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_high
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small
-2026-07-15,Inkling-Small,Thinking Machines,150.16,147.63,151.84,inkling-small,Open weights (unrestricted),inkling-small_xhigh
-2026-07-15,Inkling,Thinking Machines,148.65,145.69,150.61,inkling,Open weights (unrestricted),Inkling_high
-2026-07-15,Inkling,Thinking Machines,148.65,145.69,150.61,inkling,Open weights (unrestricted),Inkling
-2026-07-15,Inkling,Thinking Machines,148.65,145.69,150.61,inkling,Open weights (unrestricted),Inkling_xhigh
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_prounknown
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_proxhigh
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_unknown
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_xhigh
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_promax
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_high
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_medium
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_none
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_low
-2026-07-09,GPT-5.6 Sol,OpenAI,162.03,159.66,165.0,gpt-5-6-sol,API access,gpt-5.6-sol_max
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_high
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_unknown
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_xhigh
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_max
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_none
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_low
-2026-07-09,GPT-5.6 Terra,OpenAI,159.18,156.6,161.61,gpt-5-6-terra,API access,gpt-5.6-terra_medium
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_high
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_xhigh
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_unknown
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_max
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_medium
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_low
-2026-07-09,GPT-5.6 Luna,OpenAI,156.33,153.96,158.68,gpt-5-6-luna,API access,gpt-5.6-luna_none
-2026-07-09,Muse Spark 1.1,Meta AI,154.65,152.75,157.1,muse-spark-1-1,API access,muse-spark-1.1_medium
-2026-07-09,Muse Spark 1.1,Meta AI,154.65,152.75,157.1,muse-spark-1-1,API access,muse-spark-1.1_high
-2026-07-09,Muse Spark 1.1,Meta AI,154.65,152.75,157.1,muse-spark-1-1,API access,muse-spark-1.1
-2026-07-08,Grok 4.5,xAI,153.94,152.34,155.74,grok-4-5,API access,grok-4.5_low
-2026-07-08,Grok 4.5,xAI,153.94,152.34,155.74,grok-4-5,API access,grok-4.5_medium
-2026-07-08,Grok 4.5,xAI,153.94,152.34,155.74,grok-4-5,API access,grok-4.5_unknown
-2026-07-08,Grok 4.5,xAI,153.94,152.34,155.74,grok-4-5,API access,grok-4.5_high
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_16K
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_low
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_high
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_unknown
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_medium
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_max
-2026-06-30,Claude Sonnet 5,Anthropic,156.16,153.77,158.36,claude-sonnet-5,API access,claude-sonnet-5_xhigh
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_unknown
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_high
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_minimal
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_medium
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_max
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_low
-2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.98,150.29,154.07,glm-5-2,Open weights (unrestricted),glm-5.2_none
-2026-06-12,Kimi K2.7 Code,Moonshot,150.25,148.61,151.81,kimi-k2-7-code,Open weights (unrestricted),kimi-k2.7-code
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_medium
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_unknown
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_low
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_xhigh
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_high
-2026-06-09,Claude Fable 5,Anthropic,162.9,160.17,166.77,claude-fable-5,API access,claude-fable-5_max
-2026-06-04,Nemotron 3 Ultra,NVIDIA,146.3,144.06,148.05,nemotron-3-ultra,Open weights (unrestricted),nemotron-3-ultra
-2026-06-02,Qwen3.7-Plus,Alibaba,147.53,146.13,148.9,qwen3-7-plus,,qwen3.7-plus
-2026-06-02,Qwen3.7-Plus,Alibaba,147.53,146.13,148.9,qwen3-7-plus,,qwen3.7-plus_none
-2026-06-01,MiniMax-M3,MiniMax,146.57,142.3,149.34,minimax-m3,Open weights (restricted use),MiniMax-M3_none
-2026-06-01,MiniMax-M3,MiniMax,146.57,142.3,149.34,minimax-m3,Open weights (restricted use),MiniMax-M3
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_24K
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_medium
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_unknown
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_xhigh
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_low
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_none
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_high
-2026-05-28,Claude Opus 4.8,Anthropic,158.24,156.14,160.53,claude-opus-4-8,API access,claude-opus-4-8_max
-2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.64,152.77,156.84,gemini-3-5-flash,API access,gemini-3.5-flash_unknown
-2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.64,152.77,156.84,gemini-3-5-flash,API access,gemini-3.5-flash_medium
-2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.64,152.77,156.84,gemini-3-5-flash,API access,gemini-3.5-flash_minimal
-2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.64,152.77,156.84,gemini-3-5-flash,API access,gemini-3.5-flash_low
-2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.64,152.77,156.84,gemini-3-5-flash,API access,gemini-3.5-flash_high
-2026-05-19,Qwen3.7-Max,Alibaba,153.7,151.95,155.68,qwen3-7-max,API access,qwen3.7-max_none
-2026-05-19,Qwen3.7-Max,Alibaba,153.7,151.95,155.68,qwen3-7-max,API access,qwen3.7-max
-2026-05-05,GPT-5.5 Instant,OpenAI,142.52,139.84,145.18,gpt-5-5-instant,API access,gpt-5.5-instant
-2026-04-28,Mistral Medium 3.5,Mistral AI,141.37,138.98,143.44,mistral-medium-3-5,Open weights (restricted use),mistral-medium-2604
-2026-04-27,Qwen 3.6 Flash,Alibaba,143.31,141.03,144.74,qwen-3-6-flash,,qwen3.6-flash_none
-2026-04-27,Qwen 3.6 Flash,Alibaba,143.31,141.03,144.74,qwen-3-6-flash,,qwen3.6-flash
-2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.2,147.54,150.69,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_unknown
-2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.2,147.54,150.69,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_high
-2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.2,147.54,150.69,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_none
-2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.2,147.54,150.69,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_max
-2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.26,143.88,148.29,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_none
-2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.26,143.88,148.29,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_high
-2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.26,143.88,148.29,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_unknown
-2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.26,143.88,148.29,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_max
-2026-04-23,GPT-5.5 Pro,OpenAI,162.03,159.21,165.06,gpt-5-5-pro,API access,gpt-5.5-pro_high
-2026-04-23,GPT-5.5 Pro,OpenAI,162.03,159.21,165.06,gpt-5-5-pro,API access,gpt-5.5-pro_unknown
-2026-04-23,GPT-5.5 Pro,OpenAI,162.03,159.21,165.06,gpt-5-5-pro,API access,gpt-5.5-pro-pre-release_high
-2026-04-23,GPT-5.5 Pro,OpenAI,162.03,159.21,165.06,gpt-5-5-pro,API access,gpt-5.5-pro-pre-release_xhigh
-2026-04-23,GPT-5.5 Pro,OpenAI,162.03,159.21,165.06,gpt-5-5-pro,API access,gpt-5.5-pro_xhigh
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_unknown
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5-pre-release_xhigh
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_high
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_medium
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_none
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_low
-2026-04-23,GPT-5.5,OpenAI,159.23,156.94,162.02,gpt-5-5,API access,gpt-5.5_xhigh
-2026-04-22,Qwen3.6 27B,Alibaba,146.46,144.05,147.74,qwen3-6-27b,Open weights (unrestricted),qwen3.6-27b
-2026-04-22,Qwen3.6 27B,Alibaba,146.46,144.05,147.74,qwen3-6-27b,Open weights (unrestricted),qwen3.6-27b_none
-2026-04-20,Kimi K2.6,Moonshot,150.98,149.24,152.53,kimi-k2-6,Open weights (unrestricted),kimi-k2.6
-2026-04-20,Kimi K2.6,Moonshot,150.98,149.24,152.53,kimi-k2-6,Open weights (unrestricted),kimi-k2.6_none
-2026-04-20,Qwen 3.6 Max (Preview),Alibaba,149.27,147.54,151.98,qwen-3-6-max-preview,,qwen3.6-max-preview_none
-2026-04-20,Qwen 3.6 Max (Preview),Alibaba,149.27,147.54,151.98,qwen-3-6-max-preview,,qwen3.6-max-preview
-2026-04-17,Grok 4.3 Beta,xAI,149.21,147.73,150.49,grok-4-3-beta,Hosted access (no API),grok-4.3_none
-2026-04-17,Grok 4.3 Beta,xAI,149.21,147.73,150.49,grok-4-3-beta,Hosted access (no API),grok-4.3_unknown
-2026-04-17,Grok 4.3 Beta,xAI,149.21,147.73,150.49,grok-4-3-beta,Hosted access (no API),grok-4.3_high
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_unknown
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_xhigh
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_medium
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_low
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_none
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_max
+2026-09-03,GPT-6 Astra,OpenAI,166.31,163.0,171.88,gpt-6-astra,API access,gpt-6-astra_high
+2026-09-02,Gemini 3.8 Flash,Google DeepMind,156.54,154.58,161.97,gemini-3-8-flash,API access,gemini-3.8-flash_low
+2026-09-02,Gemini 3.8 Flash,Google DeepMind,156.54,154.58,161.97,gemini-3-8-flash,API access,gemini-3.8-flash_medium
+2026-09-02,Gemini 3.8 Flash,Google DeepMind,156.54,154.58,161.97,gemini-3-8-flash,API access,gemini-3.8-flash_unknown
+2026-09-02,Gemini 3.8 Flash,Google DeepMind,156.54,154.58,161.97,gemini-3-8-flash,API access,gemini-3.8-flash_high
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_unknown
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_low
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_xhigh
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_medium
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_max
+2026-09-01,Claude Fable 5.1,Anthropic,164.47,161.36,168.28,claude-fable-5-1,API access,claude-fable-5-1_high
+2026-09-01,Qwen3.8 Max (0902),Alibaba,155.22,153.57,157.34,qwen3-8-max-0902,API access,qwen3.8-max-0902_xhigh
+2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.45,149.28,153.78,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_high
+2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.45,149.28,153.78,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_unknown
+2026-08-20,GLM-5.3-Flash,Z.ai (Zhipu AI),151.45,149.28,153.78,glm-5-3-flash,Open weights (unrestricted),glm-5.3-flash_max
+2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.25,153.18,157.53,glm-5-3,API access,glm-5.3_high
+2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.25,153.18,157.53,glm-5-3,API access,glm-5.3_unknown
+2026-08-14,GLM-5.3,Z.ai (Zhipu AI),155.25,153.18,157.53,glm-5-3,API access,glm-5.3_max
+2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.44,155.66,159.78,gemini-3-7-flash,API access,gemini-3.7-flash_low
+2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.44,155.66,159.78,gemini-3-7-flash,API access,gemini-3.7-flash_medium
+2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.44,155.66,159.78,gemini-3-7-flash,API access,gemini-3.7-flash_unknown
+2026-08-13,Gemini 3.7 Flash,Google DeepMind,157.44,155.66,159.78,gemini-3-7-flash,API access,gemini-3.7-flash_high
+2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.47,153.78,157.83,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_none
+2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.47,153.78,157.83,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_high
+2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.47,153.78,157.83,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_low
+2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.47,153.78,157.83,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_unknown
+2026-08-13,DeepSeek V4 Pro 0813,DeepSeek,155.47,153.78,157.83,deepseek-v4-pro-0813,Open weights (unrestricted),deepseek-v4-pro-0813_max
+2026-08-12,Grok 4.6,xAI,156.35,154.77,158.88,grok-4-6,API access,grok-4.6_low
+2026-08-12,Grok 4.6,xAI,156.35,154.77,158.88,grok-4-6,API access,grok-4.6_medium
+2026-08-12,Grok 4.6,xAI,156.35,154.77,158.88,grok-4-6,API access,grok-4.6_unknown
+2026-08-12,Grok 4.6,xAI,156.35,154.77,158.88,grok-4-6,API access,grok-4.6_xhigh
+2026-08-12,Grok 4.6,xAI,156.35,154.77,158.88,grok-4-6,API access,grok-4.6_high
+2026-08-05,Muse Spark 1.2,Meta AI,155.48,153.9,158.64,muse-spark-1-2,API access,muse-spark-1.2
+2026-08-05,Muse Spark 1.2,Meta AI,155.48,153.9,158.64,muse-spark-1-2,API access,muse-spark-1.2_xhigh
+2026-08-02,Qwen 3.8 Max,Alibaba,156.62,154.85,158.75,qwen-3-8-max,API access,qwen3.8-max_unknown
+2026-08-02,Qwen 3.8 Max,Alibaba,156.62,154.85,158.75,qwen-3-8-max,API access,qwen3.8-max_xhigh
+2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.49,152.4,156.51,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_none
+2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.49,152.4,156.51,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_low
+2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.49,152.4,156.51,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_high
+2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.49,152.4,156.51,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_unknown
+2026-07-31,DeepSeek V4 Flash 0731,DeepSeek,154.49,152.4,156.51,deepseek-v4-flash-0731,Open weights (unrestricted),deepseek-v4-flash-0731_max
+2026-07-27,Qwen3.7 Flash,Alibaba,144.63,142.86,147.57,qwen3-7-flash,API access,qwen3.7-flash
+2026-07-27,Qwen3.7 Flash,Alibaba,144.63,142.86,147.57,qwen3-7-flash,API access,qwen3.7-flash_none
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_medium
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_xhigh
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_high
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_unknown
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_low
+2026-07-24,Claude Opus 5,Anthropic,162.3,159.9,165.74,claude-opus-5,API access,claude-opus-5_max
+2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.33,152.86,156.24,gemini-3-6-flash,API access,gemini-3.6-flash_medium
+2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.33,152.86,156.24,gemini-3-6-flash,API access,gemini-3.6-flash_unknown
+2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.33,152.86,156.24,gemini-3-6-flash,API access,gemini-3.6-flash_low
+2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.33,152.86,156.24,gemini-3-6-flash,API access,gemini-3.6-flash_minimal
+2026-07-21,Gemini 3.6 Flash,Google DeepMind,154.33,152.86,156.24,gemini-3-6-flash,API access,gemini-3.6-flash_high
+2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.13,142.76,146.76,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_medium
+2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.13,142.76,146.76,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite
+2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.13,142.76,146.76,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_high
+2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.13,142.76,146.76,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_minimal
+2026-07-21,Gemini 3.5 Flash-Lite,Google DeepMind,145.13,142.76,146.76,gemini-3-5-flash-lite,API access,gemini-3.5-flash-lite_low
+2026-07-16,Kimi K3,Moonshot,157.63,155.38,160.45,kimi-k3,Open weights (non-commercial),kimi-k3_unknown
+2026-07-16,Kimi K3,Moonshot,157.63,155.38,160.45,kimi-k3,Open weights (non-commercial),kimi-k3_high
+2026-07-16,Kimi K3,Moonshot,157.63,155.38,160.45,kimi-k3,Open weights (non-commercial),kimi-k3_max
+2026-07-16,Kimi K3,Moonshot,157.63,155.38,160.45,kimi-k3,Open weights (non-commercial),kimi-k3_low
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_none
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_minimal
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_low
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_medium
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_high
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small
+2026-07-15,Inkling-Small,Thinking Machines,150.15,147.34,152.09,inkling-small,Open weights (unrestricted),inkling-small_xhigh
+2026-07-15,Inkling,Thinking Machines,148.64,145.95,150.6,inkling,Open weights (unrestricted),Inkling_high
+2026-07-15,Inkling,Thinking Machines,148.64,145.95,150.6,inkling,Open weights (unrestricted),Inkling
+2026-07-15,Inkling,Thinking Machines,148.64,145.95,150.6,inkling,Open weights (unrestricted),Inkling_xhigh
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_prounknown
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_proxhigh
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_unknown
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_xhigh
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_promax
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_high
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_medium
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_none
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_low
+2026-07-09,GPT-5.6 Sol,OpenAI,161.81,159.57,165.2,gpt-5-6-sol,API access,gpt-5.6-sol_max
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_high
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_unknown
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_xhigh
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_max
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_none
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_low
+2026-07-09,GPT-5.6 Terra,OpenAI,159.14,157.01,161.84,gpt-5-6-terra,API access,gpt-5.6-terra_medium
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_high
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_xhigh
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_unknown
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_max
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_medium
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_low
+2026-07-09,GPT-5.6 Luna,OpenAI,156.31,154.06,158.86,gpt-5-6-luna,API access,gpt-5.6-luna_none
+2026-07-09,Muse Spark 1.1,Meta AI,154.62,152.58,157.88,muse-spark-1-1,API access,muse-spark-1.1_medium
+2026-07-09,Muse Spark 1.1,Meta AI,154.62,152.58,157.88,muse-spark-1-1,API access,muse-spark-1.1_high
+2026-07-09,Muse Spark 1.1,Meta AI,154.62,152.58,157.88,muse-spark-1-1,API access,muse-spark-1.1
+2026-07-08,Grok 4.5,xAI,153.92,152.49,156.04,grok-4-5,API access,grok-4.5_low
+2026-07-08,Grok 4.5,xAI,153.92,152.49,156.04,grok-4-5,API access,grok-4.5_medium
+2026-07-08,Grok 4.5,xAI,153.92,152.49,156.04,grok-4-5,API access,grok-4.5_unknown
+2026-07-08,Grok 4.5,xAI,153.92,152.49,156.04,grok-4-5,API access,grok-4.5_high
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_16K
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_low
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_high
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_unknown
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_medium
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_max
+2026-06-30,Claude Sonnet 5,Anthropic,156.22,153.63,158.63,claude-sonnet-5,API access,claude-sonnet-5_xhigh
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_unknown
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_high
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_minimal
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_medium
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_max
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_low
+2026-06-16,GLM-5.2,Z.ai (Zhipu AI),151.86,150.21,154.16,glm-5-2,Open weights (unrestricted),glm-5.2_none
+2026-06-12,Kimi K2.7 Code,Moonshot,150.07,148.68,151.93,kimi-k2-7-code,Open weights (unrestricted),kimi-k2.7-code
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_medium
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_unknown
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_low
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_xhigh
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_high
+2026-06-09,Claude Fable 5,Anthropic,163.27,160.54,167.1,claude-fable-5,API access,claude-fable-5_max
+2026-06-04,Nemotron 3 Ultra,NVIDIA,146.27,144.01,148.3,nemotron-3-ultra,Open weights (unrestricted),nemotron-3-ultra
+2026-06-02,Qwen3.7-Plus,Alibaba,147.41,145.92,148.83,qwen3-7-plus,API access,qwen3.7-plus
+2026-06-02,Qwen3.7-Plus,Alibaba,147.41,145.92,148.83,qwen3-7-plus,API access,qwen3.7-plus_none
+2026-06-01,MiniMax-M3,MiniMax,146.47,142.57,149.55,minimax-m3,Open weights (restricted use),MiniMax-M3_none
+2026-06-01,MiniMax-M3,MiniMax,146.47,142.57,149.55,minimax-m3,Open weights (restricted use),MiniMax-M3
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_24K
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_medium
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_unknown
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_xhigh
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_low
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_none
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_high
+2026-05-28,Claude Opus 4.8,Anthropic,158.3,156.43,160.71,claude-opus-4-8,API access,claude-opus-4-8_max
+2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.69,152.78,157.03,gemini-3-5-flash,API access,gemini-3.5-flash_unknown
+2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.69,152.78,157.03,gemini-3-5-flash,API access,gemini-3.5-flash_medium
+2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.69,152.78,157.03,gemini-3-5-flash,API access,gemini-3.5-flash_minimal
+2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.69,152.78,157.03,gemini-3-5-flash,API access,gemini-3.5-flash_low
+2026-05-19,Gemini 3.5 Flash,Google DeepMind,154.69,152.78,157.03,gemini-3-5-flash,API access,gemini-3.5-flash_high
+2026-05-19,Qwen3.7-Max,Alibaba,153.73,151.88,155.88,qwen3-7-max,API access,qwen3.7-max_none
+2026-05-19,Qwen3.7-Max,Alibaba,153.73,151.88,155.88,qwen3-7-max,API access,qwen3.7-max
+2026-05-05,GPT-5.5 Instant,OpenAI,142.5,140.25,145.35,gpt-5-5-instant,API access,gpt-5.5-instant
+2026-04-28,Mistral Medium 3.5,Mistral AI,141.28,139.38,143.28,mistral-medium-3-5,Open weights (restricted use),mistral-medium-2604
+2026-04-27,Qwen 3.6 Flash,Alibaba,143.27,140.98,144.97,qwen-3-6-flash,,qwen3.6-flash_none
+2026-04-27,Qwen 3.6 Flash,Alibaba,143.27,140.98,144.97,qwen-3-6-flash,,qwen3.6-flash
+2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.09,147.52,150.74,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_unknown
+2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.09,147.52,150.74,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_high
+2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.09,147.52,150.74,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_none
+2026-04-24,DeepSeek-V4-Pro,DeepSeek,149.09,147.52,150.74,deepseek-v4-pro,Open weights (unrestricted),deepseek-v4-pro_max
+2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.11,144.22,148.12,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_none
+2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.11,144.22,148.12,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_high
+2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.11,144.22,148.12,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_unknown
+2026-04-24,DeepSeek-V4-Flash,DeepSeek,146.11,144.22,148.12,deepseek-v4-flash,Open weights (unrestricted),deepseek-v4-flash_max
+2026-04-23,GPT-5.5 Pro,OpenAI,162.25,159.32,165.76,gpt-5-5-pro,API access,gpt-5.5-pro_high
+2026-04-23,GPT-5.5 Pro,OpenAI,162.25,159.32,165.76,gpt-5-5-pro,API access,gpt-5.5-pro_unknown
+2026-04-23,GPT-5.5 Pro,OpenAI,162.25,159.32,165.76,gpt-5-5-pro,API access,gpt-5.5-pro-pre-release_high
+2026-04-23,GPT-5.5 Pro,OpenAI,162.25,159.32,165.76,gpt-5-5-pro,API access,gpt-5.5-pro-pre-release_xhigh
+2026-04-23,GPT-5.5 Pro,OpenAI,162.25,159.32,165.76,gpt-5-5-pro,API access,gpt-5.5-pro_xhigh
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_unknown
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5-pre-release_xhigh
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_high
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_medium
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_none
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_low
+2026-04-23,GPT-5.5,OpenAI,159.12,156.91,161.95,gpt-5-5,API access,gpt-5.5_xhigh
+2026-04-22,Qwen3.6 27B,Alibaba,146.49,144.26,147.95,qwen3-6-27b,Open weights (unrestricted),qwen3.6-27b
+2026-04-22,Qwen3.6 27B,Alibaba,146.49,144.26,147.95,qwen3-6-27b,Open weights (unrestricted),qwen3.6-27b_none
+2026-04-20,Kimi K2.6,Moonshot,151.0,149.14,152.7,kimi-k2-6,Open weights (unrestricted),kimi-k2.6
+2026-04-20,Kimi K2.6,Moonshot,151.0,149.14,152.7,kimi-k2-6,Open weights (unrestricted),kimi-k2.6_none
+2026-04-20,Qwen 3.6 Max (Preview),Alibaba,149.27,147.69,152.44,qwen-3-6-max-preview,,qwen3.6-max-preview_none
+2026-04-20,Qwen 3.6 Max (Preview),Alibaba,149.27,147.69,152.44,qwen-3-6-max-preview,,qwen3.6-max-preview
+2026-04-17,Grok 4.3 Beta,xAI,149.17,147.78,150.85,grok-4-3-beta,Hosted access (no API),grok-4.3_none
+2026-04-17,Grok 4.3 Beta,xAI,149.17,147.78,150.85,grok-4-3-beta,Hosted access (no API),grok-4.3_unknown
+2026-04-17,Grok 4.3 Beta,xAI,149.17,147.78,150.85,grok-4-3-beta,Hosted access (no API),grok-4.3_high
 2026-04-17,Grok 4.3 Beta,xAI,149.16,147.83,150.61,grok-4-3-beta,Hosted access (no API),grok-4-3
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_medium
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_unknown
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_low
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_max
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_high
-2026-04-16,Claude Opus 4.7,Anthropic,156.11,154.34,158.13,claude-opus-4-7,API access,claude-opus-4-7_xhigh
-2026-04-14,Qwen 3.6 35B-A3B,Alibaba,143.88,141.5,146.1,qwen-3-6-35b-a3b,Open weights (unrestricted),qwen3.6-35b-a3b
-2026-04-14,Qwen 3.6 35B-A3B,Alibaba,143.88,141.5,146.1,qwen-3-6-35b-a3b,Open weights (unrestricted),qwen3.6-35b-a3b_none
-2026-04-08,Muse Spark,Meta AI,152.11,150.29,154.94,muse-spark,API access,muse-spark
-2026-04-07,GLM-5.1,Z.ai (Zhipu AI),149.68,147.84,151.37,glm-5-1,Open weights (unrestricted),glm-5.1_none
-2026-04-07,GLM-5.1,Z.ai (Zhipu AI),149.68,147.84,151.37,glm-5-1,Open weights (unrestricted),glm-5.1
-2026-04-02,Gemma 4 31B IT,Google DeepMind,142.69,140.37,145.12,gemma-4-31b-it,Open weights (restricted use),gemma-4-31b-it_minimal
-2026-04-02,Gemma 4 31B IT,Google DeepMind,142.69,140.37,145.12,gemma-4-31b-it,Open weights (restricted use),gemma-4-31b-it
-2026-04-02,Gemma 4 26B A4B,Google DeepMind,141.87,138.58,143.53,gemma-4-26b-a4b,Open weights (unrestricted),gemma-4-26b-a4b
-2026-04-02,Gemma 4 26B A4B,Google DeepMind,141.87,138.58,143.53,gemma-4-26b-a4b,Open weights (unrestricted),gemma-4-26b-a4b-it_minimal
-2026-03-31,Qwen 3.6 Plus,Alibaba,147.65,145.44,149.33,qwen-3-6-plus,API access,qwen3.6-plus_none
-2026-03-31,Qwen 3.6 Plus,Alibaba,147.65,145.44,149.33,qwen-3-6-plus,API access,qwen3.6-plus
-2026-03-18,MiniMax-M2.7,MiniMax,145.74,138.37,147.75,minimax-m2-7,Open weights (non-commercial),MiniMax-M2.7
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_unknown
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_xhigh
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_medium
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_high
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_low
-2026-03-17,GPT-5.4 Mini,OpenAI,149.05,147.2,150.49,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_none
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_unknown
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_xhigh
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_medium
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_high
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_low
-2026-03-17,GPT-5.4 Nano,OpenAI,145.93,143.76,147.61,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_none
-2026-03-05,GPT-5.4 Pro,OpenAI,158.89,156.54,161.67,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_none
-2026-03-05,GPT-5.4 Pro,OpenAI,158.89,156.54,161.67,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_unknown
-2026-03-05,GPT-5.4 Pro,OpenAI,158.89,156.54,161.67,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05-web-app
-2026-03-05,GPT-5.4 Pro,OpenAI,158.89,156.54,161.67,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_xhigh
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_unknown
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_high
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_low
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_xhigh
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_medium
-2026-03-05,GPT-5.4,OpenAI,156.77,155.11,158.85,gpt-5-4,API access,gpt-5.4-2026-03-05_none
-2026-03-03,Gemini 3.1 Flash-Lite,Google,144.51,142.62,145.95,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite
-2026-03-03,Gemini 3.1 Flash-Lite,Google,144.51,142.62,145.95,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_minimal
-2026-03-03,Gemini 3.1 Flash-Lite,Google,144.51,142.62,145.95,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_high
-2026-03-03,Gemini 3.1 Flash-Lite,Google,144.51,142.62,145.95,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_low
-2026-02-25,Qwen 3.5 Flash (hosted 35B-A3B),Alibaba,144.03,142.18,145.6,qwen-3-5-flash-hosted-35b-a3b,,qwen3.5-flash
-2026-02-25,Qwen 3.5 Flash (hosted 35B-A3B),Alibaba,144.03,142.18,145.6,qwen-3-5-flash-hosted-35b-a3b,,qwen3.5-flash_none
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_medium
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_unknown
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_low
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_max
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_high
+2026-04-16,Claude Opus 4.7,Anthropic,156.34,154.57,158.5,claude-opus-4-7,API access,claude-opus-4-7_xhigh
+2026-04-14,Qwen 3.6 35B-A3B,Alibaba,143.86,141.79,146.13,qwen-3-6-35b-a3b,Open weights (unrestricted),qwen3.6-35b-a3b
+2026-04-14,Qwen 3.6 35B-A3B,Alibaba,143.86,141.79,146.13,qwen-3-6-35b-a3b,Open weights (unrestricted),qwen3.6-35b-a3b_none
+2026-04-08,Muse Spark,Meta AI,152.12,150.27,155.59,muse-spark,API access,muse-spark
+2026-04-07,GLM-5.1,Z.ai (Zhipu AI),149.71,147.97,151.41,glm-5-1,Open weights (unrestricted),glm-5.1_none
+2026-04-07,GLM-5.1,Z.ai (Zhipu AI),149.71,147.97,151.41,glm-5-1,Open weights (unrestricted),glm-5.1
+2026-04-02,Gemma 4 31B IT,Google DeepMind,142.66,140.48,145.02,gemma-4-31b-it,Open weights (restricted use),gemma-4-31b-it_minimal
+2026-04-02,Gemma 4 31B IT,Google DeepMind,142.66,140.48,145.02,gemma-4-31b-it,Open weights (restricted use),gemma-4-31b-it
+2026-04-02,Gemma 4 26B A4B,Google DeepMind,141.86,138.61,143.65,gemma-4-26b-a4b,Open weights (unrestricted),gemma-4-26b-a4b
+2026-04-02,Gemma 4 26B A4B,Google DeepMind,141.86,138.61,143.65,gemma-4-26b-a4b,Open weights (unrestricted),gemma-4-26b-a4b-it_minimal
+2026-03-31,Qwen 3.6 Plus,Alibaba,147.67,145.74,149.56,qwen-3-6-plus,API access,qwen3.6-plus_none
+2026-03-31,Qwen 3.6 Plus,Alibaba,147.67,145.74,149.56,qwen-3-6-plus,API access,qwen3.6-plus
+2026-03-18,MiniMax-M2.7,MiniMax,145.8,138.57,147.75,minimax-m2-7,Open weights (non-commercial),MiniMax-M2.7
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_unknown
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_xhigh
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_medium
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_high
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_low
+2026-03-17,GPT-5.4 Mini,OpenAI,148.96,147.33,150.68,gpt-5-4-mini,API access,gpt-5.4-mini-2026-03-17_none
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_unknown
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_xhigh
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_medium
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_high
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_low
+2026-03-17,GPT-5.4 Nano,OpenAI,145.85,143.7,147.77,gpt-5-4-nano,API access,gpt-5.4-nano-2026-03-17_none
+2026-03-05,GPT-5.4 Pro,OpenAI,158.95,156.73,161.7,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_none
+2026-03-05,GPT-5.4 Pro,OpenAI,158.95,156.73,161.7,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_unknown
+2026-03-05,GPT-5.4 Pro,OpenAI,158.95,156.73,161.7,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05-web-app
+2026-03-05,GPT-5.4 Pro,OpenAI,158.95,156.73,161.7,gpt-5-4-pro,API access,gpt-5.4-pro-2026-03-05_xhigh
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_unknown
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_high
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_low
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_xhigh
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_medium
+2026-03-05,GPT-5.4,OpenAI,156.86,155.21,159.0,gpt-5-4,API access,gpt-5.4-2026-03-05_none
+2026-03-03,Gemini 3.1 Flash-Lite,Google,144.49,142.78,146.17,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite
+2026-03-03,Gemini 3.1 Flash-Lite,Google,144.49,142.78,146.17,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_minimal
+2026-03-03,Gemini 3.1 Flash-Lite,Google,144.49,142.78,146.17,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_high
+2026-03-03,Gemini 3.1 Flash-Lite,Google,144.49,142.78,146.17,gemini-3-1-flash-lite,API access,gemini-3.1-flash-lite_low
+2026-02-25,Qwen 3.5 Flash (hosted 35B-A3B),Alibaba,144.0,142.32,145.75,qwen-3-5-flash-hosted-35b-a3b,,qwen3.5-flash
+2026-02-25,Qwen 3.5 Flash (hosted 35B-A3B),Alibaba,144.0,142.32,145.75,qwen-3-5-flash-hosted-35b-a3b,,qwen3.5-flash_none
 2026-02-24,Qwen3.5-122B-A10B,Alibaba,146.26,144.03,147.81,qwen3-5-122b-a10b,Open weights (restricted use),qwen3.5-122b-a10b_none
-2026-02-24,Qwen3.5-35B-A3B,Alibaba,142.54,140.09,144.72,qwen3-5-35b-a3b,Open weights (unrestricted),qwen3.5-35b-a3b
-2026-02-24,Qwen3.5-35B-A3B,Alibaba,142.54,140.09,144.72,qwen3-5-35b-a3b,Open weights (unrestricted),qwen3.5-35b-a3b_none
-2026-02-24,Qwen3.5-9B,Alibaba,139.46,136.24,141.41,qwen3-5-9b,Open weights (restricted use),qwen3.5-9B
-2026-02-24,Qwen3.5-9B,Alibaba,139.46,136.24,141.41,qwen3-5-9b,Open weights (restricted use),qwen3.5-9B_none
-2026-02-19,Gemini 3.1 Pro,Google DeepMind,154.9,152.51,157.46,gemini-3-1-pro,API access,gemini-3.1-pro-preview-customtools
-2026-02-19,Gemini 3.1 Pro,Google DeepMind,154.9,152.51,157.46,gemini-3-1-pro,API access,gemini-3.1-pro-preview
-2026-02-19,Gemini 3.1 Pro,Google DeepMind,154.9,152.51,157.46,gemini-3-1-pro,API access,gemini-3.1-pro-preview_low
-2026-02-19,Gemini 3.1 Pro,Google DeepMind,154.9,152.51,157.46,gemini-3-1-pro,API access,gemini-3.1-pro-preview_medium
-2026-02-19,Gemini 3.1 Pro,Google DeepMind,154.9,152.51,157.46,gemini-3-1-pro,API access,gemini-3.1-pro-preview_high
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_unknown
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_32K
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_16K
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_medium
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_low
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_high
-2026-02-17,Claude Sonnet 4.6,Anthropic,152.2,149.72,154.32,claude-sonnet-4-6,API access,claude-sonnet-4-6_max
-2026-02-17,Grok 4.20,xAI,152.01,149.24,154.16,grok-4-20,API access,grok-4-20
-2026-02-17,Grok 4.20,xAI,152.01,149.24,154.16,grok-4-20,API access,grok-4.20-0309-reasoning
-2026-02-16,Qwen 3.5 Plus (hosted 397B-A17B),Alibaba,146.77,144.64,147.86,qwen-3-5-plus-hosted-397b-a17b,,qwen3.5-plus_none
-2026-02-16,Qwen 3.5 Plus (hosted 397B-A17B),Alibaba,146.77,144.64,147.86,qwen-3-5-plus-hosted-397b-a17b,,qwen3.5-plus
-2026-02-13,Qwen3.5 397B-A17B,Alibaba,147.0,145.42,148.78,qwen3-5-397b-a17b,Open weights (unrestricted),qwen3.5-397b-a17b
-2026-02-13,Qwen3.5 397B-A17B,Alibaba,147.0,145.42,148.78,qwen3-5-397b-a17b,Open weights (unrestricted),qwen3.5-397b-a17b_none
-2026-02-12,MiniMax-M2.5,MiniMax,146.52,139.09,147.63,minimax-m2-5,Open weights (unrestricted),MiniMax-M2.5
-2026-02-11,GLM-5,Z.ai (Zhipu AI),145.89,143.99,147.48,glm-5,Open weights (unrestricted),glm-5
-2026-02-05,GPT-5.3 Codex,OpenAI,156.4,154.23,159.33,gpt-5-3-codex,API access,gpt-5.3-codex_xhigh
-2026-02-05,GPT-5.3 Codex,OpenAI,156.4,154.23,159.33,gpt-5-3-codex,API access,gpt-5.3-codex
-2026-02-05,GPT-5.3 Codex,OpenAI,156.4,154.23,159.33,gpt-5-3-codex,API access,gpt-5.3-codex_high
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_medium
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_high
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_unknown
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_32K
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_64K
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_120K
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_low
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6
-2026-02-05,Claude Opus 4.6,Anthropic,155.25,153.49,157.14,claude-opus-4-6,API access,claude-opus-4-6_max
-2026-01-27,Kimi K2.5,Moonshot,148.02,146.52,149.13,kimi-k2-5,Open weights (unrestricted),kimi-k2.5_none
-2026-01-27,Kimi K2.5,Moonshot,148.02,146.52,149.13,kimi-k2-5,Open weights (unrestricted),fireworks/kimi-k2p5
-2026-01-27,Kimi K2.5,Moonshot,148.02,146.52,149.13,kimi-k2-5,Open weights (unrestricted),kimi-k2.5
-2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.48,141.39,145.35,glm-4-7,Open weights (unrestricted),zai-org/glm-4.7
-2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.48,141.39,145.35,glm-4-7,Open weights (unrestricted),zai-org/GLM-4.7
-2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.48,141.39,145.35,glm-4-7,Open weights (unrestricted),glm-4.7
-2025-12-17,Gemini 3 Flash,Google DeepMind,151.8,150.39,153.22,gemini-3-flash,API access,gemini-3-flash-preview
-2025-12-17,Gemini 3 Flash,Google DeepMind,151.8,150.39,153.22,gemini-3-flash,API access,gemini-3-flash-preview_low
-2025-12-17,Gemini 3 Flash,Google DeepMind,151.8,150.39,153.22,gemini-3-flash,API access,gemini-3-flash-preview_minimal
-2025-12-17,Gemini 3 Flash,Google DeepMind,151.8,150.39,153.22,gemini-3-flash,API access,gemini-3-flash-preview_high
-2025-12-11,GPT-5.2 Pro,OpenAI,155.3,152.98,157.85,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_medium
-2025-12-11,GPT-5.2 Pro,OpenAI,155.3,152.98,157.85,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_high
-2025-12-11,GPT-5.2 Pro,OpenAI,155.3,152.98,157.85,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11
-2025-12-11,GPT-5.2 Pro,OpenAI,155.3,152.98,157.85,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11-webapp
-2025-12-11,GPT-5.2 Pro,OpenAI,155.3,152.98,157.85,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_xhigh
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_unknown
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_none
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_xhigh
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_high
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_low
-2025-12-11,GPT-5.2,OpenAI,153.43,151.72,155.3,gpt-5-2,API access,gpt-5.2-2025-12-11_medium
-2025-12-01,DeepSeek-V3.2,DeepSeek,146.21,144.47,147.29,deepseek-v3-2,Open weights (unrestricted),deepseek/deepseek-v3.2
-2025-12-01,DeepSeek-V3.2,DeepSeek,146.21,144.47,147.29,deepseek-v3-2,Open weights (unrestricted),deepseek-reasoner
-2025-12-01,DeepSeek-V3.2,DeepSeek,146.21,144.47,147.29,deepseek-v3-2,Open weights (unrestricted),fireworks/deepseek-v3p2
-2025-12-01,DeepSeek-V3.2,DeepSeek,146.21,144.47,147.29,deepseek-v3-2,Open weights (unrestricted),deepseek-chat
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_8K
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_unknown
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_64K
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_low
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_high
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_16K
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_128K
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_48K
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101
-2025-11-24,Claude Opus 4.5,Anthropic,150.08,148.0,152.64,claude-opus-4-5,API access,claude-opus-4-5-20251101_32K
+2026-02-24,Qwen3.5-35B-A3B,Alibaba,142.53,140.39,144.77,qwen3-5-35b-a3b,Open weights (unrestricted),qwen3.5-35b-a3b
+2026-02-24,Qwen3.5-35B-A3B,Alibaba,142.53,140.39,144.77,qwen3-5-35b-a3b,Open weights (unrestricted),qwen3.5-35b-a3b_none
+2026-02-24,Qwen3.5-9B,Alibaba,139.44,136.67,141.53,qwen3-5-9b,Open weights (restricted use),qwen3.5-9B
+2026-02-24,Qwen3.5-9B,Alibaba,139.44,136.67,141.53,qwen3-5-9b,Open weights (restricted use),qwen3.5-9B_none
+2026-02-19,Gemini 3.1 Pro,Google DeepMind,155.0,152.72,157.6,gemini-3-1-pro,API access,gemini-3.1-pro-preview-customtools
+2026-02-19,Gemini 3.1 Pro,Google DeepMind,155.0,152.72,157.6,gemini-3-1-pro,API access,gemini-3.1-pro-preview
+2026-02-19,Gemini 3.1 Pro,Google DeepMind,155.0,152.72,157.6,gemini-3-1-pro,API access,gemini-3.1-pro-preview_low
+2026-02-19,Gemini 3.1 Pro,Google DeepMind,155.0,152.72,157.6,gemini-3-1-pro,API access,gemini-3.1-pro-preview_medium
+2026-02-19,Gemini 3.1 Pro,Google DeepMind,155.0,152.72,157.6,gemini-3-1-pro,API access,gemini-3.1-pro-preview_high
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_unknown
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_32K
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_16K
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_medium
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_low
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_high
+2026-02-17,Claude Sonnet 4.6,Anthropic,152.25,149.69,154.47,claude-sonnet-4-6,API access,claude-sonnet-4-6_max
+2026-02-17,Grok 4.20,xAI,152.03,149.21,154.36,grok-4-20,API access,grok-4-20
+2026-02-17,Grok 4.20,xAI,152.03,149.21,154.36,grok-4-20,API access,grok-4.20-0309-reasoning
+2026-02-16,Qwen 3.5 Plus (hosted 397B-A17B),Alibaba,146.73,144.76,148.09,qwen-3-5-plus-hosted-397b-a17b,,qwen3.5-plus_none
+2026-02-16,Qwen 3.5 Plus (hosted 397B-A17B),Alibaba,146.73,144.76,148.09,qwen-3-5-plus-hosted-397b-a17b,,qwen3.5-plus
+2026-02-13,Qwen3.5 397B-A17B,Alibaba,146.96,145.43,148.62,qwen3-5-397b-a17b,Open weights (unrestricted),qwen3.5-397b-a17b
+2026-02-13,Qwen3.5 397B-A17B,Alibaba,146.96,145.43,148.62,qwen3-5-397b-a17b,Open weights (unrestricted),qwen3.5-397b-a17b_none
+2026-02-12,MiniMax-M2.5,MiniMax,146.51,138.67,147.85,minimax-m2-5,Open weights (unrestricted),MiniMax-M2.5
+2026-02-11,GLM-5,Z.ai (Zhipu AI),145.85,144.17,147.76,glm-5,Open weights (unrestricted),glm-5
+2026-02-05,GPT-5.3 Codex,OpenAI,156.58,153.91,159.73,gpt-5-3-codex,API access,gpt-5.3-codex_xhigh
+2026-02-05,GPT-5.3 Codex,OpenAI,156.58,153.91,159.73,gpt-5-3-codex,API access,gpt-5.3-codex
+2026-02-05,GPT-5.3 Codex,OpenAI,156.58,153.91,159.73,gpt-5-3-codex,API access,gpt-5.3-codex_high
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_medium
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_high
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_unknown
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_32K
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_64K
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_120K
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_low
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6
+2026-02-05,Claude Opus 4.6,Anthropic,155.34,153.7,157.21,claude-opus-4-6,API access,claude-opus-4-6_max
+2026-01-27,Kimi K2.5,Moonshot,148.01,146.58,149.35,kimi-k2-5,Open weights (unrestricted),kimi-k2.5_none
+2026-01-27,Kimi K2.5,Moonshot,148.01,146.58,149.35,kimi-k2-5,Open weights (unrestricted),fireworks/kimi-k2p5
+2026-01-27,Kimi K2.5,Moonshot,148.01,146.58,149.35,kimi-k2-5,Open weights (unrestricted),kimi-k2.5
+2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.46,141.57,145.43,glm-4-7,Open weights (unrestricted),zai-org/glm-4.7
+2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.46,141.57,145.43,glm-4-7,Open weights (unrestricted),zai-org/GLM-4.7
+2025-12-22,GLM-4.7,Z.ai (Zhipu AI),143.46,141.57,145.43,glm-4-7,Open weights (unrestricted),glm-4.7
+2025-12-17,Gemini 3 Flash,Google DeepMind,151.84,150.57,153.61,gemini-3-flash,API access,gemini-3-flash-preview
+2025-12-17,Gemini 3 Flash,Google DeepMind,151.84,150.57,153.61,gemini-3-flash,API access,gemini-3-flash-preview_low
+2025-12-17,Gemini 3 Flash,Google DeepMind,151.84,150.57,153.61,gemini-3-flash,API access,gemini-3-flash-preview_minimal
+2025-12-17,Gemini 3 Flash,Google DeepMind,151.84,150.57,153.61,gemini-3-flash,API access,gemini-3-flash-preview_high
+2025-12-11,GPT-5.2 Pro,OpenAI,155.38,153.18,158.22,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_medium
+2025-12-11,GPT-5.2 Pro,OpenAI,155.38,153.18,158.22,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_high
+2025-12-11,GPT-5.2 Pro,OpenAI,155.38,153.18,158.22,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11
+2025-12-11,GPT-5.2 Pro,OpenAI,155.38,153.18,158.22,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11-webapp
+2025-12-11,GPT-5.2 Pro,OpenAI,155.38,153.18,158.22,gpt-5-2-pro,API access,gpt-5.2-pro-2025-12-11_xhigh
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_unknown
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_none
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_xhigh
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_high
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_low
+2025-12-11,GPT-5.2,OpenAI,153.51,151.75,155.43,gpt-5-2,API access,gpt-5.2-2025-12-11_medium
+2025-12-01,DeepSeek-V3.2,DeepSeek,146.19,144.45,147.44,deepseek-v3-2,Open weights (unrestricted),deepseek/deepseek-v3.2
+2025-12-01,DeepSeek-V3.2,DeepSeek,146.19,144.45,147.44,deepseek-v3-2,Open weights (unrestricted),deepseek-reasoner
+2025-12-01,DeepSeek-V3.2,DeepSeek,146.19,144.45,147.44,deepseek-v3-2,Open weights (unrestricted),fireworks/deepseek-v3p2
+2025-12-01,DeepSeek-V3.2,DeepSeek,146.19,144.45,147.44,deepseek-v3-2,Open weights (unrestricted),deepseek-chat
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_8K
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_unknown
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_64K
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_low
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_high
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_16K
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_128K
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_48K
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101
+2025-11-24,Claude Opus 4.5,Anthropic,150.11,148.12,152.85,claude-opus-4-5,API access,claude-opus-4-5-20251101_32K
 2025-11-19,GPT-5.1-Codex-Max,OpenAI,150.16,148.14,152.6,gpt-5-1-codex-max,API access,gpt-5.1-codex-max
-2025-11-18,Gemini 3 Pro,Google DeepMind,152.94,151.01,154.94,gemini-3-pro,API access,gemini-3-pro-preview_low
-2025-11-18,Gemini 3 Pro,Google DeepMind,152.94,151.01,154.94,gemini-3-pro,API access,gemini-3-pro-preview
-2025-11-13,GPT-5.1,OpenAI,149.62,148.34,150.88,gpt-5-1,API access,gpt-5.1-2025-11-13_unknown
-2025-11-13,GPT-5.1,OpenAI,149.62,148.34,150.88,gpt-5-1,API access,gpt-5.1-2025-11-13_none
-2025-11-13,GPT-5.1,OpenAI,149.62,148.34,150.88,gpt-5-1,API access,gpt-5.1-2025-11-13_low
-2025-11-13,GPT-5.1,OpenAI,149.62,148.34,150.88,gpt-5-1,API access,gpt-5.1-2025-11-13_medium
-2025-11-13,GPT-5.1,OpenAI,149.62,148.34,150.88,gpt-5-1,API access,gpt-5.1-2025-11-13_high
-2025-11-06,Kimi K2 Thinking,Moonshot,145.79,142.95,147.21,kimi-k2-thinking,Open weights (restricted use),kimi-k2-thinking
-2025-11-06,Kimi K2 Thinking,Moonshot,145.79,142.95,147.21,kimi-k2-thinking,Open weights (restricted use),moonshotai/Kimi-K2-Thinking
-2025-11-06,Kimi K2 Thinking,Moonshot,145.79,142.95,147.21,kimi-k2-thinking,Open weights (restricted use),kimi-k2-thinking-turbo
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_8K
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_16K
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_1K
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_low
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_unknown
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001
-2025-10-15,Claude Haiku 4.5,Anthropic,142.41,139.61,144.02,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_32K
-2025-10-07,GPT-5 Pro,OpenAI,150.3,148.58,152.67,gpt-5-pro,API access,gpt-5-pro-2025-10-06_medium
-2025-10-07,GPT-5 Pro,OpenAI,150.3,148.58,152.67,gpt-5-pro,API access,gpt-5-pro-2025-10-06_unknown
-2025-10-07,GPT-5 Pro,OpenAI,150.3,148.58,152.67,gpt-5-pro,API access,gpt-5-pro-2025-10-06_high
-2025-09-30,GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",140.85,135.16,142.42,glm-4-6,Open weights (unrestricted),glm-4.6
-2025-09-30,GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",140.85,135.16,142.42,glm-4-6,Open weights (unrestricted),zai-org/GLM-4.6
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_1K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_8K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_12K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_low
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_2K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_unknown
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_16K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_32K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_48K
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929
-2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.1,148.29,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_59K
-2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.06,142.46,146.91,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_unknown
-2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.06,142.46,146.91,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp
-2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.06,142.46,146.91,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_high
-2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.06,142.46,146.91,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_thinking
-2025-09-25,Gemini 2.5 Flash,Google DeepMind,143.02,139.16,146.49,gemini-2-5-flash-sep-2025,API access,gemini-2.5-flash-preview-09-2025_16k
-2025-09-25,Gemini 2.5 Flash,Google DeepMind,143.02,139.16,146.49,gemini-2-5-flash-sep-2025,API access,gemini-2.5-flash-preview-09-2025
-2025-09-24,Qwen3-Max,Alibaba,142.46,140.01,144.82,qwen3-max,API access,qwen3-max-2025-09-23
-2025-09-19,Grok 4 Fast,xAI,144.23,141.78,146.4,grok-4-fast,API access,grok-4-fast
-2025-09-18,Magistral Small 1.2,Mistral AI,131.42,125.92,133.4,magistral-small-1-2,Open weights (unrestricted),magistral-small-2509
+2025-11-18,Gemini 3 Pro,Google DeepMind,153.0,151.05,155.08,gemini-3-pro,API access,gemini-3-pro-preview_low
+2025-11-18,Gemini 3 Pro,Google DeepMind,153.0,151.05,155.08,gemini-3-pro,API access,gemini-3-pro-preview
+2025-11-13,GPT-5.1,OpenAI,149.64,148.45,151.03,gpt-5-1,API access,gpt-5.1-2025-11-13_unknown
+2025-11-13,GPT-5.1,OpenAI,149.64,148.45,151.03,gpt-5-1,API access,gpt-5.1-2025-11-13_none
+2025-11-13,GPT-5.1,OpenAI,149.64,148.45,151.03,gpt-5-1,API access,gpt-5.1-2025-11-13_low
+2025-11-13,GPT-5.1,OpenAI,149.64,148.45,151.03,gpt-5-1,API access,gpt-5.1-2025-11-13_medium
+2025-11-13,GPT-5.1,OpenAI,149.64,148.45,151.03,gpt-5-1,API access,gpt-5.1-2025-11-13_high
+2025-11-06,Kimi K2 Thinking,Moonshot,145.76,143.25,147.14,kimi-k2-thinking,Open weights (restricted use),kimi-k2-thinking
+2025-11-06,Kimi K2 Thinking,Moonshot,145.76,143.25,147.14,kimi-k2-thinking,Open weights (restricted use),moonshotai/Kimi-K2-Thinking
+2025-11-06,Kimi K2 Thinking,Moonshot,145.76,143.25,147.14,kimi-k2-thinking,Open weights (restricted use),kimi-k2-thinking-turbo
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_8K
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_16K
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_1K
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_low
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_unknown
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001
+2025-10-15,Claude Haiku 4.5,Anthropic,142.37,139.8,144.07,claude-haiku-4-5,API access,claude-haiku-4-5-20251001_32K
+2025-10-07,GPT-5 Pro,OpenAI,150.29,148.83,152.9,gpt-5-pro,API access,gpt-5-pro-2025-10-06_medium
+2025-10-07,GPT-5 Pro,OpenAI,150.29,148.83,152.9,gpt-5-pro,API access,gpt-5-pro-2025-10-06_unknown
+2025-10-07,GPT-5 Pro,OpenAI,150.29,148.83,152.9,gpt-5-pro,API access,gpt-5-pro-2025-10-06_high
+2025-09-30,GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",140.78,135.2,142.57,glm-4-6,Open weights (unrestricted),glm-4.6
+2025-09-30,GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",140.78,135.2,142.57,glm-4-6,Open weights (unrestricted),zai-org/GLM-4.6
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_1K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_8K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_12K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_low
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_2K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_unknown
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_16K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_32K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_48K
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929
+2025-09-29,Claude Sonnet 4.5,Anthropic,146.84,145.46,148.5,claude-sonnet-4-5,API access,claude-sonnet-4-5-20250929_59K
+2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.02,142.61,147.24,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_unknown
+2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.02,142.61,147.24,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp
+2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.02,142.61,147.24,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_high
+2025-09-29,DeepSeek-V3.2-Exp,DeepSeek,145.02,142.61,147.24,deepseek-v3-2-exp,Open weights (unrestricted),DeepSeek-V3.2-Exp_thinking
+2025-09-25,Gemini 2.5 Flash,Google DeepMind,142.99,139.67,146.63,gemini-2-5-flash-sep-2025,API access,gemini-2.5-flash-preview-09-2025_16k
+2025-09-25,Gemini 2.5 Flash,Google DeepMind,142.99,139.67,146.63,gemini-2-5-flash-sep-2025,API access,gemini-2.5-flash-preview-09-2025
+2025-09-24,Qwen3-Max,Alibaba,142.43,140.4,144.98,qwen3-max,API access,qwen3-max-2025-09-23
+2025-09-19,Grok 4 Fast,xAI,144.21,142.22,146.36,grok-4-fast,API access,grok-4-fast
+2025-09-18,Magistral Small 1.2,Mistral AI,131.41,127.11,133.67,magistral-small-1-2,Open weights (unrestricted),magistral-small-2509
 2025-09-05,Kimi K2,Moonshot,140.98,138.39,142.27,kimi-k2-sep-2025,Open weights (restricted use),Kimi-K2-Instruct-0905
 2025-09-05,Kimi K2,Moonshot,140.98,138.39,142.27,kimi-k2-sep-2025,Open weights (restricted use),fireworks/Kimi-K2-Instruct-0905
 2025-09-05,Kimi K2,Moonshot,140.98,138.39,142.27,kimi-k2-sep-2025,Open weights (restricted use),moonshotai/kimi-k2-0905
-2025-09-01,Qwen3-235B-A22B (Jul 2025),Alibaba,138.95,135.68,140.98,qwen3-235b-a22b-instruct-jul-2025,Open weights (unrestricted),parasail-qwen3-235b-a22b-instruct-2507
-2025-08-21,DeepSeek-V3.1,DeepSeek,139.95,135.85,143.32,deepseek-v3-1,Open weights (unrestricted),DeepSeek-V3.1
-2025-08-21,DeepSeek-V3.1,DeepSeek,139.95,135.85,143.32,deepseek-v3-1,Open weights (unrestricted),DeepSeek-V3.1_thinking
+2025-09-01,Qwen3-235B-A22B (Jul 2025),Alibaba,138.92,135.97,140.87,qwen3-235b-a22b-instruct-jul-2025,Open weights (unrestricted),parasail-qwen3-235b-a22b-instruct-2507
+2025-08-21,DeepSeek-V3.1,DeepSeek,139.92,136.28,143.28,deepseek-v3-1,Open weights (unrestricted),DeepSeek-V3.1
+2025-08-21,DeepSeek-V3.1,DeepSeek,139.92,136.28,143.28,deepseek-v3-1,Open weights (unrestricted),DeepSeek-V3.1_thinking
 2025-08-12,Mistral Medium 3.1,Mistral AI,135.67,132.27,137.04,mistral-medium-3-1,API access,mistral-medium-2508
 2025-08-07,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-2025-08-07_unknown
 2025-08-07,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-2025-08-07_minimal
 2025-08-07,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-2025-08-07_medium
 2025-08-07,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-2025-08-07_high
 2025-08-07,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-2025-08-07_low
-2025-08-07,GPT-5 mini,OpenAI,145.54,143.78,146.86,gpt-5-mini,API access,gpt-5-mini-2025-08-07_unknown
-2025-08-07,GPT-5 mini,OpenAI,145.54,143.78,146.86,gpt-5-mini,API access,gpt-5-mini-2025-08-07_low
-2025-08-07,GPT-5 mini,OpenAI,145.54,143.78,146.86,gpt-5-mini,API access,gpt-5-mini-2025-08-07_minimal
-2025-08-07,GPT-5 mini,OpenAI,145.54,143.78,146.86,gpt-5-mini,API access,gpt-5-mini-2025-08-07_medium
-2025-08-07,GPT-5 mini,OpenAI,145.54,143.78,146.86,gpt-5-mini,API access,gpt-5-mini-2025-08-07_high
-2025-08-07,GPT-5 nano,OpenAI,139.42,134.49,141.47,gpt-5-nano,API access,gpt-5-nano-2025-08-07_unknown
-2025-08-07,GPT-5 nano,OpenAI,139.42,134.49,141.47,gpt-5-nano,API access,gpt-5-nano-2025-08-07_minimal
-2025-08-07,GPT-5 nano,OpenAI,139.42,134.49,141.47,gpt-5-nano,API access,gpt-5-nano-2025-08-07_low
-2025-08-07,GPT-5 nano,OpenAI,139.42,134.49,141.47,gpt-5-nano,API access,gpt-5-nano-2025-08-07_medium
-2025-08-07,GPT-5 nano,OpenAI,139.42,134.49,141.47,gpt-5-nano,API access,gpt-5-nano-2025-08-07_high
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805_unknown
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805_16K
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805_27K
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805_32K
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805
-2025-08-05,Claude Opus 4.1,Anthropic,144.14,141.76,146.01,claude-opus-4-1,API access,claude-opus-4-1-20250805_24K
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_unknown
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),openai/gpt-oss-120b_low
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),chutes/gpt-oss-120b_high
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),chutes/gpt-oss-120b
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),openai/gpt-oss-120b_high
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_medium
-2025-08-05,gpt-oss-120b,OpenAI,140.13,135.8,142.58,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_high
-2025-08-05,gpt-oss-20b,OpenAI,137.82,132.6,139.81,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_unknown
-2025-08-05,gpt-oss-20b,OpenAI,137.82,132.6,139.81,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b
-2025-08-05,gpt-oss-20b,OpenAI,137.82,132.6,139.81,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_low
-2025-08-05,gpt-oss-20b,OpenAI,137.82,132.6,139.81,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_medium
-2025-08-05,gpt-oss-20b,OpenAI,137.82,132.6,139.81,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_high
-2025-07-30,Qwen3-30B-A3B (Jul 2025),Alibaba,139.66,134.92,141.15,qwen3-30b-a3b-thinking-jul-2025,Open weights (unrestricted),qwen3-30b-a3b-thinking-2507
-2025-07-29,Qwen3-30B-A3B (Jul 2025),Alibaba,137.44,132.3,139.54,qwen3-30b-a3b-instruct-jul-2025,Open weights (unrestricted),qwen3-30b-a3b-instruct-2507
-2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.06,145.3,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),qwen/qwen3-235b-a22b-thinking-2507
-2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.06,145.3,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),chutes/Qwen3-235B-A22B-Thinking-2507
-2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.06,145.3,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),Qwen/Qwen3-235B-A22B-Thinking-2507
-2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.06,145.3,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),Qwen3-235B-A22B-Thinking-2507
-2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,138.95,135.68,140.98,qwen3-235b-a22b-instruct-jul-2025,Open weights (unrestricted),Qwen3-235B-A22B-Instruct-2507
-2025-07-12,Kimi K2,Moonshot,140.13,136.61,142.02,kimi-k2-jul-2025,Open weights (restricted use),kimi-k2-0711-preview
-2025-07-12,Kimi K2,Moonshot,140.13,136.61,142.02,kimi-k2-jul-2025,Open weights (restricted use),Kimi-K2-Instruct
-2025-07-09,Grok 4,xAI,146.46,144.47,148.05,grok-4,API access,grok-4-0709_high
-2025-07-09,Grok 4,xAI,146.46,144.47,148.05,grok-4,API access,grok-4-0709
-2025-06-24,Grok-3 mini,xAI,140.37,137.73,142.0,grok-3-mini,API access,grok-3-mini_high
-2025-06-24,Grok-3 mini,xAI,140.37,137.73,142.0,grok-3-mini,API access,grok-3-mini_low
-2025-06-20,Mistral Small 3.2,Mistral AI,131.75,126.54,133.81,mistral-small-3-2,Open weights (unrestricted),mistral-small-2506
-2025-06-20,Mistral Small 3.2,Mistral AI,131.75,126.54,133.81,mistral-small-3-2,Open weights (unrestricted),mistral-small-3.2-2506
-2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_8K
-2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_32K
-2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_16K
-2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro
-2025-06-17,Gemini 2.5 Flash,Google DeepMind,140.58,138.07,141.75,gemini-2-5-flash-jun-2025,API access,gemini-2.5-flash
-2025-06-17,Gemini 2.5 Flash-Lite,Google DeepMind,133.92,130.54,136.39,gemini-2-5-flash-lite-jun-2025,API access,gemini-2.5-flash-lite-preview-06-17_16K
-2025-06-17,Gemini 2.5 Flash-Lite,Google DeepMind,133.92,130.54,136.39,gemini-2-5-flash-lite-jun-2025,API access,gemini-2.5-flash-lite-preview-06-17-thinking
-2025-06-10,o3-pro,OpenAI,147.46,145.92,150.16,o3-pro,API access,o3-pro-2025-06-10_low
-2025-06-10,o3-pro,OpenAI,147.46,145.92,150.16,o3-pro,API access,o3-pro-2025-06-10_medium
-2025-06-10,o3-pro,OpenAI,147.46,145.92,150.16,o3-pro,API access,o3-pro-2025-06-10_high
-2025-06-10,Magistral Small 1.0,Mistral AI,133.21,129.23,134.46,magistral-small-1-0,Open weights (unrestricted),magistral-small-2506
-2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05_32K
-2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05_1K
-2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.29,143.5,146.63,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05
-2025-05-28,DeepSeek-R1 (May 2025),DeepSeek,141.32,139.09,142.73,deepseek-r1-may-2025,Open weights (unrestricted),chutes/DeepSeek-R1-0528
-2025-05-28,DeepSeek-R1 (May 2025),DeepSeek,141.32,139.09,142.73,deepseek-r1-may-2025,Open weights (unrestricted),DeepSeek-R1-0528
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_32K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_1K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_8K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_12K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_2K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_unknown
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_16K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514_27K
-2025-05-22,Claude Opus 4,Anthropic,142.7,140.41,144.18,claude-opus-4,API access,claude-opus-4-20250514
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_1K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_8K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_12K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_2K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_unknown
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_16K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_32K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514_59K
-2025-05-22,Claude Sonnet 4,Anthropic,141.72,139.09,143.1,claude-sonnet-4,API access,claude-sonnet-4-20250514
-2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.58,139.21,142.98,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_1K
-2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.58,139.21,142.98,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_8K
-2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.58,139.21,142.98,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_23K
-2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.58,139.21,142.98,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_16K
-2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.58,139.21,142.98,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20
-2025-05-07,Mistral Medium 3,Mistral AI,134.1,130.27,135.52,mistral-medium-3,API access,mistral-medium-2505
-2025-05-06,Gemini 2.5 Pro (May 2025),Google DeepMind,142.54,138.89,145.06,gemini-2-5-pro-may-2025,API access,gemini-2.5-pro-preview-05-06
-2025-04-29,Qwen3-235B-A22B,Alibaba,139.38,135.67,140.8,qwen3-235b-a22b,Open weights (unrestricted),Qwen3-235B-A22B
-2025-04-29,Qwen3-235B-A22B,Alibaba,139.38,135.67,140.8,qwen3-235b-a22b,Open weights (unrestricted),qwen3-235b-a22b
-2025-04-29,Qwen3-32B,Alibaba,138.53,135.09,140.33,qwen3-32b,Open weights (unrestricted),Qwen3-32B
-2025-04-29,Qwen3-32B,Alibaba,138.53,135.09,140.33,qwen3-32b,Open weights (unrestricted),Qwen3-32B_none
-2025-04-29,Qwen3-14B,Alibaba,138.26,133.68,140.03,qwen3-14b,Open weights (unrestricted),qwen3-14b
-2025-04-29,Qwen3-14B,Alibaba,138.26,133.68,140.03,qwen3-14b,Open weights (unrestricted),qwen3-14b_none
-2025-04-29,Qwen3-30B-A3B,Alibaba,136.2,130.58,138.77,qwen3-30b-a3b,Open weights (unrestricted),Qwen3-30B-A3B
-2025-04-29,Qwen3-30B-A3B,Alibaba,136.2,130.58,138.77,qwen3-30b-a3b,Open weights (unrestricted),Qwen3-30B-A3B_none
-2025-04-28,Qwen3-235B-A22B,Alibaba,139.38,135.67,140.8,qwen3-235b-a22b,Open weights (unrestricted),chutes/Qwen3-235B-A22B
-2025-04-28,Qwen3-32B,Alibaba,138.53,135.09,140.33,qwen3-32b,Open weights (unrestricted),chutes/Qwen3-32B
-2025-04-28,Qwen3-14B,Alibaba,138.26,133.68,140.03,qwen3-14b,Open weights (unrestricted),chutes/Qwen3-14B
-2025-04-28,Qwen3-30B-A3B,Alibaba,136.2,130.58,138.77,qwen3-30b-a3b,Open weights (unrestricted),chutes/Qwen3-30B-A3B
-2025-04-28,Qwen3-8B,Alibaba,136.19,130.1,138.3,qwen3-8b,Open weights (unrestricted),chutes/Qwen3-8B
-2025-04-28,Qwen3-8B,Alibaba,136.19,130.1,138.3,qwen3-8b,Open weights (unrestricted),qwen3-8b
-2025-04-28,Qwen3-8B,Alibaba,136.19,130.1,138.3,qwen3-8b,Open weights (unrestricted),qwen3-8b_none
-2025-04-17,Gemini 2.5 Flash,Google DeepMind,140.01,135.52,142.02,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17 (16K thinking)
-2025-04-17,Gemini 2.5 Flash,Google DeepMind,140.01,135.52,142.02,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17 (24K thinking)
-2025-04-17,Gemini 2.5 Flash,Google DeepMind,140.01,135.52,142.02,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17
-2025-04-16,o3,OpenAI,146.91,145.03,148.51,o3,API access,o3-2025-04-16_unknown
-2025-04-16,o3,OpenAI,146.91,145.03,148.51,o3,API access,o3-2025-04-16_low
-2025-04-16,o3,OpenAI,146.91,145.03,148.51,o3,API access,o3-2025-04-16_medium
-2025-04-16,o3,OpenAI,146.91,145.03,148.51,o3,API access,o3-2025-04-16_high
-2025-04-16,o4-mini,OpenAI,145.67,143.22,147.19,o4-mini,API access,o4-mini-2025-04-16_unknown
-2025-04-16,o4-mini,OpenAI,145.67,143.22,147.19,o4-mini,API access,o4-mini-2025-04-16_medium
-2025-04-16,o4-mini,OpenAI,145.67,143.22,147.19,o4-mini,API access,o4-mini-2025-04-16_high
-2025-04-16,o4-mini,OpenAI,145.67,143.22,147.19,o4-mini,API access,o4-mini-2025-04-16_low
-2025-04-14,GPT-4.1,OpenAI,136.82,133.72,138.45,gpt-4-1,API access,gpt-4.1-2025-04-14
-2025-04-14,GPT-4.1 mini,OpenAI,135.03,131.39,136.66,gpt-4-1-mini,API access,gpt-4.1-mini-2025-04-14
-2025-04-14,GPT-4.1 nano,OpenAI,129.63,123.58,132.01,gpt-4-1-nano,API access,gpt-4.1-nano-2025-04-14
-2025-04-09,Grok-3 mini,xAI,140.37,137.73,142.0,grok-3-mini,API access,grok-3-mini-beta_medium
-2025-04-09,Grok-3 mini,xAI,140.37,137.73,142.0,grok-3-mini,API access,grok-3-mini-beta_low
-2025-04-09,Grok-3 mini,xAI,140.37,137.73,142.0,grok-3-mini,API access,grok-3-mini-beta_high
-2025-04-09,Grok 3,xAI,138.32,135.64,139.64,grok-3,API access,grok-3
-2025-04-09,Grok 3,xAI,138.32,135.64,139.64,grok-3,API access,grok-3-beta
-2025-04-06,Llama 4 Maverick,Meta AI,132.22,127.82,134.25,llama-4-maverick,Open weights (restricted use),chutes/Llama-4-Maverick-17B-128E-Instruct
-2025-04-06,Llama 4 Scout,Meta AI,129.65,124.74,131.3,llama-4-scout,Open weights (restricted use),chutes/Llama-4-Scout-17B-16E Instruct
-2025-04-05,Llama 4 Maverick,Meta AI,132.22,127.82,134.25,llama-4-maverick,Open weights (restricted use),Llama-4-Maverick-17B-128E-Instruct
-2025-04-05,Llama 4 Maverick,Meta AI,132.22,127.82,134.25,llama-4-maverick,Open weights (restricted use),Llama-4-Maverick-17B-128E-Instruct-FP8
-2025-04-05,Llama 4 Scout,Meta AI,129.65,124.74,131.3,llama-4-scout,Open weights (restricted use),Llama-4-Scout-17B-16E-Instruct
-2025-03-31,Gemini 2.5 Pro (Mar 2025),Google DeepMind,144.2,142.05,146.9,gemini-2-5-pro-mar-2025,API access,gemini-2.5-pro-preview-03-25
-2025-03-25,Gemini 2.5 Pro (Mar 2025),Google DeepMind,144.2,142.05,146.9,gemini-2-5-pro-mar-2025,API access,gemini-2.5-pro-exp-03-25
-2025-03-24,DeepSeek-V3 (Mar 2025),DeepSeek,135.96,132.63,137.72,deepseek-v3-mar-2025,Open weights (restricted use),chutes/DeepSeek-V3-0324
-2025-03-24,DeepSeek-V3 (Mar 2025),DeepSeek,135.96,132.63,137.72,deepseek-v3-mar-2025,Open weights (restricted use),DeepSeek-V3-0324
-2025-03-17,Mistral Small 3.1,Mistral AI,127.48,122.02,129.3,mistral-small-3-1,Open weights (unrestricted),mistral-small-2503
-2025-03-17,Mistral Small 3.1,Mistral AI,127.48,122.02,129.3,mistral-small-3-1,Open weights (unrestricted),mistral-small-3.1-2503
-2025-03-12,Gemma 3 27B,Google DeepMind,130.04,124.19,132.25,gemma-3-27b,Open weights (restricted use),gemma-3-27b-it
-2025-03-12,Gemma 3 12B,Google DeepMind,123.48,115.48,128.53,gemma-3-12b,Open weights (restricted use),gemma-3-12b-it
-2025-03-12,Gemma 3 4B,Google DeepMind,115.99,96.61,123.33,gemma-3-4b,Open weights (restricted use),gemma-3-4b-it
-2025-03-11,Gemma 3 27B,Google DeepMind,130.04,124.19,132.25,gemma-3-27b,Open weights (restricted use),chutes/Gemma-3-27b-It
-2025-03-05,QwQ-32B,Alibaba,137.62,132.28,141.31,qwq-32b,Open weights (unrestricted),chutes/QwQ-32B
-2025-03-05,QwQ-32B,Alibaba,137.62,132.28,141.31,qwq-32b,Open weights (unrestricted),QwQ-32B (16K thinking)
-2025-03-05,QwQ-32B,Alibaba,137.62,132.28,141.31,qwq-32b,Open weights (unrestricted),QwQ-32B
-2025-02-27,GPT-4.5,OpenAI,136.77,133.69,138.47,gpt-4-5,API access,gpt-4.5-preview-2025-02-27
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_15K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_1K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_unknown
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_12K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_8K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_2K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_16K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_32K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_64K
-2025-02-24,Claude 3.7 Sonnet,Anthropic,141.19,138.87,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219
-2025-02-05,Gemini 2.0 Pro,Google DeepMind,135.08,131.49,136.64,gemini-2-0-pro,Hosted access (no API),gemini-2.0-pro-exp-02-05
-2025-02-05,Gemini 2.0 Flash,"Google DeepMind,Google",134.7,130.84,136.53,gemini-2-0-flash-feb-2025,API access,gemini-2.0-flash-02-05
-2025-02-05,Gemini 2.0 Flash,"Google DeepMind,Google",134.7,130.84,136.53,gemini-2-0-flash-feb-2025,API access,gemini-2.0-flash-001
-2025-01-31,o3-mini,OpenAI,140.38,137.27,141.78,o3-mini,API access,o3-mini-2025-01-31_unknown
-2025-01-31,o3-mini,OpenAI,140.38,137.27,141.78,o3-mini,API access,o3-mini-2025-01-31_low
-2025-01-31,o3-mini,OpenAI,140.38,137.27,141.78,o3-mini,API access,o3-mini-2025-01-31_medium
-2025-01-31,o3-mini,OpenAI,140.38,137.27,141.78,o3-mini,API access,o3-mini-2025-01-31_high
-2025-01-30,Mistral Small 3,Mistral AI,127.07,121.33,128.72,mistral-small-3,Open weights (unrestricted),mistral-small-3-2501
-2025-01-28,Qwen2.5-Max,Alibaba,132.55,128.36,135.72,qwen2-5-max,API access,qwen2.5-max
-2025-01-25,Qwen2.5-Max,Alibaba,132.55,128.36,135.72,qwen2-5-max,API access,qwen-max-2025-01-25
-2025-01-25,Mistral Small 3,Mistral AI,127.07,121.33,128.72,mistral-small-3,Open weights (unrestricted),mistral-small-2501
-2025-01-21,Gemini 2.0 Flash Thinking,"Google DeepMind,Google",135.39,130.45,138.31,gemini-2-0-flash-thinking-jan-2025,API access,gemini-2.0-flash-thinking-exp-01-21
-2025-01-20,DeepSeek-R1,DeepSeek,138.99,136.22,140.27,deepseek-r1,Open weights (unrestricted),DeepSeek-R1
-2025-01-20,DeepSeek-R1-Distill-Qwen-32B,DeepSeek,137.44,127.2,138.81,deepseek-r1-distill-qwen-32b,Open weights (unrestricted),DeepSeek-R1-Distill-Qwen-32B
-2025-01-20,DeepSeek-R1-Distill-Qwen-14B,DeepSeek,135.45,127.94,138.02,deepseek-r1-distill-qwen-14b,Open weights (unrestricted),DeepSeek-R1-Distill-Qwen-14B
-2024-12-26,DeepSeek-V3,DeepSeek,132.36,127.71,135.56,deepseek-v3,Open weights (restricted use),DeepSeek-V3-Base
-2024-12-26,DeepSeek-V3,DeepSeek,132.36,127.71,135.56,deepseek-v3,Open weights (restricted use),DeepSeek-V3
-2024-12-17,o1,OpenAI,141.9,139.57,142.98,o1,API access,o1-2024-12-17_unknown
-2024-12-17,o1,OpenAI,141.9,139.57,142.98,o1,API access,o1-2024-12-17_medium
-2024-12-17,o1,OpenAI,141.9,139.57,142.98,o1,API access,o1-2024-12-17_low
-2024-12-17,o1,OpenAI,141.9,139.57,142.98,o1,API access,o1-2024-12-17_high
-2024-12-12,Grok-2,xAI,130.48,125.64,132.33,grok-2-dec-2024,API access,grok-2-1212
-2024-12-12,Phi-4,Microsoft Research,130.43,124.52,132.02,phi-4,Open weights (unrestricted),phi-4
-2024-12-11,Gemini 2.0 Flash,"Google DeepMind,Google",134.73,124.43,136.48,gemini-2-0-flash-dec-2024,API access,gemini-2.0-flash-exp
-2024-12-06,Gemini 2.0 Flash,"Google DeepMind,Google",134.73,124.43,136.48,gemini-2-0-flash-dec-2024,API access,gemini-exp-1206
-2024-12-06,Llama 3.3 70B,Meta AI,127.32,122.46,129.64,llama-3-3-70b,Open weights (restricted use),Llama-3.3-70B-Instruct
-2024-12-03,Amazon Nova Pro,Amazon,123.8,109.61,126.75,amazon-nova-pro,API access,amazon.nova-pro-v1:0
-2024-11-29,INTELLECT-1,"Prime Intellect,Hugging Face,Arcee AI",100.45,89.9,105.85,intellect-1,,INTELLECT-1-Instruct
-2024-11-20,GPT-4o,OpenAI,128.82,123.95,131.27,gpt-4o-nov-2024,API access,gpt-4o-2024-11-20
-2024-11-18,Mistral Large 2,Mistral AI,128.52,123.6,130.64,mistral-large-2-nov-2024,Open weights (non-commercial),mistral-large-2411
-2024-10-22,Claude 3.5 Sonnet (October 2024),Anthropic,133.57,128.95,137.93,claude-3-5-sonnet-october-2024,API access,claude-3-5-sonnet-20241022
-2024-10-22,Claude 3.5 Haiku,Anthropic,127.15,120.17,129.68,claude-3-5-haiku,API access,claude-3-5-haiku-20241022
-2024-10-16,Ministral 3B,Mistral AI,118.06,107.58,121.43,ministral-3b,API access,ministral-3b-2410
-2024-09-24,Gemini 1.5 Pro,Google DeepMind,131.75,127.22,133.15,gemini-1-5-pro-sept-2024,API access,gemini-1.5-pro-002
-2024-09-24,Gemini 1.5 Flash,Google DeepMind,129.36,123.04,131.12,gemini-1-5-flash-sep-2024,API access,gemini-1.5-flash-002
-2024-09-24,Llama 3.2 90B,Meta AI,125.5,119.84,127.31,llama-3-2-90b,Open weights (restricted use),Llama-3.2-90B-Vision-Instruct
-2024-09-24,Llama 3.2 1B,Meta AI,102.43,90.92,113.64,llama-3-2-1b,Open weights (restricted use),Llama-3.2-1B-Instruct
-2024-09-19,Qwen2.5-72B,Alibaba,129.0,123.74,130.66,qwen2-5-72b,Open weights (unrestricted),Qwen2.5-72B
-2024-09-19,Qwen2.5-72B,Alibaba,129.0,123.74,130.66,qwen2-5-72b,Open weights (unrestricted),Qwen2.5-VL-72B-Instruct
-2024-09-19,Qwen2.5-72B,Alibaba,129.0,123.74,130.66,qwen2-5-72b,Open weights (unrestricted),qwen2.5-72b-instruct
-2024-09-19,Qwen2.5-7B,Alibaba,118.44,110.69,121.16,qwen2-5-7b,Open weights (unrestricted),qwen2.5-7b-instruct
-2024-09-18,Qwen2.5-Coder (32B),Alibaba,119.41,110.74,125.16,qwen2-5-coder-32b,Open weights (unrestricted),Qwen2.5-Coder-32B
-2024-09-18,Qwen2.5-Coder (7B),Alibaba,112.95,102.43,119.02,qwen2-5-coder-7b,Open weights (unrestricted),Qwen2.5-Coder-7B
-2024-09-18,Qwen2.5-Coder (1.5B),Alibaba,102.62,87.42,110.16,qwen2-5-coder-1-5b,Open weights (unrestricted),Qwen2.5-Coder-1.5B
-2024-09-17,Qwen2.5-32B,Alibaba,128.53,122.37,129.98,qwen2-5-32b,Open weights (unrestricted),qwen2.5-32b-instruct
-2024-09-17,Qwen2.5-Coder (7B),Alibaba,112.95,102.43,119.02,qwen2-5-coder-7b,Open weights (unrestricted),Qwen2.5-Coder-7B-Instruct
-2024-09-12,o1-mini,OpenAI,135.84,132.14,137.16,o1-mini,API access,o1-mini-2024-09-12_unknown
-2024-09-12,o1-mini,OpenAI,135.84,132.14,137.16,o1-mini,API access,o1-mini-2024-09-12_medium
-2024-09-12,o1-mini,OpenAI,135.84,132.14,137.16,o1-mini,API access,o1-mini-2024-09-12_high
-2024-09-12,o1-preview,OpenAI,134.79,131.08,138.5,o1-preview,API access,o1-preview-2024-09-12
-2024-08-30,Command R+,"Cohere,Cohere Labs (formerly Cohere for AI)",119.26,109.74,125.22,command-r,Open weights (non-commercial),c4ai-command-r-plus-08-2024
-2024-08-06,GPT-4o,OpenAI,128.78,123.57,130.76,gpt-4o-aug-2024,API access,gpt-4o-2024-08-06
-2024-07-24,Mistral Large 2,Mistral AI,127.54,122.1,129.79,mistral-large-2-jul-2024,Open weights (non-commercial),mistral-large-2407
-2024-07-23,Llama 3.1-405B,Meta AI,128.75,123.89,130.65,llama-3-1-405b,Open weights (restricted use),Llama-3.1-405B
-2024-07-23,Llama 3.1-405B,Meta AI,128.75,123.89,130.65,llama-3-1-405b,Open weights (restricted use),Llama-3.1-405B-Instruct
-2024-07-23,Llama 3.1-70B,Meta AI,125.91,120.27,128.15,llama-3-1-70b,Open weights (restricted use),Llama-3.1-70B-Instruct
-2024-07-23,Llama 3.1-8B,Meta AI,116.47,106.6,121.3,llama-3-1-8b,Open weights (restricted use),Llama-3.1-8B-Instruct
-2024-07-18,GPT-4o mini,OpenAI,126.56,120.21,128.38,gpt-4o-mini,API access,gpt-4o-mini-2024-07-18
-2024-07-18,Mistral NeMo,Mistral AI,118.63,111.36,121.2,mistral-nemo,Open weights (unrestricted),Mistral-Nemo-Base-2407
-2024-07-18,Mistral NeMo,Mistral AI,118.63,111.36,121.2,mistral-nemo,Open weights (unrestricted),Mistral-Nemo-Instruct-2407
-2024-07-18,Mistral NeMo,Mistral AI,118.63,111.36,121.2,mistral-nemo,Open weights (unrestricted),open-mistral-nemo-2407
-2024-06-24,Gemma 2 27B,Google DeepMind,122.05,115.21,123.98,gemma-2-27b,Open weights (restricted use),gemma-2-27b-it
-2024-06-24,Gemma 2 9B,Google DeepMind,119.78,111.53,122.21,gemma-2-9b,Open weights (restricted use),gemma-2-9b-it
+2025-08-07,GPT-5 mini,OpenAI,145.52,143.6,147.15,gpt-5-mini,API access,gpt-5-mini-2025-08-07_unknown
+2025-08-07,GPT-5 mini,OpenAI,145.52,143.6,147.15,gpt-5-mini,API access,gpt-5-mini-2025-08-07_low
+2025-08-07,GPT-5 mini,OpenAI,145.52,143.6,147.15,gpt-5-mini,API access,gpt-5-mini-2025-08-07_minimal
+2025-08-07,GPT-5 mini,OpenAI,145.52,143.6,147.15,gpt-5-mini,API access,gpt-5-mini-2025-08-07_medium
+2025-08-07,GPT-5 mini,OpenAI,145.52,143.6,147.15,gpt-5-mini,API access,gpt-5-mini-2025-08-07_high
+2025-08-07,GPT-5 nano,OpenAI,139.39,135.2,141.56,gpt-5-nano,API access,gpt-5-nano-2025-08-07_unknown
+2025-08-07,GPT-5 nano,OpenAI,139.39,135.2,141.56,gpt-5-nano,API access,gpt-5-nano-2025-08-07_minimal
+2025-08-07,GPT-5 nano,OpenAI,139.39,135.2,141.56,gpt-5-nano,API access,gpt-5-nano-2025-08-07_low
+2025-08-07,GPT-5 nano,OpenAI,139.39,135.2,141.56,gpt-5-nano,API access,gpt-5-nano-2025-08-07_medium
+2025-08-07,GPT-5 nano,OpenAI,139.39,135.2,141.56,gpt-5-nano,API access,gpt-5-nano-2025-08-07_high
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805_unknown
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805_16K
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805_27K
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805_32K
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805
+2025-08-05,Claude Opus 4.1,Anthropic,144.11,142.06,145.99,claude-opus-4-1,API access,claude-opus-4-1-20250805_24K
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_unknown
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),openai/gpt-oss-120b_low
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),chutes/gpt-oss-120b_high
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),chutes/gpt-oss-120b
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),openai/gpt-oss-120b_high
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_medium
+2025-08-05,gpt-oss-120b,OpenAI,140.1,136.28,142.7,gpt-oss-120b,Open weights (unrestricted),gpt-oss-120b_high
+2025-08-05,gpt-oss-20b,OpenAI,137.8,133.26,139.73,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_unknown
+2025-08-05,gpt-oss-20b,OpenAI,137.8,133.26,139.73,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b
+2025-08-05,gpt-oss-20b,OpenAI,137.8,133.26,139.73,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_low
+2025-08-05,gpt-oss-20b,OpenAI,137.8,133.26,139.73,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_medium
+2025-08-05,gpt-oss-20b,OpenAI,137.8,133.26,139.73,gpt-oss-20b,Open weights (unrestricted),gpt-oss-20b_high
+2025-07-30,Qwen3-30B-A3B (Jul 2025),Alibaba,139.64,135.51,141.17,qwen3-30b-a3b-thinking-jul-2025,Open weights (unrestricted),qwen3-30b-a3b-thinking-2507
+2025-07-29,Qwen3-30B-A3B (Jul 2025),Alibaba,137.42,131.98,139.5,qwen3-30b-a3b-instruct-jul-2025,Open weights (unrestricted),qwen3-30b-a3b-instruct-2507
+2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.1,145.38,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),qwen/qwen3-235b-a22b-thinking-2507
+2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.1,145.38,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),chutes/Qwen3-235B-A22B-Thinking-2507
+2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.1,145.38,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),Qwen/Qwen3-235B-A22B-Thinking-2507
+2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,143.88,142.1,145.38,qwen3-235b-a22b-thinking-jul-2025,Open weights (unrestricted),Qwen3-235B-A22B-Thinking-2507
+2025-07-25,Qwen3-235B-A22B (Jul 2025),Alibaba,138.92,135.97,140.87,qwen3-235b-a22b-instruct-jul-2025,Open weights (unrestricted),Qwen3-235B-A22B-Instruct-2507
+2025-07-12,Kimi K2,Moonshot,140.11,137.03,141.99,kimi-k2-jul-2025,Open weights (restricted use),kimi-k2-0711-preview
+2025-07-12,Kimi K2,Moonshot,140.11,137.03,141.99,kimi-k2-jul-2025,Open weights (restricted use),Kimi-K2-Instruct
+2025-07-09,Grok 4,xAI,146.45,144.62,148.2,grok-4,API access,grok-4-0709_high
+2025-07-09,Grok 4,xAI,146.45,144.62,148.2,grok-4,API access,grok-4-0709
+2025-06-24,Grok-3 mini,xAI,140.35,138.05,142.03,grok-3-mini,API access,grok-3-mini_high
+2025-06-24,Grok-3 mini,xAI,140.35,138.05,142.03,grok-3-mini,API access,grok-3-mini_low
+2025-06-20,Mistral Small 3.2,Mistral AI,131.74,126.94,133.88,mistral-small-3-2,Open weights (unrestricted),mistral-small-2506
+2025-06-20,Mistral Small 3.2,Mistral AI,131.74,126.94,133.88,mistral-small-3-2,Open weights (unrestricted),mistral-small-3.2-2506
+2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_8K
+2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_32K
+2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro_16K
+2025-06-17,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro
+2025-06-17,Gemini 2.5 Flash,Google DeepMind,140.53,138.48,141.94,gemini-2-5-flash-jun-2025,API access,gemini-2.5-flash
+2025-06-17,Gemini 2.5 Flash-Lite,Google DeepMind,133.93,130.93,136.34,gemini-2-5-flash-lite-jun-2025,API access,gemini-2.5-flash-lite-preview-06-17_16K
+2025-06-17,Gemini 2.5 Flash-Lite,Google DeepMind,133.93,130.93,136.34,gemini-2-5-flash-lite-jun-2025,API access,gemini-2.5-flash-lite-preview-06-17-thinking
+2025-06-10,o3-pro,OpenAI,147.45,145.85,149.7,o3-pro,API access,o3-pro-2025-06-10_low
+2025-06-10,o3-pro,OpenAI,147.45,145.85,149.7,o3-pro,API access,o3-pro-2025-06-10_medium
+2025-06-10,o3-pro,OpenAI,147.45,145.85,149.7,o3-pro,API access,o3-pro-2025-06-10_high
+2025-06-10,Magistral Small 1.0,Mistral AI,133.19,130.02,134.49,magistral-small-1-0,Open weights (unrestricted),magistral-small-2506
+2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05_32K
+2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05_1K
+2025-06-05,Gemini 2.5 Pro (Jun 2025),Google DeepMind,145.26,143.82,146.79,gemini-2-5-pro-jun-2025,API access,gemini-2.5-pro-preview-06-05
+2025-05-28,DeepSeek-R1 (May 2025),DeepSeek,141.29,139.31,142.74,deepseek-r1-may-2025,Open weights (unrestricted),chutes/DeepSeek-R1-0528
+2025-05-28,DeepSeek-R1 (May 2025),DeepSeek,141.29,139.31,142.74,deepseek-r1-may-2025,Open weights (unrestricted),DeepSeek-R1-0528
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_32K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_1K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_8K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_12K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_2K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_unknown
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_16K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514_27K
+2025-05-22,Claude Opus 4,Anthropic,142.68,140.74,144.27,claude-opus-4,API access,claude-opus-4-20250514
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_1K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_8K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_12K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_2K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_unknown
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_16K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_32K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514_59K
+2025-05-22,Claude Sonnet 4,Anthropic,141.69,139.18,143.08,claude-sonnet-4,API access,claude-sonnet-4-20250514
+2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.54,139.66,143.04,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_1K
+2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.54,139.66,143.04,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_8K
+2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.54,139.66,143.04,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_23K
+2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.54,139.66,143.04,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20_16K
+2025-05-20,Gemini 2.5 Flash,Google DeepMind,141.54,139.66,143.04,gemini-2-5-flash-may-2025,API access,gemini-2.5-flash-preview-05-20
+2025-05-07,Mistral Medium 3,Mistral AI,134.07,130.83,135.56,mistral-medium-3,API access,mistral-medium-2505
+2025-05-06,Gemini 2.5 Pro (May 2025),Google DeepMind,142.47,139.42,145.42,gemini-2-5-pro-may-2025,API access,gemini-2.5-pro-preview-05-06
+2025-04-29,Qwen3-235B-A22B,Alibaba,139.35,136.34,140.95,qwen3-235b-a22b,Open weights (unrestricted),Qwen3-235B-A22B
+2025-04-29,Qwen3-235B-A22B,Alibaba,139.35,136.34,140.95,qwen3-235b-a22b,Open weights (unrestricted),qwen3-235b-a22b
+2025-04-29,Qwen3-32B,Alibaba,138.51,135.04,140.45,qwen3-32b,Open weights (unrestricted),Qwen3-32B
+2025-04-29,Qwen3-32B,Alibaba,138.51,135.04,140.45,qwen3-32b,Open weights (unrestricted),Qwen3-32B_none
+2025-04-29,Qwen3-14B,Alibaba,138.24,133.78,139.91,qwen3-14b,Open weights (unrestricted),qwen3-14b
+2025-04-29,Qwen3-14B,Alibaba,138.24,133.78,139.91,qwen3-14b,Open weights (unrestricted),qwen3-14b_none
+2025-04-29,Qwen3-30B-A3B,Alibaba,136.19,130.67,138.63,qwen3-30b-a3b,Open weights (unrestricted),Qwen3-30B-A3B
+2025-04-29,Qwen3-30B-A3B,Alibaba,136.19,130.67,138.63,qwen3-30b-a3b,Open weights (unrestricted),Qwen3-30B-A3B_none
+2025-04-28,Qwen3-235B-A22B,Alibaba,139.35,136.34,140.95,qwen3-235b-a22b,Open weights (unrestricted),chutes/Qwen3-235B-A22B
+2025-04-28,Qwen3-32B,Alibaba,138.51,135.04,140.45,qwen3-32b,Open weights (unrestricted),chutes/Qwen3-32B
+2025-04-28,Qwen3-14B,Alibaba,138.24,133.78,139.91,qwen3-14b,Open weights (unrestricted),chutes/Qwen3-14B
+2025-04-28,Qwen3-30B-A3B,Alibaba,136.19,130.67,138.63,qwen3-30b-a3b,Open weights (unrestricted),chutes/Qwen3-30B-A3B
+2025-04-28,Qwen3-8B,Alibaba,136.18,130.64,138.29,qwen3-8b,Open weights (unrestricted),chutes/Qwen3-8B
+2025-04-28,Qwen3-8B,Alibaba,136.18,130.64,138.29,qwen3-8b,Open weights (unrestricted),qwen3-8b
+2025-04-28,Qwen3-8B,Alibaba,136.18,130.64,138.29,qwen3-8b,Open weights (unrestricted),qwen3-8b_none
+2025-04-17,Gemini 2.5 Flash,Google DeepMind,139.97,135.94,142.06,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17 (16K thinking)
+2025-04-17,Gemini 2.5 Flash,Google DeepMind,139.97,135.94,142.06,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17 (24K thinking)
+2025-04-17,Gemini 2.5 Flash,Google DeepMind,139.97,135.94,142.06,gemini-2-5-flash-apr-2025,API access,gemini-2.5-flash-preview-04-17
+2025-04-16,o3,OpenAI,146.91,145.23,148.66,o3,API access,o3-2025-04-16_unknown
+2025-04-16,o3,OpenAI,146.91,145.23,148.66,o3,API access,o3-2025-04-16_low
+2025-04-16,o3,OpenAI,146.91,145.23,148.66,o3,API access,o3-2025-04-16_medium
+2025-04-16,o3,OpenAI,146.91,145.23,148.66,o3,API access,o3-2025-04-16_high
+2025-04-16,o4-mini,OpenAI,145.65,143.36,147.36,o4-mini,API access,o4-mini-2025-04-16_unknown
+2025-04-16,o4-mini,OpenAI,145.65,143.36,147.36,o4-mini,API access,o4-mini-2025-04-16_medium
+2025-04-16,o4-mini,OpenAI,145.65,143.36,147.36,o4-mini,API access,o4-mini-2025-04-16_high
+2025-04-16,o4-mini,OpenAI,145.65,143.36,147.36,o4-mini,API access,o4-mini-2025-04-16_low
+2025-04-14,GPT-4.1,OpenAI,136.8,134.37,138.51,gpt-4-1,API access,gpt-4.1-2025-04-14
+2025-04-14,GPT-4.1 mini,OpenAI,135.02,131.78,136.65,gpt-4-1-mini,API access,gpt-4.1-mini-2025-04-14
+2025-04-14,GPT-4.1 nano,OpenAI,129.63,124.26,131.97,gpt-4-1-nano,API access,gpt-4.1-nano-2025-04-14
+2025-04-09,Grok-3 mini,xAI,140.35,138.05,142.03,grok-3-mini,API access,grok-3-mini-beta_medium
+2025-04-09,Grok-3 mini,xAI,140.35,138.05,142.03,grok-3-mini,API access,grok-3-mini-beta_low
+2025-04-09,Grok-3 mini,xAI,140.35,138.05,142.03,grok-3-mini,API access,grok-3-mini-beta_high
+2025-04-09,Grok 3,xAI,138.3,135.93,139.83,grok-3,API access,grok-3
+2025-04-09,Grok 3,xAI,138.3,135.93,139.83,grok-3,API access,grok-3-beta
+2025-04-06,Llama 4 Maverick,Meta AI,132.2,128.7,134.05,llama-4-maverick,Open weights (restricted use),chutes/Llama-4-Maverick-17B-128E-Instruct
+2025-04-06,Llama 4 Scout,Meta AI,129.64,125.22,131.37,llama-4-scout,Open weights (restricted use),chutes/Llama-4-Scout-17B-16E Instruct
+2025-04-05,Llama 4 Maverick,Meta AI,132.2,128.7,134.05,llama-4-maverick,Open weights (restricted use),Llama-4-Maverick-17B-128E-Instruct
+2025-04-05,Llama 4 Maverick,Meta AI,132.2,128.7,134.05,llama-4-maverick,Open weights (restricted use),Llama-4-Maverick-17B-128E-Instruct-FP8
+2025-04-05,Llama 4 Scout,Meta AI,129.64,125.22,131.37,llama-4-scout,Open weights (restricted use),Llama-4-Scout-17B-16E-Instruct
+2025-03-31,Gemini 2.5 Pro (Mar 2025),Google DeepMind,144.16,142.19,147.04,gemini-2-5-pro-mar-2025,API access,gemini-2.5-pro-preview-03-25
+2025-03-25,Gemini 2.5 Pro (Mar 2025),Google DeepMind,144.16,142.19,147.04,gemini-2-5-pro-mar-2025,API access,gemini-2.5-pro-exp-03-25
+2025-03-24,DeepSeek-V3 (Mar 2025),DeepSeek,135.95,133.32,137.9,deepseek-v3-mar-2025,Open weights (restricted use),chutes/DeepSeek-V3-0324
+2025-03-24,DeepSeek-V3 (Mar 2025),DeepSeek,135.95,133.32,137.9,deepseek-v3-mar-2025,Open weights (restricted use),DeepSeek-V3-0324
+2025-03-17,Mistral Small 3.1,Mistral AI,127.48,123.58,129.41,mistral-small-3-1,Open weights (unrestricted),mistral-small-2503
+2025-03-17,Mistral Small 3.1,Mistral AI,127.48,123.58,129.41,mistral-small-3-1,Open weights (unrestricted),mistral-small-3.1-2503
+2025-03-12,Gemma 3 27B,Google DeepMind,130.03,125.11,132.2,gemma-3-27b,Open weights (restricted use),gemma-3-27b-it
+2025-03-12,Gemma 3 12B,Google DeepMind,123.46,115.68,129.29,gemma-3-12b,Open weights (restricted use),gemma-3-12b-it
+2025-03-12,Gemma 3 4B,Google DeepMind,115.97,97.92,123.7,gemma-3-4b,Open weights (restricted use),gemma-3-4b-it
+2025-03-11,Gemma 3 27B,Google DeepMind,130.03,125.11,132.2,gemma-3-27b,Open weights (restricted use),chutes/Gemma-3-27b-It
+2025-03-05,QwQ-32B,Alibaba,137.6,132.9,141.53,qwq-32b,Open weights (unrestricted),chutes/QwQ-32B
+2025-03-05,QwQ-32B,Alibaba,137.6,132.9,141.53,qwq-32b,Open weights (unrestricted),QwQ-32B (16K thinking)
+2025-03-05,QwQ-32B,Alibaba,137.6,132.9,141.53,qwq-32b,Open weights (unrestricted),QwQ-32B
+2025-02-27,GPT-4.5,OpenAI,136.75,134.26,138.84,gpt-4-5,API access,gpt-4.5-preview-2025-02-27
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_15K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_1K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_unknown
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_12K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_8K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_2K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_16K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_32K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219_64K
+2025-02-24,Claude 3.7 Sonnet,Anthropic,141.16,139.15,142.7,claude-3-7-sonnet,API access,claude-3-7-sonnet-20250219
+2025-02-05,Gemini 2.0 Pro,Google DeepMind,135.06,132.0,136.72,gemini-2-0-pro,Hosted access (no API),gemini-2.0-pro-exp-02-05
+2025-02-05,Gemini 2.0 Flash,"Google DeepMind,Google",134.69,132.02,136.71,gemini-2-0-flash-feb-2025,API access,gemini-2.0-flash-02-05
+2025-02-05,Gemini 2.0 Flash,"Google DeepMind,Google",134.69,132.02,136.71,gemini-2-0-flash-feb-2025,API access,gemini-2.0-flash-001
+2025-01-31,o3-mini,OpenAI,140.35,137.21,141.89,o3-mini,API access,o3-mini-2025-01-31_unknown
+2025-01-31,o3-mini,OpenAI,140.35,137.21,141.89,o3-mini,API access,o3-mini-2025-01-31_low
+2025-01-31,o3-mini,OpenAI,140.35,137.21,141.89,o3-mini,API access,o3-mini-2025-01-31_medium
+2025-01-31,o3-mini,OpenAI,140.35,137.21,141.89,o3-mini,API access,o3-mini-2025-01-31_high
+2025-01-30,Mistral Small 3,Mistral AI,127.07,122.77,129.11,mistral-small-3,Open weights (unrestricted),mistral-small-3-2501
+2025-01-28,Qwen2.5-Max,Alibaba,132.53,129.09,135.74,qwen2-5-max,API access,qwen2.5-max
+2025-01-25,Qwen2.5-Max,Alibaba,132.53,129.09,135.74,qwen2-5-max,API access,qwen-max-2025-01-25
+2025-01-25,Mistral Small 3,Mistral AI,127.07,122.77,129.11,mistral-small-3,Open weights (unrestricted),mistral-small-2501
+2025-01-21,Gemini 2.0 Flash Thinking,"Google DeepMind,Google",135.37,130.54,138.06,gemini-2-0-flash-thinking-jan-2025,API access,gemini-2.0-flash-thinking-exp-01-21
+2025-01-20,DeepSeek-R1,DeepSeek,138.97,136.9,140.47,deepseek-r1,Open weights (unrestricted),DeepSeek-R1
+2025-01-20,DeepSeek-R1-Distill-Qwen-32B,DeepSeek,137.42,131.53,138.84,deepseek-r1-distill-qwen-32b,Open weights (unrestricted),DeepSeek-R1-Distill-Qwen-32B
+2025-01-20,DeepSeek-R1-Distill-Qwen-14B,DeepSeek,135.43,127.32,138.15,deepseek-r1-distill-qwen-14b,Open weights (unrestricted),DeepSeek-R1-Distill-Qwen-14B
+2024-12-26,DeepSeek-V3,DeepSeek,132.35,128.55,135.57,deepseek-v3,Open weights (restricted use),DeepSeek-V3-Base
+2024-12-26,DeepSeek-V3,DeepSeek,132.35,128.55,135.57,deepseek-v3,Open weights (restricted use),DeepSeek-V3
+2024-12-17,o1,OpenAI,141.86,140.15,143.11,o1,API access,o1-2024-12-17_unknown
+2024-12-17,o1,OpenAI,141.86,140.15,143.11,o1,API access,o1-2024-12-17_medium
+2024-12-17,o1,OpenAI,141.86,140.15,143.11,o1,API access,o1-2024-12-17_low
+2024-12-17,o1,OpenAI,141.86,140.15,143.11,o1,API access,o1-2024-12-17_high
+2024-12-12,Grok-2,xAI,130.48,126.21,132.43,grok-2-dec-2024,API access,grok-2-1212
+2024-12-12,Phi-4,Microsoft Research,130.42,125.56,132.22,phi-4,Open weights (unrestricted),phi-4
+2024-12-11,Gemini 2.0 Flash,"Google DeepMind,Google",134.71,124.75,136.67,gemini-2-0-flash-dec-2024,API access,gemini-2.0-flash-exp
+2024-12-06,Gemini 2.0 Flash,"Google DeepMind,Google",134.71,124.75,136.67,gemini-2-0-flash-dec-2024,API access,gemini-exp-1206
+2024-12-06,Llama 3.3 70B,Meta AI,127.32,123.07,129.81,llama-3-3-70b,Open weights (restricted use),Llama-3.3-70B-Instruct
+2024-12-03,Amazon Nova Pro,Amazon,123.77,109.93,126.64,amazon-nova-pro,API access,amazon.nova-pro-v1:0
+2024-11-29,INTELLECT-1,"Prime Intellect,Hugging Face,Arcee AI",100.49,90.54,106.31,intellect-1,,INTELLECT-1-Instruct
+2024-11-20,GPT-4o,OpenAI,128.81,124.89,131.18,gpt-4o-nov-2024,API access,gpt-4o-2024-11-20
+2024-11-18,Mistral Large 2,Mistral AI,128.52,124.64,130.68,mistral-large-2-nov-2024,Open weights (non-commercial),mistral-large-2411
+2024-10-22,Claude 3.5 Sonnet (October 2024),Anthropic,133.55,129.7,138.29,claude-3-5-sonnet-october-2024,API access,claude-3-5-sonnet-20241022
+2024-10-22,Claude 3.5 Haiku,Anthropic,127.15,120.88,129.73,claude-3-5-haiku,API access,claude-3-5-haiku-20241022
+2024-10-16,Ministral 3B,Mistral AI,118.06,106.88,121.5,ministral-3b,API access,ministral-3b-2410
+2024-09-24,Gemini 1.5 Pro,Google DeepMind,131.73,128.47,133.31,gemini-1-5-pro-sept-2024,API access,gemini-1.5-pro-002
+2024-09-24,Gemini 1.5 Flash,Google DeepMind,129.36,124.24,131.19,gemini-1-5-flash-sep-2024,API access,gemini-1.5-flash-002
+2024-09-24,Llama 3.2 90B,Meta AI,125.5,120.84,127.41,llama-3-2-90b,Open weights (restricted use),Llama-3.2-90B-Vision-Instruct
+2024-09-24,Llama 3.2 1B,Meta AI,102.43,92.05,113.95,llama-3-2-1b,Open weights (restricted use),Llama-3.2-1B-Instruct
+2024-09-19,Qwen2.5-72B,Alibaba,129.0,124.2,130.83,qwen2-5-72b,Open weights (unrestricted),Qwen2.5-72B
+2024-09-19,Qwen2.5-72B,Alibaba,129.0,124.2,130.83,qwen2-5-72b,Open weights (unrestricted),Qwen2.5-VL-72B-Instruct
+2024-09-19,Qwen2.5-72B,Alibaba,129.0,124.2,130.83,qwen2-5-72b,Open weights (unrestricted),qwen2.5-72b-instruct
+2024-09-19,Qwen2.5-7B,Alibaba,118.44,111.37,121.21,qwen2-5-7b,Open weights (unrestricted),qwen2.5-7b-instruct
+2024-09-18,Qwen2.5-Coder (32B),Alibaba,119.42,110.95,124.94,qwen2-5-coder-32b,Open weights (unrestricted),Qwen2.5-Coder-32B
+2024-09-18,Qwen2.5-Coder (7B),Alibaba,112.97,103.06,119.27,qwen2-5-coder-7b,Open weights (unrestricted),Qwen2.5-Coder-7B
+2024-09-18,Qwen2.5-Coder (1.5B),Alibaba,102.66,87.49,110.49,qwen2-5-coder-1-5b,Open weights (unrestricted),Qwen2.5-Coder-1.5B
+2024-09-17,Qwen2.5-32B,Alibaba,128.52,123.46,130.17,qwen2-5-32b,Open weights (unrestricted),qwen2.5-32b-instruct
+2024-09-17,Qwen2.5-Coder (7B),Alibaba,112.97,103.06,119.27,qwen2-5-coder-7b,Open weights (unrestricted),Qwen2.5-Coder-7B-Instruct
+2024-09-12,o1-mini,OpenAI,135.82,132.6,137.28,o1-mini,API access,o1-mini-2024-09-12_unknown
+2024-09-12,o1-mini,OpenAI,135.82,132.6,137.28,o1-mini,API access,o1-mini-2024-09-12_medium
+2024-09-12,o1-mini,OpenAI,135.82,132.6,137.28,o1-mini,API access,o1-mini-2024-09-12_high
+2024-09-12,o1-preview,OpenAI,134.78,131.38,138.44,o1-preview,API access,o1-preview-2024-09-12
+2024-08-30,Command R+,"Cohere,Cohere Labs (formerly Cohere for AI)",119.25,111.34,125.27,command-r,Open weights (non-commercial),c4ai-command-r-plus-08-2024
+2024-08-06,GPT-4o,OpenAI,128.77,124.75,131.04,gpt-4o-aug-2024,API access,gpt-4o-2024-08-06
+2024-07-24,Mistral Large 2,Mistral AI,127.54,123.38,129.87,mistral-large-2-jul-2024,Open weights (non-commercial),mistral-large-2407
+2024-07-23,Llama 3.1-405B,Meta AI,128.75,124.83,130.75,llama-3-1-405b,Open weights (restricted use),Llama-3.1-405B
+2024-07-23,Llama 3.1-405B,Meta AI,128.75,124.83,130.75,llama-3-1-405b,Open weights (restricted use),Llama-3.1-405B-Instruct
+2024-07-23,Llama 3.1-70B,Meta AI,125.91,121.49,128.4,llama-3-1-70b,Open weights (restricted use),Llama-3.1-70B-Instruct
+2024-07-23,Llama 3.1-8B,Meta AI,116.5,107.07,121.8,llama-3-1-8b,Open weights (restricted use),Llama-3.1-8B-Instruct
+2024-07-18,GPT-4o mini,OpenAI,126.56,121.04,128.51,gpt-4o-mini,API access,gpt-4o-mini-2024-07-18
+2024-07-18,Mistral NeMo,Mistral AI,118.64,112.08,121.77,mistral-nemo,Open weights (unrestricted),Mistral-Nemo-Base-2407
+2024-07-18,Mistral NeMo,Mistral AI,118.64,112.08,121.77,mistral-nemo,Open weights (unrestricted),Mistral-Nemo-Instruct-2407
+2024-07-18,Mistral NeMo,Mistral AI,118.64,112.08,121.77,mistral-nemo,Open weights (unrestricted),open-mistral-nemo-2407
+2024-06-24,Gemma 2 27B,Google DeepMind,122.05,116.0,124.19,gemma-2-27b,Open weights (restricted use),gemma-2-27b-it
+2024-06-24,Gemma 2 9B,Google DeepMind,119.79,112.51,122.42,gemma-2-9b,Open weights (restricted use),gemma-2-9b-it
 2024-06-20,Claude 3.5 Sonnet,Anthropic,130.0,,,claude-3-5-sonnet,API access,claude-3-5-sonnet-20240620
-2024-06-07,Qwen2-72B,Alibaba,125.26,119.16,126.82,qwen2-72b,Open weights (unrestricted),qwen2-72b-instruct
-2024-05-27,Mistral 7B,Mistral AI,108.75,98.38,112.38,mistral-7b-v0-3,Open weights (unrestricted),Mistral-7B-Instruct-v0.3
-2024-05-23,Gemini 1.5 Flash,Google DeepMind,122.57,115.99,124.61,gemini-1-5-flash-may-2024,API access,gemini-1.5-flash-001
-2024-05-14,Gemini 1.5 Pro,Google DeepMind,126.9,121.89,128.93,gemini-1-5-pro-may-2024,API access,gemini-1.5-pro-001
-2024-05-14,Gemini 1.5 Flash,Google DeepMind,122.57,115.99,124.61,gemini-1-5-flash-may-2024,API access,gemini-1.5-flash-0514
-2024-05-13,GPT-4o,OpenAI,128.98,123.76,131.48,gpt-4o-may-2024,API access,gpt-4o-2024-05-13
-2024-05-09,Falcon 2 11B,Technology Innovation Institute,109.29,100.85,114.75,falcon-2-11b,Open weights (restricted use),falcon-11b
-2024-05-07,DeepSeek-V2 (MoE-236B),DeepSeek,124.77,118.52,127.76,deepseek-v2-moe-236b-may-2024,Open weights (restricted use),DeepSeek-V2
-2024-04-23,phi-3-small 7.4B,Microsoft,121.79,114.84,124.29,phi-3-small-7-4b,Open weights (unrestricted),Phi-3-small-8k-instruct
-2024-04-23,phi-3-medium 14B,Microsoft,121.18,114.51,124.12,phi-3-medium-14b,Open weights (unrestricted),Phi-3-medium-128k-instruct
-2024-04-23,phi-3-mini 3.8B,Microsoft,117.24,108.01,120.41,phi-3-mini-3-8b,Open weights (unrestricted),Phi-3-mini-4k-instruct
-2024-04-18,Llama 3-70B,Meta AI,122.9,116.94,125.66,llama-3-70b,Open weights (restricted use),Meta-Llama-3-70B
-2024-04-18,Llama 3-70B,Meta AI,122.9,116.94,125.66,llama-3-70b,Open weights (restricted use),Meta-Llama-3-70B-Instruct
-2024-04-18,Llama 3-8B,Meta AI,116.33,106.89,119.17,llama-3-8b,Open weights (restricted use),Meta-Llama-3-8B
-2024-04-18,Llama 3-8B,Meta AI,116.33,106.89,119.17,llama-3-8b,Open weights (restricted use),Meta-Llama-3-8B-Instruct
-2024-04-17,Mixtral 8x22B,Mistral AI,121.98,115.16,124.26,mixtral-8x22b,Open weights (unrestricted),Mixtral-8x22B-v0.1
-2024-04-17,Mixtral 8x22B,Mistral AI,121.98,115.16,124.26,mixtral-8x22b,Open weights (unrestricted),Mixtral-8x22B-Instruct-v0.1
-2024-04-17,Mixtral 8x22B,Mistral AI,121.98,115.16,124.26,mixtral-8x22b,Open weights (unrestricted),open-mixtral-8x22b
-2024-04-09,GPT-4 Turbo (Apr 2024),OpenAI,127.25,121.83,128.85,gpt-4-turbo-apr-2024,API access,gpt-4-turbo-2024-04-09
-2024-03-07,Claude 3 Haiku,Anthropic,118.27,110.55,121.01,claude-3-haiku,API access,claude-3-haiku-20240307
-2024-02-29,Claude 3 Opus,Anthropic,126.9,121.5,129.74,claude-3-opus,API access,claude-3-opus-20240229
-2024-02-29,Claude 3 Sonnet,Anthropic,120.66,112.8,123.29,claude-3-sonnet,API access,claude-3-sonnet-20240229
-2024-02-26,Mistral Large,Mistral AI,121.99,115.34,124.7,mistral-large,API access,mistral-large-2402
-2024-02-26,Nemotron-4 15B,NVIDIA,107.42,97.64,112.97,nemotron-4-15b,Unreleased,Nemotron-4 15B
-2024-02-22,StarCoder 2 3B,"Hugging Face,ServiceNow,NVIDIA,BigCode",88.12,73.0,96.67,starcoder-2-3b,Open weights (restricted use),starcoder2-3b
-2024-02-21,Gemma 7B,Google DeepMind,111.77,103.36,116.17,gemma-7b,Open weights (restricted use),gemma-7b
-2024-02-21,Gemma 2B,Google DeepMind,93.66,80.99,100.2,gemma-2b,Open weights (restricted use),gemma-2b
-2024-02-20,StarCoder 2 15B,"Hugging Face,ServiceNow,NVIDIA,BigCode",104.66,93.12,111.22,starcoder-2-15b,Open weights (restricted use),starcoder2-15b
-2024-02-20,StarCoder 2 7B,"Hugging Face,ServiceNow,NVIDIA,BigCode",93.01,76.86,101.14,starcoder-2-7b,Open weights (restricted use),starcoder2-7b
+2024-06-07,Qwen2-72B,Alibaba,125.27,120.23,126.96,qwen2-72b,Open weights (unrestricted),qwen2-72b-instruct
+2024-05-27,Mistral 7B,Mistral AI,108.78,98.81,112.63,mistral-7b-v0-3,Open weights (unrestricted),Mistral-7B-Instruct-v0.3
+2024-05-23,Gemini 1.5 Flash,Google DeepMind,122.57,117.47,124.66,gemini-1-5-flash-may-2024,API access,gemini-1.5-flash-001
+2024-05-14,Gemini 1.5 Pro,Google DeepMind,126.9,122.76,129.18,gemini-1-5-pro-may-2024,API access,gemini-1.5-pro-001
+2024-05-14,Gemini 1.5 Flash,Google DeepMind,122.57,117.47,124.66,gemini-1-5-flash-may-2024,API access,gemini-1.5-flash-0514
+2024-05-13,GPT-4o,OpenAI,128.97,125.32,131.55,gpt-4o-may-2024,API access,gpt-4o-2024-05-13
+2024-05-09,Falcon 2 11B,Technology Innovation Institute,109.32,102.33,115.66,falcon-2-11b,Open weights (restricted use),falcon-11b
+2024-05-07,DeepSeek-V2 (MoE-236B),DeepSeek,124.77,119.95,127.8,deepseek-v2-moe-236b-may-2024,Open weights (restricted use),DeepSeek-V2
+2024-04-23,phi-3-small 7.4B,Microsoft,121.8,116.07,124.75,phi-3-small-7-4b,Open weights (unrestricted),Phi-3-small-8k-instruct
+2024-04-23,phi-3-medium 14B,Microsoft,121.19,115.62,124.27,phi-3-medium-14b,Open weights (unrestricted),Phi-3-medium-128k-instruct
+2024-04-23,phi-3-mini 3.8B,Microsoft,117.25,108.88,121.19,phi-3-mini-3-8b,Open weights (unrestricted),Phi-3-mini-4k-instruct
+2024-04-18,Llama 3-70B,Meta AI,122.91,118.22,125.97,llama-3-70b,Open weights (restricted use),Meta-Llama-3-70B
+2024-04-18,Llama 3-70B,Meta AI,122.91,118.22,125.97,llama-3-70b,Open weights (restricted use),Meta-Llama-3-70B-Instruct
+2024-04-18,Llama 3-8B,Meta AI,116.35,109.0,119.28,llama-3-8b,Open weights (restricted use),Meta-Llama-3-8B
+2024-04-18,Llama 3-8B,Meta AI,116.35,109.0,119.28,llama-3-8b,Open weights (restricted use),Meta-Llama-3-8B-Instruct
+2024-04-17,Mixtral 8x22B,Mistral AI,122.0,115.9,124.51,mixtral-8x22b,Open weights (unrestricted),Mixtral-8x22B-v0.1
+2024-04-17,Mixtral 8x22B,Mistral AI,122.0,115.9,124.51,mixtral-8x22b,Open weights (unrestricted),Mixtral-8x22B-Instruct-v0.1
+2024-04-17,Mixtral 8x22B,Mistral AI,122.0,115.9,124.51,mixtral-8x22b,Open weights (unrestricted),open-mixtral-8x22b
+2024-04-09,GPT-4 Turbo (Apr 2024),OpenAI,127.25,123.32,128.87,gpt-4-turbo-apr-2024,API access,gpt-4-turbo-2024-04-09
+2024-03-07,Claude 3 Haiku,Anthropic,118.3,112.27,121.43,claude-3-haiku,API access,claude-3-haiku-20240307
+2024-02-29,Claude 3 Opus,Anthropic,126.91,123.2,130.09,claude-3-opus,API access,claude-3-opus-20240229
+2024-02-29,Claude 3 Sonnet,Anthropic,120.68,113.41,124.15,claude-3-sonnet,API access,claude-3-sonnet-20240229
+2024-02-26,Mistral Large,Mistral AI,122.0,115.45,124.63,mistral-large,API access,mistral-large-2402
+2024-02-26,Nemotron-4 15B,NVIDIA,107.45,100.02,113.16,nemotron-4-15b,Unreleased,Nemotron-4 15B
+2024-02-22,StarCoder 2 3B,"Hugging Face,ServiceNow,NVIDIA,BigCode",88.18,74.45,97.14,starcoder-2-3b,Open weights (restricted use),starcoder2-3b
+2024-02-21,Gemma 7B,Google DeepMind,111.79,104.47,116.73,gemma-7b,Open weights (restricted use),gemma-7b
+2024-02-21,Gemma 2B,Google DeepMind,93.72,83.4,100.44,gemma-2b,Open weights (restricted use),gemma-2b
+2024-02-20,StarCoder 2 15B,"Hugging Face,ServiceNow,NVIDIA,BigCode",104.7,94.66,111.42,starcoder-2-15b,Open weights (restricted use),starcoder2-15b
+2024-02-20,StarCoder 2 7B,"Hugging Face,ServiceNow,NVIDIA,BigCode",93.06,79.66,101.53,starcoder-2-7b,Open weights (restricted use),starcoder2-7b
 2024-02-15,Gemini 1.5 Pro,Google DeepMind,127.77667684732914,125.4048457742372,136.14635270821287,gemini-1-5-pro-feb-2024,API access,gemini-1.5-pro-001-feb24
-2024-01-25,GPT-4 Turbo (Nov 2023),OpenAI,126.46,120.93,128.62,gpt-4-turbo-nov-2023,API access,gpt-4-0125-preview
-2024-01-25,GPT-3.5 Turbo,OpenAI,115.57,107.51,118.96,gpt-3-5-turbo-jan-2024,API access,gpt-3.5-turbo-0125
-2023-12-13,Gemini 1.0 Pro,Google DeepMind,116.96,108.98,119.58,gemini-1-0-pro,API access,gemini-1.0-pro-001
-2023-12-12,Phi-2,Microsoft,107.66,83.85,113.33,phi-2,Open weights (unrestricted),phi-2
-2023-12-11,Mixtral 8x7B,Mistral AI,118.38,110.87,120.71,mixtral-8x7b,Open weights (unrestricted),Mixtral-8x7B-v0.1
-2023-12-11,Mixtral 8x7B,Mistral AI,118.38,110.87,120.71,mixtral-8x7b,Open weights (unrestricted),open-mixtral-8x7b
-2023-12-11,Mixtral 8x7B,Mistral AI,118.38,110.87,120.71,mixtral-8x7b,Open weights (unrestricted),Mixtral-8x7B-Instruct-v0.1
-2023-11-29,DeepSeek LLM 67B,DeepSeek,110.54,94.64,116.83,deepseek-llm-67b,Open weights (restricted use),deepseek-llm-67b-chat
-2023-11-22,Yi-34B,01.AI,117.28,109.43,120.55,yi-34b,Open weights (restricted use),Yi-34B-Chat
-2023-11-22,Yi 6B,01.AI,104.42,93.54,109.59,yi-6b,Open weights (restricted use),Yi-6B-Chat
-2023-11-21,Claude 2.1,Anthropic,119.18,111.6,121.81,claude-2-1,API access,claude-2.1
-2023-11-06,GPT-4 Turbo (Nov 2023),OpenAI,126.46,120.93,128.62,gpt-4-turbo-nov-2023,API access,gpt-4-turbo
-2023-11-06,GPT-4 Turbo (Nov 2023),OpenAI,126.46,120.93,128.62,gpt-4-turbo-nov-2023,API access,gpt-4-1106-preview
-2023-11-06,GPT-3.5 Turbo,OpenAI,118.48,110.08,121.52,gpt-3-5-turbo-nov-2023,API access,gpt-3.5-turbo-1106
-2023-11-02,Yi-34B,01.AI,117.28,109.43,120.55,yi-34b,Open weights (restricted use),Yi-34B
-2023-11-02,Yi 6B,01.AI,104.42,93.54,109.59,yi-6b,Open weights (restricted use),Yi-6B
-2023-11-02,DeepSeek Coder 33B,"DeepSeek,Peking University",95.82,82.46,102.5,deepseek-coder-33b,Open weights (restricted use),deepseek-coder-33b-base
-2023-11-02,DeepSeek Coder 6.7B,"DeepSeek,Peking University",88.99,74.23,97.25,deepseek-coder-6-7b,Open weights (restricted use),deepseek-coder-6.7b-base
-2023-11-02,DeepSeek Coder 1.3B,"DeepSeek,Peking University",62.43,43.09,76.43,deepseek-coder-1-3b,Open weights (restricted use),deepseek-coder-1.3b-base
-2023-09-28,Qwen-14B,Alibaba,112.83,103.88,117.21,qwen-14b,Open weights (restricted use),Qwen-14B
-2023-09-28,Qwen-7B,Alibaba,106.52,95.32,111.82,qwen-7b,Open weights (restricted use),Qwen-7B
-2023-09-27,Mistral 7B,Mistral AI,111.99,103.63,115.85,mistral-7b-v0-1,Open weights (unrestricted),Mistral-7B-Instruct-v0.1
-2023-09-27,Mistral 7B,Mistral AI,111.99,103.63,115.85,mistral-7b-v0-1,Open weights (unrestricted),Mistral-7B-v0.1
-2023-09-27,Mistral 7B,Mistral AI,108.75,98.38,112.38,mistral-7b-v0-3,Open weights (unrestricted),open-mistral-7b
-2023-09-24,Qwen-14B,Alibaba,112.83,103.88,117.21,qwen-14b,Open weights (restricted use),Qwen-14B-Chat
-2023-09-20,Baichuan 2-7B,Baichuan,95.83,83.18,103.92,baichuan-2-7b,Open weights (restricted use),Baichuan-2-7B-Base
-2023-09-11,Phi-1.5,Microsoft,90.93,67.62,100.87,phi-1-5,Open weights (unrestricted),phi-1_5
-2023-09-06,Falcon-180B,Technology Innovation Institute,111.91,103.88,119.51,falcon-180b,Open weights (restricted use),falcon-180B
-2023-09-06,Baichuan2-13B,Baichuan,102.82,90.41,109.73,baichuan2-13b,Open weights (restricted use),Baichuan-2-13B-Base
-2023-08-09,Claude Instant,Anthropic,120.19,112.55,123.02,claude-instant,API access,claude-instant-1.2
-2023-07-20,Stable Beluga 2,Stability AI,116.98,109.07,120.22,stable-beluga-2,Open weights (non-commercial),StableBeluga2
-2023-07-18,Llama 2-70B,Meta AI,113.61,105.65,117.5,llama-2-70b,Open weights (restricted use),Llama-2-70b-hf
-2023-07-18,Llama 2-70B,Meta AI,113.61,105.65,117.5,llama-2-70b,Open weights (restricted use),Llama-2-70b-chat
-2023-07-18,Llama 2-70B,Meta AI,113.61,105.65,117.5,llama-2-70b,Open weights (restricted use),Llama-2-70b-chat-hf
-2023-07-18,Llama 2-13B,Meta AI,105.85,96.53,110.55,llama-2-13b,Open weights (restricted use),Llama-2-13b
-2023-07-18,Llama 2-13B,Meta AI,105.85,96.53,110.55,llama-2-13b,Open weights (restricted use),Llama-2-13b-chat
-2023-07-18,Llama 2-34B,Meta AI,104.86,94.66,110.04,llama-2-34b,Unreleased,Llama-2-34b
-2023-07-18,Llama 2-7B,Meta AI,98.61,87.33,105.41,llama-2-7b,Open weights (restricted use),Llama-2-7b
-2023-07-18,Llama 2-7B,Meta AI,98.61,87.33,105.41,llama-2-7b,Open weights (restricted use),llama-2-7b-chat
-2023-07-11,Claude 2,Anthropic,120.08,113.23,123.85,claude-2,API access,claude-2.0
-2023-06-27,XGen-7B,Salesforce,92.85,79.14,99.68,xgen-7b,Open weights (unrestricted),xgen-7b-8k-base
-2023-06-22,MPT-30B,MosaicML,100.23,89.27,105.57,mpt-30b,Open weights (unrestricted),mpt-30b
-2023-06-22,MPT-30B,MosaicML,100.23,89.27,105.57,mpt-30b,Open weights (unrestricted),mpt-30b-instruct
-2023-06-13,GPT-4 (Jun 2023),OpenAI,123.09,117.11,126.93,gpt-4-jun-2023,API access,gpt-4-0613
-2023-06-13,GPT-3.5 Turbo,OpenAI,113.17,105.25,117.73,gpt-3-5-turbo-jun-2023,API access,gpt-3.5-turbo-0613
-2023-06-01,Baichuan1-7B,Baichuan,89.87,76.36,98.03,baichuan1-7b,Open weights (non-commercial),Baichuan-7B
-2023-05-25,Falcon-40B,Technology Innovation Institute,104.09,94.56,109.81,falcon-40b,Open weights (unrestricted),falcon-40b-instruct
-2023-05-05,MPT-7B,MosaicML,94.06,81.8,101.42,mpt-7b,Open weights (unrestricted),mpt-7b
-2023-04-24,Falcon-7B,Technology Innovation Institute,94.57,82.22,102.09,falcon-7b,Open weights (unrestricted),falcon-7b
-2023-04-11,Dolly 2.0-12b,Databricks,89.05,74.65,96.66,dolly-2-0-12b,Open weights (unrestricted),dolly-v2-12b
-2023-03-20,Cerebras-GPT-13B,Cerebras Systems,82.5,67.57,91.12,cerebras-gpt-13b,Open weights (unrestricted),Cerebras-GPT-13B
-2023-03-15,Falcon-40B,Technology Innovation Institute,104.09,94.56,109.81,falcon-40b,Open weights (unrestricted),falcon-40b
-2023-03-14,GPT-4 (Mar 2023),OpenAI,125.88,120.51,129.47,gpt-4-mar-2023,API access,gpt-4-32k-0314
-2023-03-14,GPT-4 (Mar 2023),OpenAI,125.88,120.51,129.47,gpt-4-mar-2023,API access,gpt-4-0314
-2023-02-24,LLaMA-65B,Meta AI,109.91,100.62,114.31,llama-65b,Open weights (non-commercial),LLaMA-65B
-2023-02-24,LLaMA-33B,Meta AI,107.11,98.37,112.06,llama-33b,Open weights (non-commercial),LLaMA-33B
-2023-02-24,LLaMA-13B,Meta AI,100.16,89.9,105.86,llama-13b,Open weights (non-commercial),LLaMA-13B
-2023-02-24,LLaMA-7B,Meta AI,96.2,84.31,103.28,llama-7b,Open weights (non-commercial),LLaMA-7B
+2024-01-25,GPT-4 Turbo (Nov 2023),OpenAI,126.45,122.53,129.06,gpt-4-turbo-nov-2023,API access,gpt-4-0125-preview
+2024-01-25,GPT-3.5 Turbo,OpenAI,115.61,109.31,119.09,gpt-3-5-turbo-jan-2024,API access,gpt-3.5-turbo-0125
+2023-12-13,Gemini 1.0 Pro,Google DeepMind,116.97,111.28,119.91,gemini-1-0-pro,API access,gemini-1.0-pro-001
+2023-12-12,Phi-2,Microsoft,107.69,86.08,112.67,phi-2,Open weights (unrestricted),phi-2
+2023-12-11,Mixtral 8x7B,Mistral AI,118.4,112.43,121.19,mixtral-8x7b,Open weights (unrestricted),Mixtral-8x7B-v0.1
+2023-12-11,Mixtral 8x7B,Mistral AI,118.4,112.43,121.19,mixtral-8x7b,Open weights (unrestricted),open-mixtral-8x7b
+2023-12-11,Mixtral 8x7B,Mistral AI,118.4,112.43,121.19,mixtral-8x7b,Open weights (unrestricted),Mixtral-8x7B-Instruct-v0.1
+2023-11-29,DeepSeek LLM 67B,DeepSeek,110.56,94.72,117.04,deepseek-llm-67b,Open weights (restricted use),deepseek-llm-67b-chat
+2023-11-22,Yi-34B,01.AI,117.3,110.2,120.62,yi-34b,Open weights (restricted use),Yi-34B-Chat
+2023-11-22,Yi 6B,01.AI,104.46,96.4,109.77,yi-6b,Open weights (restricted use),Yi-6B-Chat
+2023-11-21,Claude 2.1,Anthropic,119.22,113.09,122.07,claude-2-1,API access,claude-2.1
+2023-11-06,GPT-4 Turbo (Nov 2023),OpenAI,126.45,122.53,129.06,gpt-4-turbo-nov-2023,API access,gpt-4-turbo
+2023-11-06,GPT-4 Turbo (Nov 2023),OpenAI,126.45,122.53,129.06,gpt-4-turbo-nov-2023,API access,gpt-4-1106-preview
+2023-11-06,GPT-3.5 Turbo,OpenAI,118.49,109.97,121.66,gpt-3-5-turbo-nov-2023,API access,gpt-3.5-turbo-1106
+2023-11-02,Yi-34B,01.AI,117.3,110.2,120.62,yi-34b,Open weights (restricted use),Yi-34B
+2023-11-02,Yi 6B,01.AI,104.46,96.4,109.77,yi-6b,Open weights (restricted use),Yi-6B
+2023-11-02,DeepSeek Coder 33B,"DeepSeek,Peking University",95.87,83.8,103.31,deepseek-coder-33b,Open weights (restricted use),deepseek-coder-33b-base
+2023-11-02,DeepSeek Coder 6.7B,"DeepSeek,Peking University",89.05,76.34,97.47,deepseek-coder-6-7b,Open weights (restricted use),deepseek-coder-6.7b-base
+2023-11-02,DeepSeek Coder 1.3B,"DeepSeek,Peking University",62.54,47.12,77.27,deepseek-coder-1-3b,Open weights (restricted use),deepseek-coder-1.3b-base
+2023-09-28,Qwen-14B,Alibaba,112.85,104.94,117.63,qwen-14b,Open weights (restricted use),Qwen-14B
+2023-09-28,Qwen-7B,Alibaba,106.55,97.18,112.2,qwen-7b,Open weights (restricted use),Qwen-7B
+2023-09-27,Mistral 7B,Mistral AI,112.02,105.4,116.2,mistral-7b-v0-1,Open weights (unrestricted),Mistral-7B-Instruct-v0.1
+2023-09-27,Mistral 7B,Mistral AI,112.02,105.4,116.2,mistral-7b-v0-1,Open weights (unrestricted),Mistral-7B-v0.1
+2023-09-27,Mistral 7B,Mistral AI,108.78,98.81,112.63,mistral-7b-v0-3,Open weights (unrestricted),open-mistral-7b
+2023-09-24,Qwen-14B,Alibaba,112.85,104.94,117.63,qwen-14b,Open weights (restricted use),Qwen-14B-Chat
+2023-09-20,Baichuan 2-7B,Baichuan,95.88,85.35,104.45,baichuan-2-7b,Open weights (restricted use),Baichuan-2-7B-Base
+2023-09-11,Phi-1.5,Microsoft,90.99,69.51,100.73,phi-1-5,Open weights (unrestricted),phi-1_5
+2023-09-06,Falcon-180B,Technology Innovation Institute,111.94,104.28,118.9,falcon-180b,Open weights (restricted use),falcon-180B
+2023-09-06,Baichuan2-13B,Baichuan,102.86,92.28,109.77,baichuan2-13b,Open weights (restricted use),Baichuan-2-13B-Base
+2023-08-09,Claude Instant,Anthropic,120.2,114.06,122.84,claude-instant,API access,claude-instant-1.2
+2023-07-20,Stable Beluga 2,Stability AI,117.0,110.4,120.04,stable-beluga-2,Open weights (non-commercial),StableBeluga2
+2023-07-18,Llama 2-70B,Meta AI,113.63,107.1,117.47,llama-2-70b,Open weights (restricted use),Llama-2-70b-hf
+2023-07-18,Llama 2-70B,Meta AI,113.63,107.1,117.47,llama-2-70b,Open weights (restricted use),Llama-2-70b-chat
+2023-07-18,Llama 2-70B,Meta AI,113.63,107.1,117.47,llama-2-70b,Open weights (restricted use),Llama-2-70b-chat-hf
+2023-07-18,Llama 2-13B,Meta AI,105.88,97.93,111.08,llama-2-13b,Open weights (restricted use),Llama-2-13b
+2023-07-18,Llama 2-13B,Meta AI,105.88,97.93,111.08,llama-2-13b,Open weights (restricted use),Llama-2-13b-chat
+2023-07-18,Llama 2-34B,Meta AI,104.9,96.63,110.21,llama-2-34b,Unreleased,Llama-2-34b
+2023-07-18,Llama 2-7B,Meta AI,98.66,89.15,104.53,llama-2-7b,Open weights (restricted use),Llama-2-7b
+2023-07-18,Llama 2-7B,Meta AI,98.66,89.15,104.53,llama-2-7b,Open weights (restricted use),llama-2-7b-chat
+2023-07-11,Claude 2,Anthropic,120.09,114.65,123.88,claude-2,API access,claude-2.0
+2023-06-27,XGen-7B,Salesforce,92.9,82.02,100.1,xgen-7b,Open weights (unrestricted),xgen-7b-8k-base
+2023-06-22,MPT-30B,MosaicML,100.28,91.03,106.26,mpt-30b,Open weights (unrestricted),mpt-30b
+2023-06-22,MPT-30B,MosaicML,100.28,91.03,106.26,mpt-30b,Open weights (unrestricted),mpt-30b-instruct
+2023-06-13,GPT-4 (Jun 2023),OpenAI,123.1,117.33,126.96,gpt-4-jun-2023,API access,gpt-4-0613
+2023-06-13,GPT-3.5 Turbo,OpenAI,113.19,105.86,118.59,gpt-3-5-turbo-jun-2023,API access,gpt-3.5-turbo-0613
+2023-06-01,Baichuan1-7B,Baichuan,89.92,78.81,98.42,baichuan1-7b,Open weights (non-commercial),Baichuan-7B
+2023-05-25,Falcon-40B,Technology Innovation Institute,104.13,96.13,109.74,falcon-40b,Open weights (unrestricted),falcon-40b-instruct
+2023-05-05,MPT-7B,MosaicML,94.11,82.85,101.31,mpt-7b,Open weights (unrestricted),mpt-7b
+2023-04-24,Falcon-7B,Technology Innovation Institute,94.63,83.39,102.26,falcon-7b,Open weights (unrestricted),falcon-7b
+2023-04-11,Dolly 2.0-12b,Databricks,89.11,74.2,97.44,dolly-2-0-12b,Open weights (unrestricted),dolly-v2-12b
+2023-03-20,Cerebras-GPT-13B,Cerebras Systems,82.57,68.78,91.55,cerebras-gpt-13b,Open weights (unrestricted),Cerebras-GPT-13B
+2023-03-15,Falcon-40B,Technology Innovation Institute,104.13,96.13,109.74,falcon-40b,Open weights (unrestricted),falcon-40b
+2023-03-14,GPT-4 (Mar 2023),OpenAI,125.89,120.86,130.92,gpt-4-mar-2023,API access,gpt-4-32k-0314
+2023-03-14,GPT-4 (Mar 2023),OpenAI,125.89,120.86,130.92,gpt-4-mar-2023,API access,gpt-4-0314
+2023-02-24,LLaMA-65B,Meta AI,109.94,102.38,114.19,llama-65b,Open weights (non-commercial),LLaMA-65B
+2023-02-24,LLaMA-33B,Meta AI,107.14,99.12,111.49,llama-33b,Open weights (non-commercial),LLaMA-33B
+2023-02-24,LLaMA-13B,Meta AI,100.2,90.99,106.42,llama-13b,Open weights (non-commercial),LLaMA-13B
+2023-02-24,LLaMA-7B,Meta AI,96.25,86.62,103.51,llama-7b,Open weights (non-commercial),LLaMA-7B
 ,GPT-5,OpenAI,150.0,,,gpt-5,API access,gpt-5-chat
 ,MiMo-V2.5-Pro,Xiaomi Corp,149.27,143.75,151.96,mimo-v2-5-pro,Open weights (unrestricted),mimo-v2.5-pro
-,Gemma 2 27B,Google DeepMind,122.05,115.21,123.98,gemma-2-27b,Open weights (restricted use),gemma-2-27b
-,Claude Instant,Anthropic,120.19,112.55,123.02,claude-instant,API access,claude-instant-1.1
-,Gemma 2 9B,Google DeepMind,119.78,111.53,122.21,gemma-2-9b,Open weights (restricted use),gemma-2-9b
+,Gemma 2 27B,Google DeepMind,122.05,116.0,124.19,gemma-2-27b,Open weights (restricted use),gemma-2-27b
+,Claude Instant,Anthropic,120.2,114.06,122.84,claude-instant,API access,claude-instant-1.1
+,Gemma 2 9B,Google DeepMind,119.79,112.51,122.42,gemma-2-9b,Open weights (restricted use),gemma-2-9b
