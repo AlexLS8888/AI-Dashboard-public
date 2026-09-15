@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-14,Comfy-Org/MiniMax-H3,Community,unknown,19450489,1836,0.0001,432233.1,0.029
-2026-09-14,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,10077938,4066,0.0004,325094.8,-0.0383
-2026-09-14,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,7752562,820,0.0001,250082.6,0.1426
-2026-09-14,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7703400,15085,0.002,197523.1,0.2006
-2026-09-14,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,4889153,376,0.0001,195566.1,
-2026-09-14,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4149809,412,0.0001,159608.0,
-2026-09-14,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4782007,54,0.0,159400.2,
-2026-09-14,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,252806720,5959,0.0,152661.1,0.0057
-2026-09-14,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4552821,27,0.0,151760.7,
-2026-09-14,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4497127,16,0.0,149904.2,
-2026-09-14,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4460984,2,0.0,148699.5,
-2026-09-14,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,7426197,17,0.0,142811.5,0.0789
-2026-09-14,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4827156,5270,0.0011,102705.4,-0.0326
-2026-09-14,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4451916,3960,0.0009,101179.9,-0.0039
-2026-09-14,Comfy-Org/Krea-2,Community,unknown,7451864,546,0.0001,83728.8,0.7774
-2026-09-14,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,9034267,615,0.0001,82883.2,-0.1014
-2026-09-14,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,11210850,409,0.0,74244.0,-0.1058
-2026-09-14,amazon/chronos-2,Amazon,time-series-forecasting,22620722,472,0.0,71134.3,-0.0554
-2026-09-14,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,63865672,582,0.0,58218.5,-0.0131
-2026-09-14,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,87484661,338,0.0,52828.9,0.0185
+2026-09-15,Comfy-Org/MiniMax-H3,Community,unknown,19627030,1845,0.0001,426674.6,0.0438
+2026-09-15,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,9456089,4127,0.0004,295502.8,-0.1142
+2026-09-15,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,7787536,827,0.0001,243360.5,0.1148
+2026-09-15,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5098072,386,0.0001,196079.7,
+2026-09-15,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7702543,15201,0.002,192563.6,0.1476
+2026-09-15,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4904768,60,0.0,158218.3,
+2026-09-15,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4258710,417,0.0001,157730.0,
+2026-09-15,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,254208155,5981,0.0,153414.7,0.0035
+2026-09-15,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4683117,27,0.0,151068.3,
+2026-09-15,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4632418,17,0.0,149432.8,
+2026-09-15,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4598951,2,0.0,148353.3,
+2026-09-15,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,7497964,17,0.0,141471.0,0.0757
+2026-09-15,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4906989,5310,0.0011,102228.9,-0.0175
+2026-09-15,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4469509,3967,0.0009,99322.4,0.0099
+2026-09-15,Comfy-Org/Krea-2,Community,unknown,7914528,549,0.0001,87939.2,0.6972
+2026-09-15,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8805257,618,0.0001,80047.8,-0.1282
+2026-09-15,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,10939105,411,0.0,71967.8,-0.1158
+2026-09-15,amazon/chronos-2,Amazon,time-series-forecasting,22654650,475,0.0,71017.7,-0.0469
+2026-09-15,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64018437,582,0.0,58304.6,-0.0141
+2026-09-15,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,18020761,1123,0.0001,53315.9,0.1831
