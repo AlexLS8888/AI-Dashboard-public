@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-17,Comfy-Org/MiniMax-H3,Community,unknown,20042055,1875,0.0001,417542.8,0.0653
-2026-09-17,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,8205000,4242,0.0005,241323.5,-0.2626
-2026-09-17,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,7603458,841,0.0001,223631.1,0.0181
-2026-09-17,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5532094,403,0.0001,197574.8,
-2026-09-17,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7456257,15478,0.0021,177529.9,0.0183
-2026-09-17,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4492820,427,0.0001,154924.8,
-2026-09-17,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,255618777,6040,0.0,154080.0,0.0051
-2026-09-17,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4873208,67,0.0,147673.0,0.1398
-2026-09-17,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4665399,28,0.0,141375.7,
-2026-09-17,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4620470,20,0.0,140014.2,
-2026-09-17,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4591269,2,0.0,139129.4,
-2026-09-17,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,7407454,19,0.0,134681.0,0.0339
-2026-09-17,Comfy-Org/Krea-2,Community,unknown,8864528,561,0.0001,96353.6,0.5711
-2026-09-17,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4394898,3974,0.0009,93508.5,0.0002
-2026-09-17,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4576471,5403,0.0012,91529.4,-0.0992
-2026-09-17,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8594317,622,0.0001,76735.0,-0.1432
-2026-09-17,amazon/chronos-2,Amazon,time-series-forecasting,22327151,480,0.0,69555.0,-0.035
-2026-09-17,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,10210602,411,0.0,66302.6,-0.1538
-2026-09-17,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64529380,583,0.0,58663.1,-0.0049
-2026-09-17,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,18789941,1127,0.0001,55264.5,0.1406
+2026-09-18,Comfy-Org/MiniMax-H3,Community,unknown,20277946,1890,0.0001,413835.6,0.0683
+2026-09-18,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,7628907,4297,0.0006,217968.8,-0.3272
+2026-09-18,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,7347861,843,0.0001,209938.9,-0.0422
+2026-09-18,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5668795,405,0.0001,195475.7,0.3374
+2026-09-18,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7358662,15595,0.0021,171131.7,-0.0271
+2026-09-18,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,255050544,6055,0.0,153644.9,0.004
+2026-09-18,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4543983,432,0.0001,151466.1,
+2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4793644,70,0.0,140989.5,0.0836
+2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4590943,28,0.0,135027.7,0.0965
+2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4548557,20,0.0,133781.1,
+2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4521460,2,0.0,132984.1,
+2026-09-18,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,7222729,20,0.0,128977.3,-0.0032
+2026-09-18,Comfy-Org/Krea-2,Community,unknown,9353017,564,0.0001,100570.1,0.5266
+2026-09-18,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4331220,3978,0.0009,90233.8,-0.015
+2026-09-18,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4449605,5438,0.0012,87247.2,-0.1048
+2026-09-18,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8446246,624,0.0001,74745.5,-0.1406
+2026-09-18,amazon/chronos-2,Amazon,time-series-forecasting,22382730,480,0.0,69511.6,-0.0338
+2026-09-18,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,10009539,411,0.0,64577.7,-0.1607
+2026-09-18,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64516396,584,0.0,58598.0,-0.0014
+2026-09-18,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19098599,1130,0.0001,56007.6,0.1564
