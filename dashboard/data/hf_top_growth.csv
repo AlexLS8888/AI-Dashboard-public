@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-18,Comfy-Org/Krea-2,Community,unknown,9353017,564,0.0001,0.5266,100570.1
-2026-09-18,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5668795,405,0.0001,0.3374,195475.7
-2026-09-18,google/vit-base-patch16-224,Google,image-classification,7074109,999,0.0001,0.2315,4261.5
-2026-09-18,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17819333,87,0.0,0.2002,10734.5
-2026-09-18,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8490193,627,0.0001,0.1751,11614.5
-2026-09-18,Qwen/Qwen3-4B,Alibaba,text-generation,7242404,703,0.0001,0.164,14256.7
-2026-09-18,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19098599,1130,0.0001,0.1564,56007.6
-2026-09-18,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5161353,242,0.0,0.1392,3109.2
-2026-09-18,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5957894,58,0.0,0.1214,3589.1
-2026-09-18,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6921311,1679,0.0002,0.1058,9494.3
-2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4590943,28,0.0,0.0965,135027.7
-2026-09-18,google/gemma-4-26B-A4B-it,Google,image-text-to-text,9794984,1526,0.0002,0.0904,51552.5
-2026-09-18,Qwen/Qwen3-0.6B,Alibaba,text-generation,22498727,1642,0.0001,0.0877,44288.8
-2026-09-18,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4793644,70,0.0,0.0836,140989.5
-2026-09-18,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,5791673,876,0.0002,0.0742,13888.9
-2026-09-18,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,8531084,1228,0.0001,0.07,18112.7
-2026-09-18,Comfy-Org/MiniMax-H3,Community,unknown,20277946,1890,0.0001,0.0683,413835.6
-2026-09-18,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5934139,7707,0.0013,0.0559,7502.1
-2026-09-18,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,8273752,2099,0.0003,0.051,4984.2
-2026-09-18,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9751001,521,0.0001,0.0495,5874.1
+2026-09-19,Comfy-Org/Krea-2,Community,unknown,9773608,565,0.0001,0.4848,103974.6
+2026-09-19,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5829216,409,0.0001,0.3131,194307.2
+2026-09-19,google/vit-base-patch16-224,Google,image-classification,7177062,999,0.0001,0.1904,4320.9
+2026-09-19,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19522025,1130,0.0001,0.1683,57081.9
+2026-09-19,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17871018,87,0.0,0.1614,10759.2
+2026-09-19,Qwen/Qwen3-4B,Alibaba,text-generation,7098338,703,0.0001,0.1416,13945.7
+2026-09-19,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8487705,629,0.0001,0.137,11595.2
+2026-09-19,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5262258,242,0.0,0.1315,3168.1
+2026-09-19,Qwen/Qwen3-0.6B,Alibaba,text-generation,22967391,1645,0.0001,0.1236,45122.6
+2026-09-19,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7000841,1683,0.0002,0.1165,9590.2
+2026-09-19,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5990815,58,0.0,0.106,3606.8
+2026-09-19,google/gemma-4-26B-A4B-it,Google,image-text-to-text,9928847,1527,0.0002,0.0976,51983.5
+2026-09-19,Comfy-Org/MiniMax-H3,Community,unknown,20497092,1926,0.0001,0.0793,409941.8
+2026-09-19,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9891491,521,0.0001,0.0649,5955.1
+2026-09-19,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,5754737,876,0.0002,0.0635,13767.3
+2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4482973,2,0.0,0.0635,128084.9
+2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4508529,20,0.0,0.0598,128815.1
+2026-09-19,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5919746,7734,0.0013,0.0587,7474.4
+2026-09-19,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5300239,1885,0.0004,0.0572,10173.2
+2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4549521,28,0.0,0.0527,129986.3
