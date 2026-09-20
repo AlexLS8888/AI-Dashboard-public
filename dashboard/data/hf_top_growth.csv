@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-19,Comfy-Org/Krea-2,Community,unknown,9773608,565,0.0001,0.4848,103974.6
-2026-09-19,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5829216,409,0.0001,0.3131,194307.2
-2026-09-19,google/vit-base-patch16-224,Google,image-classification,7177062,999,0.0001,0.1904,4320.9
-2026-09-19,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19522025,1130,0.0001,0.1683,57081.9
-2026-09-19,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17871018,87,0.0,0.1614,10759.2
-2026-09-19,Qwen/Qwen3-4B,Alibaba,text-generation,7098338,703,0.0001,0.1416,13945.7
-2026-09-19,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8487705,629,0.0001,0.137,11595.2
-2026-09-19,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5262258,242,0.0,0.1315,3168.1
-2026-09-19,Qwen/Qwen3-0.6B,Alibaba,text-generation,22967391,1645,0.0001,0.1236,45122.6
-2026-09-19,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7000841,1683,0.0002,0.1165,9590.2
-2026-09-19,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5990815,58,0.0,0.106,3606.8
-2026-09-19,google/gemma-4-26B-A4B-it,Google,image-text-to-text,9928847,1527,0.0002,0.0976,51983.5
-2026-09-19,Comfy-Org/MiniMax-H3,Community,unknown,20497092,1926,0.0001,0.0793,409941.8
-2026-09-19,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9891491,521,0.0001,0.0649,5955.1
-2026-09-19,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,5754737,876,0.0002,0.0635,13767.3
-2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4482973,2,0.0,0.0635,128084.9
-2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4508529,20,0.0,0.0598,128815.1
-2026-09-19,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5919746,7734,0.0013,0.0587,7474.4
-2026-09-19,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5300239,1885,0.0004,0.0572,10173.2
-2026-09-19,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4549521,28,0.0,0.0527,129986.3
+2026-09-20,Comfy-Org/Krea-2,Community,unknown,9790176,570,0.0001,0.3979,103054.5
+2026-09-20,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5953741,414,0.0001,0.2721,192056.2
+2026-09-20,Qwen/Qwen3-0.6B,Alibaba,text-generation,23745227,1647,0.0001,0.1851,46559.3
+2026-09-20,google/vit-base-patch16-224,Google,image-classification,7262445,999,0.0001,0.1722,4369.7
+2026-09-20,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19744243,1134,0.0001,0.1711,57563.4
+2026-09-20,Qwen/Qwen3-4B,Alibaba,text-generation,6941310,704,0.0001,0.1228,13610.4
+2026-09-20,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5242570,242,0.0,0.1193,3154.4
+2026-09-20,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17738844,87,0.0,0.117,10673.2
+2026-09-20,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6922063,1688,0.0002,0.1163,9469.3
+2026-09-20,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8490785,629,0.0001,0.1118,11583.6
+2026-09-20,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10031000,1528,0.0002,0.1056,52244.8
+2026-09-20,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5937776,58,0.0,0.0861,3572.7
+2026-09-20,Comfy-Org/MiniMax-H3,Community,unknown,20700265,1936,0.0001,0.0805,405887.5
+2026-09-20,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5329088,1910,0.0004,0.0764,10209.0
+2026-09-20,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9948737,521,0.0001,0.0703,5986.0
+2026-09-20,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5910102,7761,0.0013,0.0602,7452.8
+2026-09-20,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18269111,122,0.0,0.0586,13306.0
+2026-09-20,Comfy-Org/z_image_turbo,Community,unknown,7906758,895,0.0001,0.0468,26622.1
+2026-09-20,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7439987,838,0.0001,0.0408,10163.9
+2026-09-20,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7598246,1471,0.0002,0.0373,4571.7
