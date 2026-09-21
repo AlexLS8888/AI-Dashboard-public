@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-20,Comfy-Org/Krea-2,Community,unknown,9790176,570,0.0001,0.3979,103054.5
-2026-09-20,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5953741,414,0.0001,0.2721,192056.2
-2026-09-20,Qwen/Qwen3-0.6B,Alibaba,text-generation,23745227,1647,0.0001,0.1851,46559.3
-2026-09-20,google/vit-base-patch16-224,Google,image-classification,7262445,999,0.0001,0.1722,4369.7
-2026-09-20,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19744243,1134,0.0001,0.1711,57563.4
-2026-09-20,Qwen/Qwen3-4B,Alibaba,text-generation,6941310,704,0.0001,0.1228,13610.4
-2026-09-20,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5242570,242,0.0,0.1193,3154.4
-2026-09-20,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17738844,87,0.0,0.117,10673.2
-2026-09-20,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6922063,1688,0.0002,0.1163,9469.3
-2026-09-20,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8490785,629,0.0001,0.1118,11583.6
-2026-09-20,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10031000,1528,0.0002,0.1056,52244.8
-2026-09-20,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5937776,58,0.0,0.0861,3572.7
-2026-09-20,Comfy-Org/MiniMax-H3,Community,unknown,20700265,1936,0.0001,0.0805,405887.5
-2026-09-20,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5329088,1910,0.0004,0.0764,10209.0
-2026-09-20,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9948737,521,0.0001,0.0703,5986.0
-2026-09-20,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5910102,7761,0.0013,0.0602,7452.8
-2026-09-20,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18269111,122,0.0,0.0586,13306.0
-2026-09-20,Comfy-Org/z_image_turbo,Community,unknown,7906758,895,0.0001,0.0468,26622.1
-2026-09-20,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7439987,838,0.0001,0.0408,10163.9
-2026-09-20,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7598246,1471,0.0002,0.0373,4571.7
+2026-09-21,Comfy-Org/Krea-2,Community,unknown,9832368,576,0.0001,0.3195,102420.5
+2026-09-21,Qwen/Qwen3-0.6B,Alibaba,text-generation,24836019,1658,0.0001,0.2284,48602.8
+2026-09-21,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5858233,427,0.0001,0.1982,183069.8
+2026-09-21,google/vit-base-patch16-224,Google,image-classification,7383140,1001,0.0001,0.1711,4439.7
+2026-09-21,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,20047151,1137,0.0001,0.1497,58276.6
+2026-09-21,Qwen/Qwen3-4B,Alibaba,text-generation,6940659,706,0.0001,0.1186,13582.5
+2026-09-21,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5220886,243,0.0,0.1134,3139.4
+2026-09-21,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10134789,1530,0.0002,0.1108,52511.9
+2026-09-21,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4581531,443,0.0001,0.104,138834.3
+2026-09-21,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6954030,1695,0.0002,0.1032,9500.0
+2026-09-21,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5383364,1945,0.0004,0.09,10293.2
+2026-09-21,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7740499,844,0.0001,0.0852,10560.0
+2026-09-21,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18503927,123,0.0,0.0762,13467.2
+2026-09-21,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8501681,631,0.0001,0.0753,11582.7
+2026-09-21,Comfy-Org/MiniMax-H3,Community,unknown,20901410,1951,0.0001,0.0746,401950.2
+2026-09-21,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9960238,522,0.0001,0.072,5989.3
+2026-09-21,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17447121,87,0.0,0.0676,10491.4
+2026-09-21,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5880967,58,0.0,0.0668,3536.4
+2026-09-21,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5992652,7787,0.0013,0.0662,7547.4
+2026-09-21,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7710380,1472,0.0002,0.0571,4636.4

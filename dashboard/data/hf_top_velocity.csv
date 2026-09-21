@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-20,Comfy-Org/MiniMax-H3,Community,unknown,20700265,1936,0.0001,405887.5,0.0805
-2026-09-20,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5953741,414,0.0001,192056.2,0.2721
-2026-09-20,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6941478,4405,0.0006,187607.5,-0.3693
-2026-09-20,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,6865395,844,0.0001,185551.2,-0.1258
-2026-09-20,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7331932,15818,0.0022,162931.8,-0.0563
-2026-09-20,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,252170882,6091,0.0,151727.4,-0.003
-2026-09-20,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4682506,437,0.0001,146328.3,
-2026-09-20,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4431509,11,0.0,134288.2,
-2026-09-20,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4696719,72,0.0,130464.4,0.0034
-2026-09-20,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4500496,28,0.0,125013.8,0.0137
-2026-09-20,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4460498,20,0.0,123902.7,0.0192
-2026-09-20,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4436237,2,0.0,123228.8,0.0226
-2026-09-20,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,6581143,20,0.0,113468.0,-0.107
-2026-09-20,Comfy-Org/Krea-2,Community,unknown,9790176,570,0.0001,103054.5,0.3979
-2026-09-20,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,8020372,625,0.0001,69742.4,-0.1374
-2026-09-20,amazon/chronos-2,Amazon,time-series-forecasting,22527541,482,0.0,69529.4,-0.0114
-2026-09-20,audio-cpp/audio.cpp-gguf,Community,text-to-speech,4435289,158,0.0,66198.3,
-2026-09-20,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,9490163,411,0.0,60446.9,-0.172
-2026-09-20,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64447211,585,0.0,58429.0,0.0065
-2026-09-20,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19744243,1134,0.0001,57563.4,0.1711
+2026-09-21,Comfy-Org/MiniMax-H3,Community,unknown,20901410,1951,0.0001,401950.2,0.0746
+2026-09-21,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,7039006,4450,0.0006,185237.0,-0.3015
+2026-09-21,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5858233,427,0.0001,183069.8,0.1982
+2026-09-21,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,6649723,847,0.0001,174992.7,-0.1423
+2026-09-21,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7153238,15923,0.0022,155505.2,-0.0714
+2026-09-21,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,251048129,6096,0.0,150961.0,-0.007
+2026-09-21,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4829585,11,0.0,142046.6,
+2026-09-21,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4581531,443,0.0001,138834.3,0.104
+2026-09-21,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4665798,73,0.0,126102.6,-0.0243
+2026-09-21,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4470687,28,0.0,120829.4,-0.018
+2026-09-21,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4432055,20,0.0,119785.3,-0.0145
+2026-09-21,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4408630,2,0.0,119152.2,-0.0117
+2026-09-21,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,6257971,21,0.0,106067.3,-0.1573
+2026-09-21,Comfy-Org/Krea-2,Community,unknown,9832368,576,0.0001,102420.5,0.3195
+2026-09-21,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4135598,3988,0.001,81090.2,
+2026-09-21,amazon/chronos-2,Amazon,time-series-forecasting,22629668,484,0.0,69629.7,0.0004
+2026-09-21,audio-cpp/audio.cpp-gguf,Community,text-to-speech,4600500,162,0.0,67654.4,
+2026-09-21,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,7814061,629,0.0001,67362.6,-0.1351
+2026-09-21,Qwen/Qwen3.6-35B-A3B-FP8,Alibaba,image-text-to-text,9212373,412,0.0,58306.2,-0.1783
+2026-09-21,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64343667,588,0.0,58282.3,0.0075
