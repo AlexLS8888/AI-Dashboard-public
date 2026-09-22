@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-21,Comfy-Org/Krea-2,Community,unknown,9832368,576,0.0001,0.3195,102420.5
-2026-09-21,Qwen/Qwen3-0.6B,Alibaba,text-generation,24836019,1658,0.0001,0.2284,48602.8
-2026-09-21,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5858233,427,0.0001,0.1982,183069.8
-2026-09-21,google/vit-base-patch16-224,Google,image-classification,7383140,1001,0.0001,0.1711,4439.7
-2026-09-21,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,20047151,1137,0.0001,0.1497,58276.6
-2026-09-21,Qwen/Qwen3-4B,Alibaba,text-generation,6940659,706,0.0001,0.1186,13582.5
-2026-09-21,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5220886,243,0.0,0.1134,3139.4
-2026-09-21,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10134789,1530,0.0002,0.1108,52511.9
-2026-09-21,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,4581531,443,0.0001,0.104,138834.3
-2026-09-21,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,6954030,1695,0.0002,0.1032,9500.0
-2026-09-21,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5383364,1945,0.0004,0.09,10293.2
-2026-09-21,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7740499,844,0.0001,0.0852,10560.0
-2026-09-21,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18503927,123,0.0,0.0762,13467.2
-2026-09-21,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8501681,631,0.0001,0.0753,11582.7
-2026-09-21,Comfy-Org/MiniMax-H3,Community,unknown,20901410,1951,0.0001,0.0746,401950.2
-2026-09-21,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,9960238,522,0.0001,0.072,5989.3
-2026-09-21,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17447121,87,0.0,0.0676,10491.4
-2026-09-21,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5880967,58,0.0,0.0668,3536.4
-2026-09-21,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,5992652,7787,0.0013,0.0662,7547.4
-2026-09-21,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7710380,1472,0.0002,0.0571,4636.4
+2026-09-22,Comfy-Org/Krea-2,Community,unknown,9864243,583,0.0001,0.2463,101693.2
+2026-09-22,Qwen/Qwen3-0.6B,Alibaba,text-generation,25377576,1662,0.0001,0.2058,49565.6
+2026-09-22,google/vit-base-patch16-224,Google,image-classification,7505835,1001,0.0001,0.1542,4510.7
+2026-09-22,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18936442,123,0.0,0.1283,13772.0
+2026-09-22,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,20173542,1137,0.0001,0.1195,58474.0
+2026-09-22,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10293404,1534,0.0001,0.1142,53058.8
+2026-09-22,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7207795,1700,0.0002,0.1042,9833.3
+2026-09-22,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7917611,849,0.0001,0.104,10786.9
+2026-09-22,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5223319,243,0.0,0.0977,3139.0
+2026-09-22,Qwen/Qwen3.5-2B,Alibaba,image-text-to-text,4787189,411,0.0001,0.0977,23352.1
+2026-09-22,Qwen/Qwen3-4B,Alibaba,text-generation,7000013,708,0.0001,0.0946,13671.9
+2026-09-22,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5437063,1987,0.0004,0.0875,10376.1
+2026-09-22,Comfy-Org/MiniMax-H3,Community,unknown,21305822,1961,0.0001,0.0855,401996.6
+2026-09-22,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10061885,522,0.0001,0.0801,6046.8
+2026-09-22,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7866839,1472,0.0002,0.0756,4727.7
+2026-09-22,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,6107231,7809,0.0013,0.069,7682.1
+2026-09-22,Comfy-Org/z_image_turbo,Community,unknown,8117005,903,0.0001,0.0617,27147.2
+2026-09-22,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8568538,632,0.0001,0.0496,11657.9
+2026-09-22,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5928434,58,0.0,0.0493,3562.8
+2026-09-22,intfloat/multilingual-e5-large,Community,feature-extraction,7237571,1256,0.0002,0.0492,6138.7
