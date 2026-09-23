@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-22,Comfy-Org/Krea-2,Community,unknown,9864243,583,0.0001,0.2463,101693.2
-2026-09-22,Qwen/Qwen3-0.6B,Alibaba,text-generation,25377576,1662,0.0001,0.2058,49565.6
-2026-09-22,google/vit-base-patch16-224,Google,image-classification,7505835,1001,0.0001,0.1542,4510.7
-2026-09-22,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,18936442,123,0.0,0.1283,13772.0
-2026-09-22,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,20173542,1137,0.0001,0.1195,58474.0
-2026-09-22,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10293404,1534,0.0001,0.1142,53058.8
-2026-09-22,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7207795,1700,0.0002,0.1042,9833.3
-2026-09-22,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7917611,849,0.0001,0.104,10786.9
-2026-09-22,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5223319,243,0.0,0.0977,3139.0
-2026-09-22,Qwen/Qwen3.5-2B,Alibaba,image-text-to-text,4787189,411,0.0001,0.0977,23352.1
-2026-09-22,Qwen/Qwen3-4B,Alibaba,text-generation,7000013,708,0.0001,0.0946,13671.9
-2026-09-22,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5437063,1987,0.0004,0.0875,10376.1
-2026-09-22,Comfy-Org/MiniMax-H3,Community,unknown,21305822,1961,0.0001,0.0855,401996.6
-2026-09-22,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10061885,522,0.0001,0.0801,6046.8
-2026-09-22,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7866839,1472,0.0002,0.0756,4727.7
-2026-09-22,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,6107231,7809,0.0013,0.069,7682.1
-2026-09-22,Comfy-Org/z_image_turbo,Community,unknown,8117005,903,0.0001,0.0617,27147.2
-2026-09-22,Qwen/Qwen2.5-0.5B-Instruct,Alibaba,text-generation,8568538,632,0.0001,0.0496,11657.9
-2026-09-22,jonatasgrosman/wav2vec2-large-xlsr-53-portuguese,Community,automatic-speech-recognition,5928434,58,0.0,0.0493,3562.8
-2026-09-22,intfloat/multilingual-e5-large,Community,feature-extraction,7237571,1256,0.0002,0.0492,6138.7
+2026-09-23,Qwen/Qwen3-0.6B,Alibaba,text-generation,26662555,1671,0.0001,0.2033,51973.8
+2026-09-23,Comfy-Org/Krea-2,Community,unknown,9897254,590,0.0001,0.1687,100992.4
+2026-09-23,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,19429010,123,0.0,0.1255,14119.9
+2026-09-23,google/vit-base-patch16-224,Google,image-classification,7673585,1001,0.0001,0.1228,4608.8
+2026-09-23,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10486181,1541,0.0001,0.108,53775.3
+2026-09-23,Qwen/Qwen2.5-1.5B-Instruct,Alibaba,text-generation,7919735,851,0.0001,0.0989,10775.1
+2026-09-23,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7388679,1710,0.0002,0.0977,10066.3
+2026-09-23,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,20117097,1141,0.0001,0.0914,58141.9
+2026-09-23,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5355914,243,0.0,0.0791,3216.8
+2026-09-23,pyannote/speaker-diarization-community-1,Community,automatic-speech-recognition,5471695,2029,0.0004,0.0747,10422.3
+2026-09-23,Comfy-Org/MiniMax-H3,Community,unknown,21517501,1970,0.0001,0.073,398472.2
+2026-09-23,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,7946165,1472,0.0002,0.0723,4772.5
+2026-09-23,Comfy-Org/z_image_turbo,Community,unknown,8259813,905,0.0001,0.0648,27532.7
+2026-09-23,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Sentence Transformers,sentence-similarity,10053327,522,0.0001,0.0644,6038.0
+2026-09-23,meta-llama/Llama-3.1-8B-Instruct,Meta,text-generation,6225344,7830,0.0013,0.062,7820.8
+2026-09-23,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,8950697,1242,0.0001,0.0497,18804.0
+2026-09-23,intfloat/multilingual-e5-large,Community,feature-extraction,7277899,1256,0.0002,0.0448,6167.7
+2026-09-23,Qwen/Qwen3-32B,Alibaba,text-generation,5004209,749,0.0001,0.0339,9754.8
+2026-09-23,Qwen/Qwen3.5-9B,Alibaba,image-text-to-text,9639694,2019,0.0002,0.0319,46568.6
+2026-09-23,jonatasgrosman/wav2vec2-large-xlsr-53-japanese,Community,automatic-speech-recognition,17428935,88,0.0,0.0297,10467.8
