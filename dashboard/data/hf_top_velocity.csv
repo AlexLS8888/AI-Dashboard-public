@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-24,Comfy-Org/MiniMax-H3,Community,unknown,21820807,1985,0.0001,396741.9,0.0888
-2026-09-24,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,7063930,4570,0.0006,172291.0,-0.1391
-2026-09-24,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,250598416,6117,0.0,150419.2,-0.0196
-2026-09-24,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5258643,440,0.0001,150246.9,-0.0494
-2026-09-24,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,6003919,857,0.0001,146437.0,-0.2104
-2026-09-24,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6765008,16177,0.0024,138061.4,-0.0927
-2026-09-24,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4955904,17,0.0,133943.4,
-2026-09-24,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4621883,74,0.0,115547.1,-0.0516
-2026-09-24,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4422593,29,0.0,110564.8,-0.052
-2026-09-24,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4388558,21,0.0,109713.9,-0.0502
-2026-09-24,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4367143,3,0.0,109178.6,-0.0488
-2026-09-24,Comfy-Org/Krea-2,Community,unknown,9920380,593,0.0001,100205.9,0.1191
-2026-09-24,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,5367575,22,0.0,86573.8,-0.2754
-2026-09-24,RadixArk/Kimi-K3-DSpark,Community,text-generation,4241144,57,0.0,73123.2,
-2026-09-24,audio-cpp/audio.cpp-gguf,Community,text-to-speech,4992109,172,0.0,70311.4,
-2026-09-24,amazon/chronos-2,Amazon,time-series-forecasting,22436160,493,0.0,68402.9,0.0049
-2026-09-24,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,7558387,630,0.0001,63515.9,-0.1205
-2026-09-24,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,64262954,591,0.0,58051.4,-0.0041
-2026-09-24,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19665641,1144,0.0001,56673.3,0.0466
-2026-09-24,google/gemma-4-26B-A4B-it,Google,image-text-to-text,10715414,1546,0.0001,54670.5,0.1147
+2026-09-25,Comfy-Org/MiniMax-H3,Community,unknown,21737402,1999,0.0001,388167.9,0.072
+2026-09-25,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6938321,4602,0.0007,165198.1,-0.0905
+2026-09-25,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,247637634,6120,0.0,148552.9,-0.0291
+2026-09-25,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5079635,441,0.0001,141101.0,-0.1039
+2026-09-25,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,5697329,858,0.0002,135650.7,-0.2246
+2026-09-25,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6579319,16244,0.0025,131586.4,-0.1059
+2026-09-25,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4947281,17,0.0,130191.6,
+2026-09-25,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4544339,75,0.0,110837.5,-0.052
+2026-09-25,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4347743,30,0.0,106042.5,-0.053
+2026-09-25,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4314774,21,0.0,105238.4,-0.0514
+2026-09-25,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4294132,3,0.0,104734.9,-0.0503
+2026-09-25,Comfy-Org/Krea-2,Community,unknown,9922380,596,0.0001,99223.8,0.0609
+2026-09-25,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,5100127,22,0.0,80954.4,-0.2939
+2026-09-25,RadixArk/Kimi-K3-DSpark,Community,text-generation,4311260,57,0.0,73072.2,
+2026-09-25,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5080798,175,0.0,70566.6,
+2026-09-25,amazon/chronos-2,Amazon,time-series-forecasting,21883141,494,0.0,66514.1,-0.0223
+2026-09-25,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,7386231,631,0.0001,61551.9,-0.1255
+2026-09-25,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,63555289,591,0.0,57360.4,-0.0149
+2026-09-25,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11073424,1549,0.0001,56210.3,0.1305
+2026-09-25,Qwen/Qwen3-VL-8B-Instruct,Alibaba,image-text-to-text,19149628,1147,0.0001,55027.7,0.0027
