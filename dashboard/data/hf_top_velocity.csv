@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-26,Comfy-Org/MiniMax-H3,Community,unknown,21849745,2009,0.0001,383328.9,0.066
-2026-09-26,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6832629,4638,0.0007,158898.3,-0.0401
-2026-09-26,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,245656284,6123,0.0,147275.9,-0.0334
-2026-09-26,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5114332,449,0.0001,138225.2,-0.1226
-2026-09-26,zai-org/GLM-5.3-Flash,Community,image-text-to-text,4242609,2570,0.0006,136858.4,
-2026-09-26,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6652309,16315,0.0025,130437.4,-0.0968
-2026-09-26,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,5509853,859,0.0002,128136.1,-0.2216
-2026-09-26,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4899968,19,0.0,125640.2,
-2026-09-26,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4505442,75,0.0,107272.4,-0.0513
-2026-09-26,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4310352,30,0.0,102627.4,-0.0526
-2026-09-26,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4278156,23,0.0,101860.9,-0.0511
-2026-09-26,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4258602,3,0.0,101395.3,-0.05
-2026-09-26,Comfy-Org/Krea-2,Community,unknown,9940441,601,0.0001,98420.2,0.0171
-2026-09-26,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,4832934,22,0.0,75514.6,-0.3012
-2026-09-26,RadixArk/Kimi-K3-DSpark,Community,text-generation,4398827,57,0.0,73313.8,
-2026-09-26,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5179665,177,0.0,70954.3,0.2139
-2026-09-26,amazon/chronos-2,Amazon,time-series-forecasting,21779609,494,0.0,65998.8,-0.0289
-2026-09-26,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,7277065,631,0.0001,60141.0,-0.1209
-2026-09-26,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11529170,1555,0.0001,58228.1,0.1612
-2026-09-26,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,63423862,591,0.0,57190.1,-0.0167
+2026-09-27,Comfy-Org/MiniMax-H3,Community,unknown,21857875,2021,0.0001,376859.9,0.0559
+2026-09-27,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6651662,4668,0.0007,151174.1,-0.0418
+2026-09-27,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,243964291,6128,0.0,146173.9,-0.0325
+2026-09-27,zai-org/GLM-5.3-Flash,Community,image-text-to-text,4332082,2575,0.0006,135377.6,
+2026-09-27,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5077425,452,0.0001,133616.4,-0.1472
+2026-09-27,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6727629,16383,0.0024,129377.5,-0.0824
+2026-09-27,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,5322914,861,0.0002,120975.3,-0.2247
+2026-09-27,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4707156,19,0.0,117678.9,0.0622
+2026-09-27,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4431061,75,0.0,103047.9,-0.0566
+2026-09-27,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4239070,30,0.0,98583.0,-0.0581
+2026-09-27,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4207386,24,0.0,97846.2,-0.0567
+2026-09-27,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,4188542,3,0.0,97408.0,-0.0558
+2026-09-27,Comfy-Org/Krea-2,Community,unknown,9913901,608,0.0001,97195.1,0.0126
+2026-09-27,RadixArk/Kimi-K3-DSpark,Community,text-generation,5003118,57,0.0,82018.3,
+2026-09-27,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5253523,179,0.0,70993.6,0.1845
+2026-09-27,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,4567325,22,0.0,70266.5,-0.306
+2026-09-27,amazon/chronos-2,Amazon,time-series-forecasting,21498626,496,0.0,64950.5,-0.0457
+2026-09-27,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11784225,1558,0.0001,59217.2,0.1748
+2026-09-27,nvidia/Qwen3.6-35B-A3B-NVFP4,NVIDIA,text-generation,7109666,632,0.0001,58276.0,-0.1135
+2026-09-27,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,63243736,593,0.0,56976.3,-0.0187
