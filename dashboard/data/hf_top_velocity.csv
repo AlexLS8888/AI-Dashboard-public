@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-09-28,Comfy-Org/MiniMax-H3,Community,unknown,21935560,2033,0.0001,371789.2,0.0495
-2026-09-28,Comfy-Org/Qwen-Image-2.1,Community,unknown,4351753,819,0.0002,362646.1,
-2026-09-28,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,242677197,6137,0.0,145315.7,-0.0333
-2026-09-28,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6538700,4692,0.0007,145304.4,-0.0711
-2026-09-28,zai-org/GLM-5.3-Flash,Community,image-text-to-text,4518525,2587,0.0006,136925.0,
-2026-09-28,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5074916,455,0.0001,130126.1,-0.1337
-2026-09-28,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6844348,16465,0.0024,129138.6,-0.0432
-2026-09-28,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,5240937,867,0.0002,116465.3,-0.2119
-2026-09-28,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4564148,20,0.0,111320.7,-0.055
-2026-09-28,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4397416,77,0.0,99941.3,-0.0575
-2026-09-28,Comfy-Org/Krea-2,Community,unknown,9947316,615,0.0001,96575.9,0.0117
-2026-09-28,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4209379,30,0.0,95667.7,-0.0584
-2026-09-28,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4178489,24,0.0,94965.7,-0.0572
-2026-09-28,RadixArk/Kimi-K3-DSpark,Community,text-generation,5456864,57,0.0,88013.9,
-2026-09-28,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4419279,4006,0.0009,76194.5,
-2026-09-28,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5351778,181,0.0,71357.0,0.1633
-2026-09-28,farbodtavakkoli/OTel-2.0-LLM-31B-IT,Community,text-generation,4298511,22,0.0,65129.0,-0.3131
-2026-09-28,amazon/chronos-2,Amazon,time-series-forecasting,21444350,497,0.0,64591.4,-0.0524
-2026-09-28,google/gemma-4-26B-A4B-it,Google,image-text-to-text,12139481,1559,0.0001,60697.4,0.1978
-2026-09-28,mudler/locate-anything.cpp-gguf,Community,object-detection,6206419,15,0.0,57466.8,
+2026-09-29,Comfy-Org/MiniMax-H3,Community,unknown,21971246,2042,0.0001,366187.4,0.0312
+2026-09-29,Comfy-Org/Qwen-Image-2.1,Community,unknown,4699089,842,0.0002,361468.4,
+2026-09-29,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,242757705,6145,0.0,145276.9,-0.0366
+2026-09-29,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6425606,4712,0.0007,139687.1,-0.0846
+2026-09-29,zai-org/GLM-5.3-Flash,Community,image-text-to-text,4699117,2595,0.0006,138209.3,
+2026-09-29,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7020239,16532,0.0024,130004.4,-0.0084
+2026-09-29,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5044575,457,0.0001,126114.4,-0.0517
+2026-09-29,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,5169806,869,0.0002,112387.1,-0.2014
+2026-09-29,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,Community,image-text-to-text,4454640,21,0.0,106062.9,-0.1151
+2026-09-29,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4354325,78,0.0,96762.8,-0.0657
+2026-09-29,Comfy-Org/Krea-2,Community,unknown,9950155,617,0.0001,95674.6,0.0087
+2026-09-29,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,4170366,30,0.0,92674.8,-0.0656
+2026-09-29,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,4140158,24,0.0,92003.5,-0.0646
+2026-09-29,RadixArk/Kimi-K3-DSpark,Community,text-generation,5703256,57,0.0,90527.9,
+2026-09-29,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4518947,4005,0.0009,76592.3,
+2026-09-29,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5406989,184,0.0,71144.6,0.1416
+2026-09-29,amazon/chronos-2,Amazon,time-series-forecasting,21985629,498,0.0,66022.9,-0.0334
+2026-09-29,mudler/locate-anything.cpp-gguf,Community,object-detection,6774225,17,0.0,62148.9,
+2026-09-29,google/gemma-4-26B-A4B-it,Google,image-text-to-text,12476446,1563,0.0001,62071.9,0.2121
+2026-09-29,Qwen/Qwen3-0.6B,Alibaba,text-generation,29631573,1698,0.0001,57093.6,0.1676
