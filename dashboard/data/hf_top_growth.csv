@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-09-30,RadixArk/Kimi-K3-DSpark,Community,text-generation,5977823,57,0.0,0.4443,93403.5
-2026-09-30,google/vit-base-patch16-224,Google,image-classification,9575744,1004,0.0001,0.2479,5727.1
-2026-09-30,google/gemma-4-26B-A4B-it,Google,image-text-to-text,12794109,1565,0.0001,0.2201,63337.2
-2026-09-30,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,5527340,31,0.0,0.1609,3305.8
-2026-09-30,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5424280,188,0.0,0.1188,70445.2
-2026-09-30,Qwen/Qwen3-0.6B,Alibaba,text-generation,29622035,1706,0.0001,0.111,56965.5
-2026-09-30,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,9744263,1256,0.0001,0.0887,20174.5
-2026-09-30,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21053278,123,0.0,0.0836,15222.9
-2026-09-30,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6182128,899,0.0001,0.0785,14410.6
-2026-09-30,google/gemma-4-31B-it,Google,image-text-to-text,9904107,3972,0.0004,0.0766,49030.2
-2026-09-30,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7415353,983,0.0001,0.0641,34651.2
-2026-09-30,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,8924754,2103,0.0002,0.0584,5337.8
-2026-09-30,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,48223145,1416,0.0,0.0479,28841.6
-2026-09-30,jonatasgrosman/wav2vec2-large-xlsr-53-russian,Community,automatic-speech-recognition,4422997,77,0.0,0.0383,2645.3
-2026-09-30,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5550951,243,0.0,0.0364,3319.9
-2026-09-30,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7610184,1756,0.0002,0.03,10270.2
-2026-09-30,Comfy-Org/MiniMax-H3,Community,unknown,22115336,2058,0.0001,0.0278,362546.5
-2026-09-30,BAAI/bge-base-en-v1.5,BAAI,feature-extraction,10368059,503,0.0,0.0234,9307.1
-2026-09-30,intfloat/multilingual-e5-large,Community,feature-extraction,7442232,1260,0.0002,0.0226,6269.8
-2026-09-30,FacebookAI/roberta-base,Meta,fill-mask,8075588,667,0.0001,0.0199,4829.9
+2026-10-01,mudler/locate-anything.cpp-gguf,Community,object-detection,7962251,18,0.0,0.9253,71732.0
+2026-10-01,RadixArk/Kimi-K3-DSpark,Community,text-generation,6258632,57,0.0,0.4757,96286.6
+2026-10-01,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,5989509,31,0.0,0.2719,3580.1
+2026-10-01,google/vit-base-patch16-224,Google,image-classification,10024799,1006,0.0001,0.2598,5992.1
+2026-10-01,google/gemma-4-26B-A4B-it,Google,image-text-to-text,13052357,1573,0.0001,0.2181,64297.3
+2026-10-01,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5511595,191,0.0,0.1041,70661.5
+2026-10-01,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21296713,123,0.0,0.0863,15387.8
+2026-10-01,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6244561,903,0.0001,0.0772,14522.2
+2026-10-01,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7539039,990,0.0001,0.0715,35065.3
+2026-10-01,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,9730605,1256,0.0001,0.0646,20104.6
+2026-10-01,google/gemma-4-31B-it,Google,image-text-to-text,9845000,3981,0.0004,0.0643,48497.5
+2026-10-01,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,48901305,1417,0.0,0.0633,29229.7
+2026-10-01,Qwen/Qwen3-0.6B,Alibaba,text-generation,29423291,1712,0.0001,0.0602,56474.6
+2026-10-01,Comfy-Org/z_image_turbo,Community,unknown,8326832,921,0.0001,0.0524,27035.2
+2026-10-01,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5644264,243,0.0,0.0385,3373.7
+2026-10-01,BAAI/bge-base-en-v1.5,BAAI,feature-extraction,10398970,503,0.0,0.0329,9326.4
+2026-10-01,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7698354,1757,0.0002,0.0327,10375.1
+2026-10-01,Comfy-Org/MiniMax-H3,Community,unknown,22461562,2079,0.0001,0.0294,362283.3
+2026-10-01,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6950834,16690,0.0024,0.0275,124122.0
+2026-10-01,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,8870183,2103,0.0002,0.0235,5302.0
