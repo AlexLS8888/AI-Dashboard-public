@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-10-01,mudler/locate-anything.cpp-gguf,Community,object-detection,7962251,18,0.0,0.9253,71732.0
-2026-10-01,RadixArk/Kimi-K3-DSpark,Community,text-generation,6258632,57,0.0,0.4757,96286.6
-2026-10-01,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,5989509,31,0.0,0.2719,3580.1
-2026-10-01,google/vit-base-patch16-224,Google,image-classification,10024799,1006,0.0001,0.2598,5992.1
-2026-10-01,google/gemma-4-26B-A4B-it,Google,image-text-to-text,13052357,1573,0.0001,0.2181,64297.3
-2026-10-01,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5511595,191,0.0,0.1041,70661.5
-2026-10-01,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21296713,123,0.0,0.0863,15387.8
-2026-10-01,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6244561,903,0.0001,0.0772,14522.2
-2026-10-01,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7539039,990,0.0001,0.0715,35065.3
-2026-10-01,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,9730605,1256,0.0001,0.0646,20104.6
-2026-10-01,google/gemma-4-31B-it,Google,image-text-to-text,9845000,3981,0.0004,0.0643,48497.5
-2026-10-01,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,48901305,1417,0.0,0.0633,29229.7
-2026-10-01,Qwen/Qwen3-0.6B,Alibaba,text-generation,29423291,1712,0.0001,0.0602,56474.6
-2026-10-01,Comfy-Org/z_image_turbo,Community,unknown,8326832,921,0.0001,0.0524,27035.2
-2026-10-01,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5644264,243,0.0,0.0385,3373.7
-2026-10-01,BAAI/bge-base-en-v1.5,BAAI,feature-extraction,10398970,503,0.0,0.0329,9326.4
-2026-10-01,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7698354,1757,0.0002,0.0327,10375.1
-2026-10-01,Comfy-Org/MiniMax-H3,Community,unknown,22461562,2079,0.0001,0.0294,362283.3
-2026-10-01,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6950834,16690,0.0024,0.0275,124122.0
-2026-10-01,openai/clip-vit-large-patch14,OpenAI,zero-shot-image-classification,8870183,2103,0.0002,0.0235,5302.0
+2026-10-02,mudler/locate-anything.cpp-gguf,Community,object-detection,8561972,19,0.0,0.9031,76446.2
+2026-10-02,RadixArk/Kimi-K3-DSpark,Community,text-generation,6351566,57,0.0,0.4733,96235.8
+2026-10-02,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,5962375,31,0.0,0.2748,3561.8
+2026-10-02,google/vit-base-patch16-224,Google,image-classification,10345089,1006,0.0001,0.2571,6179.9
+2026-10-02,google/gemma-4-26B-A4B-it,Google,image-text-to-text,13086089,1579,0.0001,0.1818,64147.5
+2026-10-02,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5671783,194,0.0,0.1163,71794.7
+2026-10-02,nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16,NVIDIA,text-generation,4712693,125,0.0,0.1161,22657.2
+2026-10-02,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21610288,124,0.0,0.104,15603.1
+2026-10-02,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,50234270,1417,0.0,0.1039,30008.5
+2026-10-02,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6324789,905,0.0001,0.0934,14674.7
+2026-10-02,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7597388,994,0.0001,0.0808,35173.1
+2026-10-02,laion/clap-htsat-fused,Community,audio-classification,7648528,150,0.0,0.0783,5781.2
+2026-10-02,google/gemma-4-31B-it,Google,image-text-to-text,9875593,3994,0.0004,0.0661,48409.8
+2026-10-02,Qwen/Qwen3-4B,Alibaba,text-generation,7172295,719,0.0001,0.0637,13740.0
+2026-10-02,Comfy-Org/z_image_turbo,Community,unknown,8370019,923,0.0001,0.0558,27087.4
+2026-10-02,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6934867,16753,0.0024,0.054,121664.3
+2026-10-02,Qwen/Qwen3-Embedding-0.6B,Alibaba,feature-extraction,9690709,1256,0.0001,0.0538,19980.8
+2026-10-02,Qwen/Qwen3-0.6B,Alibaba,text-generation,29565215,1717,0.0001,0.0516,56638.3
+2026-10-02,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7756867,1765,0.0002,0.0503,10439.9
+2026-10-02,Comfy-Org/MiniMax-H3,Community,unknown,22813102,2093,0.0001,0.0495,362112.7
