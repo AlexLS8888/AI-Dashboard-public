@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-10-03,mudler/locate-anything.cpp-gguf,Community,object-detection,9141505,19,0.0,0.7862,80898.3
-2026-10-03,RadixArk/Kimi-K3-DSpark,Community,text-generation,6442784,57,0.0,0.4647,96161.0
-2026-10-03,zai-org/GLM-5.3-Flash,Community,image-text-to-text,5428853,2671,0.0005,0.2796,142864.6
-2026-10-03,google/vit-base-patch16-224,Google,image-classification,10638107,1007,0.0001,0.249,6351.1
-2026-10-03,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,6050860,31,0.0,0.245,3612.5
-2026-10-03,Qwen/Qwen3-4B,Alibaba,text-generation,7770334,720,0.0001,0.1976,14857.2
-2026-10-03,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,51962747,1417,0.0,0.1448,31022.5
-2026-10-03,google/gemma-4-26B-A4B-it,Google,image-text-to-text,12963043,1585,0.0001,0.1244,63234.4
-2026-10-03,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5812995,197,0.0,0.1223,72662.4
-2026-10-03,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21771922,124,0.0,0.1016,15708.5
-2026-10-03,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6424692,907,0.0001,0.1007,14872.0
-2026-10-03,laion/clap-htsat-fused,Community,audio-classification,7736445,150,0.0,0.0997,5843.2
-2026-10-03,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7791996,997,0.0001,0.0947,35907.8
-2026-10-03,Comfy-Org/z_image_turbo,Community,unknown,8422586,924,0.0001,0.0523,27169.6
-2026-10-03,Comfy-Org/MiniMax-H3,Community,unknown,22960987,2106,0.0001,0.0509,358765.4
-2026-10-03,amazon/chronos-2,Amazon,time-series-forecasting,22827283,503,0.0,0.0481,67736.7
-2026-10-03,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5765101,243,0.0,0.0474,3441.9
-2026-10-03,google/gemma-4-31B-it,Google,image-text-to-text,9875118,4005,0.0004,0.0465,48171.3
-2026-10-03,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7743934,1771,0.0002,0.0436,10408.5
-2026-10-03,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6895117,16836,0.0024,0.0365,118881.3
+2026-10-04,mudler/locate-anything.cpp-gguf,Community,object-detection,9753378,19,0.0,0.7443,85555.9
+2026-10-04,RadixArk/Kimi-K3-DSpark,Community,text-generation,6548991,57,0.0,0.309,96308.7
+2026-10-04,zai-org/GLM-5.3-Flash,Community,image-text-to-text,5577701,2685,0.0005,0.2875,143018.0
+2026-10-04,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,6176934,31,0.0,0.2409,3685.5
+2026-10-04,google/vit-base-patch16-224,Google,image-classification,10732106,1007,0.0001,0.2183,6403.4
+2026-10-04,laion/clap-htsat-fused,Community,audio-classification,7981157,150,0.0,0.2025,6023.5
+2026-10-04,Qwen/Qwen3-4B,Alibaba,text-generation,7669919,721,0.0001,0.1925,14637.3
+2026-10-04,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,51417545,1418,0.0,0.1364,30678.7
+2026-10-04,audio-cpp/audio.cpp-gguf,Community,text-to-speech,5878950,199,0.0,0.119,72579.6
+2026-10-04,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,21929606,124,0.0,0.0973,15810.8
+2026-10-04,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7824457,1004,0.0001,0.0952,35892.0
+2026-10-04,google/gemma-4-26B-A4B-it,Google,image-text-to-text,12854141,1589,0.0001,0.0908,62398.7
+2026-10-04,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6488441,910,0.0001,0.083,14984.9
+2026-10-04,Comfy-Org/MiniMax-H3,Community,unknown,23256823,2125,0.0001,0.064,357797.3
+2026-10-04,Comfy-Org/z_image_turbo,Community,unknown,8509956,926,0.0001,0.0611,27363.2
+2026-10-04,google/gemma-4-31B-it,Google,image-text-to-text,9909534,4014,0.0004,0.0475,48104.5
+2026-10-04,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5772184,243,0.0,0.0464,3444.0
+2026-10-04,amazon/chronos-2,Amazon,time-series-forecasting,22440681,503,0.0,0.0438,66392.5
+2026-10-04,FacebookAI/roberta-large,Meta,fill-mask,5825852,322,0.0001,0.0389,3476.0
+2026-10-04,meta-llama/Llama-3.2-1B-Instruct,Meta,text-generation,7575085,1780,0.0002,0.0343,10167.9
