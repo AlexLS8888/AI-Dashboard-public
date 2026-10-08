@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,growth_7d,velocity
-2026-10-07,Qwen/Qwen3-4B,Alibaba,text-generation,8896913,725,0.0001,0.663,16882.2
-2026-10-07,mudler/locate-anything.cpp-gguf,Community,object-detection,11524087,23,0.0,0.5644,98496.5
-2026-10-07,Comfy-Org/Qwen-Image-2.1,Community,unknown,7197052,972,0.0001,0.4301,342716.8
-2026-10-07,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6160780,2736,0.0004,0.2586,146685.2
-2026-10-07,FacebookAI/roberta-large,Meta,fill-mask,6505742,323,0.0001,0.1903,3874.8
-2026-10-07,google/vit-base-patch16-224,Google,image-classification,11046788,1011,0.0001,0.1536,6579.4
-2026-10-07,laion/clap-htsat-fused,Community,audio-classification,8191421,151,0.0,0.1353,6168.2
-2026-10-07,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6106891,206,0.0,0.1258,72701.1
-2026-10-07,cross-encoder/ms-marco-MiniLM-L4-v2,Sentence Transformers,text-ranking,6123879,31,0.0,0.1079,3647.3
-2026-10-07,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,7999244,1020,0.0001,0.0787,36195.7
-2026-10-07,RadixArk/Kimi-K3-DSpark,Community,text-generation,6430103,58,0.0,0.0757,90564.8
-2026-10-07,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6568303,915,0.0001,0.0625,15064.9
-2026-10-07,timm/mobilenetv3_small_100.lamb_in1k,Hugging Face,image-classification,22315895,124,0.0,0.06,16054.6
-2026-10-07,Comfy-Org/MiniMax-H3,Community,unknown,23394103,2162,0.0001,0.0578,344030.9
-2026-10-07,Comfy-Org/z_image_turbo,Community,unknown,8725188,936,0.0001,0.0565,27787.2
-2026-10-07,Qwen/Qwen3-0.6B,Alibaba,text-generation,31121660,1747,0.0001,0.0506,59054.4
-2026-10-07,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Sentence Transformers,sentence-similarity,50332290,1422,0.0,0.0437,29977.5
-2026-10-07,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5792986,244,0.0,0.0436,3450.3
-2026-10-07,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,8326687,1474,0.0002,0.0419,4959.3
-2026-10-07,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,5981070,63,0.0,0.0372,8643.2
+2026-10-08,mudler/locate-anything.cpp-gguf,Community,object-detection,12063346,24,0.0,0.5151,102231.7
+2026-10-08,Qwen/Qwen3-4B,Alibaba,text-generation,9603998,726,0.0001,0.4332,18189.4
+2026-10-08,Comfy-Org/Qwen-Image-2.1,Community,unknown,7472445,981,0.0001,0.3897,339656.6
+2026-10-08,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6352803,2748,0.0004,0.2533,147739.6
+2026-10-08,FacebookAI/roberta-large,Meta,fill-mask,6749484,323,0.0,0.2049,4017.6
+2026-10-08,google/vit-base-patch16-224,Google,image-classification,11586601,1012,0.0001,0.1558,6896.8
+2026-10-08,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6227969,208,0.0,0.13,73270.2
+2026-10-08,laion/clap-htsat-fused,Community,audio-classification,8082929,151,0.0,0.1019,6082.0
+2026-10-08,Qwen/Qwen3.5-4B,Alibaba,image-text-to-text,8082635,1026,0.0001,0.0721,36408.3
+2026-10-08,Qwen/Qwen3-0.6B,Alibaba,text-generation,31151426,1755,0.0001,0.0587,58998.9
+2026-10-08,Qwen/Qwen2.5-3B-Instruct,Alibaba,text-generation,4333852,591,0.0001,0.0562,5778.5
+2026-10-08,Comfy-Org/z_image_turbo,Community,unknown,8709912,938,0.0001,0.046,27650.5
+2026-10-08,microsoft/mdeberta-v3-base,Microsoft,fill-mask,5887270,245,0.0,0.0431,3504.3
+2026-10-08,autogluon/chronos-bolt-small,Amazon,time-series-forecasting,6021568,63,0.0,0.0424,8689.1
+2026-10-08,Comfy-Org/Wan_2.2_ComfyUI_Repackaged,Community,image-to-video,6506447,915,0.0001,0.0419,14888.9
+2026-10-08,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6518857,4943,0.0008,0.0395,118524.7
+2026-10-08,Comfy-Org/MiniMax-H3,Community,unknown,23286378,2174,0.0001,0.0367,337483.7
+2026-10-08,BAAI/bge-large-en-v1.5,BAAI,feature-extraction,10098619,750,0.0001,0.0331,9008.6
+2026-10-08,distilbert/distilbert-base-uncased,Hugging Face,fill-mask,8195251,1474,0.0002,0.032,4878.1
+2026-10-08,argmaxinc/whisperkit-coreml,Community,automatic-speech-recognition,11029371,237,0.0,0.0213,11585.5
