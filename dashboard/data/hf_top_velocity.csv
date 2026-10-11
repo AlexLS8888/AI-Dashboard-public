@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-10-10,Comfy-Org/Qwen-Image-2.1,Community,unknown,8224717,1032,0.0001,342696.5,0.3709
-2026-10-10,Comfy-Org/MiniMax-H3,Community,unknown,23218255,2201,0.0001,327017.7,0.0112
-2026-10-10,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4457576,2582,0.0006,193807.7,
-2026-10-10,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6479110,2780,0.0004,143980.2,0.1935
-2026-10-10,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,225633601,6230,0.0,134146.0,-0.058
-2026-10-10,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6449020,4991,0.0008,113140.7,0.0212
-2026-10-10,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6768654,17386,0.0026,104133.1,-0.0183
-2026-10-10,mudler/locate-anything.cpp-gguf,Community,object-detection,12330970,26,0.0,102758.1,0.3489
-2026-10-10,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5183101,517,0.0001,101629.4,0.0261
-2026-10-10,RadixArk/Kimi-K3-DSpark,Community,text-generation,5941327,58,0.0,80288.2,-0.0778
-2026-10-10,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4465358,896,0.0002,78339.6,-0.1029
-2026-10-10,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4112241,86,0.0,73432.9,-0.0299
-2026-10-10,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6382450,219,0.0,73361.5,0.098
-2026-10-10,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3941460,33,0.0,70383.2,-0.0307
-2026-10-10,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3924317,26,0.0,70077.1,
-2026-10-10,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4494443,4023,0.0009,64206.3,0.0028
-2026-10-10,amazon/chronos-2,Amazon,time-series-forecasting,20501550,513,0.0,59597.5,-0.1019
-2026-10-10,Qwen/Qwen3-0.6B,Alibaba,text-generation,30768858,1763,0.0001,58054.4,0.0372
-2026-10-10,Comfy-Org/Krea-2,Community,unknown,6600690,658,0.0001,57397.3,-0.3027
-2026-10-10,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11854067,1619,0.0001,55915.4,-0.0855
+2026-10-11,Comfy-Org/Qwen-Image-2.1,Community,unknown,8674298,1057,0.0001,346971.9,0.3771
+2026-10-11,Comfy-Org/MiniMax-H3,Community,unknown,23580892,2222,0.0001,327512.4,0.0139
+2026-10-11,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4549911,2616,0.0006,189579.6,0.1246
+2026-10-11,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6539199,2795,0.0004,142156.5,0.1724
+2026-10-11,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,223255538,6239,0.0,132653.3,-0.0585
+2026-10-11,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,4189006,788,0.0002,126939.6,
+2026-10-11,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6488262,5018,0.0008,111866.6,-0.0033
+2026-10-11,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6843108,17477,0.0026,103683.5,0.0031
+2026-10-11,mudler/locate-anything.cpp-gguf,Community,object-detection,12332115,27,0.0,101918.3,0.2644
+2026-10-11,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5177548,520,0.0001,99568.2,0.0257
+2026-10-11,RadixArk/Kimi-K3-DSpark,Community,text-generation,5818897,58,0.0,77585.3,-0.1115
+2026-10-11,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4462213,898,0.0002,76934.7,-0.0875
+2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4112485,86,0.0,72148.9,-0.0247
+2026-10-11,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6339371,221,0.0,72038.3,0.0783
+2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3942051,34,0.0,69158.8,-0.0257
+2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3924868,26,0.0,68857.3,
+2026-10-11,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4442840,4023,0.0009,62575.2,-0.0125
+2026-10-11,amazon/chronos-2,Amazon,time-series-forecasting,20044510,514,0.0,58100.0,-0.1068
+2026-10-11,Qwen/Qwen3-0.6B,Alibaba,text-generation,30575964,1767,0.0001,57581.9,0.0314
+2026-10-11,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11657345,1623,0.0001,54729.3,-0.0931
