@@ -8,6 +8,7 @@ month,frontier_p50_hours,frontier_org,frontier_model
 2024-01,0.0894,OpenAI,Gpt 4 0125 Preview
 2024-02,0.1068,Anthropic,Claude 3 Opus
 2024-04,0.1095,OpenAI,Gpt 4 Turbo 2024 04 09
+2024-05,0.1528,OpenAI,Gpt 4O 2024 05 13
 2024-06,0.3114,Anthropic,Claude 3 5 Sonnet
 2024-08,0.1165,OpenAI,Gpt 4O 2024 08 06
 2024-09,0.3704,OpenAI,O1 Preview 2024 09 12
