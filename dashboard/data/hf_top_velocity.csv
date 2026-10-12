@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-10-11,Comfy-Org/Qwen-Image-2.1,Community,unknown,8674298,1057,0.0001,346971.9,0.3771
-2026-10-11,Comfy-Org/MiniMax-H3,Community,unknown,23580892,2222,0.0001,327512.4,0.0139
-2026-10-11,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4549911,2616,0.0006,189579.6,0.1246
-2026-10-11,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6539199,2795,0.0004,142156.5,0.1724
-2026-10-11,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,223255538,6239,0.0,132653.3,-0.0585
-2026-10-11,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,4189006,788,0.0002,126939.6,
-2026-10-11,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6488262,5018,0.0008,111866.6,-0.0033
-2026-10-11,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6843108,17477,0.0026,103683.5,0.0031
-2026-10-11,mudler/locate-anything.cpp-gguf,Community,object-detection,12332115,27,0.0,101918.3,0.2644
-2026-10-11,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5177548,520,0.0001,99568.2,0.0257
-2026-10-11,RadixArk/Kimi-K3-DSpark,Community,text-generation,5818897,58,0.0,77585.3,-0.1115
-2026-10-11,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4462213,898,0.0002,76934.7,-0.0875
-2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4112485,86,0.0,72148.9,-0.0247
-2026-10-11,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6339371,221,0.0,72038.3,0.0783
-2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3942051,34,0.0,69158.8,-0.0257
-2026-10-11,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3924868,26,0.0,68857.3,
-2026-10-11,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4442840,4023,0.0009,62575.2,-0.0125
-2026-10-11,amazon/chronos-2,Amazon,time-series-forecasting,20044510,514,0.0,58100.0,-0.1068
-2026-10-11,Qwen/Qwen3-0.6B,Alibaba,text-generation,30575964,1767,0.0001,57581.9,0.0314
-2026-10-11,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11657345,1623,0.0001,54729.3,-0.0931
+2026-10-12,Comfy-Org/Qwen-Image-2.1,Community,unknown,9090866,1078,0.0001,349648.7,0.3749
+2026-10-12,Comfy-Org/MiniMax-H3,Community,unknown,23731432,2239,0.0001,325088.1,0.0228
+2026-10-12,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4615462,2651,0.0006,184618.5,0.1201
+2026-10-12,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6489462,2815,0.0004,138073.7,0.1304
+2026-10-12,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,221180273,6281,0.0,131342.2,-0.0614
+2026-10-12,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,4413142,818,0.0002,129798.3,
+2026-10-12,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6597425,5049,0.0008,111820.8,0.008
+2026-10-12,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6895303,17558,0.0025,102915.0,0.0202
+2026-10-12,mudler/locate-anything.cpp-gguf,Community,object-detection,12333890,41,0.0,101097.5,0.1926
+2026-10-12,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5099697,522,0.0001,96220.7,0.0168
+2026-10-12,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4483727,905,0.0002,75995.4,-0.0662
+2026-10-12,RadixArk/Kimi-K3-DSpark,Community,text-generation,5724892,67,0.0,75327.5,-0.1328
+2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4118520,92,0.0,71009.0,-0.0204
+2026-10-12,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6285059,228,0.0,70618.6,0.055
+2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3948154,39,0.0,68071.6,-0.0214
+2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3931165,31,0.0,67778.7,
+2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,3915381,5,0.0,67506.6,
+2026-10-12,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4446916,4054,0.0009,61762.7,-0.0198
+2026-10-12,Qwen/Qwen3-0.6B,Alibaba,text-generation,30604529,1787,0.0001,57527.3,0.0189
+2026-10-12,amazon/chronos-2,Amazon,time-series-forecasting,19526904,524,0.0,56436.1,-0.1135
