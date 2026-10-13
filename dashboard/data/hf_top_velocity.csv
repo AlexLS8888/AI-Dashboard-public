@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-10-12,Comfy-Org/Qwen-Image-2.1,Community,unknown,9090866,1078,0.0001,349648.7,0.3749
-2026-10-12,Comfy-Org/MiniMax-H3,Community,unknown,23731432,2239,0.0001,325088.1,0.0228
-2026-10-12,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4615462,2651,0.0006,184618.5,0.1201
-2026-10-12,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6489462,2815,0.0004,138073.7,0.1304
-2026-10-12,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,221180273,6281,0.0,131342.2,-0.0614
-2026-10-12,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,4413142,818,0.0002,129798.3,
-2026-10-12,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6597425,5049,0.0008,111820.8,0.008
-2026-10-12,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,6895303,17558,0.0025,102915.0,0.0202
-2026-10-12,mudler/locate-anything.cpp-gguf,Community,object-detection,12333890,41,0.0,101097.5,0.1926
-2026-10-12,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5099697,522,0.0001,96220.7,0.0168
-2026-10-12,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4483727,905,0.0002,75995.4,-0.0662
-2026-10-12,RadixArk/Kimi-K3-DSpark,Community,text-generation,5724892,67,0.0,75327.5,-0.1328
-2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4118520,92,0.0,71009.0,-0.0204
-2026-10-12,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6285059,228,0.0,70618.6,0.055
-2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3948154,39,0.0,68071.6,-0.0214
-2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3931165,31,0.0,67778.7,
-2026-10-12,lmstudio-community/Qwen3.8-27B-MLX-5bit,LM Studio,image-text-to-text,3915381,5,0.0,67506.6,
-2026-10-12,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4446916,4054,0.0009,61762.7,-0.0198
-2026-10-12,Qwen/Qwen3-0.6B,Alibaba,text-generation,30604529,1787,0.0001,57527.3,0.0189
-2026-10-12,amazon/chronos-2,Amazon,time-series-forecasting,19526904,524,0.0,56436.1,-0.1135
+2026-10-13,Comfy-Org/Qwen-Image-2.1,Community,unknown,9400716,1096,0.0001,348174.7,0.3624
+2026-10-13,Comfy-Org/MiniMax-H3,Community,unknown,23813859,2260,0.0001,321808.9,0.017
+2026-10-13,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4686252,2672,0.0006,180240.5,0.1174
+2026-10-13,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6511401,2833,0.0004,135654.2,0.0939
+2026-10-13,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,4675423,847,0.0002,133583.5,
+2026-10-13,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,220348634,6337,0.0,130770.7,-0.0642
+2026-10-13,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6650349,5073,0.0008,110839.1,0.0127
+2026-10-13,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7119569,17616,0.0025,104699.5,0.0519
+2026-10-13,mudler/locate-anything.cpp-gguf,Community,object-detection,12335986,50,0.0,100292.6,0.1269
+2026-10-13,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5056836,531,0.0001,93645.1,0.0088
+2026-10-13,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4489018,913,0.0002,74817.0,-0.0636
+2026-10-13,RadixArk/Kimi-K3-DSpark,Community,text-generation,5572662,72,0.0,72372.2,-0.149
+2026-10-13,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4126380,97,0.0,69938.6,-0.0174
+2026-10-13,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6212944,236,0.0,69032.7,0.0245
+2026-10-13,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3956543,40,0.0,67060.1,-0.0165
+2026-10-13,lmstudio-community/Qwen3.8-27B-MLX-6bit,LM Studio,image-text-to-text,3939544,33,0.0,66771.9,
+2026-10-13,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4441333,4081,0.0009,60840.2,-0.0222
+2026-10-13,Qwen/Qwen3-0.6B,Alibaba,text-generation,30726361,1811,0.0001,57648.0,-0.0022
+2026-10-13,amazon/chronos-2,Amazon,time-series-forecasting,19156628,534,0.0,55206.4,-0.125
+2026-10-13,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11454083,1642,0.0001,53274.8,-0.0933
