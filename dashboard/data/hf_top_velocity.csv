@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-10-15,Comfy-Org/Qwen-Image-2.1,Community,unknown,10250615,1119,0.0001,353469.5,0.3718
-2026-10-15,Comfy-Org/MiniMax-H3,Community,unknown,24344675,2289,0.0001,320324.7,0.0454
-2026-10-15,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4849199,2697,0.0006,173185.7,0.1159
-2026-10-15,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,5183346,879,0.0002,140090.4,
-2026-10-15,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6531090,2855,0.0004,130621.8,0.0281
-2026-10-15,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,216129209,6342,0.0,128114.5,-0.0694
-2026-10-15,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6655172,5108,0.0008,107341.5,0.0209
-2026-10-15,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7363968,17748,0.0024,105199.5,0.0763
-2026-10-15,mudler/locate-anything.cpp-gguf,Community,object-detection,12343183,53,0.0,98745.5,0.0232
-2026-10-15,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5011351,540,0.0001,89488.4,-0.0263
-2026-10-15,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4486652,917,0.0002,72365.4,-0.0385
-2026-10-15,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4120016,98,0.0,67541.2,-0.0113
-2026-10-15,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6211946,245,0.0,67521.2,-0.0026
-2026-10-15,RadixArk/Kimi-K3-DSpark,Community,text-generation,5170377,72,0.0,65447.8,-0.1735
-2026-10-15,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3951936,41,0.0,64785.8,-0.0103
-2026-10-15,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4416319,4083,0.0009,58884.3,-0.0231
-2026-10-15,Qwen/Qwen3-0.6B,Alibaba,text-generation,29853801,1817,0.0001,55801.5,-0.0417
-2026-10-15,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,59099949,643,0.0,52393.6,-0.0457
-2026-10-15,amazon/chronos-2,Amazon,time-series-forecasting,18245694,537,0.0,52279.9,-0.1562
-2026-10-15,google/gemma-4-26B-A4B-it,Google,image-text-to-text,11170734,1653,0.0001,51478.0,-0.0893
+2026-10-16,Comfy-Org/Qwen-Image-2.1,Community,unknown,10584606,1128,0.0001,352820.2,0.3648
+2026-10-16,Comfy-Org/MiniMax-H3,Community,unknown,24667625,2304,0.0001,320358.8,0.0691
+2026-10-16,prism-ml/Ternary-Bonsai-2-27B-gguf,Community,text-generation,4908985,2709,0.0006,169275.3,0.1185
+2026-10-16,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,5349998,903,0.0002,140789.4,
+2026-10-16,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6527460,2865,0.0004,127989.4,0.0214
+2026-10-16,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,213006807,6343,0.0,126188.9,-0.0658
+2026-10-16,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7516626,17819,0.0024,105868.0,0.1081
+2026-10-16,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,6663225,5128,0.0008,105765.5,0.0326
+2026-10-16,mudler/locate-anything.cpp-gguf,Community,object-detection,12010068,53,0.0,95318.0,-0.0259
+2026-10-16,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,4960083,542,0.0001,87019.0,-0.0545
+2026-10-16,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4459370,920,0.0002,70783.7,-0.018
+2026-10-16,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6167729,249,0.0,66319.7,-0.0211
+2026-10-16,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,4097047,99,0.0,66081.4,-0.0042
+2026-10-16,lmstudio-community/Qwen3.8-27B-MLX-8bit,LM Studio,image-text-to-text,3930217,42,0.0,63390.6,-0.0032
+2026-10-16,RadixArk/Kimi-K3-DSpark,Community,text-generation,4951290,73,0.0,61891.1,-0.1869
+2026-10-16,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4391387,4085,0.0009,57781.4,-0.0293
+2026-10-16,Qwen/Qwen3-0.6B,Alibaba,text-generation,29878421,1819,0.0001,55743.3,-0.0327
+2026-10-16,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,58505382,643,0.0,51820.5,-0.0394
+2026-10-16,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4014459,6169,0.0015,50815.9,
+2026-10-16,amazon/chronos-2,Amazon,time-series-forecasting,17755478,540,0.0,50729.9,-0.1567
