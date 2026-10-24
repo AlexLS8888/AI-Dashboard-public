@@ -1,21 +1,21 @@
 date,model_id,company,pipeline_tag,downloads_30d,likes,like_ratio,velocity,growth_7d
-2026-10-23,Comfy-Org/MiniMax-H3,Community,unknown,25532380,2386,0.0001,303956.9,0.0351
-2026-10-23,Comfy-Org/Qwen-Image-2.1,Community,unknown,10048476,1181,0.0001,271580.4,-0.0507
-2026-10-23,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,6513173,992,0.0002,144737.2,0.2174
-2026-10-23,Serveurperso/YuE2-GGUF,Community,unknown,5438394,21,0.0,135959.9,
-2026-10-23,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,193424443,6004,0.0,114114.7,-0.0919
-2026-10-23,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6319699,2926,0.0005,108960.3,-0.0318
-2026-10-23,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7710011,18257,0.0024,98846.3,0.0257
-2026-10-23,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,5751118,5288,0.0009,82158.8,-0.1369
-2026-10-23,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,4994795,579,0.0001,78043.7,0.007
-2026-10-23,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6563716,266,0.0,65637.2,0.0642
-2026-10-23,mudler/locate-anything.cpp-gguf,Community,object-detection,8323312,66,0.0,62581.3,-0.307
-2026-10-23,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4253998,939,0.0002,60771.4,-0.0461
-2026-10-23,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,3803120,548,0.0001,58509.5,
-2026-10-23,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,4967030,6316,0.0013,57756.2,0.2373
-2026-10-23,lmstudio-community/Qwen3.8-27B-MLX-4bit,LM Studio,image-text-to-text,3735452,111,0.0,54137.0,-0.0883
-2026-10-23,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4348313,4086,0.0009,52389.3,-0.0098
-2026-10-23,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,54048872,649,0.0,47578.2,-0.0762
-2026-10-23,Qwen/Qwen3-0.6B,Alibaba,text-generation,25158033,1846,0.0001,46331.6,-0.158
-2026-10-23,RadixArk/Kimi-K3-DSpark,Community,text-generation,3725706,77,0.0,42824.2,-0.2475
-2026-10-23,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,71405909,430,0.0,42127.4,-0.0785
+2026-10-24,Comfy-Org/MiniMax-H3,Community,unknown,26010202,2394,0.0001,306002.4,0.0411
+2026-10-24,Comfy-Org/Qwen-Image-2.1,Community,unknown,9949279,1189,0.0001,261823.1,-0.0979
+2026-10-24,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,Community,image-text-to-text,6740278,1007,0.0001,146527.8,0.2064
+2026-10-24,Serveurperso/YuE2-GGUF,Community,unknown,5648544,21,0.0,137769.4,
+2026-10-24,sentence-transformers/all-MiniLM-L6-v2,Sentence Transformers,sentence-similarity,193924911,6008,0.0,114342.5,-0.0834
+2026-10-24,zai-org/GLM-5.3-Flash,Community,image-text-to-text,6377661,2930,0.0005,108095.9,-0.0299
+2026-10-24,Qwen/Qwen3.8-27B,Alibaba,image-text-to-text,7851161,18310,0.0023,99381.8,0.0071
+2026-10-24,unsloth/Qwen3.8-27B-GGUF,Unsloth,unknown,5804646,5305,0.0009,81755.6,-0.1425
+2026-10-24,ornith-ai/Ornith-1.5-9B-GGUF,Community,text-generation,5096314,587,0.0001,78404.8,0.0226
+2026-10-24,audio-cpp/audio.cpp-gguf,Community,text-to-speech,6779771,268,0.0,67126.4,0.0812
+2026-10-24,Qwen/Qwen3.8-27B-FP8,Alibaba,image-text-to-text,4375626,941,0.0002,61628.5,-0.0221
+2026-10-24,MiniMaxAI/MiniMax-H3,Community,image-text-to-video,5099332,6332,0.0012,58613.0,0.1692
+2026-10-24,mudler/locate-anything.cpp-gguf,Community,object-detection,7845332,68,0.0,58547.3,-0.3184
+2026-10-24,ornith-ai/Ornith-1.5-35B-A3B-GGUF,Community,text-generation,3860439,553,0.0001,58491.5,
+2026-10-24,deepseek-ai/DeepSeek-V4-Flash-0731,DeepSeek,text-generation,4315560,4088,0.0009,51375.7,-0.0029
+2026-10-24,BAAI/bge-small-en-v1.5,BAAI,feature-extraction,54148843,651,0.0,47624.3,-0.0746
+2026-10-24,Qwen/Qwen3-0.6B,Alibaba,text-generation,24928161,1847,0.0001,45823.8,-0.1711
+2026-10-24,cross-encoder/ms-marco-MiniLM-L6-v2,Sentence Transformers,text-ranking,71633770,431,0.0,42236.9,-0.0751
+2026-10-24,autogluon/chronos-2,Amazon,time-series-forecasting,15514526,89,0.0,40613.9,0.8253
+2026-10-24,amazon/chronos-2,Amazon,time-series-forecasting,13981259,551,0.0,39053.8,-0.1886
